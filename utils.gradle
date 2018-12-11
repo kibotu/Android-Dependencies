@@ -190,7 +190,7 @@ def generateChangelog() {
         def line = scanner.nextLine()
         def commit = line.subSequence(1, line.length() - 1)
         def hash = commit.subSequence(commit.indexOf("[[") + 2, commit.indexOf("]]"))
-        def message = commit.replaceFirst("\\[\\[$hash\\]\\]", "<a href=\"${VSC_PATH}commits/\">#$hash</a>")
+        def message = commit.replaceFirst("\\[\\[$hash\\]\\]", "<a href=\"${VSC_PATH}commits/$hash\">#$hash</a>")
         builder.append(message).append("\r\n").append("\r\n")
     }
 
