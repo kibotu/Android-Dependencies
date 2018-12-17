@@ -22,7 +22,7 @@ ext {
 
 ext.plugin = [
         gradleBuildTools       : 'com.android.tools.build:gradle:3.2.1',
-        gradleBuildToolsAlpha  : 'com.android.tools.build:gradle:3.4.0-alpha07',
+        gradleBuildToolsAlpha  : 'com.android.tools.build:gradle:3.4.0-alpha08',
         gradleRetroLambda      : 'me.tatarka:gradle-retrolambda:3.7.0', // deprecated: use build:gradle:3
         lombok                 : 'me.tatarka.retrolambda.projectlombok:lombok.ast:0.2.3.a2', // deprecated: use build:gradle:3
         androidApt             : 'com.neenbedankt.gradle.plugins:android-apt:1.8', // deprecated: use build:gradle:3
@@ -75,6 +75,8 @@ ext.libs = [
 
         supportMultidex              : "androidx.multidex:multidex:2.0.0",
         supportCompat                : "androidx.core:core:1.1.0-alpha02",
+        supportCompatKtx             : "androidx.core:core-ktx:1.0.1",
+
         supportMediaCompat           : "androidx.media:media:1.1.0-alpha01",
         supportFragment              : "androidx.fragment:fragment:1.1.0-alpha02",
         supportAppCompat             : "androidx.appcompat:appcompat:1.1.0-alpha01",
@@ -317,7 +319,7 @@ ext.libs = [
         leakcanaryDebug              : 'com.squareup.leakcanary:leakcanary-android:1.6.1',
         leakcanaryRelease            : 'com.squareup.leakcanary:leakcanary-android-no-op:1.6.1',
 
-        exozetCore                   : 'com.exozet.android:core:0.1.79',
+        exozetCore                   : "com.github.exozet:AndroidCore:1.3.0",
 
         commonUtils                  : 'com.github.kibotu:common.android.utils:0.7.2',
         deviceInfo                   : 'com.github.kibotu:net.kibotu.android.deviceinfo:1.3.2',
@@ -382,8 +384,8 @@ ext.testLibs = [
 ]
 
 ext.androidTestLibs = [
-        espressoCore  : 'androidx.test.espresso:espresso-core:3.1.0-alpha1',
-        espressoRunner: 'androidx.test:runner:1.1.0-alpha1' // robolectric 3.8 requires latest runner; old version: 'com.android.support.test:runner:1.0.1'
+        espressoCore  : 'androidx.test.espresso:espresso-core:3.1.1',
+        espressoRunner: 'androidx.test:runner:1.1.1' // robolectric 3.8 requires latest runner; old version: 'com.android.support.test:runner:1.0.1'
 ]
 
 ext.configs = [
