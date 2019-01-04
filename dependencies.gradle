@@ -20,7 +20,7 @@ ext {
 
 ext.plugin = [
         gradleBuildTools       : 'com.android.tools.build:gradle:3.2.1',
-        gradleBuildToolsAlpha  : 'com.android.tools.build:gradle:3.4.0-alpha09',
+        gradleBuildToolsAlpha  : 'com.android.tools.build:gradle:3.4.0-alpha10',
         gradleRetroLambda      : 'me.tatarka:gradle-retrolambda:3.7.0', // deprecated: use build:gradle:3
         lombok                 : 'me.tatarka.retrolambda.projectlombok:lombok.ast:0.2.3.a2', // deprecated: use build:gradle:3
         androidApt             : 'com.neenbedankt.gradle.plugins:android-apt:1.8', // deprecated: use build:gradle:3
