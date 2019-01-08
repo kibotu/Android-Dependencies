@@ -60,10 +60,12 @@ def simpleReleaseVersionName() {
     else
         releaseName = versionName
 
-    if (buildNumber != null)
-        releaseName += "." + buildNumber
-    else
-        releaseName += "." + 0
+    if (releaseName.split(".").length < 2) {
+        if (buildNumber != null)
+            releaseName += "." + buildNumber
+        else
+            releaseName += "." + 0
+    }
 
     println("Version Name: " + releaseName)
     return releaseName
