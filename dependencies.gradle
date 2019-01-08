@@ -13,6 +13,10 @@ ext {
 
     versionName = 0
 
+    major = 1
+    minor = 0
+    patch = 0
+
     VSC_PATH = '0'
 
     isCi = rootProject.hasProperty("CI") || rootProject.hasProperty("ci") || System.getenv().containsKey("CI")

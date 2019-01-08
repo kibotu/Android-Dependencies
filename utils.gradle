@@ -26,6 +26,25 @@ def commitCount() {
     return commits.size()
 }
 
+def simpleReleaseVersionNameMajorMinorPatch() {
+    description = "Creating release version name. Format: major.minor.patch"
+    println(description)
+
+    final def buildNumber = buildNumberByCI()
+    def releaseName = branchName()
+    // remove 'origin' in from branch name
+    if (releaseName != null && releaseName.contains("origin/"))
+        releaseName = releaseName.replace("origin/", "")
+
+    if (releaseName.contains("release"))
+        releaseName = releaseName.replace("release/", "")
+    else
+        releaseName = major + "." + minor + "." + patch
+
+    println("Version Name: " + releaseName)
+    return releaseName
+}
+
 def simpleReleaseVersionName() {
     description = "Creating release version name. Format: major.minor.build"
     println(description)
@@ -47,30 +66,6 @@ def simpleReleaseVersionName() {
         releaseName += "." + 0
 
     println("Version Name: " + releaseName)
-    return releaseName
-}
-
-def canonicalReleaseVersionName() {
-    description = "Creating release version name. Format: branch/major.minor.build-commithash"
-    println(description)
-    final def buildNumber = buildNumberByCI()
-    def releaseName = branchName()
-
-    // remove 'origin' in from branch name
-    if (releaseName != null && releaseName.contains("origin/"))
-        releaseName = releaseName.replace("origin/", "")
-
-    if (!releaseName.contains("release"))
-        releaseName += "/" + versionName
-
-    if (buildNumber != null) {
-        releaseName += "." + buildNumber + "-"
-    } else {
-        releaseName += ".0-"
-    }
-
-    releaseName += commitHash()
-    println('Version Name: ' + releaseName)
     return releaseName
 }
 
@@ -220,6 +215,7 @@ ext {
     commitHash = this.&commitHash
     commitCount = this.&commitCount
     simpleReleaseVersionName = this.&simpleReleaseVersionName
+    simpleReleaseVersionNameMajorMinorPatch = this.&simpleReleaseVersionNameMajorMinorPatch
     canonicalReleaseVersionName = this.&canonicalReleaseVersionName
     buildNumberByCI = this.&buildNumberByCI
     branchName = this.&branchName
