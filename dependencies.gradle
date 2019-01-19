@@ -23,7 +23,7 @@ ext {
 }
 
 ext.plugin = [
-        gradleBuildTools       : 'com.android.tools.build:gradle:3.2.1',
+        gradleBuildTools       : 'com.android.tools.build:gradle:3.3.0',
         gradleBuildToolsAlpha  : 'com.android.tools.build:gradle:3.4.0-alpha10',
         gradleBuildToolsCanary : 'com.android.tools.build:gradle:3.5.0-alpha01',
         gradleRetroLambda      : 'me.tatarka:gradle-retrolambda:3.7.0', // deprecated: use build:gradle:3
@@ -228,7 +228,7 @@ ext.libs = [
         stethoJsRhino                : 'com.facebook.stetho:stetho-js-rhino:1.4.2',
         crashlytics                  : 'com.crashlytics.sdk.android:crashlytics:2.9.8@aar',
         processPhoenix               : 'com.jakewharton:process-phoenix:1.1.0',
-        circleIndicator              : 'me.relex:circleindicator:1.2.2@aar', // please use indefinitePagerIndicator instead, due being scalable
+        circleIndicator              : 'me.relex:circleindicator:2.0.0', // please use indefinitePagerIndicator instead, due being scalable
         indefinitePagerIndicator     : 'com.github.kibotu:Android-Indefinite-Pager-Indicator:2.0.4',
         smarttablayoutLib            : 'com.ogaclejapan.smarttablayout:library:1.6.1@aar',
         smartTablayoutUtils          : 'com.ogaclejapan.smarttablayout:utils-v4:1.6.1@aar',
@@ -285,6 +285,10 @@ ext.libs = [
         picasso                      : 'com.squareup.picasso:picasso:2.71828',
         glide                        : 'com.github.bumptech.glide:glide:4.8.0',
         glideAnnotationsProcessor    : 'com.github.bumptech.glide:compiler:4.8.0',
+
+        glideTransformations         : 'jp.wasabeef:glide-transformations:3.3.0',
+        gpuImageLibrary              : 'jp.co.cyberagent.android.gpuimage:gpuimage-library:1.4.1',
+        photoView                    : 'com.github.chrisbanes:PhotoView:2.0.0',
 
         mosbyMvi                     : 'com.hannesdorfmann.mosby3:mvi:3.1.0',
 
