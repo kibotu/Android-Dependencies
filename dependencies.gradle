@@ -82,6 +82,7 @@ ext.libs = [
 
         supportMediaCompat           : "androidx.media:media:1.1.0-alpha01",
         supportFragment              : "androidx.fragment:fragment:1.1.0-alpha02",
+        supportActivity              : "androidx.activity:activity:1.0.0-alpha02",
         supportAppCompat             : "androidx.appcompat:appcompat:1.1.0-alpha01",
         supportCardView              : "androidx.cardview:cardview:1.0.0",
         supportGridLayout            : "androidx.gridlayout:gridlayout:1.0.0",
@@ -109,8 +110,9 @@ ext.libs = [
         supportCoreUi                : "androidx.legacy:legacy-support-core-ui:1.0.0",
 
 
-        navigationFragment           : 'android.arch.navigation:navigation-fragment-ktx:1.0.0-alpha08',
-        navigationUI                 : 'android.arch.navigation:navigation-ui-ktx:1.0.0-alpha08',
+        fragmentKtx                  : 'androidx.fragment:fragment-ktx:1.1.0-alpha03',
+        navigationFragment           : 'android.arch.navigation:navigation-fragment-ktx:1.0.0-alpha09',
+        navigationUI                 : 'android.arch.navigation:navigation-ui-ktx:1.0.0-alpha09',
 
         // google play services
         // https://developers.google.com/android/guides/setup
@@ -234,7 +236,7 @@ ext.libs = [
         smartTablayoutUtils          : 'com.ogaclejapan.smarttablayout:utils-v4:1.6.1@aar',
         fragmentViewpager            : 'com.sbrukhanda.fragmentviewpager:fragmentviewpager:1.0.0',
         viewpagerTransformers        : 'com.eftimoff:android-viewpager-transformers:1.0.1@aar',
-        guava                        : 'com.google.guava:guava:24.1-jre',
+        guava                        : 'com.google.guava:guava:27.0.1-jre',
         preferator                   : 'com.sloydev:preferator:1.0.0',
         recyclerviewAnimators        : 'jp.wasabeef:recyclerview-animators:2.3.0',
         androidSnowfall              : 'com.github.jetradarmobile:android-snowfall:1.1.6',
@@ -396,11 +398,48 @@ ext.testLibs = [
         kotlinReflect             : "org.jetbrains.kotlin:kotlin-reflect:$kotlinVersion",
         kotlinTest                : "org.jetbrains.kotlin:kotlin-test:$kotlinVersion",
         kotlinTestJUnit           : "org.jetbrains.kotlin:kotlin-test-junit:$kotlinVersion",
+
 ]
 
 ext.androidTestLibs = [
-        espressoCore  : 'androidx.test.espresso:espresso-core:3.1.1',
-        espressoRunner: 'androidx.test:runner:1.1.1' // robolectric 3.8 requires latest runner; old version: 'com.android.support.test:runner:1.0.1'
+
+        // Core library
+        testCore              : "androidx.test:core:1.1.0",
+
+        // AndroidJUnitRunner and JUnit Rules
+        testRunner            : "androidx.test:runner:1.1.1",
+        testRules             : "androidx.test:rules:1.1.1",
+
+        // Assertions
+        testJUnit             : 'androidx.test.ext:junit:1.1.0',
+        textTruth             : 'androidx.test.ext:truth:1.1.0',
+        truth                 : 'com.google.truth:truth:0.42',
+
+        // Espresso dependencies
+        espressoCore          : 'androidx.test.espresso:espresso-core:3.1.1',
+        espressoContrib       : 'androidx.test.espresso:espresso-contrib:3.1.1',
+        espressoIntents       : 'androidx.test.espresso:espresso-intents:3.1.1',
+        espressoAccessibility : 'androidx.test.espresso:espresso-accessibility:3.1.1',
+        espressoWeb           : 'androidx.test.espresso:espresso-web:3.1.1',
+        idlingConcurrent      : 'androidx.test.espresso.idling:idling-concurrent:3.1.1',
+
+        // The following Espresso dependency can be either "implementation"
+        // or "androidTestImplementation", depending on whether you want the
+        // dependency to appear on your APK's compile classpath or the test APK
+        // classpath.
+        espressoIdlingResource: 'androidx.test.espresso:espresso-idling-resource:3.1.1',
+
+        fragmentTesting       : 'androidx.fragment:fragment-testing:1.1.0-alpha03',
+
+        findBugs              : 'com.google.code.findbugs:jsr305:2.0.1',
+        checkerCompatQual     : 'org.checkerframework:checker-compat-qual:2.5.3',
+        checkerQual           : 'org.checkerframework:checker-qual:2.5.3',
+        errorProneAnnotations : 'com.google.errorprone:error_prone_annotations:2.3.1',
+        guavaListenablefuture : 'com.google.guava:listenablefuture:9999.0-empty-to-avoid-conflict-with-guava'
+]
+
+ext.androidTestUtilLibs = [
+        orchestrator: 'androidx.test:orchestrator:1.1.1'
 ]
 
 ext.configs = [
