@@ -407,8 +407,8 @@ ext.androidTestLibs = [
         testCore              : "androidx.test:core:1.1.0",
 
         // AndroidJUnitRunner and JUnit Rules
-        testRunner            : "androidx.test:runner:1.1.1",
-        testRules             : "androidx.test:rules:1.1.1",
+        espressoRunner        : "androidx.test:runner:1.1.1",
+        espressoRules         : "androidx.test:rules:1.1.1",
 
         // Assertions
         testJUnit             : 'androidx.test.ext:junit:1.1.0',
