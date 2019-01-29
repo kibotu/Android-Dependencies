@@ -328,7 +328,7 @@ ext.libs = [
         leakcanaryDebug              : 'com.squareup.leakcanary:leakcanary-android:1.6.1',
         leakcanaryRelease            : 'com.squareup.leakcanary:leakcanary-android-no-op:1.6.1',
 
-        exozetCore                   : "com.github.exozet:AndroidCore:1.5.8",
+        exozetCore                   : "com.github.exozet:AndroidCore:1.5.9",
 
         commonUtils                  : 'com.github.kibotu:common.android.utils:0.7.2',
         deviceInfo                   : 'com.github.kibotu:net.kibotu.android.deviceinfo:1.3.2',
