@@ -30,24 +30,25 @@ def simpleReleaseVersionName() {
     description = "Creating release version name. Format: major.minor.build"
     println(description)
 
-    final def buildNumber = buildNumberByCI()
-    def releaseName = branchName()
-    // remove 'origin' in from branch name
-    if (releaseName != null && releaseName.contains("origin/"))
-        releaseName = releaseName.replace("origin/", "")
+//    final def buildNumber = buildNumberByCI()
+//    def releaseName = branchName()
+//    // remove 'origin' in from branch name
+//    if (releaseName != null && releaseName.contains("origin/"))
+//        releaseName = releaseName.replace("origin/", "")
+//
+//    if (releaseName.contains("release"))
+//        releaseName = releaseName.replace("release/", "")
+//    else
+//        releaseName = versionName
 
-    if (releaseName.contains("release"))
-        releaseName = releaseName.replace("release/", "")
-    else
-        releaseName = versionName
+//    if (releaseName.count(".") < 2) {
+//        if (buildNumber != null)
+//            releaseName += "." + buildNumber
+//        else
+//            releaseName += "." + 0
+//    }
 
-    if (releaseName.count(".") < 2) {
-        if (buildNumber != null)
-            releaseName += "." + buildNumber
-        else
-            releaseName += "." + 0
-    }
-
+    def releaseName = ""
     println("Version Name: " + releaseName)
     return releaseName
 }
