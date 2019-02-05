@@ -331,12 +331,12 @@ ext.libs = [
 
         exozetCore                   : "com.github.exozet:AndroidCore:1.5.9",
 
-        commonUtils                  : 'com.github.kibotu:common.android.utils:0.7.2',
+        commonUtils                  : 'com.github.kibotu:common.android.utils:0.7.2', // deprecated, use exozetCore
         deviceInfo                   : 'com.github.kibotu:net.kibotu.android.deviceinfo:1.3.2',
         recyclerViewPresenter        : 'com.github.kibotu:RecyclerViewPresenter:2.0.0',
         googlePlayForceUpdate        : 'com.github.kibotu:GooglePlayForceUpdate:1.0.8',
         timeBomb                     : 'com.github.kibotu:TimeBomb:1.1.0',
-        bloodHound                   : 'com.github.kibotu:BloodHound:3.0.1',
+        bloodHound                   : 'com.github.kibotu:BloodHound:3.0.6',
         openAndroidSSLWrapper        : 'com.github.kibotu:Open-Android-SSL-Wrapper:1.0.7',
         androidAnimationsActions     : 'com.github.kibotu:AndroidAnimationsActions:1.0.7',
         urlShortener                 : 'com.github.kibotu:UrlShortener:1.0.7',
