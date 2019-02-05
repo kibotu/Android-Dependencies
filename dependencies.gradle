@@ -336,7 +336,7 @@ ext.libs = [
         recyclerViewPresenter        : 'com.github.kibotu:RecyclerViewPresenter:2.0.0',
         googlePlayForceUpdate        : 'com.github.kibotu:GooglePlayForceUpdate:1.0.8',
         timeBomb                     : 'com.github.kibotu:TimeBomb:1.1.0',
-        bloodHound                   : 'com.github.kibotu:BloodHound:3.0.6',
+        bloodHound                   : 'com.github.kibotu:BloodHound:3.1.0',
         openAndroidSSLWrapper        : 'com.github.kibotu:Open-Android-SSL-Wrapper:1.0.7',
         androidAnimationsActions     : 'com.github.kibotu:AndroidAnimationsActions:1.0.7',
         urlShortener                 : 'com.github.kibotu:UrlShortener:1.0.7',
