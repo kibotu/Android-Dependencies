@@ -378,7 +378,7 @@ ext.libs = [
         wheelNumberPicker            : 'com.super_rabbit.wheel_picker:NumberPicker:1.0.1',
         dotsIndicator                : 'com.github.kibotu:dotsindicator:2.2.1',
         rippleBackground             : 'com.skyfishjy.ripplebackground:library:1.0.1',
-
+        catLoading                   : "com.roger.catloadinglibrary:catloadinglibrary:1.0.4",
         inputMask                    : 'com.redmadrobot:inputmask:4.0.0'
 ]
 
