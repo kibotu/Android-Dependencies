@@ -23,7 +23,7 @@ ext {
 }
 
 ext.plugin = [
-        gradleBuildTools       : 'com.android.tools.build:gradle:3.3.0',
+        gradleBuildTools       : 'com.android.tools.build:gradle:3.3.1',
         gradleBuildToolsAlpha  : 'com.android.tools.build:gradle:3.4.0-alpha10',
         gradleBuildToolsCanary : 'com.android.tools.build:gradle:3.5.0-alpha03',
         gradleRetroLambda      : 'me.tatarka:gradle-retrolambda:3.7.0', // deprecated: use build:gradle:3
