@@ -383,8 +383,7 @@ ext.libs = [
         inputMask                      : 'com.redmadrobot:inputmask:4.0.0',
         md360Player                    : 'com.github.ashqal:MD360Player4Android:2.5.0',
 
-        rxpermissions                    : 'com.tbruyelle.rxpermissions2:rxpermissions:0.9.5@aar',
-        rxjava2Interop                    : 'com.github.akarnokd:rxjava2-interop:0.8.0'
+        rxpermissions                  : 'com.github.tbruyelle:rxpermissions:0.10.2',
 ]
 
 ext.testLibs = [
