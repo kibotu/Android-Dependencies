@@ -30,6 +30,10 @@ def simpleReleaseVersionName() {
     description = "Creating release version name. Format: major.minor.build"
     println(description)
 
+    def tag = System.getenv("BITRISE_GIT_TAG")
+    if (tag != null)
+        return tag
+
     final def buildNumber = buildNumberByCI()
     def releaseName = branchName()
     // remove 'origin' in from branch name
