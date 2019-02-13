@@ -1,0 +1,41 @@
+apply plugin: 'com.jfrog.bintray'
+
+
+Properties properties = new Properties()
+properties.load(project.rootProject.file('bintray.properties').newDataInputStream())
+
+group = properties.getProperty('binrtray.group')
+version = simpleReleaseVersionName()
+
+// https://github.com/bintray/gradle-bintray-plugin#buildgradle
+
+bintray {
+
+    dryRun = false
+
+    user = properties.getProperty('bintray.user')
+    key = properties.getProperty('bintray.apikey')
+    publish = true
+
+    pkg {
+        repo = properties.getProperty('binrtray.repo')
+        name = properties.getProperty('binrtray.name')
+        userOrg = properties.getProperty('bintray.organization')
+        licenses = [properties.getProperty('bintray.licenses')]
+        vcsUrl = properties.getProperty('bintray.vcsUrl')
+        websiteUrl = properties.getProperty('bintray.websiteUrl')
+        publicDownloadNumbers = true
+
+        version {
+            name = simpleReleaseVersionName()
+            desc = properties.getProperty('bintray.version.desc')
+            released = new Date()
+            vcsTag = simpleReleaseVersionName()
+        }
+
+        licenses = [properties.getProperty('bintray.licenses')]
+        vcsUrl = properties.getProperty('bintray.vcsUrl')
+        websiteUrl = properties.getProperty('bintray.websiteUrl')
+    }
+    configurations = ['archives']
+}

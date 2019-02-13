@@ -138,3 +138,27 @@ Basically calls:
     preBuild.dependsOn generateChangelogTask
     preBuild.dependsOn generateReleaseNotesTask
     preBuild.dependsOn copyReadme
+
+# bintray
+
+    apply from: "${project.rootDir}/Android-Dependencies/bintray.gradle"
+
+bintray.properties
+
+    bintray.user=
+    bintray.apikey=
+    bintray.organization=
+    bintray.gpg.password=
+
+    binrtray.group =
+    binrtray.repo = 'maven'
+    binrtray.name =
+    bintray.licenses = 'MIT'
+
+    bintray.vcsUrl =
+    bintray.websiteUrl =
+    bintray.version.desc =
+
+# javadoc
+
+apply from: "${project.rootDir}/Android-Dependencies/javadoc.gradle"
