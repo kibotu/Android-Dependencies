@@ -380,7 +380,11 @@ ext.libs = [
         dotsIndicator                  : 'com.github.kibotu:dotsindicator:2.2.1',
         rippleBackground               : 'com.skyfishjy.ripplebackground:library:1.0.1',
         catLoading                     : "com.roger.catloadinglibrary:catloadinglibrary:1.0.4",
-        inputMask                      : 'com.redmadrobot:inputmask:4.0.0'
+        inputMask                      : 'com.redmadrobot:inputmask:4.0.0',
+        md360Player                    : 'com.github.ashqal:MD360Player4Android:2.5.0',
+
+        rxpermissions                    : 'com.tbruyelle.rxpermissions2:rxpermissions:0.9.5@aar',
+        rxjava2Interop                    : 'com.github.akarnokd:rxjava2-interop:0.8.0'
 ]
 
 ext.testLibs = [
