@@ -384,6 +384,7 @@ ext.libs = [
         md360Player                    : 'com.github.ashqal:MD360Player4Android:2.5.0',
 
         rxpermissions                  : 'com.github.tbruyelle:rxpermissions:0.10.2',
+        zoomage                        : 'com.jsibbold:zoomage:1.1.0'
 ]
 
 ext.testLibs = [
