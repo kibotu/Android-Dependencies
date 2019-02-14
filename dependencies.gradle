@@ -278,7 +278,6 @@ ext.libs = [
         scalpel                        : 'com.jakewharton.scalpel:scalpel:1.1.2',
         exomedia                       : 'com.devbrackets.android:exomedia:3.1.1',
         sqliteassethelper              : 'com.readystatesoftware.sqliteasset:sqliteassethelper:2.0.1',
-        gson                           : 'com.google.code.gson:gson:2.8.5',
         paper                          : 'io.paperdb:paperdb:2.5',
         appIntro                       : 'com.github.apl-devs:appintro:v4.2.3',
 
@@ -294,8 +293,13 @@ ext.libs = [
 
         mosbyMvi                       : 'com.hannesdorfmann.mosby3:mvi:3.1.0',
 
-        dagger                         : 'com.google.dagger:dagger:2.10',
-        daggerCompiler                 : 'com.google.dagger:dagger-compiler:2.10',
+        dagger                         : 'com.google.dagger:dagger:2.21',
+        daggerAndroidSupport           : 'com.google.dagger:dagger-android-support:2.21',
+        daggerAndroidProcessor         : 'com.google.dagger:dagger-android-processor:2.21',
+        daggerCompiler                 : 'com.google.dagger:dagger-compiler:2.21', // deprecated use dagger android processor
+
+        koinAndroidxScope              : 'org.koin:koin-androidx-scope:1.0.2',
+        koinAndroidxViewmodel          : 'org.koin:koin-androidx-viewmodel:1.0.2',
 
         retrofit                       : "com.squareup.retrofit2:retrofit:$retrofitVersion",
         retrofitAdapterRxJava2         : "com.squareup.retrofit2:adapter-rxjava2:$retrofitVersion",
@@ -305,6 +309,10 @@ ext.libs = [
         retrofitMock                   : "com.squareup.retrofit2:retrofit-mock:$retrofitVersion",
         converterScalars               : "com.squareup.retrofit2:converter-scalars:$retrofitVersion",
         converterSimpleXml             : "com.squareup.retrofit2:converter-simplexml:$retrofitVersion",
+
+        gson                           : 'com.google.code.gson:gson:2.8.5',
+        moshiKotlin                    : 'com.squareup.moshi:moshi-kotlin:1.8.0',
+        moshiAdapters                  : 'com.squareup.moshi:moshi-adapters:1.8.0',
 
         rx2java                        : "io.reactivex.rxjava2:rxjava:2.2.5",
         rx2Android                     : "io.reactivex.rxjava2:rxandroid:2.1.0",
@@ -386,8 +394,10 @@ ext.libs = [
         rxpermissions                  : 'com.github.tbruyelle:rxpermissions:0.10.2',
         zoomage                        : 'com.jsibbold:zoomage:1.2.0',
 
+        freedomPlayer                  : 'com.exozet:FreedomPlayer:1.0.1',
         threeHundertSixtyPlayer        : 'com.exozet:ThreeHundertSixtyPlayer:1.0.3',
-        sequentialImagePlayer          : 'com.exozet:SequentialImagePlayer:1.0.2'
+        sequentialImagePlayer          : 'com.exozet:SequentialImagePlayer:1.0.2',
+        filedownloader                 : 'com.liulishuo.filedownloader:library:1.75'
 ]
 
 ext.testLibs = [
