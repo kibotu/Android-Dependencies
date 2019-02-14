@@ -373,7 +373,7 @@ ext.libs = [
 
         rxandroidble                   : 'com.polidea.rxandroidble:rxandroidble:1.4.3',
         shortcutBadger                 : 'me.leolin:ShortcutBadger:1.1.21@aar',
-        fileDownloader                 : 'com.liulishuo.filedownloader:library:1.7.1',
+        fileDownloader                 : 'com.liulishuo.filedownloader:library:1.7.5',
         expandableLayout               : 'com.github.chuross:expandable-layout:1.0.5',
         expandableLayoutFork           : 'com.github.kibotu:expandable-layout:1.0.5.1',
         greenrobotEventbus             : 'org.greenrobot:eventbus:3.1.1',
@@ -397,7 +397,6 @@ ext.libs = [
         freedomPlayer                  : 'com.exozet:FreedomPlayer:1.0.1',
         threeHundertSixtyPlayer        : 'com.exozet:ThreeHundertSixtyPlayer:1.0.3',
         sequentialImagePlayer          : 'com.exozet:SequentialImagePlayer:1.0.2',
-        filedownloader                 : 'com.liulishuo.filedownloader:library:1.75'
 ]
 
 ext.testLibs = [
