@@ -57,11 +57,6 @@ ext.pluginLibrary = [
         artifactory        : 'org.jfrog.buildinfo:build-info-extractor-gradle:4.6.2'
 ]
 
-ext.apis = [
-        kotlinxCoroutinesCore   : 'org.jetbrains.kotlinx:kotlinx-coroutines-core:0.26.0',
-        kotlinxCoroutinesAndroid: 'org.jetbrains.kotlinx:kotlinx-coroutines-android:0.26.0',
-]
-
 def htextview_version = "0.1.2"
 
 ext.libs = [
@@ -70,6 +65,8 @@ ext.libs = [
         kotlinJre8                     : "org.jetbrains.kotlin:kotlin-stdlib-jre8:$kotlinVersion",
         kotlinJdk7                     : "org.jetbrains.kotlin:kotlin-stdlib-jdk7:$kotlinVersion",
         kotlinJdk8                     : "org.jetbrains.kotlin:kotlin-stdlib-jdk8:$kotlinVersion",
+        kotlinxCoroutinesCore          : 'org.jetbrains.kotlinx:kotlinx-coroutines-core:1.1.1',
+        kotlinxCoroutinesAndroid       : 'org.jetbrains.kotlinx:kotlinx-coroutines-android:1.1.1',
 
         // support libraries
         // https://developer.android.com/topic/libraries/support-library/revisions.html
@@ -397,6 +394,10 @@ ext.libs = [
         freedomPlayer                  : 'com.exozet:FreedomPlayer:1.0.1',
         threeHundertSixtyPlayer        : 'com.exozet:ThreeHundertSixtyPlayer:1.0.3',
         sequentialImagePlayer          : 'com.exozet:SequentialImagePlayer:1.0.2',
+
+        jpegkit                        : 'com.camerakit:jpegkit:0.2.2',
+        camerakit                      : 'com.camerakit:camerakit:1.0.0-beta3.10',
+        fotoapparat                    : 'io.fotoapparat:fotoapparat:2.6.1',
 ]
 
 ext.testLibs = [
