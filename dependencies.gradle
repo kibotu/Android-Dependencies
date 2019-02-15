@@ -256,6 +256,8 @@ ext.libs = [
         numberPicker                   : 'com.shawnlin:number-picker:1.0.1',
         adjust                         : 'com.adjust.sdk:adjust-android:4.10.2',
         facebookCore                   : 'com.facebook.android:facebook-core:4.31.0',
+        tealium                        : 'com.tealium:library:5.5.4',
+        hawk                           : 'com.orhanobut:hawk:2.0.1',
 
         htextviewBase                  : "com.hanks:htextview-base:$htextview_version",
         htextviewFade                  : "com.hanks:htextview-fade:$htextview_version",
@@ -321,6 +323,8 @@ ext.libs = [
         exoplayer                      : 'com.google.android.exoplayer:exoplayer:2.9.2',
         exoplayerCore                  : 'com.google.android.exoplayer:exoplayer-core:2.9.5',
         gpuVideoAndroid                : 'com.github.MasayukiSuda:GPUVideo-android:v0.1.0',
+        amazonExoplayer                : 'com.amazon.android:exoplayer:2.9.0',
+        amazonExoplayerImaExtension    : 'com.amazon.android:extension-ima:2.9.0',
 
         mzip                           : 'com.github.ghost1372:Mzip-Android:0.4.0',
         numberprogressbar              : 'com.daimajia.numberprogressbar:library:1.4@aar',
