@@ -405,6 +405,12 @@ ext.libs = [
         jpegkit                        : 'com.camerakit:jpegkit:0.2.2',
         camerakit                      : 'com.camerakit:camerakit:1.0.0-beta3.10',
         fotoapparat                    : 'io.fotoapparat:fotoapparat:2.6.1',
+
+        horziontalCompassView          : 'com.redinput.compassview:compassview:1.0',
+        compassView                    : 'com.github.arbelkilani:Compass-View:v1.1.1',
+
+        flipper                        : 'com.facebook.flipper:flipper:0.15.0',
+        soloader                       : 'com.facebook.soloader:soloader:0.6.0'
 ]
 
 ext.testLibs = [
