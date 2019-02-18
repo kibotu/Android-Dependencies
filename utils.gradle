@@ -222,6 +222,30 @@ def runCommand(sh, cmd) {
     return sout.toString()
 }
 
+def connectDevice() {
+    Properties properties = new Properties()
+    properties.load(project.rootProject.file('local.properties').newDataInputStream())
+    def deviceIp = properties.getProperty('deviceIp').replace('\"', "")
+
+    if (deviceIp == null || deviceIp.length() < 0)
+        return
+
+    description = "adb connect " + deviceIp
+    println(description)
+    def stdout = new ByteArrayOutputStream()
+    exec {
+        executable android.getAdbExe().toString()
+        args = ['connect', deviceIp]
+        standardOutput = stdout
+    }
+    def result = stdout.toString().trim()
+
+    if (result.contains("unable to connect"))
+        throw new GradleException(result)
+    else
+        println(result)
+}
+
 ext {
     generateEnvironmentLog = this.&generateEnvironmentLog
     printGitLog = this.&printGitLog
@@ -237,4 +261,5 @@ ext {
     generateReleaseNotes = this.&generateReleaseNotes
     generateChangelog = this.&generateChangelog
     runCommand = this.&runCommand
+    connectDevice = this.&connectDevice
 }
