@@ -14,7 +14,13 @@ bintray {
     dryRun = false
 
     user = properties.getProperty('bintray.user')
-    key = properties.getProperty('bintray.apikey')
+
+    def bitrise = System.getenv("BINTRAY_APIKEY")
+
+    key = bitrise != null && bitrise?.length() > 0
+            ? System.getenv("BINTRAY_APIKEY")
+            : properties.getProperty('bintray.apikey')
+
     publish = true
 
     pkg {
