@@ -224,7 +224,12 @@ def runCommand(sh, cmd) {
 
 def connectDevice() {
     Properties properties = new Properties()
-    properties.load(project.rootProject.file('local.properties').newDataInputStream())
+    try {
+        properties.load(project.rootProject.file('local.properties').newDataInputStream())
+    }
+    catch (ignored) {
+        return
+    }
     def deviceIp = properties.getProperty('deviceIp').replace('\"', "")
 
     if (deviceIp == null || deviceIp.length() < 0)
