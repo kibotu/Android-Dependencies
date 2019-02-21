@@ -41,7 +41,7 @@ def simpleReleaseVersionName() {
         releaseName = releaseName.replace("origin/", "")
 
     if (releaseName.contains("release"))
-        releaseName = releaseName.replace("release/", "")
+        releaseName = releaseName.replaceFirst(".*release.*\\/", "")
     else
         releaseName = versionName
 
