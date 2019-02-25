@@ -285,8 +285,8 @@ ext.libs = [
         adapterDelegate                : 'com.hannesdorfmann:adapterdelegates3:3.0.1',
 
         picasso                        : 'com.squareup.picasso:picasso:2.71828',
-        glide                          : 'com.github.bumptech.glide:glide:4.8.0',
-        glideAnnotationsProcessor      : 'com.github.bumptech.glide:compiler:4.8.0',
+        glide                          : 'com.github.bumptech.glide:glide:4.9.0',
+        glideAnnotationsProcessor      : 'com.github.bumptech.glide:compiler:4.9.0',
 
         glideTransformations           : 'jp.wasabeef:glide-transformations:3.3.0',
         gpuImageLibrary                : 'jp.co.cyberagent.android.gpuimage:gpuimage-library:1.4.1',
