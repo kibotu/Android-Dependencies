@@ -74,7 +74,7 @@ ext.libs = [
         // https://developer.android.com/topic/libraries/support-library/refactor
 
         supportMultidex                : "androidx.multidex:multidex:2.0.1",
-        supportCompat                  : "androidx.core:core:1.1.0-alpha03",
+        supportCompat                  : "androidx.core:core:1.1.0-alpha04",
         supportCompatKtx               : "androidx.core:core-ktx:1.0.1",
 
         supportMediaCompat             : "androidx.media:media:1.1.0-alpha01",
