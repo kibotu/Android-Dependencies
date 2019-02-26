@@ -414,7 +414,7 @@ ext.libs = [
         flipper                        : 'com.facebook.flipper:flipper:0.15.0',
         soloader                       : 'com.facebook.soloader:soloader:0.6.0',
 
-        xozRicohThetaSDK               : 'com.exozet:ricohtheta:1.0.4'
+        xozRicohThetaSDK               : 'com.exozet:ricohtheta:1.0.5'
 ]
 
 ext.testLibs = [
