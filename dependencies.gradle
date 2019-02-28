@@ -391,6 +391,7 @@ ext.libs = [
         flatRadioGroup                 : "com.github.droid-it:Flat-Radio-Group:master",
 
         wheelNumberPicker              : 'com.super_rabbit.wheel_picker:NumberPicker:1.0.1',
+        wheelNumberPickerKibotu        : 'com.github.kibotu:NumberPicker:1.2.1',
         dotsIndicator                  : 'com.github.kibotu:dotsindicator:2.2.1',
         rippleBackground               : 'com.skyfishjy.ripplebackground:library:1.0.1',
         catLoading                     : "com.roger.catloadinglibrary:catloadinglibrary:1.0.4",
