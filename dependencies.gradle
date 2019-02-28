@@ -184,6 +184,8 @@ ext.libs = [
 
         pagingCommon                   : "androidx.paging:paging-common:2.0.0-alpha1", // Paging
         pagingRuntime                  : "androidx.paging:paging-runtime:2.0.0-alpha1", // Paging
+        pagingRuntime                  : "androidx.paging:paging-runtime:2.0.0-alpha1", // Paging
+        pagingRuntimeKtx               : "androidx.paging:paging-runtime-ktx:2.1.0", // Paging
 
         roomRuntime                    : "android.arch.persistence.room:runtime:1.1.1", // Room (use 1.1.0-rc1 for latest version)
         roomCompiler                   : "android.arch.persistence.room:compiler:1.1.1",
