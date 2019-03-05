@@ -248,6 +248,7 @@ ext.libs = [
         facebook                       : 'com.facebook.android:facebook-android-sdk:4.+',
         okhttp3                        : 'com.squareup.okhttp3:okhttp:3.13.1',
         okhttp3LoggingInterceptor      : 'com.squareup.okhttp3:logging-interceptor:3.13.1',
+        okhttp3ResponseEcho            : 'com.github.simonpercic:oklog3:2.3.0',
         javawriter                     : 'com.squareup:javawriter:2.5.1',
         kotterknife                    : 'com.jakewharton:kotterknife:0.1.0-SNAPSHOT', // deprecated, use kotlin synthetic imports instead
         butterknife                    : 'com.jakewharton:butterknife:8.8.1', // deprecated, use kotlin synthetic imports instead
