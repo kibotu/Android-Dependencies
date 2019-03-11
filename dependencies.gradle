@@ -427,7 +427,7 @@ ext.libs = [
         horziontalCompassView             : 'com.redinput.compassview:compassview:1.0',
         compassView                       : 'com.github.arbelkilani:Compass-View:v1.1.1',
 
-        flipper                           : 'com.facebook.flipper:flipper:0.15.0',
+        flipper                           : 'com.facebook.flipper:flipper:0.17.0',
         soloader                          : 'com.facebook.soloader:soloader:0.6.0',
 
         xozRicohThetaSDK                  : 'com.exozet:ricohtheta:1.0.5'
