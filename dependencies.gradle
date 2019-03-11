@@ -462,7 +462,9 @@ ext.androidTestLibs = [
 
         // AndroidJUnitRunner and JUnit Rules
         espressoRunner        : "androidx.test:runner:1.1.1",
+        espressoRunnerAlpha   : "androidx.test:runner:1.1.2-alpha02",
         espressoRules         : "androidx.test:rules:1.1.1",
+        espressoRulesAlpha    : "androidx.test:rules:1.1.2-alpha02",
 
         // Assertions
         testJUnit             : 'androidx.test.ext:junit:1.1.0',
@@ -493,7 +495,8 @@ ext.androidTestLibs = [
 ]
 
 ext.androidTestUtilLibs = [
-        orchestrator: 'androidx.test:orchestrator:1.1.1'
+        orchestrator     : 'androidx.test:orchestrator:1.1.1',
+        orchestratorAlpha: 'androidx.test:orchestrator:1.1.2-alpha02'
 ]
 
 ext.configs = [
