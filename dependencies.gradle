@@ -251,7 +251,7 @@ ext.libs = [
         viewpagerTransformers             : 'com.eftimoff:android-viewpager-transformers:1.0.1@aar',
         guava                             : 'com.google.guava:guava:27.0.1-jre',
         preferator                        : 'com.sloydev:preferator:1.0.0',
-        recyclerviewAnimators             : 'jp.wasabeef:recyclerview-animators:2.3.0',
+        recyclerviewAnimators             : 'jp.wasabeef:recyclerview-animators:3.0.0',
         androidSnowfall                   : 'com.github.jetradarmobile:android-snowfall:1.1.6',
         googleMapsRipplEffect             : 'com.github.aarsy.googlemapsrippleeffect:googlemapsrippleeffect:1.0.2',
         jellyToggleButton                 : 'com.nightonke:jellytogglebutton:1.0.2',
