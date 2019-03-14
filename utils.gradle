@@ -230,7 +230,7 @@ def connectDevice() {
     catch (ignored) {
         return
     }
-    def deviceIp = properties.getProperty('deviceIp').replace('\"', "")
+    def deviceIp = properties.getProperty('deviceIp')?.replace('\"', "")
 
     if (deviceIp == null || deviceIp.length() < 0)
         return
