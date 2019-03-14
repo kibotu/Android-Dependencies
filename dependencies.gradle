@@ -203,7 +203,6 @@ ext.libs = [
 
         pagingCommon                      : "androidx.paging:paging-common:2.0.0-alpha1", // Paging
         pagingRuntime                     : "androidx.paging:paging-runtime:2.0.0-alpha1", // Paging
-        pagingRuntime                     : "androidx.paging:paging-runtime:2.0.0-alpha1", // Paging
         pagingRuntimeKtx                  : "androidx.paging:paging-runtime-ktx:2.1.0", // Paging
 
         roomRuntime                       : "android.arch.persistence.room:runtime:1.1.1", // Room (use 1.1.0-rc1 for latest version)
@@ -423,7 +422,7 @@ ext.libs = [
         rxpermissions                     : 'com.github.tbruyelle:rxpermissions:0.10.2',
         zoomage                           : 'com.jsibbold:zoomage:1.2.0',
 
-        freedomPlayer                     : 'com.exozet:FreedomPlayer:1.0.2',
+        freedomPlayer                     : 'com.exozet:FreedomPlayer:1.0.3',
         threeHundertSixtyPlayer           : 'com.exozet:ThreeHundertSixtyPlayer:1.1.1',
         sequentialImagePlayer             : 'com.exozet:SequentialImagePlayer:1.0.4',
 
