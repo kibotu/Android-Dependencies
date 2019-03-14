@@ -400,7 +400,9 @@ ext.libs = [
 
         rxandroidble                      : 'com.polidea.rxandroidble:rxandroidble:1.4.3',
         shortcutBadger                    : 'me.leolin:ShortcutBadger:1.1.21@aar',
-        fileDownloader                    : 'com.liulishuo.filedownloader:library:1.7.5',
+        fileDownloader                    : 'com.liulishuo.filedownloader:library:1.7.5', // deprecated
+        okdownload                        : 'com.liulishuo.okdownload:okdownload:1.0.5',
+
         expandableLayout                  : 'com.github.chuross:expandable-layout:1.0.5',
         expandableLayoutFork              : 'com.github.kibotu:expandable-layout:1.0.5.1',
         greenrobotEventbus                : 'org.greenrobot:eventbus:3.1.1',
