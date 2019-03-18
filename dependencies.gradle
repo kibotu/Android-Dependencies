@@ -122,6 +122,7 @@ ext.libs = [
         supportCoreUi                     : "androidx.legacy:legacy-support-core-ui:1.0.0",
         supportDynamicAnimation           : "androidx.dynamicanimation:dynamicanimation:1.0.0",
 
+        autoValueAnnotations              : 'com.google.auto.value:auto-value-annotations:1.6.3',
 
         fragmentKtx                       : 'androidx.fragment:fragment-ktx:1.1.0-alpha05',
         navigationFragment                : 'android.arch.navigation:navigation-fragment-ktx:1.0.0',
