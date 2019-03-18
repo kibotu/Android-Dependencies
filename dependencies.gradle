@@ -456,7 +456,6 @@ ext.testLibs = [
         kotlinReflect             : "org.jetbrains.kotlin:kotlin-reflect:$kotlinVersion",
         kotlinTest                : "org.jetbrains.kotlin:kotlin-test:$kotlinVersion",
         kotlinTestJUnit           : "org.jetbrains.kotlin:kotlin-test-junit:$kotlinVersion",
-
 ]
 
 ext.androidTestLibs = [
@@ -473,7 +472,7 @@ ext.androidTestLibs = [
         // Assertions
         testJUnit             : 'androidx.test.ext:junit:1.1.0',
         textTruth             : 'androidx.test.ext:truth:1.1.0',
-        truth                 : 'com.google.truth:truth:0.42',
+        truth                 : 'com.google.truth:truth:0.43',
 
         // Espresso dependencies
         espressoCore          : 'androidx.test.espresso:espresso-core:3.1.1',
@@ -489,9 +488,9 @@ ext.androidTestLibs = [
         // classpath.
         espressoIdlingResource: 'androidx.test.espresso:espresso-idling-resource:3.1.1',
 
-        fragmentTesting       : 'androidx.fragment:fragment-testing:1.1.0-alpha03',
+        fragmentTesting       : 'androidx.fragment:fragment-testing:1.1.0-alpha05',
 
-        findBugs              : 'com.google.code.findbugs:jsr305:2.0.1',
+        findBugs              : 'com.google.code.findbugs:jsr305:3.0.2',
         checkerCompatQual     : 'org.checkerframework:checker-compat-qual:2.5.3',
         checkerQual           : 'org.checkerframework:checker-qual:2.5.3',
         errorProneAnnotations : 'com.google.errorprone:error_prone_annotations:2.3.1',
