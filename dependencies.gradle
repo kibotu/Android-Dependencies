@@ -93,9 +93,9 @@ ext.libs = [
 
 
         supportMediaCompat                : "androidx.media:media:1.1.0-alpha02",
-        supportFragment                   : "androidx.fragment:fragment:1.1.0-alpha05",
-        supportActivity                   : "androidx.activity:activity:1.0.0-alpha05",
-        supportAppCompat                  : "androidx.appcompat:appcompat:1.1.0-alpha03",
+        supportFragment                   : "androidx.fragment:fragment:1.1.0-alpha03", // alpha 4/5 not working
+        supportActivity                   : "androidx.activity:activity:1.0.0-alpha03", // alpha 4/5 not working
+        supportAppCompat                  : "androidx.appcompat:appcompat:1.1.0-alpha02", // alpha03 is not working
         supportCardView                   : "androidx.cardview:cardview:1.0.0",
         supportGridLayout                 : "androidx.gridlayout:gridlayout:1.0.0",
         supportMediaRouter                : "androidx.mediarouter:mediarouter:1.1.0-alpha02",
