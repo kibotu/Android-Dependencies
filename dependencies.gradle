@@ -353,7 +353,8 @@ ext.libs = [
         timberLogger                      : 'com.jakewharton.timber:timber:4.7.1',
         cameraView                        : 'com.wonderkiln:camerakit:0.13.2',
         cameraViewPhotoApparat            : 'io.fotoapparat.fotoapparat:library:2.2.0',
-
+        cameraPri                         : "com.priyankvasa.android:cameraview-ex:3.2.0",
+        cameraViewOtalias                 : 'com.otaliastudios:cameraview:2.0.0-beta04',
         realmEncryptionHelper             : 'com.github.tntkhang:realm-encryption-helper:1.0.1', // requires preferenceHelper
         preferencesHelper                 : 'com.github.tntkhang:preferences-helper:1.0.0',
 
