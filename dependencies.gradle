@@ -89,13 +89,15 @@ ext.libs = [
         // https://developer.android.com/topic/libraries/support-library/refactor
 
         supportMultidex                   : "androidx.multidex:multidex:2.0.1",
-        supportCompat                     : "androidx.core:core:1.1.0-alpha04",
-
+        supportCompat                     : "androidx.core:core:1.1.0-alpha05",
 
         supportMediaCompat                : "androidx.media:media:1.1.0-alpha02",
-        supportFragment                   : "androidx.fragment:fragment:1.1.0-alpha03", // alpha 4/5 not working
-        supportActivity                   : "androidx.activity:activity:1.0.0-alpha03", // alpha 4/5 not working
-        supportAppCompat                  : "androidx.appcompat:appcompat:1.1.0-alpha02", // alpha03 is not working
+        supportFragment                   : "androidx.fragment:fragment:1.1.0-alpha05", // https://developer.android.com/jetpack/androidx/releases/fragment
+        fragmentKtx                       : 'androidx.fragment:fragment-ktx:1.1.0-alpha05',
+        supportActivity                   : "androidx.activity:activity:1.0.0-alpha05", // https://developer.android.com/jetpack/androidx/releases/activity
+        activityKtx                       : "androidx.activity:activity-ktx:1.0.0-alpha05",
+        supportAppCompat                  : "androidx.appcompat:appcompat:1.1.0-alpha03", // https://developer.android.com/jetpack/androidx/releases/appcompat
+        appCompatResources                : "androidx.appcompat:appcompat-resources:1.1.0-alpha03",
         supportCardView                   : "androidx.cardview:cardview:1.0.0",
         supportGridLayout                 : "androidx.gridlayout:gridlayout:1.0.0",
         supportMediaRouter                : "androidx.mediarouter:mediarouter:1.1.0-alpha02",
@@ -109,7 +111,7 @@ ext.libs = [
         supportLeanback                   : "androidx.leanback:leanback:1.0.0",
         supportVectorDrawable             : "androidx.vectordrawable:vectordrawable:1.1.0-alpha01",
         supportAnimatedVectorDrawable     : "androidx.vectordrawable:vectordrawable-animated:1.1.0-alpha01",
-        supportAnnotations                : "androidx.annotation:annotation:1.0.2",
+        supportAnnotations                : "androidx.annotation:annotation:1.1.0-alpha02",
         supportDesign                     : "com.google.android.material:material:1.1.0-alpha04",
         supportCustomTabs                 : "androidx.browser:browser:1.0.0",
         supportPercent                    : "androidx.percentlayout:percentlayout:1.0.0",
@@ -124,7 +126,7 @@ ext.libs = [
 
         autoValueAnnotations              : 'com.google.auto.value:auto-value-annotations:1.6.3',
 
-        fragmentKtx                       : 'androidx.fragment:fragment-ktx:1.1.0-alpha05',
+        // https://developer.android.com/jetpack/androidx/releases/navigation
         navigationFragment                : 'android.arch.navigation:navigation-fragment-ktx:1.0.0',
         navigationUI                      : 'android.arch.navigation:navigation-ui-ktx:1.0.0',
 
