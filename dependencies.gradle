@@ -190,6 +190,8 @@ ext.libs = [
         lifecycleCommonJava8              : 'androidx.lifecycle:lifecycle-common-java8:2.0.0', // Java8 support for Lifecycles
         lifecycleRactiveStream            : 'androidx.lifecycle:lifecycle-reactivestreams:2.0.0', // ReactiveStreams support for LiveData
 
+        viewpager2                        : 'androidx.viewpager2:viewpager2:1.0.0-alpha02',
+
         // core
 
         archCoreCommon                    : "androidx.arch.core:core-common:2.0.0",
@@ -334,6 +336,7 @@ ext.libs = [
         moshiKotlin                       : 'com.squareup.moshi:moshi-kotlin:1.8.0',
         moshiAdapters                     : 'com.squareup.moshi:moshi-adapters:1.8.0',
 
+        kalmanRx                          : "com.github.kibotu:KalmanRx:1.2.1",
         rx2java                           : "io.reactivex.rxjava2:rxjava:2.2.6",
         rx2Android                        : "io.reactivex.rxjava2:rxandroid:2.1.0",
         rx2Kotlin                         : "io.reactivex.rxjava2:rxkotlin:2.3.0",
