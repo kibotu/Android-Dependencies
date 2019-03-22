@@ -1,34 +1,39 @@
 // region versioning
 
+def logd(message) {
+    if (LOG_UTILS == true)
+        println(message)
+}
+
 def commitHash() {
     description = "git log -n 1 --format='%h'"
-    println(description)
+    logd(description)
     final def stdout = new ByteArrayOutputStream()
     exec {
         commandLine 'git', 'log', '-n', '1', "--format='%h'"
         standardOutput = stdout
     }
-    println("Git Hash" + stdout.toString())
+    logd("Git Hash" + stdout.toString())
     return stdout.toString().trim().replaceAll('\'', '')
 }
 
 def commitCount() {
     final def stdout = new ByteArrayOutputStream()
     description = "git rev-list --full-history --all"
-    println(description)
+    logd(description)
     exec {
         commandLine 'git', 'rev-list', '--full-history', '--all'
         standardOutput = stdout
     }
     final String output = stdout.toString()
     final List<String> commits = output.split("\n")
-    println("Version Code: " + commits.size())
+    logd("Version Code: " + commits.size())
     return commits.size()
 }
 
 def simpleReleaseVersionName() {
     description = "Creating release version name. Format: major.minor.build"
-    println(description)
+    logd(description)
 
     def tag = System.getenv("BITRISE_GIT_TAG")
     if (tag != null)
@@ -43,7 +48,7 @@ def simpleReleaseVersionName() {
     if (releaseName.contains("release"))
         releaseName = releaseName.replaceFirst(".*release.*\\/", "")
     else
-        releaseName = versionName
+        releaseName = VERSION_NAME
 
     if (releaseName.count(".") < 2) {
         if (buildNumber != null)
@@ -52,13 +57,13 @@ def simpleReleaseVersionName() {
             releaseName += "." + 0
     }
 
-    println("Version Name: " + releaseName)
+    logd("Version Name: " + releaseName)
     return releaseName
 }
 
 def canonicalReleaseVersionName() {
     description = "Creating release version name. Format: branch/major.minor.build-commithash"
-    println(description)
+    logd(description)
     final def buildNumber = buildNumberByCI()
     def releaseName = branchName()
 
@@ -67,7 +72,7 @@ def canonicalReleaseVersionName() {
         releaseName = releaseName.replace("origin/", "")
 
     if (!releaseName.contains("release"))
-        releaseName += "/" + versionName
+        releaseName += "/" + VERSION_NAME
 
     if (releaseName.count(".") < 2) {
         if (buildNumber != null) {
@@ -78,13 +83,13 @@ def canonicalReleaseVersionName() {
     }
 
     releaseName += "-" + commitHash()
-    println('Version Name: ' + releaseName)
+    logd('Version Name: ' + releaseName)
     return releaseName
 }
 
 def buildNumberByCI() {
     description = 'Getting build number from Jenkins, Travis or Bitrise.'
-    println(description)
+    logd(description)
     final def env = System.getenv()
     if (env.BITRISE_BUILD_NUMBER != null)
         return Integer.parseInt(env.BITRISE_BUILD_NUMBER)
@@ -97,7 +102,7 @@ def buildNumberByCI() {
 
 def branchName() {
     description = 'Getting branch name from CI or from git directly.'
-    println(description)
+    logd(description)
     def branchName = branchNameByCI()
     if (branchName == null)
         branchName = branchNameByGit()
@@ -106,7 +111,7 @@ def branchName() {
 
 def branchNameByCI() {
     description = 'Getting build number from Jenkins, Travis or Bitrise.'
-    println(description)
+    logd(description)
     final def env = System.getenv()
     if (env.BITRISE_GIT_BRANCH != null)
         return env.BITRISE_GIT_BRANCH
@@ -120,19 +125,19 @@ def branchNameByCI() {
 def branchNameByGit() {
     final def stdout = new ByteArrayOutputStream()
     description = 'git rev-parse --abbrev-ref HEAD'
-    println(description)
+    logd(description)
     exec {
         commandLine 'git', 'rev-parse', '--abbrev-ref', 'HEAD'
         standardOutput = stdout
     }
     final String output = stdout.toString().trim()
-    println('Branch Name: ' + output)
+    logd('Branch Name: ' + output)
     return output
 }
 
 def gitLog() {
     description = "git log --pretty=format:'[[%h]] %cn %s'"
-    println(description)
+    logd(description)
     final def stdout = new ByteArrayOutputStream()
     exec {
         commandLine 'git', 'log', "--pretty=format:'[[%h]] %cn %s'"
@@ -146,7 +151,7 @@ def generateReleaseNotes() {
     final String filePath = "${project.rootDir}/app/src/main/assets/RELEASE.md"
 
     description = "Generate release notes. [" + filePath + "]"
-    println(description)
+    logd(description)
 
     final def env = System.getenv()
     env.each { final key, final value -> println "$key = $value" }
@@ -161,14 +166,14 @@ def generateReleaseNotes() {
 
     output.write(notes)
 
-    println new File(filePath).getText('UTF-8')
+    logd new File(filePath).getText('UTF-8')
 }
 
 def generateEnvironmentLog() {
     final String filePath = "${project.rootDir}/app/src/main/assets/ENVIRONMENT.md"
 
     description = "Generate environemnt log. [" + filePath + "]"
-    println(description)
+    logd(description)
 
     def assetFolder = new File("${project.rootDir}/app/src/main/assets/")
     if (!assetFolder.exists())
@@ -180,14 +185,14 @@ def generateEnvironmentLog() {
 
     output.write(notes)
 
-    println new File(filePath).getText('UTF-8')
+    logd new File(filePath).getText('UTF-8')
 }
 
 def generateChangelog() {
     final String filePath = "${project.rootDir}/app/src/main/assets/CHANGELOG.md"
 
     description = "Generate Changelog. [" + filePath + "]"
-    println(description)
+    logd(description)
 
     def log = gitLog()
 
@@ -209,11 +214,11 @@ def generateChangelog() {
     final def output = new File(filePath)
     output.write(builder.toString())
 
-    // println new File(filePath).getText('UTF-8')
+    // logd new File(filePath).getText('UTF-8')
 }
 
 def runCommand(sh, cmd) {
-    println "Running command $cmd"
+    logd "Running command $cmd"
     def sout = new ByteArrayOutputStream()
     project.exec {
         commandLine = [sh, cmd]
@@ -236,7 +241,7 @@ def connectDevice() {
         return
 
     description = "adb connect " + deviceIp
-    println(description)
+    logd(description)
     def stdout = new ByteArrayOutputStream()
     exec {
         executable android.getAdbExe().toString()
