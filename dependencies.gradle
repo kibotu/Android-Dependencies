@@ -29,7 +29,7 @@ ext {
 }
 
 ext.plugin = [
-        gradleBuildTools       : 'com.android.tools.build:gradle:3.3.1',
+        gradleBuildTools       : 'com.android.tools.build:gradle:3.3.2',
         gradleBuildToolsAlpha  : 'com.android.tools.build:gradle:3.4.0-alpha10',
         gradleBuildToolsCanary : 'com.android.tools.build:gradle:3.5.0-alpha07', // alpha 8 not working for me https://www.reddit.com/r/androiddev/comments/b5dha9/android_studio_35_canary_8_available/
         gradleRetroLambda      : 'me.tatarka:gradle-retrolambda:3.7.0', // deprecated: use build:gradle:3
@@ -424,6 +424,7 @@ ext.libs = [
         catLoading                        : "com.roger.catloadinglibrary:catloadinglibrary:1.0.4",
         inputMask                         : 'com.redmadrobot:inputmask:4.0.0',
         md360Player                       : 'com.github.ashqal:MD360Player4Android:2.5.0',
+        md360PlayerBeta                   : 'com.github.kibotu:MD360Player4Android:2.6.2',
 
         rxpermissions                     : 'com.github.tbruyelle:rxpermissions:0.10.2',
         zoomage                           : 'com.jsibbold:zoomage:1.2.0',
