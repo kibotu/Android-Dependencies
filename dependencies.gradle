@@ -185,6 +185,7 @@ ext.libs = [
         lifecycleViewmodel                : "androidx.lifecycle:lifecycle-viewmodel:2.0.0", // alternatively, just ViewModel
         lifecycleLivedataKtx              : "androidx.lifecycle:lifecycle-livedata-ktx:2.1.0-alpha03", // alternatively, just LiveData
         lifecycleLivedata                 : "androidx.lifecycle:lifecycle-livedata:2.0.0", // alternatively, just LiveData
+        lifecycleLivedataKtx              : "androidx.lifecycle:lifecycle-livedata-ktx:2.1.0-alpha03", // alternatively, just LiveData
         lifecycleLivedataCore             : "androidx.lifecycle:lifecycle-livedata-core:2.0.0",
         lifecycleCompiler                 : "androidx.lifecycle:lifecycle-compiler:2.0.0",
         lifecycleRuntime                  : "androidx.lifecycle:lifecycle-runtime:2.0.0",
@@ -373,7 +374,8 @@ ext.libs = [
 
         commonUtils                       : 'com.github.kibotu:common.android.utils:0.7.2', // deprecated, use exozetCore
         deviceInfo                        : 'com.github.kibotu:net.kibotu.android.deviceinfo:1.3.2',
-        recyclerViewPresenter             : 'com.github.kibotu:RecyclerViewPresenter:2.0.0',
+        recyclerViewPresenterDeprecated   : 'com.github.kibotu:RecyclerViewPresenter:2.0.0',
+        recyclerViewPresenter             : 'com.github.kibotu:RecyclerViewPresenter:3.0.0',
         googlePlayForceUpdate             : 'com.github.kibotu:GooglePlayForceUpdate:1.0.8',
         timeBomb                          : 'com.github.kibotu:TimeBomb:1.1.0',
         bloodHound                        : 'com.github.kibotu:BloodHound:3.1.0',
