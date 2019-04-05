@@ -445,7 +445,7 @@ ext.libs = [
         flipper                           : 'com.facebook.flipper:flipper:0.17.0',
         soloader                          : 'com.facebook.soloader:soloader:0.6.0',
 
-        xozRicohThetaSDK                  : 'com.exozet:ricohtheta:1.1.0',
+        xozRicohThetaSDK                  : 'com.exozet:ricohtheta:1.1.2',
         jrSpinner                         : 'com.github.jrizani:JRSpinner:1.0.0'
 ]
 
