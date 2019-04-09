@@ -387,7 +387,7 @@ ext.libs = [
         actionAnimations                  : 'com.github.kibotu:AndroidAnimationsActions:1.0.7',
         androidPgp                        : 'com.github.kibotu:Android-PGP:1.2.1',
         swipeDirectionViewPager           : 'com.github.kibotu:SwipeDirectionViewPager:2.0.0',
-        logger                            : 'com.github.kibotu:StreamingAndroidLogger:3.0.0',
+        logger                            : 'com.github.kibotu:StreamingAndroidLogger:4.0.2',
 
         materialDialogs                   : 'com.afollestad.material-dialogs:core:0.9.6.0',
 
