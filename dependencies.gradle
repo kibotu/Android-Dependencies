@@ -446,7 +446,9 @@ ext.libs = [
         soloader                          : 'com.facebook.soloader:soloader:0.6.0',
 
         xozRicohThetaSDK                  : 'com.exozet:ricohtheta:1.1.2',
-        jrSpinner                         : 'com.github.jrizani:JRSpinner:1.0.0'
+        jrSpinner                         : 'com.github.jrizani:JRSpinner:1.0.0',
+
+        applicationProvider               : 'com.github.florent37:applicationprovider:1.0.0'
 ]
 
 ext.testLibs = [
