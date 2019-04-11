@@ -225,6 +225,11 @@ ext.libs = [
         persistenceDbFramework            : "androidx.sqlite:sqlite-framework:2.0.0",
         persistenceDb                     : "androidx.sqlite:sqlite:2.0.0",
 
+        // work
+
+        archWorkRuntime                   : 'android.arch.work:work-runtime-ktx:1.0.1',
+        archWorkRxJava2                   : 'android.arch.work:work-rxjava2:1.0.1',
+
         // tested libs
 
         connectionBuddy                   : 'com.zplesac:connectionbuddy:2.0.0-beta1',
@@ -242,14 +247,14 @@ ext.libs = [
         materialdrawerAlpha               : 'com.mikepenz:materialdrawer:7.0.0-beta01',
         markdownview                      : 'com.github.mukeshsolanki:MarkdownView-Android:1.0.5',
         rxmarkdown                        : 'com.yydcdut:rxmarkdown:0.1.1-beta',
-        stetho                            : 'com.facebook.stetho:stetho:1.5.0',
+        stetho                            : 'com.facebook.stetho:stetho:1.5.1',
         stethoRealm                       : 'com.uphyca:stetho_realm:2.1.0',
+        stethoOkHttp3                     : 'com.facebook.stetho:stetho-okhttp3:1.5.1',
+        stethoJsRhino                     : 'com.facebook.stetho:stetho-js-rhino:1.4.2',
         realmBrowser                      : 'com.github.jonasrottmann.realm-browser:realm-browser:0.0.14',
         realmBrowserTest                  : 'com.github.jonasrottmann.realm-browser:realm-browser:0.0.14',
         realmBrowserRelease               : 'com.github.jonasrottmann.realm-browser:realm-browser:0.0.14',
         realmExtensions                   : 'com.github.vicpinm:krealmextensions:2.3.0',
-        stethoOkHttp3                     : 'com.facebook.stetho:stetho-okhttp3:1.5.0',
-        stethoJsRhino                     : 'com.facebook.stetho:stetho-js-rhino:1.4.2',
         crashlytics                       : 'com.crashlytics.sdk.android:crashlytics:2.9.9@aar',
         processPhoenix                    : 'com.jakewharton:process-phoenix:1.1.0',
         circleIndicator                   : 'me.relex:circleindicator:2.0.0', // please use indefinitePagerIndicator instead, due being scalable
@@ -448,7 +453,14 @@ ext.libs = [
         xozRicohThetaSDK                  : 'com.exozet:ricohtheta:1.1.2',
         jrSpinner                         : 'com.github.jrizani:JRSpinner:1.0.0',
 
-        applicationProvider               : 'com.github.florent37:applicationprovider:1.0.0'
+        applicationProvider               : 'com.github.florent37:applicationprovider:1.0.0',
+
+        rxSensors                         : 'com.gvillani:rxsensors:1.0',
+
+        reactiveWiFi                      : 'com.github.pwittchen:reactivewifi-rx2:0.3.0',
+        rxLint                            : 'nl.littlerobots.rxlint:rxlint:1.6.1',
+
+        ffmpegAndroid                     : 'com.writingminds:FFmpegAndroid:0.3.2'
 ]
 
 ext.testLibs = [
