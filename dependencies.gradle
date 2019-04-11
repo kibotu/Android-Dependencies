@@ -185,7 +185,6 @@ ext.libs = [
         lifecycleViewmodel                : "androidx.lifecycle:lifecycle-viewmodel:2.0.0", // alternatively, just ViewModel
         lifecycleLivedataKtx              : "androidx.lifecycle:lifecycle-livedata-ktx:2.1.0-alpha03", // alternatively, just LiveData
         lifecycleLivedata                 : "androidx.lifecycle:lifecycle-livedata:2.0.0", // alternatively, just LiveData
-        lifecycleLivedataKtx              : "androidx.lifecycle:lifecycle-livedata-ktx:2.1.0-alpha03", // alternatively, just LiveData
         lifecycleLivedataCore             : "androidx.lifecycle:lifecycle-livedata-core:2.0.0",
         lifecycleCompiler                 : "androidx.lifecycle:lifecycle-compiler:2.0.0",
         lifecycleRuntime                  : "androidx.lifecycle:lifecycle-runtime:2.0.0",
@@ -243,8 +242,7 @@ ext.libs = [
         joda                              : 'net.danlew:android.joda:2.9.9.2',
         smartLocation                     : 'io.nlopez.smartlocation:library:3.3.3',
         smartLocationRx                   : 'io.nlopez.smartlocation:rx:3.3.3',
-        materialdrawer                    : 'com.mikepenz:materialdrawer:6.1.2@aar',
-        materialdrawerAlpha               : 'com.mikepenz:materialdrawer:7.0.0-beta01',
+        materialdrawer               : 'com.mikepenz:materialdrawer:7.0.0-beta01',
         markdownview                      : 'com.github.mukeshsolanki:MarkdownView-Android:1.0.5',
         rxmarkdown                        : 'com.yydcdut:rxmarkdown:0.1.1-beta',
         stetho                            : 'com.facebook.stetho:stetho:1.5.1',
