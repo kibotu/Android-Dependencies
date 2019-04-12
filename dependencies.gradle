@@ -377,7 +377,7 @@ ext.libs = [
 
         commonUtils                       : 'com.github.kibotu:common.android.utils:0.7.2', // deprecated, use exozetCore
         deviceInfo                        : 'com.github.kibotu:net.kibotu.android.deviceinfo:1.3.2',
-        recyclerViewPresenter             : 'com.github.kibotu:RecyclerViewPresenter:3.0.2',
+        recyclerViewPresenter             : 'com.github.kibotu:RecyclerViewPresenter:3.1.1',
         googlePlayForceUpdate             : 'com.github.kibotu:GooglePlayForceUpdate:1.0.8',
         timeBomb                          : 'com.github.kibotu:TimeBomb:1.1.0',
         bloodHound                        : 'com.github.kibotu:BloodHound:3.1.0',
@@ -389,8 +389,8 @@ ext.libs = [
         shareIntentBuilder                : 'com.github.kibotu:ShareIntentBuilder:v0.0.3',
         actionAnimations                  : 'com.github.kibotu:AndroidAnimationsActions:1.0.7',
         androidPgp                        : 'com.github.kibotu:Android-PGP:1.2.1',
-        swipeDirectionViewPager           : 'com.github.kibotu:SwipeDirectionViewPager:3.0.0',
-        logger                            : 'com.github.kibotu:StreamingAndroidLogger:4.1.1',
+        swipeDirectionViewPager           : 'com.github.kibotu:SwipeDirectionViewPager:3.0.1',
+        logger                            : 'com.github.kibotu:StreamingAndroidLogger:4.1.2',
 
         materialDialogs                   : 'com.afollestad.material-dialogs:core:0.9.6.0',
 
