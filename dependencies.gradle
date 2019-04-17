@@ -31,7 +31,7 @@ ext {
 ext.plugin = [
         gradleBuildTools       : 'com.android.tools.build:gradle:3.3.2',
         gradleBuildToolsAlpha  : 'com.android.tools.build:gradle:3.4.0-alpha10',
-        gradleBuildToolsCanary : 'com.android.tools.build:gradle:3.5.0-alpha10',
+        gradleBuildToolsCanary : 'com.android.tools.build:gradle:3.5.0-alpha11',
         gradleRetroLambda      : 'me.tatarka:gradle-retrolambda:3.7.0', // deprecated: use build:gradle:3
         lombok                 : 'me.tatarka.retrolambda.projectlombok:lombok.ast:0.2.3.a2', // deprecated: use build:gradle:3
         androidApt             : 'com.neenbedankt.gradle.plugins:android-apt:1.8', // deprecated: use build:gradle:3
