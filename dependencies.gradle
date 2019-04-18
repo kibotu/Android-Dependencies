@@ -460,7 +460,7 @@ ext.libs = [
         rxLint                            : 'nl.littlerobots.rxlint:rxlint:1.6.1',
 
         ffmpegAndroid                     : 'com.writingminds:FFmpegAndroid:0.3.2',
-        webViewAdapter                    : 'com.github.kibotu:WebViewAdapter:1.0.0',
+        webViewAdapter                    : 'com.github.kibotu:WebViewAdapter:1.0.2',
 
         graphView                         : 'com.jjoe64:graphview:4.2.2'
 ]
