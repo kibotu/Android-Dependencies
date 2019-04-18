@@ -434,7 +434,7 @@ ext.libs = [
         rxpermissions                     : 'com.github.tbruyelle:rxpermissions:0.10.2',
         zoomage                           : 'com.jsibbold:zoomage:1.2.0',
 
-        freedomPlayer                     : 'com.exozet:FreedomPlayer:1.0.8',
+        freedomPlayer                     : 'com.exozet:FreedomPlayer:1.0.9',
         threeHundertSixtyPlayer           : 'com.exozet:ThreeHundertSixtyPlayer:1.1.1',
         sequentialImagePlayer             : 'com.exozet:SequentialImagePlayer:1.0.4',
 
@@ -462,7 +462,8 @@ ext.libs = [
         ffmpegAndroid                     : 'com.writingminds:FFmpegAndroid:0.3.2',
         webViewAdapter                    : 'com.github.kibotu:WebViewAdapter:1.0.2',
 
-        graphView                         : 'com.jjoe64:graphview:4.2.2'
+        graphView                         : 'com.jjoe64:graphview:4.2.2',
+        mobileDeUploadService             : 'com.exozet:uploader:1.0.3'
 ]
 
 ext.testLibs = [
