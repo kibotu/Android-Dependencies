@@ -343,6 +343,7 @@ ext.libs = [
         moshiAdapters                     : 'com.squareup.moshi:moshi-adapters:1.8.0',
 
         kalmanRx                          : "com.github.kibotu:KalmanRx:1.2.1",
+        rxAndroid                         : 'io.reactivex:rxandroid:1.2.1', // deprecated, use rx2
         rx2java                           : "io.reactivex.rxjava2:rxjava:2.2.6",
         rx2Android                        : "io.reactivex.rxjava2:rxandroid:2.1.0",
         rx2Kotlin                         : "io.reactivex.rxjava2:rxkotlin:2.3.0",
@@ -459,7 +460,9 @@ ext.libs = [
         rxLint                            : 'nl.littlerobots.rxlint:rxlint:1.6.1',
 
         ffmpegAndroid                     : 'com.writingminds:FFmpegAndroid:0.3.2',
-        webViewAdapter                    : 'com.github.kibotu:WebViewAdapter:0.5.0'
+        webViewAdapter                    : 'com.github.kibotu:WebViewAdapter:0.5.0',
+
+        graphView                         : 'com.jjoe64:graphview:4.2.2'
 ]
 
 ext.testLibs = [
