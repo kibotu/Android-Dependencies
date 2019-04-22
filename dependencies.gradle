@@ -29,7 +29,7 @@ ext {
 }
 
 ext.plugin = [
-        gradleBuildTools       : 'com.android.tools.build:gradle:3.3.2',
+        gradleBuildTools       : 'com.android.tools.build:gradle:3.4.0',
         gradleBuildToolsAlpha  : 'com.android.tools.build:gradle:3.4.0-alpha10',
         gradleBuildToolsCanary : 'com.android.tools.build:gradle:3.5.0-alpha11',
         gradleRetroLambda      : 'me.tatarka:gradle-retrolambda:3.7.0', // deprecated: use build:gradle:3
@@ -97,13 +97,13 @@ ext.libs = [
         fragmentKtx                       : 'androidx.fragment:fragment-ktx:1.1.0-alpha05',
         supportActivity                   : "androidx.activity:activity:1.0.0-alpha05", // https://developer.android.com/jetpack/androidx/releases/activity
         activityKtx                       : "androidx.activity:activity-ktx:1.0.0-alpha05",
-        supportAppCompat                  : "androidx.appcompat:appcompat:1.1.0-alpha03", // https://developer.android.com/jetpack/androidx/releases/appcompat
-        appCompatResources                : "androidx.appcompat:appcompat-resources:1.1.0-alpha03",
+        supportAppCompat                  : "androidx.appcompat:appcompat:1.1.0-alpha04", // https://developer.android.com/jetpack/androidx/releases/appcompat
+        appCompatResources                : "androidx.appcompat:appcompat-resources:1.1.0-alpha04",
         supportCardView                   : "androidx.cardview:cardview:1.0.0",
         supportGridLayout                 : "androidx.gridlayout:gridlayout:1.0.0",
         supportMediaRouter                : "androidx.mediarouter:mediarouter:1.1.0-alpha02",
         supportPalette                    : "androidx.palette:palette:1.0.0",
-        supportRecyclerview               : "androidx.recyclerview:recyclerview:1.1.0-alpha03",
+        supportRecyclerview               : "androidx.recyclerview:recyclerview:1.1.0-alpha04",
         supportPreferenceV7               : "androidx.preference:preference:1.1.0-alpha04",
         supportPreferenceV14              : "androidx.legacy:legacy-preference-v14:1.0.0",
         supportV13                        : "androidx.legacy:legacy-support-v13:1.0.0",
@@ -112,8 +112,8 @@ ext.libs = [
         supportLeanback                   : "androidx.leanback:leanback:1.1.0-alpha01",
         supportVectorDrawable             : "androidx.vectordrawable:vectordrawable:1.1.0-alpha01",
         supportAnimatedVectorDrawable     : "androidx.vectordrawable:vectordrawable-animated:1.1.0-alpha01",
-        supportAnnotations                : "androidx.annotation:annotation:1.1.0-alpha02",
-        supportDesign                     : "com.google.android.material:material:1.1.0-alpha04",
+        supportAnnotations                : "androidx.annotation:annotation:1.1.0-beta01",
+        supportDesign                     : "com.google.android.material:material:1.1.0-alpha05",
         supportCustomTabs                 : "androidx.browser:browser:1.0.0",
         supportPercent                    : "androidx.percentlayout:percentlayout:1.0.0",
         supportExifInterface              : "androidx.exifinterface:exifinterface:1.0.0",
@@ -125,7 +125,7 @@ ext.libs = [
         supportCoreUi                     : "androidx.legacy:legacy-support-core-ui:1.0.0",
         supportDynamicAnimation           : "androidx.dynamicanimation:dynamicanimation:1.0.0",
 
-        autoValueAnnotations              : 'com.google.auto.value:auto-value-annotations:1.6.3',
+        autoValueAnnotations              : 'com.google.auto.value:auto-value-annotations:1.6.5',
 
         // https://developer.android.com/jetpack/androidx/releases/navigation
         navigationFragment                : 'android.arch.navigation:navigation-fragment-ktx:1.0.0',
@@ -239,10 +239,10 @@ ext.libs = [
         permissionDispatcherProcessor     : 'com.github.hotchemi:permissionsdispatcher-processor:3.2.0',
         parceler                          : 'org.parceler:parceler-api:1.1.12',
         parcelerProcessor                 : 'org.parceler:parceler:1.1.12',
-        joda                              : 'net.danlew:android.joda:2.9.9.2',
+        joda                              : 'net.danlew:android.joda:2.10.1.2',
         smartLocation                     : 'io.nlopez.smartlocation:library:3.3.3',
         smartLocationRx                   : 'io.nlopez.smartlocation:rx:3.3.3',
-        materialdrawer               : 'com.mikepenz:materialdrawer:7.0.0-beta01',
+        materialdrawer                    : 'com.mikepenz:materialdrawer:7.0.0-beta01',
         markdownview                      : 'com.github.mukeshsolanki:MarkdownView-Android:1.0.5',
         rxmarkdown                        : 'com.yydcdut:rxmarkdown:0.1.1-beta',
         stetho                            : 'com.facebook.stetho:stetho:1.5.1',
@@ -270,8 +270,8 @@ ext.libs = [
         currencyEditText                  : 'com.github.blackcat27:library:1.4.4-SNAPSHOT',
         brainTree                         : 'com.braintreepayments.api:drop-in:3.6.1',
         facebook                          : 'com.facebook.android:facebook-android-sdk:4.+',
-        okhttp3                           : 'com.squareup.okhttp3:okhttp:3.13.1',
-        okhttp3LoggingInterceptor         : 'com.squareup.okhttp3:logging-interceptor:3.13.1',
+        okhttp3                           : 'com.squareup.okhttp3:okhttp:3.14.1',
+        okhttp3LoggingInterceptor         : 'com.squareup.okhttp3:logging-interceptor:3.14.1',
         okhttp3ResponseEcho               : 'com.github.simonpercic:oklog3:2.3.0',
         javawriter                        : 'com.squareup:javawriter:2.5.1',
         kotterknife                       : 'com.jakewharton:kotterknife:0.1.0-SNAPSHOT', // deprecated, use kotlin synthetic imports instead
@@ -463,11 +463,11 @@ ext.libs = [
 
 ext.testLibs = [
         junit                     : 'junit:junit:4.12',
-        jsonUnit                  : 'net.javacrumbs.json-unit:json-unit:1.28.2',
-        jsonUnitFluent            : 'net.javacrumbs.json-unit:json-unit-fluent:1.28.2',
-        robolectric               : "org.robolectric:robolectric:4.2",
+        jsonUnit                  : 'net.javacrumbs.json-unit:json-unit:2.6.1',
+        jsonUnitFluent            : 'net.javacrumbs.json-unit:json-unit-fluent:2.6.1',
+        robolectric               : "org.robolectric:robolectric:4.2.1",
         robolectricSnapshot       : 'org.robolectric:robolectric:4.3-SNAPSHOT',
-        robolectricShadowsMultidex: "org.robolectric:shadows-multidex:4.1",
+        robolectricShadowsMultidex: "org.robolectric:shadows-multidex:4.2.1",
         robolectricResources      : 'org.robolectric:robolectric-resources:3.3.2',
         robolectricUtils          : 'org.robolectric:robolectric-utils:3.3.2',
         robolectricAnnotations    : 'org.robolectric:robolectric-annotations:3.3.2',
