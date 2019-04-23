@@ -41,7 +41,7 @@ ext.plugin = [
         dexcountGradle         : 'com.getkeepsafe.dexcount:dexcount-gradle-plugin:0.8.5',
         kotlinAndroidExtensions: "org.jetbrains.kotlin:kotlin-android-extensions:$kotlinVersion",
         kotlinGradle           : "org.jetbrains.kotlin:kotlin-gradle-plugin:$kotlinVersion",
-        fabric                 : 'io.fabric.tools:gradle:1.26.1',
+        fabric                 : 'io.fabric.tools:gradle:1.28.1',
         // https://developers.google.com/android/guides/google-services-plugin
         gms                    : 'com.google.gms:google-services:4.2.0',
         poeditor               : 'be.lukin.poeditor:gradle:0.3.3',
