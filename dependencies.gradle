@@ -466,7 +466,7 @@ ext.libs = [
         mobileDeUploadService             : 'com.exozet:uploader:1.0.11',
 
         progressManager                   : 'me.jessyan:progressmanager:1.5.0',
-        progressManagerFork               : 'com.github.kibotu:ProgressManager:v1.5.2' // with remove listeners,
+        progressManagerFork               : 'com.github.kibotu:ProgressManager:v1.5.2', // with remove listeners,
         camera3                           : 'com.avalancheevantage.android:camera3:0.4.0'
 ]
 
