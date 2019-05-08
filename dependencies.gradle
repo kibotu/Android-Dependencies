@@ -297,9 +297,12 @@ ext.libs = [
         htextviewEvaporate                : "com.hanks:htextview-evaporate:0.1.2",
         htextviewFall                     : "com.hanks:htextview-fall:0.1.2",
 
-
         htextviewBase2                    : "com.github.kibotu.HTextView:htextview-base:0.1.28", // https://github.com/hanks-zyh/HTextView/issues/76
         htextviewScale2                   : "com.github.kibotu.HTextView:htextview-scale:0.1.28",
+
+        // AWS SDK
+        awsIot                            : 'com.amazonaws:aws-android-sdk-iot:2.13.3@aar',
+        awsClient                         : 'com.amazonaws:aws-android-sdk-mobile-client:2.13.3@aar',
 
         sweetalert                        : 'cn.pedant.sweetalert:library:1.3',
         circularReveal                    : 'com.github.ozodrukh:CircularReveal:2.1.0@aar',
