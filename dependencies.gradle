@@ -463,7 +463,7 @@ ext.libs = [
         webViewAdapter                    : 'com.github.kibotu:WebViewAdapter:1.0.2',
 
         graphView                         : 'com.jjoe64:graphview:4.2.2',
-        mobileDeUploadService             : 'com.exozet:uploader:1.1.5',
+        mobileDeUploadService             : 'com.exozet:uploader:1.1.6',
 
         progressManager                   : 'me.jessyan:progressmanager:1.5.0',
         progressManagerFork               : 'com.github.kibotu:ProgressManager:v1.5.2', // with remove listeners,
