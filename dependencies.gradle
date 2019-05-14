@@ -436,7 +436,7 @@ ext.libs = [
 
         freedomPlayer                     : 'com.exozet:FreedomPlayer:1.1.5',
         threeHundertSixtyPlayer           : 'com.exozet:ThreeHundertSixtyPlayer:1.1.1',
-        sequentialImagePlayer             : 'com.exozet:SequentialImagePlayer:1.1.0',
+        sequentialImagePlayer             : 'com.exozet:SequentialImagePlayer:1.1.1',
 
         jpegkit                           : 'com.camerakit:jpegkit:0.2.2',
         camerakit                         : 'com.camerakit:camerakit:1.0.0-beta3.10',
