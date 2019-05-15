@@ -434,7 +434,7 @@ ext.libs = [
         rxpermissions                     : 'com.github.tbruyelle:rxpermissions:0.10.2',
         zoomage                           : 'com.jsibbold:zoomage:1.2.0',
 
-        freedomPlayer                     : 'com.exozet:FreedomPlayer:1.1.6',
+        freedomPlayer                     : 'com.exozet:FreedomPlayer:1.1.7',
         threeHundertSixtyPlayer           : 'com.exozet:ThreeHundertSixtyPlayer:1.1.1',
         sequentialImagePlayer             : 'com.exozet:SequentialImagePlayer:1.2.1',
 
