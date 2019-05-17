@@ -469,7 +469,8 @@ ext.libs = [
         progressManagerFork               : 'com.github.kibotu:ProgressManager:v1.5.2', // with remove listeners,
         camera3                           : 'com.avalancheevantage.android:camera3:0.4.0',
 
-        youtubeExtractor                  : 'com.github.Commit451:YouTubeExtractor:4.2.1'
+        youtubeExtractor                  : 'com.github.Commit451:YouTubeExtractor:4.2.1',
+        fastExoPlayerSeeker               : 'com.github.kibotu:FastExoPlayerSeeker:1.0.0'
 ]
 
 ext.testLibs = [
