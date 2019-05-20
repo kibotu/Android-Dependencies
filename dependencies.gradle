@@ -31,6 +31,7 @@ ext {
 ext.plugin = [
         gradleBuildTools       : 'com.android.tools.build:gradle:3.3.2',
         gradleBuildToolsCanary : 'com.android.tools.build:gradle:3.5.0-beta01',
+        navigationSafeArgs     : 'androidx.navigation:navigation-safe-args-gradle-plugin:2.1.0-alpha04',
         gradleRetroLambda      : 'me.tatarka:gradle-retrolambda:3.7.0', // deprecated: use build:gradle:3
         lombok                 : 'me.tatarka.retrolambda.projectlombok:lombok.ast:0.2.3.a2', // deprecated: use build:gradle:3
         androidApt             : 'com.neenbedankt.gradle.plugins:android-apt:1.8', // deprecated: use build:gradle:3
@@ -77,16 +78,16 @@ ext.libs = [
         androidKtxPalette                 : "androidx.palette:palette-ktx:1.0.0", // 	androidx.palette.graphics
         androidKtxSqlite                  : "androidx.sqlite:sqlite-ktx:2.0.1", // 	androidx.sqlite.db
         androidKtxCollection              : "androidx.collection:collection-ktx:1.0.0", // 	androidx.collection
-        androidKtxLifecycleViewmodel      : "androidx.lifecycle:lifecycle-viewmodel-ktx:2.0.0", // 	androidx.lifecycle
-        androidKtxLifecycleReactiveStreams: "androidx.lifecycle:lifecycle-reactivestreams-ktx:2.0.0", // 	androidx.lifecycle
-        androidKtxNavigationCommon        : "android.arch.navigation:navigation-common-ktx:1.0.0", // 	androidx.navigation
-        androidKtxNavigationFragment      : "android.arch.navigation:navigation-fragment-ktx:1.0.0", // 	androidx.navigation.fragment
-        androidKtxNavigationUi            : "android.arch.navigation:navigation-ui-ktx:1.0.0", // 	androidx.navigation.fragment
-        androidKtxNavigationRuntime       : "android.arch.navigation:navigation-runtime-ktx:1.0.0", // 	androidx.navigation
+        androidKtxLifecycleViewmodel      : "androidx.lifecycle:lifecycle-viewmodel-ktx:2.2.0-alpha01", // 	androidx.viewmodel
+        androidKtxLifecycleReactiveStreams: "androidx.lifecycle:lifecycle-reactivestreams-ktx:2.2.0-alpha01", // 	androidx.lifecycle
+        androidKtxNavigationCommon        : "androidx.navigation:navigation-common-ktx:2.0.0", // 	androidx.navigation
+        androidKtxNavigationFragment      : "androidx.navigation:navigation-fragment-ktx:2.0.0", // 	androidx.navigation.fragment
+        androidKtxNavigationUi            : "androidx.navigation:navigation-ui-ktx:2.0.0", // 	androidx.navigation.fragment
+        androidKtxNavigationRuntime       : "androidx.navigation:navigation-runtime-ktx:2.0.0", // 	androidx.navigation
 
         // https://developer.android.com/jetpack/androidx/releases/navigation
-        navigationFragment                : 'androidx.navigation:navigation-fragment:2.1.0-alpha03',
-        navigationUI                      : 'androidx.navigation:navigation-ui:2.1.0-alpha03',
+        navigationFragment                : 'androidx.navigation:navigation-fragment:2.1.0-alpha04',
+        navigationUI                      : 'androidx.navigation:navigation-ui:2.1.0-alpha04',
 
         // support libraries
         // https://developer.android.com/topic/libraries/support-library/revisions.html
