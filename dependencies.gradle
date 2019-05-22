@@ -73,8 +73,8 @@ ext.libs = [
         kotlinxCoroutinesAndroid          : 'org.jetbrains.kotlinx:kotlinx-coroutines-android:1.1.1',
 
         // https://developer.android.com/kotlin/ktx#modules
-        androidKtx                        : 'androidx.core:core-ktx:1.0.1',
-        androidKtxFragment                : "androidx.fragment:fragment-ktx:1.0.0", // 	androidx.fragment.app
+        androidKtx                        : 'androidx.core:core:1.2.0-alpha01',
+        androidKtxFragment                : "androidx.fragment:fragment-ktx:1.1.0-alpha09", // 	androidx.fragment.app
         androidKtxPalette                 : "androidx.palette:palette-ktx:1.0.0", // 	androidx.palette.graphics
         androidKtxSqlite                  : "androidx.sqlite:sqlite-ktx:2.0.1", // 	androidx.sqlite.db
         androidKtxCollection              : "androidx.collection:collection-ktx:1.0.0", // 	androidx.collection
@@ -102,8 +102,8 @@ ext.libs = [
         fragmentKtx                       : 'androidx.fragment:fragment-ktx:1.1.0-alpha08',
         supportActivity                   : "androidx.activity:activity:1.0.0-alpha08", // https://developer.android.com/jetpack/androidx/releases/activity
         activityKtx                       : "androidx.activity:activity-ktx:1.0.0-alpha08",
-        supportAppCompat                  : "androidx.appcompat:appcompat:1.1.0-alpha04", // https://developer.android.com/jetpack/androidx/releases/appcompat
-        appCompatResources                : "androidx.appcompat:appcompat-resources:1.1.0-alpha04",
+        supportAppCompat                  : "androidx.appcompat:appcompat:1.1.0-alpha05", // https://developer.android.com/jetpack/androidx/releases/appcompat
+        appCompatResources                : "androidx.appcompat:appcompat-resources:1.1.0-alpha05",
         supportCardView                   : "androidx.cardview:cardview:1.0.0",
         supportGridLayout                 : "androidx.gridlayout:gridlayout:1.0.0",
         supportMediaRouter                : "androidx.mediarouter:mediarouter:1.1.0-beta01",
@@ -125,7 +125,7 @@ ext.libs = [
         supportRecommendation             : "androidx.recommendation:recommendation:1.0.0",
         supportWear                       : "androidx.wear:wear:1.0.0",
         constraintLayoutSolver            : 'androidx.constraintlayout:constraintlayout-solver:1.1.3',
-        constraintLayout                  : 'androidx.constraintlayout:constraintlayout:1.1.3',
+        constraintLayout                  : 'androidx.constraintlayout:constraintlayout:2.0.0-beta1',
         supportCoreUtils                  : "androidx.legacy:legacy-support-core-utils:1.0.0",
         supportCoreUi                     : "androidx.legacy:legacy-support-core-ui:1.0.0",
         supportDynamicAnimation           : "androidx.dynamicanimation:dynamicanimation:1.0.0",
@@ -476,6 +476,7 @@ ext.libs = [
 
 ext.testLibs = [
         junit                     : 'junit:junit:4.12',
+        jsonAssert                : 'org.skyscreamer:jsonassert:1.5.0',
         jsonUnit                  : 'net.javacrumbs.json-unit:json-unit:1.28.2',
         jsonUnitFluent            : 'net.javacrumbs.json-unit:json-unit-fluent:1.28.2',
         robolectric               : "org.robolectric:robolectric:4.2",
@@ -525,7 +526,7 @@ ext.androidTestLibs = [
         // classpath.
         espressoIdlingResource: 'androidx.test.espresso:espresso-idling-resource:3.1.1',
 
-        fragmentTesting       : 'androidx.fragment:fragment-testing:1.1.0-alpha08',
+        fragmentTesting       : 'androidx.fragment:fragment-testing:1.1.0-alpha09',
 
         findBugs              : 'com.google.code.findbugs:jsr305:3.0.2',
         checkerCompatQual     : 'org.checkerframework:checker-compat-qual:2.5.5',
@@ -535,8 +536,7 @@ ext.androidTestLibs = [
 ]
 
 ext.androidTestUtilLibs = [
-        orchestrator     : 'androidx.test:orchestrator:1.1.1',
-        orchestratorAlpha: 'androidx.test:orchestrator:1.1.2-alpha02'
+        orchestrator     : 'androidx.test:orchestrator:1.2.0-beta01',
 ]
 
 ext.configs = [
