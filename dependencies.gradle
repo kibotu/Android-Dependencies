@@ -466,11 +466,11 @@ ext.libs = [
 
 ext.testLibs = [
         junit                     : 'junit:junit:4.12',
-        jsonUnit                  : 'net.javacrumbs.json-unit:json-unit:2.6.1',
-        jsonUnitFluent            : 'net.javacrumbs.json-unit:json-unit-fluent:2.6.1',
-        robolectric               : "org.robolectric:robolectric:4.2.1",
+        jsonUnit                  : 'net.javacrumbs.json-unit:json-unit:1.28.2',
+        jsonUnitFluent            : 'net.javacrumbs.json-unit:json-unit-fluent:1.28.2',
+        robolectric               : "org.robolectric:robolectric:4.2",
         robolectricSnapshot       : 'org.robolectric:robolectric:4.3-SNAPSHOT',
-        robolectricShadowsMultidex: "org.robolectric:shadows-multidex:4.2.1",
+        robolectricShadowsMultidex: "org.robolectric:shadows-multidex:4.1",
         robolectricResources      : 'org.robolectric:robolectric-resources:3.3.2',
         robolectricUtils          : 'org.robolectric:robolectric-utils:3.3.2',
         robolectricAnnotations    : 'org.robolectric:robolectric-annotations:3.3.2',
@@ -478,13 +478,12 @@ ext.testLibs = [
         khronos                   : 'org.khronos:opengl-api:gl1.1-android-2.1_r1',
         spek                      : 'org.jetbrains.spek:spek-api:1.1.5',
         mockito                   : 'com.nhaarman:mockito-kotlin:1.5.0',
-        truth                     : 'com.google.truth:truth:0.42',
-        jodaTime                  : 'joda-time:joda-time:2.9.9',
+        truth                     : 'com.google.truth:truth:0.43',
+        jodaTime                  : 'joda-time:joda-time:2.10.1',
         kotlinReflect             : "org.jetbrains.kotlin:kotlin-reflect:$kotlinVersion",
         kotlinTest                : "org.jetbrains.kotlin:kotlin-test:$kotlinVersion",
         kotlinTestJUnit           : "org.jetbrains.kotlin:kotlin-test-junit:$kotlinVersion",
 ]
-
 ext.androidTestLibs = [
 
         // Core library
@@ -492,9 +491,9 @@ ext.androidTestLibs = [
 
         // AndroidJUnitRunner and JUnit Rules
         espressoRunner        : "androidx.test:runner:1.1.1",
-        espressoRunnerAlpha   : "androidx.test:runner:1.1.2-alpha02",
+        espressoRunnerAlpha   : "androidx.test:runner:1.2.0-beta01",
         espressoRules         : "androidx.test:rules:1.1.1",
-        espressoRulesAlpha    : "androidx.test:rules:1.1.2-alpha02",
+        espressoRulesAlpha    : "androidx.test:rules:1.2.0-beta01",
 
         // Assertions
         testJUnit             : 'androidx.test.ext:junit:1.1.0',
@@ -515,15 +514,14 @@ ext.androidTestLibs = [
         // classpath.
         espressoIdlingResource: 'androidx.test.espresso:espresso-idling-resource:3.1.1',
 
-        fragmentTesting       : 'androidx.fragment:fragment-testing:1.1.0-alpha05',
+        fragmentTesting       : 'androidx.fragment:fragment-testing:1.1.0-alpha08',
 
         findBugs              : 'com.google.code.findbugs:jsr305:3.0.2',
-        checkerCompatQual     : 'org.checkerframework:checker-compat-qual:2.5.3',
+        checkerCompatQual     : 'org.checkerframework:checker-compat-qual:2.5.5',
         checkerQual           : 'org.checkerframework:checker-qual:2.5.3',
         errorProneAnnotations : 'com.google.errorprone:error_prone_annotations:2.3.1',
         guavaListenablefuture : 'com.google.guava:listenablefuture:9999.0-empty-to-avoid-conflict-with-guava'
 ]
-
 ext.androidTestUtilLibs = [
         orchestrator     : 'androidx.test:orchestrator:1.1.1',
         orchestratorAlpha: 'androidx.test:orchestrator:1.1.2-alpha02'
