@@ -125,7 +125,7 @@ ext.libs = [
         supportRecommendation             : "androidx.recommendation:recommendation:1.0.0",
         supportWear                       : "androidx.wear:wear:1.0.0",
         constraintLayoutSolver            : 'androidx.constraintlayout:constraintlayout-solver:1.1.3',
-        constraintLayout                  : 'androidx.constraintlayout:constraintlayout:2.0.0-beta1',
+        constraintLayout                  : 'androidx.constraintlayout:constraintlayout:1.1.3',
         supportCoreUtils                  : "androidx.legacy:legacy-support-core-utils:1.0.0",
         supportCoreUi                     : "androidx.legacy:legacy-support-core-ui:1.0.0",
         supportDynamicAnimation           : "androidx.dynamicanimation:dynamicanimation:1.0.0",
