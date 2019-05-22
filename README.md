@@ -1,4 +1,4 @@
-# Gradle Dependency and Utils
+# Gradle Dependency and Utils [![Hits-of-Code](https://hitsofcode.com/github/exozet/Android-Dependencies)](https://hitsofcode.com/view/github/exozet/Android-Dependencies)
 
 ## Introduction
 
