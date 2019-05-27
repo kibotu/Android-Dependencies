@@ -330,8 +330,8 @@ ext.libs = [
         daggerAndroidProcessor            : 'com.google.dagger:dagger-android-processor:2.21',
         daggerCompiler                    : 'com.google.dagger:dagger-compiler:2.21', // deprecated use dagger android processor
 
-        koinAndroidxScope                 : 'org.koin:koin-androidx-scope:2.0.0-rc-2',
-        koinAndroidxViewmodel             : 'org.koin:koin-androidx-viewmodel:2.0.0-rc-2',
+        koinAndroidxScope                 : 'org.koin:koin-androidx-scope:2.0.0',
+        koinAndroidxViewmodel             : 'org.koin:koin-androidx-viewmodel:2.0.0',
 
         retrofit                          : "com.squareup.retrofit2:retrofit:2.5.0",
         retrofitAdapterRxJava2            : "com.squareup.retrofit2:adapter-rxjava2:2.5.0",
