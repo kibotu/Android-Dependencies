@@ -475,7 +475,9 @@ ext.libs = [
         camera3                           : 'com.avalancheevantage.android:camera3:0.4.0',
 
         youtubeExtractor                  : 'com.github.Commit451:YouTubeExtractor:4.2.1',
-        fastExoPlayerSeeker               : 'com.github.kibotu:FastExoPlayerSeeker:1.0.0'
+        fastExoPlayerSeeker               : 'com.github.kibotu:FastExoPlayerSeeker:1.0.0',
+
+        polet                             : 'com.github.fievx:Polet:0.1.4'
 ]
 
 ext.testLibs = [
