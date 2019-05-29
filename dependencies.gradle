@@ -187,7 +187,7 @@ ext.libs = [
 
         lifecycleExtensions               : "androidx.lifecycle:lifecycle-extensions:2.0.0", // ViewModel and LiveData
         lifecycleViewmodel                : "androidx.lifecycle:lifecycle-viewmodel:2.0.0", // alternatively, just ViewModel
-        lifecycleLivedataKtx              : "androidx.lifecycle:lifecycle-livedata-ktx:2.1.0-alpha03", // alternatively, just LiveData
+        lifecycleLivedataKtx              : "androidx.lifecycle:lifecycle-livedata-ktx:2.1.0-beta01", // alternatively, just LiveData
         lifecycleLivedata                 : "androidx.lifecycle:lifecycle-livedata:2.0.0", // alternatively, just LiveData
         lifecycleLivedataCore             : "androidx.lifecycle:lifecycle-livedata-core:2.0.0",
         lifecycleCompiler                 : "androidx.lifecycle:lifecycle-compiler:2.0.0",
@@ -257,7 +257,7 @@ ext.libs = [
         realmBrowserTest                  : 'com.github.jonasrottmann.realm-browser:realm-browser:0.0.14',
         realmBrowserRelease               : 'com.github.jonasrottmann.realm-browser:realm-browser:0.0.14',
         realmExtensions                   : 'com.github.vicpinm:krealmextensions:2.3.0',
-        crashlytics                       : 'com.crashlytics.sdk.android:crashlytics:2.10.0@aar',
+        crashlytics                       : 'com.crashlytics.sdk.android:crashlytics:2.10.1@aar',
         processPhoenix                    : 'com.jakewharton:process-phoenix:1.1.0',
         circleIndicator                   : 'me.relex:circleindicator:2.0.0', // please use indefinitePagerIndicator instead, due being scalable
         indefinitePagerIndicator          : 'com.github.kibotu:Android-Indefinite-Pager-Indicator:2.0.4',
