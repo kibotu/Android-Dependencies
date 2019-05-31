@@ -513,6 +513,10 @@ ext.androidTestLibs = [
         // room
         roomTesting           : "androidx.room:room-testing:2.1.0-rc01",
 
+        // mockito
+        mockitoCore           : "org.mockito:mockito-core:2.28.2",
+        mockitoAndroid        : "org.mockito:mockito-android:2.28.2",
+
         // coroutines
         kotlinxCoroutinesTest : "org.jetbrains.kotlinx:kotlinx-coroutines-test:1.2.1",
 
