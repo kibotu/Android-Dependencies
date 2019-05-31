@@ -451,7 +451,7 @@ ext.libs = [
         horziontalCompassView             : 'com.redinput.compassview:compassview:1.0',
         compassView                       : 'com.github.arbelkilani:Compass-View:v1.1.1',
 
-        flipper                           : 'com.facebook.flipper:flipper:0.17.0',
+        flipper                           : 'com.facebook.flipper:flipper:0.21.1', // packagingOptions need to be updated https://github.com/facebook/flipper/issues/157#issuecomment-441961025
         soloader                          : 'com.facebook.soloader:soloader:0.6.0',
 
         xozRicohThetaSDK                  : 'com.exozet:ricohtheta:1.1.2',
