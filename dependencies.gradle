@@ -80,10 +80,10 @@ ext.libs = [
         androidKtxCollection              : "androidx.collection:collection-ktx:1.0.0", // 	androidx.collection
         androidKtxLifecycleViewmodel      : "androidx.lifecycle:lifecycle-viewmodel-ktx:2.2.0-alpha01", // 	androidx.viewmodel
         androidKtxLifecycleReactiveStreams: "androidx.lifecycle:lifecycle-reactivestreams-ktx:2.2.0-alpha01", // 	androidx.lifecycle
-        androidKtxNavigationCommon        : "androidx.navigation:navigation-common-ktx:2.0.0", // 	androidx.navigation
-        androidKtxNavigationFragment      : "androidx.navigation:navigation-fragment-ktx:2.0.0", // 	androidx.navigation.fragment
-        androidKtxNavigationUi            : "androidx.navigation:navigation-ui-ktx:2.0.0", // 	androidx.navigation.fragment
-        androidKtxNavigationRuntime       : "androidx.navigation:navigation-runtime-ktx:2.0.0", // 	androidx.navigation
+        androidKtxNavigationCommon        : "androidx.navigation:navigation-common-ktx:2.1.0-alpha04", // 	androidx.navigation
+        androidKtxNavigationFragment      : "androidx.navigation:navigation-fragment-ktx:2.1.0-alpha04", // 	androidx.navigation.fragment
+        androidKtxNavigationUi            : "androidx.navigation:navigation-ui-ktx:2.1.0-alpha04", // 	androidx.navigation.fragment
+        androidKtxNavigationRuntime       : "androidx.navigation:navigation-runtime-ktx:2.1.0-alpha04", // 	androidx.navigation
 
         androidRoomKtx                    : "androidx.room:room-ktx:2.1.0-rc01",
 
@@ -187,17 +187,17 @@ ext.libs = [
         // ktx
         // https://android.github.io/android-ktx/core-ktx/
 
-        lifecycleExtensions               : "androidx.lifecycle:lifecycle-extensions:2.0.0", // ViewModel and LiveData
-        lifecycleViewmodel                : "androidx.lifecycle:lifecycle-viewmodel:2.0.0", // alternatively, just ViewModel
-        lifecycleLivedataKtx              : "androidx.lifecycle:lifecycle-livedata-ktx:2.1.0-beta01", // alternatively, just LiveData
-        lifecycleLivedata                 : "androidx.lifecycle:lifecycle-livedata:2.0.0", // alternatively, just LiveData
+        lifecycleExtensions               : "androidx.lifecycle:lifecycle-extensions:2.2.0-alpha01", // ViewModel and LiveData
+        lifecycleViewmodel                : "androidx.lifecycle:lifecycle-viewmodel:2.2.0-alpha01", // alternatively just ViewModel
+        lifecycleLivedataKtx              : "androidx.lifecycle:lifecycle-livedata-ktx:2.2.0-alpha01", // alternatively just LiveData
+        lifecycleLivedata                 : "androidx.lifecycle:lifecycle-livedata:2.2.0-alpha01", // alternatively just LiveData
         lifecycleLivedataCore             : "androidx.lifecycle:lifecycle-livedata-core:2.0.0",
-        lifecycleCompiler                 : "androidx.lifecycle:lifecycle-compiler:2.0.0",
-        lifecycleRuntime                  : "androidx.lifecycle:lifecycle-runtime:2.0.0",
-        lifecycleCommon                   : "androidx.lifecycle:lifecycle-common:2.0.0", // Java8 support for Lifecycles
-        lifecycleCommonJava8              : "androidx.lifecycle:lifecycle-common-java8:2.0.0", // Java8 support for Lifecycles
-        lifecycleRactiveStream            : "androidx.lifecycle:lifecycle-reactivestreams:2.0.0", // ReactiveStreams support for LiveData
-
+        lifecycleCompiler                 : "androidx.lifecycle:lifecycle-compiler:2.2.0-alpha01",
+        lifecycleRuntime                  : "androidx.lifecycle:lifecycle-runtime:2.2.0-alpha01",
+        lifecycleRuntimeKtx               : "androidx.lifecycle:lifecycle-runtime-ktx:2.2.0-alpha01",
+        lifecycleCommon                   : "androidx.lifecycle:lifecycle-common:2.2.0-alpha01", // Java8 support for Lifecycles
+        lifecycleCommonJava8              : "androidx.lifecycle:lifecycle-common-java8:2.2.0-alpha01", // Java8 support for Lifecycles
+        lifecycleRactiveStream            : "androidx.lifecycle:lifecycle-reactivestreams:2.2.0-alpha01", // ReactiveStreams support for LiveData
         viewpager2                        : "androidx.viewpager2:viewpager2:1.0.0-alpha02",
 
         // core
@@ -225,6 +225,7 @@ ext.libs = [
         persistenceRoomGuava              : "androidx.room:room-guava:2.1.0-rc01",
         persistenceRoomMigration          : "androidx.room:room-migration:2.1.0-rc01",
         persistenceRoomRuntime            : "androidx.room:room-runtime:2.1.0-rc01",
+        roomCoroutines                    : "androidx.room:room-coroutines:2.1.0-alpha04",
         persistenceRoomRxjava2            : "androidx.room:room-rxjava2:2.1.0-rc01",
         persistenceRoomTesting            : "androidx.room:room-testing:2.1.0-rc01",
         persistenceDbFramework            : "androidx.sqlite:sqlite-framework:2.0.1",
@@ -487,8 +488,8 @@ ext.testLibs = [
         jsonAssert                : "org.skyscreamer:jsonassert:1.5.0",
         jsonUnit                  : "net.javacrumbs.json-unit:json-unit:1.28.2",
         jsonUnitFluent            : "net.javacrumbs.json-unit:json-unit-fluent:1.28.2",
-        robolectric               : "org.robolectric:robolectric:4.2",
-        robolectricSnapshot       : "org.robolectric:robolectric:4.3-SNAPSHOT",
+        robolectric               : "org.robolectric:robolectric:4.3",
+        robolectricSnapshot       : "org.robolectric:robolectric:4.4-SNAPSHOT",
         robolectricShadowsMultidex: "org.robolectric:shadows-multidex:4.1",
         robolectricResources      : "org.robolectric:robolectric-resources:3.3.2",
         robolectricUtils          : "org.robolectric:robolectric-utils:3.3.2",
@@ -507,7 +508,15 @@ ext.testLibs = [
 ext.androidTestLibs = [
 
         // Core library
-        testCore              : "androidx.test:core:1.1.0",
+        testCore              : "androidx.test:core:1.2.0-beta01",
+
+        // room
+        roomTesting           : "androidx.room:room-testing:2.1.0-rc01",
+
+        // coroutines
+        kotlinxCoroutinesTest : "org.jetbrains.kotlinx:kotlinx-coroutines-test:1.2.1",
+
+        coreTesting           : "android.arch.core:core-testing:1.1.1",
 
         // AndroidJUnitRunner and JUnit Rules
         espressoRunner        : "androidx.test:runner:1.1.1",
