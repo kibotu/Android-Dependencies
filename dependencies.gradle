@@ -337,14 +337,14 @@ ext.libs = [
         koinAndroidxScope                 : "org.koin:koin-androidx-scope:2.0.0",
         koinAndroidxViewmodel             : "org.koin:koin-androidx-viewmodel:2.0.0",
 
-        retrofit                          : "com.squareup.retrofit2:retrofit:2.5.0",
-        retrofitAdapterRxJava2            : "com.squareup.retrofit2:adapter-rxjava2:2.5.0",
-        retrofitCoroutineAdapter          : "com.jakewharton.retrofit:retrofit2-kotlin-coroutines-adapter:0.9.2",
-        retrofitConverterGson             : "com.squareup.retrofit2:converter-gson:2.5.0",
-        retrofitConverterMoshi            : "com.squareup.retrofit2:converter-moshi:2.5.0",
-        retrofitMock                      : "com.squareup.retrofit2:retrofit-mock:2.5.0",
-        converterScalars                  : "com.squareup.retrofit2:converter-scalars:2.5.0",
-        converterSimpleXml                : "com.squareup.retrofit2:converter-simplexml:2.5.0",
+        retrofit                          : "com.squareup.retrofit2:retrofit:2.6.0",
+        retrofitAdapterRxJava2            : "com.squareup.retrofit2:adapter-rxjava2:2.6.0",
+        retrofitCoroutineAdapter          : "com.jakewharton.retrofit:retrofit2-kotlin-coroutines-adapter:0.9.2", // deprecated, use suspend
+        retrofitConverterGson             : "com.squareup.retrofit2:converter-gson:2.6.0",
+        retrofitConverterMoshi            : "com.squareup.retrofit2:converter-moshi:2.6.0",
+        retrofitMock                      : "com.squareup.retrofit2:retrofit-mock:2.6.0",
+        converterScalars                  : "com.squareup.retrofit2:converter-scalars:2.6.0",
+        converterSimpleXml                : "com.squareup.retrofit2:converter-simplexml:2.6.0",
 
         gson                              : "com.google.code.gson:gson:2.8.5",
         moshiKotlin                       : "com.squareup.moshi:moshi-kotlin:1.8.0",
