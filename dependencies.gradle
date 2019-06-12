@@ -31,7 +31,7 @@ ext {
 ext.plugin = [
         gradleBuildTools       : "com.android.tools.build:gradle:3.3.2",
         gradleBuildToolsCanary : "com.android.tools.build:gradle:3.5.0-beta04",
-        navigationSafeArgs     : "androidx.navigation:navigation-safe-args-gradle-plugin:2.1.0-alpha04",
+        navigationSafeArgs     : "androidx.navigation:navigation-safe-args-gradle-plugin:2.1.0-alpha05",
         gradleRetroLambda      : "me.tatarka:gradle-retrolambda:3.7.0", // deprecated: use build:gradle:3
         lombok                 : "me.tatarka.retrolambda.projectlombok:lombok.ast:0.2.3.a2", // deprecated: use build:gradle:3
         androidApt             : "com.neenbedankt.gradle.plugins:android-apt:1.8", // deprecated: use build:gradle:3
@@ -74,8 +74,7 @@ ext.libs = [
         kotlinxCoroutinesAndroid          : "org.jetbrains.kotlinx:kotlinx-coroutines-android:1.1.1",
 
         // https://developer.android.com/kotlin/ktx#modules
-        androidKtx                        : "androidx.core:core:1.2.0-alpha01",
-        androidKtxFragment                : "androidx.fragment:fragment-ktx:1.1.0-alpha09", // 	androidx.fragment.app
+        androidKtxCore                    : "androidx.core:core:1.2.0-alpha01",
         androidKtxPalette                 : "androidx.palette:palette-ktx:1.0.0", // 	androidx.palette.graphics
         androidKtxSqlite                  : "androidx.sqlite:sqlite-ktx:2.0.1", // 	androidx.sqlite.db
         androidKtxCollection              : "androidx.collection:collection-ktx:1.1.0", // 	androidx.collection
@@ -98,7 +97,6 @@ ext.libs = [
         // https://developer.android.com/topic/libraries/support-library/refactor
 
         supportMultidex                   : "androidx.multidex:multidex:2.0.1",
-        supportCompat                     : "androidx.core:core:1.1.0-alpha05",
 
         supportMediaCompat                : "androidx.media:media:1.1.0-beta01",
         supportFragment                   : "androidx.fragment:fragment:1.1.0-alpha08", // https://developer.android.com/jetpack/androidx/releases/fragment
@@ -151,7 +149,7 @@ ext.libs = [
         playServicesLocation              : "com.google.android.gms:play-services-location:16.0.0", // Google Location and Activity Recognition
         playServicesMaps                  : "com.google.android.gms:play-services-maps:16.1.0", // Google Maps
         playServicesMapsUtils             : "com.google.maps.android:android-maps-utils:0.5", // Google Maps
-        playServicesAds                   : "com.google.android.gms:play-services-ads:17.2.0", // Google Mobile Ads
+        playServicesAds                   : "com.google.android.gms:play-services-ads:17.2.1", // Google Mobile Ads
         playServicesPlaces                : "com.google.android.gms:play-services-places:16.1.0", // Google Places
         playServicesVision                : "com.google.android.gms:play-services-vision:17.0.2", // Mobile Vision
         playServicesNearby                : "com.google.android.gms:play-services-nearby:16.0.0", // Google Nearby
@@ -166,19 +164,19 @@ ext.libs = [
         // https://firebase.google.com/support/release-notes/android
 
         firebaseIid                       : "com.google.firebase:firebase-iid:18.0.0",
-        firebaseCommon                    : "com.google.firebase:firebase-common:17.0.0",
+        firebaseCommon                    : "com.google.firebase:firebase-common:17.1.0",
         firebaseCore                      : "com.google.firebase:firebase-core:16.0.9", // Analytics
         firebaseDatabase                  : "com.google.firebase:firebase-database:17.0.0", // Realtime Database
-        firebaseFirestore                 : "com.google.firebase:firebase-firestore:19.0.0", // Cloud Firestore
+        firebaseFirestore                 : "com.google.firebase:firebase-firestore:19.0.2", // Cloud Firestore
         firebaseStorage                   : "com.google.firebase:firebase-storage:17.0.0", // Storage
         firebaseCrash                     : "com.google.firebase:firebase-crash:16.2.1", // Crash Reporting
         firebaseAuth                      : "com.google.firebase:firebase-auth:17.0.0", // Authentication
         firebaseMessaging                 : "com.google.firebase:firebase-messaging:18.0.0",// Cloud Messaging
         firebaseConfig                    : "com.google.firebase:firebase-config:17.0.0", // Remote Config
         firebaseInvites                   : "com.google.firebase:firebase-invites:17.0.0", // Invites and Dynamic Links
-        firebaseAds                       : "com.google.firebase:firebase-ads:17.2.0", // AdMob
+        firebaseAds                       : "com.google.firebase:firebase-ads:17.2.1", // AdMob
         firebaseAppindexing               : "com.google.firebase:firebase-appindexing:18.0.0", // App Indexing
-        firebasePerf                      : "com.google.firebase:firebase-perf:17.0.0", // Performance Monitoring
+        firebasePerf                      : "com.google.firebase:firebase-perf:17.0.2", // Performance Monitoring
         firebaseFunctions                 : "com.google.firebase:firebase-functions:17.0.0", // Cloud Functions for Firebase Client SDK
         firebaseMlVision                  : "com.google.firebase:firebase-ml-vision:20.0.0", //	ML Kit (Vision)
         firebaseMlModelInterpreter        : "com.google.firebase:firebase-ml-model-interpreter:19.0.0", // 	ML Kit (Custom Model)
@@ -339,7 +337,6 @@ ext.libs = [
 
         retrofit                          : "com.squareup.retrofit2:retrofit:2.6.0",
         retrofitAdapterRxJava2            : "com.squareup.retrofit2:adapter-rxjava2:2.6.0",
-        retrofitCoroutineAdapter          : "com.jakewharton.retrofit:retrofit2-kotlin-coroutines-adapter:0.9.2", // deprecated, use suspend
         retrofitConverterGson             : "com.squareup.retrofit2:converter-gson:2.6.0",
         retrofitConverterMoshi            : "com.squareup.retrofit2:converter-moshi:2.6.0",
         retrofitMock                      : "com.squareup.retrofit2:retrofit-mock:2.6.0",
@@ -552,9 +549,9 @@ ext.androidTestLibs = [
         // or "androidTestImplementation", depending on whether you want the
         // dependency to appear on your APK's compile classpath or the test APK
         // classpath.
-        espressoIdlingResource: "androidx.test.espresso:espresso-idling-resource:3.1.1",
+        espressoIdlingResource: "androidx.test.espresso:espresso-idling-resource:3.2.0",
 
-        fragmentTesting       : "androidx.fragment:fragment-testing:1.1.0-alpha09",
+        fragmentTesting       : "androidx.fragment:fragment-testing:1.1.0-beta01",
 
         findBugs              : "com.google.code.findbugs:jsr305:3.0.2",
         checkerCompatQual     : "org.checkerframework:checker-compat-qual:2.5.5",
