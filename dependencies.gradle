@@ -382,7 +382,7 @@ ext.libs = [
         exozetCore                        : "com.github.exozet:AndroidCore:2.1.2",
 
         commonUtils                       : "com.github.kibotu:common.android.utils:0.7.2", // deprecated, use exozetCore
-        deviceInfo                        : "com.github.kibotu:net.kibotu.android.deviceinfo:1.3.2",
+        deviceInfo                        : "com.github.kibotu:net.kibotu.android.deviceinfo:2.0.0",
         recyclerViewPresenter             : "com.github.kibotu:RecyclerViewPresenter:3.2.1",
         recyclerViewPresenter4            : "com.github.kibotu:RecyclerViewPresenter:4.0.3",
         googlePlayForceUpdate             : "com.github.kibotu:GooglePlayForceUpdate:1.0.8",
