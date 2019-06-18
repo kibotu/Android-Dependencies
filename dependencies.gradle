@@ -3,9 +3,9 @@ ext {
 
     minSdkVer = 16
 
-    compileSdkVer = 28
-    buildToolsVer = "28.0.3"
-    targetSdkVer = 28
+    compileSdkVer = 29
+    buildToolsVer = "29.0.0-rc3"
+    targetSdkVer = 29
 
     // https://android-developers.googleblog.com/2019/03/introducing-android-q-beta.html
     // https://developer.android.com/preview/migration.html
