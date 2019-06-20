@@ -561,7 +561,7 @@ ext.androidTestLibs = [
 ]
 
 ext.androidTestUtilLibs = [
-        orchestrator: "androidx.test:orchestrator:1.2.0-beta01",
+        orchestrator: "androidx.test:orchestrator:1.2.0",
 ]
 
 ext.configs = [
