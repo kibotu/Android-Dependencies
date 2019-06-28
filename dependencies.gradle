@@ -472,7 +472,8 @@ ext.libs = [
         youtubeExtractor                  : "com.github.Commit451:YouTubeExtractor:4.2.1",
         fastExoPlayerSeeker               : "com.github.kibotu:FastExoPlayerSeeker:1.0.0",
 
-        polet                             : "com.github.fievx:Polet:0.1.4"
+        polet                             : "com.github.fievx:Polet:0.1.4",
+        lottie                            : "com.airbnb.android:lottie:3.0.7"
 ]
 
 ext.testLibs = [
