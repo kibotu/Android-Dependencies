@@ -373,7 +373,7 @@ ext.libs = [
         leakcanaryDebugSupportFragments   : "com.squareup.leakcanary:leakcanary-support-fragment:1.6.3",
         leakcanaryRelease                 : "com.squareup.leakcanary:leakcanary-android-no-op:1.6.3",
 
-        exozetCore                        : "com.github.exozet:AndroidCore:2.2.4",
+        exozetCore                        : "com.github.exozet:AndroidCore:2.2.7",
 
         commonUtils                       : "com.github.kibotu:common.android.utils:0.7.2", // deprecated, use exozetCore
         deviceInfo                        : "com.github.kibotu:net.kibotu.android.deviceinfo:2.0.0",
