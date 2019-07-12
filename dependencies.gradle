@@ -72,7 +72,7 @@ ext.libs = [
         androidKtxPalette                 : "androidx.palette:palette-ktx:1.0.0", // 	androidx.palette.graphics
         androidKtxSqlite                  : "androidx.sqlite:sqlite-ktx:2.0.1", // 	androidx.sqlite.db
         androidKtxCollection              : "androidx.collection:collection-ktx:1.1.0", // 	androidx.collection
-        androidKtxLifecycleViewmodel      : "androidx.lifecycle:lifecycle-viewmodel-ktx:2.2.0-alpha01", // 	androidx.viewmodel
+        androidKtxLifecycleViewmodel      : "androidx.lifecycle:lifecycle-viewmodel-ktx:2.2.0-alpha02", // 	androidx.viewmodel
         androidKtxLifecycleReactiveStreams: "androidx.lifecycle:lifecycle-reactivestreams-ktx:2.2.0-alpha01", // 	androidx.lifecycle
         androidKtxNavigationCommon        : "androidx.navigation:navigation-common-ktx:2.1.0-alpha06", // 	androidx.navigation
         androidKtxNavigationFragment      : "androidx.navigation:navigation-fragment-ktx:2.1.0-alpha06", // 	androidx.navigation.fragment
