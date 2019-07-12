@@ -92,14 +92,13 @@ ext.libs = [
 
         supportMultidex                   : "androidx.multidex:multidex:2.0.1",
 
-        supportMediaCompat                : "androidx.media:media:1.1.0-beta01",
         supportFragment                   : "androidx.fragment:fragment:1.1.0-alpha08", // https://developer.android.com/jetpack/androidx/releases/fragment
         fragmentKtx                       : "androidx.fragment:fragment-ktx:1.2.0-alpha01",
         supportActivity                   : "androidx.activity:activity:1.0.0-alpha08", // https://developer.android.com/jetpack/androidx/releases/activity
         activityKtx                       : "androidx.activity:activity-ktx:1.1.0-alpha01",
         supportAppCompat                  : "androidx.appcompat:appcompat:1.1.0-rc01", // https://developer.android.com/jetpack/androidx/releases/appcompat
         appCompatResources                : "androidx.appcompat:appcompat-resources:1.1.0-rc01",
-        media                             : "androidx.media:media:1.0.0-alpha04",
+        supportMedia                      : "androidx.media:media:1.1.0-rc01",
         supportCardView                   : "androidx.cardview:cardview:1.0.0",
         supportGridLayout                 : "androidx.gridlayout:gridlayout:1.0.0",
         supportMediaRouter                : "androidx.mediarouter:mediarouter:1.1.0-beta01",
