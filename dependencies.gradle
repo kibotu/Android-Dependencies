@@ -242,7 +242,7 @@ ext.libs = [
         joda                              : "net.danlew:android.joda:2.10.1.2",
         smartLocation                     : "io.nlopez.smartlocation:library:3.3.3",
         smartLocationRx                   : "io.nlopez.smartlocation:rx:3.3.3",
-        materialdrawer                    : "com.mikepenz:materialdrawer:7.0.0-beta01",
+        materialdrawer                    : "com.mikepenz:materialdrawer:7.0.0-rc03",
         markdownview                      : "com.github.mukeshsolanki:MarkdownView-Android:1.0.5",
         rxmarkdown                        : "com.yydcdut:rxmarkdown:0.1.1-beta",
         stetho                            : "com.facebook.stetho:stetho:1.5.1",
