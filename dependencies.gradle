@@ -314,6 +314,7 @@ ext.libs = [
         picasso                           : "com.squareup.picasso:picasso:2.71828",
         glide                             : "com.github.bumptech.glide:glide:4.9.0",
         glideAnnotationsProcessor         : "com.github.bumptech.glide:compiler:4.9.0",
+        glideOkHttp3                      : "com.github.bumptech.glide:okhttp3-integration:4.9.0",
         glideTransformations              : "jp.wasabeef:glide-transformations:4.0.1",
 
         gpuImageLibrary                   : "jp.co.cyberagent.android.gpuimage:gpuimage-library:1.4.1",
@@ -369,9 +370,10 @@ ext.libs = [
         realmEncryptionHelper             : "com.github.tntkhang:realm-encryption-helper:1.0.1", // requires preferenceHelper
         preferencesHelper                 : "com.github.tntkhang:preferences-helper:1.0.0",
 
-        leakcanaryDebug                   : "com.squareup.leakcanary:leakcanary-android:1.6.3",
-        leakcanaryDebugSupportFragments   : "com.squareup.leakcanary:leakcanary-support-fragment:1.6.3",
-        leakcanaryRelease                 : "com.squareup.leakcanary:leakcanary-android-no-op:1.6.3",
+        leakcanary2                       : "com.squareup.leakcanary:leakcanary-android:2.0-alpha-2",
+        leakcanaryDebug                   : "com.squareup.leakcanary:leakcanary-android:1.6.3", // deprecated, use leakcanary2
+        leakcanaryDebugSupportFragments   : "com.squareup.leakcanary:leakcanary-support-fragment:1.6.3", // deprecated, use leakcanary2
+        leakcanaryRelease                 : "com.squareup.leakcanary:leakcanary-android-no-op:1.6.3", // deprecated, use leakcanary2
 
         exozetCore                        : "com.github.exozet:AndroidCore:2.2.7",
 
