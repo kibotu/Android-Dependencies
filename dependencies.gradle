@@ -270,7 +270,9 @@ ext.libs = [
         currencyEditText                  : "com.github.blackcat27:library:1.4.4-SNAPSHOT",
         brainTree                         : "com.braintreepayments.api:drop-in:3.6.1",
         facebook                          : "com.facebook.android:facebook-android-sdk:4.42.0",
-        okhttp3                           : "com.squareup.okhttp3:okhttp:3.14.1",
+        conscryptAndroid                  : "org.conscrypt:conscrypt-android:2.1.0",
+        okhttp4                           : "com.squareup.okhttp3:okhttp:4.0.1",
+        okhttp3                           : "com.squareup.okhttp3:okhttp:3.14.1", // deprecated, use okhttp4
         okhttp3LoggingInterceptor         : "com.squareup.okhttp3:logging-interceptor:3.14.1",
         okhttp3ResponseEcho               : "com.github.simonpercic:oklog3:2.3.0",
         javawriter                        : "com.squareup:javawriter:2.5.1",
