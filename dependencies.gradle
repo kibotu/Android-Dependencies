@@ -481,7 +481,8 @@ ext.libs = [
         polet                             : "com.github.fievx:Polet:0.1.4",
         lottie                            : "com.airbnb.android:lottie:3.0.7",
         konfetti                          : "nl.dionsegijn:konfetti:1.1.3",
-        trail                             : "com.github.amalChandran:trail-android:v1.51"
+        trail                             : "com.github.amalChandran:trail-android:v1.51",
+        ffmpegTranscoder                  : "com.exozet:videoeditor:1.2.5"
 ]
 
 ext.testLibs = [
