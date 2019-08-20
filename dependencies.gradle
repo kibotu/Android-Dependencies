@@ -442,8 +442,8 @@ ext.libs = [
         zoomage                           : "com.jsibbold:zoomage:1.2.0",
 
         freedomPlayer                     : "com.exozet:FreedomPlayer:1.2.6",
-        threeHundertSixtyPlayer           : "com.exozet:ThreeHundertSixtyPlayer:1.1.3",
-        sequentialImagePlayer             : "com.exozet:SequentialImagePlayer:1.2.6",
+        threeHundertSixtyPlayer           : "com.exozet:ThreeHundertSixtyPlayer:1.5.0",
+        sequentialImagePlayer             : "com.exozet:SequentialImagePlayer:1.5.0",
 
         jpegkit                           : "com.camerakit:jpegkit:0.2.2",
         camerakit                         : "com.camerakit:camerakit:1.0.0-beta3.10",
