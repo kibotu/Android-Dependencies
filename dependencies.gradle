@@ -68,18 +68,18 @@ ext.libs = [
         kotlinxCoroutinesAndroid          : "org.jetbrains.kotlinx:kotlinx-coroutines-android:1.1.1",
 
         // https://developer.android.com/kotlin/ktx#modules
-        androidKtxCore                    : "androidx.core:core:1.2.0-alpha02",
+        androidKtxCore                    : "androidx.core:core:1.2.0-alpha03",
         androidKtxPalette                 : "androidx.palette:palette-ktx:1.0.0", // 	androidx.palette.graphics
         androidKtxSqlite                  : "androidx.sqlite:sqlite-ktx:2.0.1", // 	androidx.sqlite.db
         androidKtxCollection              : "androidx.collection:collection-ktx:1.1.0", // 	androidx.collection
-        androidKtxLifecycleViewmodel      : "androidx.lifecycle:lifecycle-viewmodel-ktx:2.2.0-alpha02", // 	androidx.viewmodel
+        androidKtxLifecycleViewmodel      : "androidx.lifecycle:lifecycle-viewmodel-ktx:2.2.0-alpha03", // 	androidx.viewmodel
         androidKtxLifecycleReactiveStreams: "androidx.lifecycle:lifecycle-reactivestreams-ktx:2.2.0-alpha01", // 	androidx.lifecycle
-        androidKtxNavigationCommon        : "androidx.navigation:navigation-common-ktx:2.1.0-beta02", // 	androidx.navigation
-        androidKtxNavigationFragment      : "androidx.navigation:navigation-fragment-ktx:2.1.0-beta02", // 	androidx.navigation.fragment
-        androidKtxNavigationUi            : "androidx.navigation:navigation-ui-ktx:2.1.0-beta02", // 	androidx.navigation.fragment
-        androidKtxNavigationRuntime       : "androidx.navigation:navigation-runtime-ktx:2.1.0-beta02", // 	androidx.navigation
+        androidKtxNavigationCommon        : "androidx.navigation:navigation-common-ktx:2.2.0-alpha01", // 	androidx.navigation
+        androidKtxNavigationFragment      : "androidx.navigation:navigation-fragment-ktx:2.2.0-alpha01", // 	androidx.navigation.fragment
+        androidKtxNavigationUi            : "androidx.navigation:navigation-ui-ktx:2.2.0-alpha01", // 	androidx.navigation.fragment
+        androidKtxNavigationRuntime       : "androidx.navigation:navigation-runtime-ktx:2.2.0-alpha01", // 	androidx.navigation
 
-        androidRoomKtx                    : "androidx.room:room-ktx:2.1.0-rc01",
+        androidRoomKtx                    : "androidx.room:room-ktx:2.2.0-alpha02",
 
         // https://developer.android.com/jetpack/androidx/releases/navigation
         navigationFragment                : "androidx.navigation:navigation-fragment:2.1.0-alpha05",
@@ -93,9 +93,9 @@ ext.libs = [
         supportMultidex                   : "androidx.multidex:multidex:2.0.1",
 
         supportFragment                   : "androidx.fragment:fragment:1.1.0-alpha08", // https://developer.android.com/jetpack/androidx/releases/fragment
-        fragmentKtx                       : "androidx.fragment:fragment-ktx:1.2.0-alpha01",
+        fragmentKtx                       : "androidx.fragment:fragment-ktx:1.2.0-alpha02",
         supportActivity                   : "androidx.activity:activity:1.0.0-alpha08", // https://developer.android.com/jetpack/androidx/releases/activity
-        activityKtx                       : "androidx.activity:activity-ktx:1.1.0-alpha01",
+        activityKtx                       : "androidx.activity:activity-ktx:1.1.0-alpha02",
         supportAppCompat                  : "androidx.appcompat:appcompat:1.1.0-rc01", // https://developer.android.com/jetpack/androidx/releases/appcompat
         appCompatResources                : "androidx.appcompat:appcompat-resources:1.1.0-rc01",
         supportDrawerLayout               : "androidx.drawerlayout:drawerlayout:1.1.0-alpha02",
@@ -105,7 +105,7 @@ ext.libs = [
         supportGridLayout                 : "androidx.gridlayout:gridlayout:1.0.0",
         supportMediaRouter                : "androidx.mediarouter:mediarouter:1.1.0-beta01",
         supportPalette                    : "androidx.palette:palette:1.0.0",
-        supportRecyclerview               : "androidx.recyclerview:recyclerview:1.1.0-beta01",
+        supportRecyclerview               : "androidx.recyclerview:recyclerview:1.1.0-beta03",
         supportPreferenceV7               : "androidx.preference:preference:1.1.0-alpha05",
         supportPreferenceV14              : "androidx.legacy:legacy-preference-v14:1.0.0",
         supportV13                        : "androidx.legacy:legacy-support-v13:1.0.0",
@@ -161,13 +161,13 @@ ext.libs = [
 
         firebaseIid                       : "com.google.firebase:firebase-iid:18.0.0",
         firebaseCommon                    : "com.google.firebase:firebase-common:17.1.0",
-        firebaseCore                      : "com.google.firebase:firebase-core:17.0.1", // Analytics
+        firebaseCore                      : "com.google.firebase:firebase-core:17.1.0", // Analytics
         firebaseDatabase                  : "com.google.firebase:firebase-database:17.0.0", // Realtime Database
         firebaseFirestore                 : "com.google.firebase:firebase-firestore:19.0.2", // Cloud Firestore
         firebaseStorage                   : "com.google.firebase:firebase-storage:17.0.0", // Storage
         firebaseCrash                     : "com.google.firebase:firebase-crash:16.2.1", // Crash Reporting
         firebaseAuth                      : "com.google.firebase:firebase-auth:17.0.0", // Authentication
-        firebaseMessaging                 : "com.google.firebase:firebase-messaging:19.0.1",// Cloud Messaging
+        firebaseMessaging                 : "com.google.firebase:firebase-messaging:20.0.0",// Cloud Messaging
         firebaseConfig                    : "com.google.firebase:firebase-config:17.0.0", // Remote Config
         firebaseInvites                   : "com.google.firebase:firebase-invites:17.0.0", // Invites and Dynamic Links
         firebaseAds                       : "com.google.firebase:firebase-ads:17.2.1", // AdMob
@@ -182,18 +182,18 @@ ext.libs = [
         // ktx
         // https://android.github.io/android-ktx/core-ktx/
 
-        lifecycleExtensions               : "androidx.lifecycle:lifecycle-extensions:2.2.0-alpha02", // ViewModel and LiveData
-        lifecycleViewmodel                : "androidx.lifecycle:lifecycle-viewmodel:2.2.0-alpha02", // alternatively just ViewModel
-        lifecycleLivedataKtx              : "androidx.lifecycle:lifecycle-livedata-ktx:2.2.0-alpha02", // alternatively just LiveData
-        lifecycleLivedata                 : "androidx.lifecycle:lifecycle-livedata:2.2.0-alpha02", // alternatively just LiveData
+        lifecycleExtensions               : "androidx.lifecycle:lifecycle-extensions:2.2.0-alpha03", // ViewModel and LiveData
+        lifecycleViewmodel                : "androidx.lifecycle:lifecycle-viewmodel:2.2.0-alpha03", // alternatively just ViewModel
+        lifecycleLivedataKtx              : "androidx.lifecycle:lifecycle-livedata-ktx:2.2.0-alpha03", // alternatively just LiveData
+        lifecycleLivedata                 : "androidx.lifecycle:lifecycle-livedata:2.2.0-alpha03", // alternatively just LiveData
         lifecycleLivedataCore             : "androidx.lifecycle:lifecycle-livedata-core:2.0.0",
         lifecycleCompiler                 : "androidx.lifecycle:lifecycle-compiler:2.2.0-alpha02",
-        lifecycleRuntime                  : "androidx.lifecycle:lifecycle-runtime:2.2.0-alpha02",
-        lifecycleRuntimeKtx               : "androidx.lifecycle:lifecycle-runtime-ktx:2.2.0-alpha02",
+        lifecycleRuntime                  : "androidx.lifecycle:lifecycle-runtime:2.2.0-alpha03",
+        lifecycleRuntimeKtx               : "androidx.lifecycle:lifecycle-runtime-ktx:2.2.0-alpha03",
         lifecycleCommon                   : "androidx.lifecycle:lifecycle-common:2.2.0-alpha02", // Java8 support for Lifecycles
-        lifecycleCommonJava8              : "androidx.lifecycle:lifecycle-common-java8:2.2.0-alpha02", // Java8 support for Lifecycles
+        lifecycleCommonJava8              : "androidx.lifecycle:lifecycle-common-java8:2.2.0-alpha03", // Java8 support for Lifecycles
         lifecycleRactiveStream            : "androidx.lifecycle:lifecycle-reactivestreams:2.2.0-alpha02", // ReactiveStreams support for LiveData
-        viewpager2                        : "androidx.viewpager2:viewpager2:1.0.0-alpha02",
+        viewpager2                        : "androidx.viewpager2:viewpager2:1.0.0-beta03",
 
         // core
 
@@ -216,10 +216,10 @@ ext.libs = [
         // room
 
         persistenceRoomCommon             : "androidx.room:room-common:2.1.0-rc01",
-        persistenceRoomCompiler           : "androidx.room:room-compiler:2.1.0-rc01",
+        persistenceRoomCompiler           : "androidx.room:room-compiler:2.2.0-alpha02",
         persistenceRoomGuava              : "androidx.room:room-guava:2.1.0-rc01",
         persistenceRoomMigration          : "androidx.room:room-migration:2.1.0-rc01",
-        persistenceRoomRuntime            : "androidx.room:room-runtime:2.1.0-rc01",
+        persistenceRoomRuntime            : "androidx.room:room-runtime:2.2.0-alpha02",
         roomCoroutines                    : "androidx.room:room-coroutines:2.1.0-alpha04",
         persistenceRoomRxjava2            : "androidx.room:room-rxjava2:2.1.0-rc01",
         persistenceRoomTesting            : "androidx.room:room-testing:2.1.0-rc01",
