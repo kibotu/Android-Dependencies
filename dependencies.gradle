@@ -162,7 +162,7 @@ ext.libs = [
         firebaseIid                       : "com.google.firebase:firebase-iid:18.0.0",
         firebaseCommon                    : "com.google.firebase:firebase-common:17.1.0",
         firebaseCore                      : "com.google.firebase:firebase-core:17.1.0", // Analytics
-        firebaseDatabase                  : "com.google.firebase:firebase-database:17.0.0", // Realtime Database
+        firebaseDatabase                  : "com.google.firebase:firebase-database:19.0.0", // Realtime Database
         firebaseFirestore                 : "com.google.firebase:firebase-firestore:19.0.2", // Cloud Firestore
         firebaseStorage                   : "com.google.firebase:firebase-storage:17.0.0", // Storage
         firebaseCrash                     : "com.google.firebase:firebase-crash:16.2.1", // Crash Reporting
@@ -187,12 +187,12 @@ ext.libs = [
         lifecycleLivedataKtx              : "androidx.lifecycle:lifecycle-livedata-ktx:2.2.0-alpha03", // alternatively just LiveData
         lifecycleLivedata                 : "androidx.lifecycle:lifecycle-livedata:2.2.0-alpha03", // alternatively just LiveData
         lifecycleLivedataCore             : "androidx.lifecycle:lifecycle-livedata-core:2.0.0",
-        lifecycleCompiler                 : "androidx.lifecycle:lifecycle-compiler:2.2.0-alpha02",
+        lifecycleCompiler                 : "androidx.lifecycle:lifecycle-compiler:2.2.0-alpha03",
         lifecycleRuntime                  : "androidx.lifecycle:lifecycle-runtime:2.2.0-alpha03",
         lifecycleRuntimeKtx               : "androidx.lifecycle:lifecycle-runtime-ktx:2.2.0-alpha03",
         lifecycleCommon                   : "androidx.lifecycle:lifecycle-common:2.2.0-alpha02", // Java8 support for Lifecycles
         lifecycleCommonJava8              : "androidx.lifecycle:lifecycle-common-java8:2.2.0-alpha03", // Java8 support for Lifecycles
-        lifecycleRactiveStream            : "androidx.lifecycle:lifecycle-reactivestreams:2.2.0-alpha02", // ReactiveStreams support for LiveData
+        lifecycleRactiveStream            : "androidx.lifecycle:lifecycle-reactivestreams:2.2.0-alpha03", // ReactiveStreams support for LiveData
         viewpager2                        : "androidx.viewpager2:viewpager2:1.0.0-beta03",
 
         // core
@@ -555,7 +555,7 @@ ext.androidTestLibs = [
         // classpath.
         espressoIdlingResource: "androidx.test.espresso:espresso-idling-resource:3.2.0",
 
-        fragmentTesting       : "androidx.fragment:fragment-testing:1.2.0-alpha01",
+        fragmentTesting       : "androidx.fragment:fragment-testing:1.2.0-alpha02",
 
         findBugs              : "com.google.code.findbugs:jsr305:3.0.2",
         checkerCompatQual     : "org.checkerframework:checker-compat-qual:2.5.5",
