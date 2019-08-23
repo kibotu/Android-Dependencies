@@ -484,7 +484,7 @@ ext.libs = [
         konfetti                          : "nl.dionsegijn:konfetti:1.1.3",
         trail                             : "com.github.amalChandran:trail-android:v1.51",
         ffmpegTranscoder                  : "com.exozet:videoeditor:1.3.4",
-        androidFfmpeg                  : "nl.bravobit:android-ffmpeg:1.1.5"
+        androidFfmpeg                     : "nl.bravobit:android-ffmpeg:1.1.7"
 ]
 
 ext.testLibs = [
