@@ -14,7 +14,7 @@ ext {
     targetSdkVerQ = 'android-Q'
 
     // @see https://mvnrepository.com/artifact/org.jetbrains.kotlin/kotlin-stdlib-jdk8
-    kotlinVersion = '1.3.31'
+    kotlinVersion = '1.3.50'
 
     VERSION_NAME = 0
     LOG_UTILS = false
@@ -461,7 +461,12 @@ ext.libs = [
         reactiveWiFi                      : 'com.github.pwittchen:reactivewifi-rx2:0.3.0',
         rxLint                            : 'nl.littlerobots.rxlint:rxlint:1.6.1',
 
-        ffmpegAndroid                     : 'com.writingminds:FFmpegAndroid:0.3.2'
+        ffmpegAndroid                     : 'com.writingminds:FFmpegAndroid:0.3.2',
+
+        tvProvider                        : 'androidx.tvprovider:tvprovider:1.0.0',
+        workManagerKtx                    : "androidx.work:work-runtime-ktx:2.2.0",
+        workManagerRx2                    : "androidx.work:work-rxjava2:2.2.0"
+
 ]
 
 ext.testLibs = [
@@ -520,7 +525,7 @@ ext.androidTestLibs = [
         checkerCompatQual     : 'org.checkerframework:checker-compat-qual:2.5.5',
         checkerQual           : 'org.checkerframework:checker-qual:2.5.3',
         errorProneAnnotations : 'com.google.errorprone:error_prone_annotations:2.3.1',
-        guavaListenablefuture : 'com.google.guava:listenablefuture:9999.0-empty-to-avoid-conflict-with-guava'
+//        guavaListenablefuture : 'com.google.guava:listenablefuture:9999.0-empty-to-avoid-conflict-with-guava'
 ]
 ext.androidTestUtilLibs = [
         orchestrator     : 'androidx.test:orchestrator:1.1.1',
