@@ -73,12 +73,12 @@ ext.libs = [
         kotlinxCoroutinesAndroid          : 'org.jetbrains.kotlinx:kotlinx-coroutines-android:1.1.1',
 
         // https://developer.android.com/kotlin/ktx#modules
-        androidKtx                        : 'androidx.core:core-ktx:1.0.1',
-        androidKtxFragment                : "androidx.fragment:fragment-ktx:1.0.0", // 	androidx.fragment.app
+        androidKtx                        : 'androidx.core:core-ktx:1.1.0',
+        androidKtxFragment                : "androidx.fragment:fragment-ktx:1.1.0", // 	androidx.fragment.app
         androidKtxPalette                 : "androidx.palette:palette-ktx:1.0.0", // 	androidx.palette.graphics
         androidKtxSqlite                  : "androidx.sqlite:sqlite-ktx:2.0.0", // 	androidx.sqlite.db
-        androidKtxCollection              : "androidx.collection:collection-ktx:1.0.0", // 	androidx.collection
-        androidKtxLifecycleViewmodel      : "androidx.lifecycle:lifecycle-viewmodel-ktx:2.0.0", // 	androidx.lifecycle
+        androidKtxCollection              : "androidx.collection:collection-ktx:1.1.0", // 	androidx.collection
+        androidKtxLifecycleViewmodel      : "androidx.lifecycle:lifecycle-viewmodel-ktx:2.1.0", // 	androidx.lifecycle
         androidKtxLifecycleReactiveStreams: "androidx.lifecycle:lifecycle-reactivestreams-ktx:2.0.0", // 	androidx.lifecycle
         androidKtxNavigationCommon        : "android.arch.navigation:navigation-common-ktx:1.0.0", // 	androidx.navigation
         androidKtxNavigationFragment      : "android.arch.navigation:navigation-fragment-ktx:1.0.0", // 	androidx.navigation.fragment
@@ -97,8 +97,8 @@ ext.libs = [
         fragmentKtx                       : 'androidx.fragment:fragment-ktx:1.1.0-alpha05',
         supportActivity                   : "androidx.activity:activity:1.0.0-alpha05", // https://developer.android.com/jetpack/androidx/releases/activity
         activityKtx                       : "androidx.activity:activity-ktx:1.0.0-alpha05",
-        supportAppCompat                  : "androidx.appcompat:appcompat:1.1.0-alpha04", // https://developer.android.com/jetpack/androidx/releases/appcompat
-        appCompatResources                : "androidx.appcompat:appcompat-resources:1.1.0-alpha05",
+        supportAppCompat                  : "androidx.appcompat:appcompat:1.1.0", // https://developer.android.com/jetpack/androidx/releases/appcompat
+        appCompatResources                : "androidx.appcompat:appcompat-resources:1.1.0",
         supportCardView                   : "androidx.cardview:cardview:1.0.0",
         supportGridLayout                 : "androidx.gridlayout:gridlayout:1.0.0",
         supportMediaRouter                : "androidx.mediarouter:mediarouter:1.1.0-alpha02",
@@ -110,9 +110,9 @@ ext.libs = [
         supportV4                         : "androidx.legacy:legacy-support-v4:1.0.0",
         supportPreferenceLeanback         : "androidx.leanback:leanback-preference:1.1.0-alpha02",
         supportLeanback                   : "androidx.leanback:leanback:1.1.0-alpha02",
-        supportVectorDrawable             : "androidx.vectordrawable:vectordrawable:1.1.0-alpha01",
+        supportVectorDrawable             : "androidx.vectordrawable:vectordrawable:1.1.0",
         supportAnimatedVectorDrawable     : "androidx.vectordrawable:vectordrawable-animated:1.1.0-alpha01",
-        supportAnnotations                : "androidx.annotation:annotation:1.1.0-beta01",
+        supportAnnotations                : "androidx.annotation:annotation:1.1.0",
         supportDesign                     : "com.google.android.material:material:1.1.0-alpha05",
         supportCustomTabs                 : "androidx.browser:browser:1.0.0",
         supportPercent                    : "androidx.percentlayout:percentlayout:1.0.0",
@@ -125,7 +125,7 @@ ext.libs = [
         supportCoreUi                     : "androidx.legacy:legacy-support-core-ui:1.0.0",
         supportDynamicAnimation           : "androidx.dynamicanimation:dynamicanimation:1.0.0",
 
-        autoValueAnnotations              : 'com.google.auto.value:auto-value-annotations:1.6.5',
+        autoValueAnnotations              : 'com.google.auto.value:auto-value-annotations:1.6.6',
 
         // https://developer.android.com/jetpack/androidx/releases/navigation
         navigationFragment                : 'android.arch.navigation:navigation-fragment-ktx:1.0.0',
@@ -181,13 +181,13 @@ ext.libs = [
         // architecture components
         // https://developer.android.com/topic/libraries/architecture/adding-components
 
-        lifecycleExtensions               : "androidx.lifecycle:lifecycle-extensions:2.0.0", // ViewModel and LiveData
-        lifecycleViewmodel                : "androidx.lifecycle:lifecycle-viewmodel:2.0.0", // alternatively, just ViewModel
+        lifecycleExtensions               : "androidx.lifecycle:lifecycle-extensions:2.1.0", // ViewModel and LiveData
+        lifecycleViewmodel                : "androidx.lifecycle:lifecycle-viewmodel:2.1.0", // alternatively, just ViewModel
         lifecycleLivedataKtx              : "androidx.lifecycle:lifecycle-livedata-ktx:2.1.0-alpha03", // alternatively, just LiveData
-        lifecycleLivedata                 : "androidx.lifecycle:lifecycle-livedata:2.0.0", // alternatively, just LiveData
-        lifecycleLivedataCore             : "androidx.lifecycle:lifecycle-livedata-core:2.0.0",
-        lifecycleCompiler                 : "androidx.lifecycle:lifecycle-compiler:2.0.0",
-        lifecycleRuntime                  : "androidx.lifecycle:lifecycle-runtime:2.0.0",
+        lifecycleLivedata                 : "androidx.lifecycle:lifecycle-livedata:2.1.0", // alternatively, just LiveData
+        lifecycleLivedataCore             : "androidx.lifecycle:lifecycle-livedata-core:2.1.0",
+        lifecycleCompiler                 : "androidx.lifecycle:lifecycle-compiler:2.1.0",
+        lifecycleRuntime                  : "androidx.lifecycle:lifecycle-runtime:2.1.0",
         lifecycleRuntimeKtx               : "androidx.lifecycle:lifecycle-livedata-ktx:2.2.0-alpha03",
         lifecycleCommon                   : 'androidx.lifecycle:lifecycle-common:2.0.0', // Java8 support for Lifecycles
         lifecycleCommonJava8              : 'androidx.lifecycle:lifecycle-common-java8:2.0.0', // Java8 support for Lifecycles
@@ -450,7 +450,7 @@ ext.libs = [
         compassView                       : 'com.github.arbelkilani:Compass-View:v1.1.1',
 
         flipper                           : 'com.facebook.flipper:flipper:0.17.0',
-        soloader                          : 'com.facebook.soloader:soloader:0.6.0',
+        soloader                          : 'com.facebook.soloader:soloader:0.7.0',
 
         xozRicohThetaSDK                  : 'com.exozet:ricohtheta:1.1.2',
         jrSpinner                         : 'com.github.jrizani:JRSpinner:1.0.0',
@@ -462,7 +462,12 @@ ext.libs = [
         reactiveWiFi                      : 'com.github.pwittchen:reactivewifi-rx2:0.3.0',
         rxLint                            : 'nl.littlerobots.rxlint:rxlint:1.6.1',
 
-        ffmpegAndroid                     : 'com.writingminds:FFmpegAndroid:0.3.2'
+        ffmpegAndroid                     : 'com.writingminds:FFmpegAndroid:0.3.2',
+
+        tvProvider                        : 'androidx.tvprovider:tvprovider:1.0.0',
+        workManagerKtx                    : "androidx.work:work-runtime-ktx:2.2.0",
+        workManagerRx2                    : "androidx.work:work-rxjava2:2.2.0"
+
 ]
 
 ext.testLibs = [
@@ -470,9 +475,9 @@ ext.testLibs = [
         jsonAssert                : 'org.skyscreamer:jsonassert:1.5.0',
         jsonUnit                  : 'net.javacrumbs.json-unit:json-unit:1.28.2',
         jsonUnitFluent            : 'net.javacrumbs.json-unit:json-unit-fluent:1.28.2',
-        robolectric               : "org.robolectric:robolectric:4.2",
+        robolectric               : "org.robolectric:robolectric:4.3",
         robolectricSnapshot       : 'org.robolectric:robolectric:4.3-SNAPSHOT',
-        robolectricShadowsMultidex: "org.robolectric:shadows-multidex:4.1",
+        robolectricShadowsMultidex: "org.robolectric:shadows-multidex:4.3",
         robolectricResources      : 'org.robolectric:robolectric-resources:3.3.2',
         robolectricUtils          : 'org.robolectric:robolectric-utils:3.3.2',
         robolectricAnnotations    : 'org.robolectric:robolectric-annotations:3.3.2',
@@ -522,7 +527,7 @@ ext.androidTestLibs = [
         checkerCompatQual     : 'org.checkerframework:checker-compat-qual:2.5.5',
         checkerQual           : 'org.checkerframework:checker-qual:2.5.3',
         errorProneAnnotations : 'com.google.errorprone:error_prone_annotations:2.3.1',
-        guavaListenablefuture : 'com.google.guava:listenablefuture:9999.0-empty-to-avoid-conflict-with-guava'
+//        guavaListenablefuture : 'com.google.guava:listenablefuture:9999.0-empty-to-avoid-conflict-with-guava'
 ]
 ext.androidTestUtilLibs = [
         orchestrator     : 'androidx.test:orchestrator:1.1.1',
