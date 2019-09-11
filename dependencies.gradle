@@ -494,7 +494,7 @@ ext.testLibs = [
         jsonUnit                    : "net.javacrumbs.json-unit:json-unit:2.8.0",
         jsonUnitFluent              : "net.javacrumbs.json-unit:json-unit-fluent:2.8.0",
         robolectric                 : "org.robolectric:robolectric:4.3",
-        robolectricSnapshot         : "org.robolectric:robolectric:9-robolectric-4913185-2",
+        robolectricSnapshot         : "org.robolectric:android-all:9-robolectric-4913185-2",
         robolectricShadowsMultidex  : "org.robolectric:shadows-multidex:4.1",
         robolectricResources        : "org.robolectric:robolectric-resources:3.3.2",
         robolectricUtils            : "org.robolectric:robolectric-utils:3.3.2",
