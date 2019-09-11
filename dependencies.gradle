@@ -93,10 +93,10 @@ ext.libs = [
         supportCompat                     : "androidx.core:core:1.1.0-alpha05",
 
         supportMediaCompat                : "androidx.media:media:1.1.0-alpha02",
-        supportFragment                   : "androidx.fragment:fragment:1.1.0-alpha05", // https://developer.android.com/jetpack/androidx/releases/fragment
-        fragmentKtx                       : 'androidx.fragment:fragment-ktx:1.1.0-alpha05',
-        supportActivity                   : "androidx.activity:activity:1.0.0-alpha05", // https://developer.android.com/jetpack/androidx/releases/activity
-        activityKtx                       : "androidx.activity:activity-ktx:1.0.0-alpha05",
+        supportFragment                   : "androidx.fragment:fragment:1.1.0", // https://developer.android.com/jetpack/androidx/releases/fragment
+        fragmentKtx                       : 'androidx.fragment:fragment-ktx:1.1.0',
+        supportActivity                   : "androidx.activity:activity:1.0.0", // https://developer.android.com/jetpack/androidx/releases/activity
+        activityKtx                       : "androidx.activity:activity-ktx:1.0.0",
         supportAppCompat                  : "androidx.appcompat:appcompat:1.1.0", // https://developer.android.com/jetpack/androidx/releases/appcompat
         appCompatResources                : "androidx.appcompat:appcompat-resources:1.1.0",
         supportCardView                   : "androidx.cardview:cardview:1.0.0",
