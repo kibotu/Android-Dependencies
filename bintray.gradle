@@ -1,47 +1,49 @@
-apply plugin: 'com.jfrog.bintray'
+if (project.rootProject.file('bintray.properties').exists()) {
 
+    apply plugin: 'com.jfrog.bintray'
 
-Properties properties = new Properties()
-properties.load(project.rootProject.file('bintray.properties').newDataInputStream())
+    Properties properties = new Properties()
+    properties.load(project.rootProject.file('bintray.properties').newDataInputStream())
 
-group = properties.getProperty('binrtray.group')
-version = simpleReleaseVersionName()
+    group = properties.getProperty('binrtray.group')
+    version = simpleReleaseVersionName()
 
 // https://github.com/bintray/gradle-bintray-plugin#buildgradle
 
-bintray {
+    bintray {
 
-    dryRun = false
+        dryRun = false
 
-    user = properties.getProperty('bintray.user')
+        user = properties.getProperty('bintray.user')
 
-    def bitrise = System.getenv("BINTRAY_APIKEY")
+        def bitrise = System.getenv("BINTRAY_APIKEY")
 
-    key = bitrise != null && bitrise?.length() > 0
-            ? System.getenv("BINTRAY_APIKEY")
-            : properties.getProperty('bintray.apikey')
+        key = bitrise != null && bitrise?.length() > 0
+                ? System.getenv("BINTRAY_APIKEY")
+                : properties.getProperty('bintray.apikey')
 
-    publish = true
+        publish = true
 
-    pkg {
-        repo = properties.getProperty('binrtray.repo')
-        name = properties.getProperty('binrtray.name')
-        userOrg = properties.getProperty('bintray.organization')
-        licenses = [properties.getProperty('bintray.licenses')]
-        vcsUrl = properties.getProperty('bintray.vcsUrl')
-        websiteUrl = properties.getProperty('bintray.websiteUrl')
-        publicDownloadNumbers = true
+        pkg {
+            repo = properties.getProperty('binrtray.repo')
+            name = properties.getProperty('binrtray.name')
+            userOrg = properties.getProperty('bintray.organization')
+            licenses = [properties.getProperty('bintray.licenses')]
+            vcsUrl = properties.getProperty('bintray.vcsUrl')
+            websiteUrl = properties.getProperty('bintray.websiteUrl')
+            publicDownloadNumbers = true
 
-        version {
-            name = simpleReleaseVersionName()
-            desc = properties.getProperty('bintray.version.desc')
-            released = new Date()
-            vcsTag = simpleReleaseVersionName()
+            version {
+                name = simpleReleaseVersionName()
+                desc = properties.getProperty('bintray.version.desc')
+                released = new Date()
+                vcsTag = simpleReleaseVersionName()
+            }
+
+            licenses = [properties.getProperty('bintray.licenses')]
+            vcsUrl = properties.getProperty('bintray.vcsUrl')
+            websiteUrl = properties.getProperty('bintray.websiteUrl')
         }
-
-        licenses = [properties.getProperty('bintray.licenses')]
-        vcsUrl = properties.getProperty('bintray.vcsUrl')
-        websiteUrl = properties.getProperty('bintray.websiteUrl')
+        configurations = ['archives']
     }
-    configurations = ['archives']
 }
