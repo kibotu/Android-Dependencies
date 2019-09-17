@@ -487,7 +487,7 @@ ext.libs = [
         androidFfmpeg                     : "nl.bravobit:android-ffmpeg:1.1.7",
         geolocator                        : "com.sprotte:Geolocator:1.1.1",
         parallaxScrollingView             : 'com.github.kibotu:ParallaxScrollingView:1.0.0',
-        resourceExtensions                : 'com.github.kibotu:AndroidResourceExtensions:1.2.1'
+        resourceExtensions                : 'com.github.kibotu:AndroidResourceExtensions:1.3.0'
 ]
 
 ext.testLibs = [
