@@ -355,8 +355,8 @@ ext.libs = [
         branchIoSdk                       : "io.branch.sdk.android:library:2.19.5",
         parallaxImageView                 : "it.dex.dexmovingimageview:dexmovingimageviewlib:0.1.0",
 
-        exoplayer                         : "com.google.android.exoplayer:exoplayer:2.9.5",
-        exoplayerCore                     : "com.google.android.exoplayer:exoplayer-core:2.9.6",
+        exoplayer                         : "com.google.android.exoplayer:exoplayer:2.10.4",
+        exoplayerCore                     : "com.google.android.exoplayer:exoplayer-core:2.10.4",
         gpuVideoAndroid                   : "com.github.MasayukiSuda:GPUVideo-android:v0.1.0",
         amazonExoplayer                   : "com.amazon.android:exoplayer:2.9.6",
         amazonExoplayerImaExtension       : "com.amazon.android:extension-ima:2.9.6",
@@ -375,7 +375,7 @@ ext.libs = [
         realmEncryptionHelper             : "com.github.tntkhang:realm-encryption-helper:1.0.1", // requires preferenceHelper
         preferencesHelper                 : "com.github.tntkhang:preferences-helper:1.0.0",
 
-        leakcanary2                       : "com.squareup.leakcanary:leakcanary-android:2.0-alpha-2",
+        leakcanary2                       : "com.squareup.leakcanary:leakcanary-android:2.0-beta-3",
         leakcanaryDebug                   : "com.squareup.leakcanary:leakcanary-android:1.6.3", // deprecated, use leakcanary2
         leakcanaryDebugSupportFragments   : "com.squareup.leakcanary:leakcanary-support-fragment:1.6.3", // deprecated, use leakcanary2
         leakcanaryRelease                 : "com.squareup.leakcanary:leakcanary-android-no-op:1.6.3", // deprecated, use leakcanary2
