@@ -191,9 +191,9 @@ ext.libs = [
         lifecycleRuntime                  : "androidx.lifecycle:lifecycle-runtime:2.2.0-alpha03",
         lifecycleRuntimeKtx               : "androidx.lifecycle:lifecycle-runtime-ktx:2.2.0-alpha03",
         lifecycleCommon                   : "androidx.lifecycle:lifecycle-common:2.2.0-alpha02", // Java8 support for Lifecycles
-        lifecycleCommonJava8              : "androidx.lifecycle:lifecycle-common-java8:2.2.0-alpha03", // Java8 support for Lifecycles
+        lifecycleCommonJava8              : "androidx.lifecycle:lifecycle-common-java8:2.1.0", // Java8 support for Lifecycles
         lifecycleRactiveStream            : "androidx.lifecycle:lifecycle-reactivestreams:2.2.0-alpha03", // ReactiveStreams support for LiveData
-        viewpager2                        : "androidx.viewpager2:viewpager2:1.0.0-beta03",
+        viewpager2                        : "androidx.viewpager2:viewpager2:1.0.0-beta04",
 
         // core
 
@@ -316,9 +316,9 @@ ext.libs = [
         adapterDelegate                   : "com.hannesdorfmann:adapterdelegates3:3.0.1",
 
         picasso                           : "com.squareup.picasso:picasso:2.71828",
-        glide                             : "com.github.bumptech.glide:glide:4.9.0",
-        glideAnnotationsProcessor         : "com.github.bumptech.glide:compiler:4.9.0",
-        glideOkHttp3                      : "com.github.bumptech.glide:okhttp3-integration:4.9.0",
+        glide                             : "com.github.bumptech.glide:glide:4.10.0",
+        glideAnnotationsProcessor         : "com.github.bumptech.glide:compiler:4.10.0",
+        glideOkHttp3                      : "com.github.bumptech.glide:okhttp3-integration:4.10.0",
         glideTransformations              : "jp.wasabeef:glide-transformations:4.0.1",
 
         gpuImageLibrary                   : "jp.co.cyberagent.android.gpuimage:gpuimage-library:1.4.1",
