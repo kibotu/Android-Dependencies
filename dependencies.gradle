@@ -273,9 +273,9 @@ ext.libs = [
         brainTree                         : "com.braintreepayments.api:drop-in:3.6.1",
         facebook                          : "com.facebook.android:facebook-android-sdk:4.42.0",
         conscryptAndroid                  : "org.conscrypt:conscrypt-android:2.1.0",
-        okhttp4                           : "com.squareup.okhttp3:okhttp:4.1.0",
+        okhttp4                           : "com.squareup.okhttp3:okhttp:4.2.0",
         okhttp3                           : "com.squareup.okhttp3:okhttp:3.14.1", // deprecated, use okhttp4
-        okhttp3LoggingInterceptor         : "com.squareup.okhttp3:logging-interceptor:4.1.0",
+        okhttp3LoggingInterceptor         : "com.squareup.okhttp3:logging-interceptor:4.2.0",
         okhttp3ResponseEcho               : "com.github.simonpercic:oklog3:2.3.0",
         javawriter                        : "com.squareup:javawriter:2.5.1",
         kotterknife                       : "com.jakewharton:kotterknife:0.1.0-SNAPSHOT", // deprecated, use kotlin synthetic imports instead
