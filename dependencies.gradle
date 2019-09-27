@@ -372,6 +372,7 @@ ext.libs = [
         cameraPri                         : "com.priyankvasa.android:cameraview-ex:3.2.0",
         cameraViewOtalias                 : "com.otaliastudios:cameraview:2.0.0-beta04",
         cameraView3                       : 'com.github.exozet:CameraView:v3.0.0',
+        simpleBarcodeScanner              : 'com.github.bobekos:SimpleBarcodeScanner:1.0.23',
         realmEncryptionHelper             : "com.github.tntkhang:realm-encryption-helper:1.0.1", // requires preferenceHelper
         preferencesHelper                 : "com.github.tntkhang:preferences-helper:1.0.0",
 
