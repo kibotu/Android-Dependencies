@@ -354,8 +354,9 @@ ext.libs = [
         branchIoSdk                       : "io.branch.sdk.android:library:2.+",
         parallaxImageView                 : "it.dex.dexmovingimageview:dexmovingimageviewlib:0.1.0",
 
-        exoplayer                         : 'com.google.android.exoplayer:exoplayer:2.9.5',
-        exoplayerCore                     : 'com.google.android.exoplayer:exoplayer-core:2.9.6',
+        exoplayer                         : 'com.google.android.exoplayer:exoplayer:2.10.5',
+        exoplayerCore                     : 'com.google.android.exoplayer:exoplayer-core:2.10.5',
+        exoplayerImaExtension             : 'com.google.android.exoplayer:extension-ima:2.7.3',
         gpuVideoAndroid                   : 'com.github.MasayukiSuda:GPUVideo-android:v0.1.0',
         amazonExoplayer                   : 'com.amazon.android:exoplayer:2.10.1',
         amazonExoplayerImaExtension       : 'com.amazon.android:extension-ima:2.10.1',
