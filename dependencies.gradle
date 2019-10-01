@@ -386,7 +386,7 @@ ext.libs = [
         commonUtils                       : "com.github.kibotu:common.android.utils:0.7.2", // deprecated, use exozetCore
         deviceInfo                        : "com.github.kibotu:net.kibotu.android.deviceinfo:2.0.0",
         recyclerViewPresenter             : "com.github.kibotu:RecyclerViewPresenter:3.2.1", // deprecated, use recyclerViewPresenter4
-        recyclerViewPresenter4            : "com.github.kibotu:RecyclerViewPresenter:4.6.0",
+        recyclerViewPresenter4            : "com.github.kibotu:RecyclerViewPresenter:4.7.0",
         googlePlayForceUpdate             : "com.github.kibotu:GooglePlayForceUpdate:1.0.8",
         timeBomb                          : "com.github.kibotu:TimeBomb:1.1.0",
         bloodHound                        : "com.github.kibotu:BloodHound:3.1.0",
