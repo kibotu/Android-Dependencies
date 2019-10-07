@@ -259,7 +259,7 @@ ext.libs = [
         crashlytics                       : "com.crashlytics.sdk.android:crashlytics:2.10.1@aar",
         processPhoenix                    : "com.jakewharton:process-phoenix:2.0.0",
         circleIndicator                   : "me.relex:circleindicator:2.0.0", // please use indefinitePagerIndicator instead, due being scalable
-        indefinitePagerIndicator          : "com.github.kibotu:Android-Indefinite-Pager-Indicator:2.1.1",
+        indefinitePagerIndicator          : "com.github.kibotu:Android-Indefinite-Pager-Indicator:2.1.2",
         smarttablayoutLib                 : "com.ogaclejapan.smarttablayout:library:1.6.1@aar",
         smartTablayoutUtils               : "com.ogaclejapan.smarttablayout:utils-v4:1.6.1@aar",
         fragmentViewpager                 : "com.sbrukhanda.fragmentviewpager:fragmentviewpager:1.0.0",
