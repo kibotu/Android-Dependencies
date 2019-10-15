@@ -39,7 +39,7 @@ ext.plugin = [
         // https://developers.google.com/android/guides/google-services-plugin
         gms                    : "com.google.gms:google-services:4.2.0",
         poeditor               : "be.lukin.poeditor:gradle:0.3.3",
-        realm                  : "io.realm:realm-gradle-plugin:5.15.0",
+        realm                  : "io.realm:realm-gradle-plugin:6.0.0",
         objectBox              : "io.objectbox:objectbox-gradle-plugin:2.3.4",
         ribbonizer             : "com.github.gfx.ribbonizer:ribbonizer-plugin:2.1.0",
         cipher                 : "net.idik.lib.security:cipher.so:0.0.4",
