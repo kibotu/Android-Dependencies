@@ -358,8 +358,8 @@ ext.libs = [
         exoplayerCore                     : 'com.google.android.exoplayer:exoplayer-core:2.10.5',
         exoplayerImaExtension             : 'com.google.android.exoplayer:extension-ima:2.7.3',
         gpuVideoAndroid                   : 'com.github.MasayukiSuda:GPUVideo-android:v0.1.0',
-        amazonExoplayer                   : 'com.amazon.android:exoplayer:2.9.6',
-        amazonExoplayerImaExtension       : 'com.amazon.android:extension-ima:2.9.6',
+        amazonExoplayer                   : 'com.amazon.android:exoplayer:2.10.1',
+        amazonExoplayerImaExtension       : 'com.amazon.android:extension-ima:2.10.1',
 
         mzip                              : 'com.github.ghost1372:Mzip-Android:0.4.0',
         numberprogressbar                 : 'com.daimajia.numberprogressbar:library:1.4@aar',
