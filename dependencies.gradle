@@ -349,8 +349,8 @@ ext.libs = [
 
         kalmanRx                          : "com.github.kibotu:KalmanRx:2.0.0",
         rxAndroid                         : "io.reactivex:rxandroid:1.2.1", // deprecated, use rx2
-        rx2java                           : "io.reactivex.rxjava2:rxjava:2.2.6",
-        rx2Android                        : "io.reactivex.rxjava2:rxandroid:2.1.0",
+        rx2java                           : "io.reactivex.rxjava2:rxjava:2.2.7",
+        rx2Android                        : "io.reactivex.rxjava2:rxandroid:2.1.1",
         rx2Kotlin                         : "io.reactivex.rxjava2:rxkotlin:2.3.0",
         scalableVideoView                 : "com.yqritc:android-scalablevideoview:1.0.4",
         branchIoSdk                       : "io.branch.sdk.android:library:2.19.5",
