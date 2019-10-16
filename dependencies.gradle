@@ -23,8 +23,8 @@ ext {
 }
 
 ext.plugin = [
-        gradleBuildTools       : "com.android.tools.build:gradle:3.5.0",
-        gradleBuildToolsCanary : "com.android.tools.build:gradle:3.5.0",
+        gradleBuildTools       : "com.android.tools.build:gradle:3.5.1",
+        gradleBuildToolsCanary : "com.android.tools.build:gradle:3.5.1",
         navigationSafeArgs     : "androidx.navigation:navigation-safe-args-gradle-plugin:2.1.0-alpha05",
         gradleRetroLambda      : "me.tatarka:gradle-retrolambda:3.7.0", // deprecated: use build:gradle:3
         lombok                 : "me.tatarka.retrolambda.projectlombok:lombok.ast:0.2.3.a2", // deprecated: use build:gradle:3
