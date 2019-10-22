@@ -36,6 +36,7 @@ ext.plugin = [
         dexcountGradle         : "com.getkeepsafe.dexcount:dexcount-gradle-plugin:0.8.6",
         kotlinAndroidExtensions: "org.jetbrains.kotlin:kotlin-android-extensions:$kotlinVersion",
         kotlinGradle           : "org.jetbrains.kotlin:kotlin-gradle-plugin:$kotlinVersion",
+        kotlinDokka            : "org.jetbrains.dokka:dokka-android-gradle-plugin:0.9.18",
         fabric                 : "io.fabric.tools:gradle:1.28.1",
         // https://developers.google.com/android/guides/google-services-plugin
         gms                    : "com.google.gms:google-services:4.2.0",
@@ -170,7 +171,7 @@ ext.libs = [
         firebaseCrash                     : "com.google.firebase:firebase-crash:16.2.1", // Crash Reporting
         firebaseAuth                      : "com.google.firebase:firebase-auth:17.0.0", // Authentication
         firebaseMessaging                 : "com.google.firebase:firebase-messaging:20.0.0",// Cloud Messaging
-        firebaseConfig                    : "com.google.firebase:firebase-config:17.0.0", // Remote Config
+        firebaseConfig                    : "com.google.firebase:firebase-config:19.0.3", // Remote Config
         firebaseInvites                   : "com.google.firebase:firebase-invites:17.0.0", // Invites and Dynamic Links
         firebaseAds                       : "com.google.firebase:firebase-ads:17.2.1", // AdMob
         firebaseAppindexing               : "com.google.firebase:firebase-appindexing:18.0.0", // App Indexing
