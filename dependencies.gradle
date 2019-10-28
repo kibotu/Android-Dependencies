@@ -498,7 +498,9 @@ ext.libs = [
         bottomSheetCoordinatorLayout      : 'com.github.kibotu:BottomSheetCoordinatorLayout:v1.1.3',
         disklrucache                      : 'com.jakewharton:disklrucache:2.0.2',
         coloredShadowImageView            : 'com.github.armcha:ColoredShadowImageView:1.1.0',
-        gravitySnaphelper                 : 'com.github.rubensousa:gravitysnaphelper:2.2.0'
+        gravitySnaphelper                 : 'com.github.rubensousa:gravitysnaphelper:2.2.0',
+        materialDateTimePicker            : 'com.wdullaer:materialdatetimepicker:4.2.1',
+        localeHelper                      : 'com.zeugmasolutions.localehelper:locale-helper-android:1.0.2'
 ]
 
 ext.testLibs = [
