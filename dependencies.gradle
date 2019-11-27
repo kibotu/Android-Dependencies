@@ -231,8 +231,16 @@ ext.libs = [
 
         // work
 
-        archWorkRuntime                   : "android.arch.work:work-runtime-ktx:1.0.1",
-        archWorkRxJava2                   : "android.arch.work:work-rxjava2:1.0.1",
+        archWorkRuntime                   : "android.arch.work:work-runtime-ktx:1.0.1", // deprecated use androidx
+        archWorkRxJava2                   : "android.arch.work:work-rxjava2:1.0.1", // deprecated use androidx
+
+        // https://developer.android.com/jetpack/androidx/releases/work
+
+        workRuntime                       : "androidx.work:work-runtime:2.2.0", // (Java only)
+        workRuntimeKtx                    : "androidx.work:work-runtime-ktx:2.2.0", // Kotlin + coroutines
+        workRxJava2                       : "androidx.work:work-rxjava2:2.2.0",  // optional - RxJava2 support
+        workGcm                           : "androidx.work:work-gcm:2.2.0", // optional - GCMNetworkManager support
+        workTesting                       : "androidx.work:work-testing:2.2.0",  // optional - Test helpers
 
         // tested libs
 
