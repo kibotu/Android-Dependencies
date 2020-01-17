@@ -74,7 +74,7 @@ ext.libs = [
 
         // https://developer.android.com/kotlin/ktx#modules
         androidKtx                        : 'androidx.core:core-ktx:1.2.0-rc01',
-        androidKtxFragment                : "androidx.fragment:fragment-ktx:1.2.0-rc5", // 	androidx.fragment.app
+        androidKtxFragment                : "androidx.fragment:fragment-ktx:1.2.0-rc05", // 	androidx.fragment.app
         androidKtxPalette                 : "androidx.palette:palette-ktx:1.0.0", // 	androidx.palette.graphics
         androidKtxSqlite                  : "androidx.sqlite:sqlite-ktx:2.0.0", // 	androidx.sqlite.db
         androidKtxCollection              : "androidx.collection:collection-ktx:1.1.0", // 	androidx.collection
