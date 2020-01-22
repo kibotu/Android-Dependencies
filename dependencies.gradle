@@ -374,9 +374,7 @@ ext.libs = [
         realmEncryptionHelper             : 'com.github.tntkhang:realm-encryption-helper:1.0.1', // requires preferenceHelper
         preferencesHelper                 : 'com.github.tntkhang:preferences-helper:1.0.0',
 
-        leakcanaryDebug                   : 'com.squareup.leakcanary:leakcanary-android:1.6.3',
-        leakcanaryDebugSupportFragments   : 'com.squareup.leakcanary:leakcanary-support-fragment:1.6.3',
-        leakcanaryRelease                 : 'com.squareup.leakcanary:leakcanary-android-no-op:1.6.3',
+        leakcanary                        : 'com.squareup.leakcanary:leakcanary-android:2.1',
 
         //exozetCore                        : 'com.exozet:core:3.0.9',
         exozetCore                        : "com.github.exozet:AndroidCore:3.1.0",
