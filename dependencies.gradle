@@ -149,7 +149,7 @@ ext.libs = [
         playServicesFitness               : "com.google.android.gms:play-services-fitness:16.0.1", // Google Fit
         playServicesLocation              : "com.google.android.gms:play-services-location:17.0.0", // Google Location and Activity Recognition
         playServicesMaps                  : "com.google.android.gms:play-services-maps:17.0.0", // Google Maps
-        playServicesMapsUtils             : "com.google.maps.android:android-maps-utils:0.5", // Google Maps
+        playServicesMapsUtils             : "com.google.maps.android:android-maps-utils:0.6.2", // Google Maps
         playServicesAds                   : "com.google.android.gms:play-services-ads:17.2.1", // Google Mobile Ads
         playServicesPlaces                : "com.google.android.gms:play-services-places:16.1.0", // Google Places
         playServicesVision                : "com.google.android.gms:play-services-vision:17.0.2", // Mobile Vision
@@ -416,7 +416,7 @@ ext.libs = [
         actionAnimations                  : "com.github.kibotu:AndroidAnimationsActions:1.0.7",
         androidPgp                        : "com.github.kibotu:Android-PGP:1.2.1",
         swipeDirectionViewPager           : "com.github.kibotu:SwipeDirectionViewPager:3.0.1",
-        logger                            : "com.github.kibotu:StreamingAndroidLogger:4.4.1",
+        logger                            : "com.github.kibotu:StreamingAndroidLogger:4.4.3",
 
         materialDialogs                   : "com.afollestad.material-dialogs:core:0.9.6.0",
 
