@@ -290,9 +290,9 @@ ext.libs = [
         brainTree                         : "com.braintreepayments.api:drop-in:3.6.1",
         facebook                          : "com.facebook.android:facebook-android-sdk:4.42.0",
         conscryptAndroid                  : "org.conscrypt:conscrypt-android:2.1.0",
-        okhttp4                           : "com.squareup.okhttp3:okhttp:4.2.0",
+        okhttp4                           : "com.squareup.okhttp3:okhttp:4.3.1",
         okhttp3                           : "com.squareup.okhttp3:okhttp:3.14.1", // deprecated, use okhttp4
-        okhttp3LoggingInterceptor         : "com.squareup.okhttp3:logging-interceptor:4.2.0",
+        okhttp3LoggingInterceptor         : "com.squareup.okhttp3:logging-interceptor:4.3.1",
         okhttp3ResponseEcho               : "com.github.simonpercic:oklog3:2.3.0",
         javawriter                        : "com.squareup:javawriter:2.5.1",
         kotterknife                       : "com.jakewharton:kotterknife:0.1.0-SNAPSHOT", // deprecated, use kotlin synthetic imports instead
@@ -351,15 +351,15 @@ ext.libs = [
         koinAndroidxScope                 : "org.koin:koin-androidx-scope:2.0.0",
         koinAndroidxViewmodel             : "org.koin:koin-androidx-viewmodel:2.0.0",
 
-        retrofit                          : "com.squareup.retrofit2:retrofit:2.6.1",
-        retrofitAdapterRxJava2            : "com.squareup.retrofit2:adapter-rxjava2:2.6.1",
-        retrofitConverterGson             : "com.squareup.retrofit2:converter-gson:2.6.1",
-        retrofitConverterMoshi            : "com.squareup.retrofit2:converter-moshi:2.6.1",
-        retrofitMock                      : "com.squareup.retrofit2:retrofit-mock:2.6.1",
-        converterScalars                  : "com.squareup.retrofit2:converter-scalars:2.6.1",
-        converterSimpleXml                : "com.squareup.retrofit2:converter-simplexml:2.6.1",
+        retrofit                          : "com.squareup.retrofit2:retrofit:2.7.1",
+        retrofitAdapterRxJava2            : "com.squareup.retrofit2:adapter-rxjava2:2.7.1",
+        retrofitConverterGson             : "com.squareup.retrofit2:converter-gson:2.7.1",
+        retrofitConverterMoshi            : "com.squareup.retrofit2:converter-moshi:2.7.1",
+        retrofitMock                      : "com.squareup.retrofit2:retrofit-mock:2.7.1",
+        converterScalars                  : "com.squareup.retrofit2:converter-scalars:2.7.1",
+        converterSimpleXml                : "com.squareup.retrofit2:converter-simplexml:2.7.1",
 
-        gson                              : "com.google.code.gson:gson:2.8.5",
+        gson                              : "com.google.code.gson:gson:2.8.6",
         moshiKotlin                       : "com.squareup.moshi:moshi-kotlin:1.8.0",
         moshiAdapters                     : "com.squareup.moshi:moshi-adapters:1.8.0",
 
