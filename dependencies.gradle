@@ -351,6 +351,8 @@ ext.libs = [
         koinAndroidxScope                 : "org.koin:koin-androidx-scope:2.0.0",
         koinAndroidxViewmodel             : "org.koin:koin-androidx-viewmodel:2.0.0",
 
+        conscrypt                         : "org.conscrypt:conscrypt-android:2.2.1",
+
         retrofit                          : "com.squareup.retrofit2:retrofit:2.7.1",
         retrofitAdapterRxJava2            : "com.squareup.retrofit2:adapter-rxjava2:2.7.1",
         retrofitConverterGson             : "com.squareup.retrofit2:converter-gson:2.7.1",
