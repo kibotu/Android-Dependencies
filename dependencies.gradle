@@ -3,15 +3,9 @@ ext {
 
     minSdkVer = 15
 
-    compileSdkVer = 28
-    buildToolsVer = '28.0.3'
-    targetSdkVer = 28
-
-    // https://android-developers.googleblog.com/2019/03/introducing-android-q-beta.html
-    // https://developer.android.com/preview/migration.html
-    compileSdkVerQ = 'android-Q'
-    buildToolsVerQ = '29.0.0-rc1'
-    targetSdkVerQ = 'android-Q'
+    compileSdkVer = 29
+    buildToolsVer = '29.0.3'
+    targetSdkVer = 29
 
     // @see https://mvnrepository.com/artifact/org.jetbrains.kotlin/kotlin-stdlib-jdk8
     kotlinVersion = '1.3.61'
@@ -29,7 +23,7 @@ ext {
 }
 
 ext.plugin = [
-        gradleBuildTools       : 'com.android.tools.build:gradle:3.5.0',
+        gradleBuildTools       : 'com.android.tools.build:gradle:3.5.3',
         gradleBuildToolsAlpha  : 'com.android.tools.build:gradle:3.4.0-alpha10',
         gradleBuildToolsCanary : 'com.android.tools.build:gradle:3.5.0-alpha11',
         gradleRetroLambda      : 'me.tatarka:gradle-retrolambda:3.7.0', // deprecated: use build:gradle:3
