@@ -46,6 +46,7 @@ ext.plugin = [
         buildTimeTracker       : 'net.rdrei.android.buildtimetracker:gradle-plugin:0.11.0',
         imgOptimizer           : 'com.chenenyu:img-optimizer:1.1.1',
         buildScanPlugin        : 'com.gradle:build-scan-plugin:2.1',
+        kotlinDokka            : "org.jetbrains.dokka:dokka-android-gradle-plugin:0.9.18"
 ]
 
 //plugins needed when developing a library project
@@ -67,7 +68,7 @@ ext.libs = [
         kotlinxCoroutinesAndroid          : 'org.jetbrains.kotlinx:kotlinx-coroutines-android:1.1.1',
 
         // https://developer.android.com/kotlin/ktx#modules
-        androidKtx                        : 'androidx.core:core-ktx:1.2.0-rc01',
+        androidKtxCore                    : 'androidx.core:core-ktx:1.2.0-rc01',
         androidKtxFragment                : "androidx.fragment:fragment-ktx:1.2.0-rc05", // 	androidx.fragment.app
         androidKtxPalette                 : "androidx.palette:palette-ktx:1.0.0", // 	androidx.palette.graphics
         androidKtxSqlite                  : "androidx.sqlite:sqlite-ktx:2.0.0", // 	androidx.sqlite.db
@@ -489,6 +490,7 @@ ext.androidTestLibs = [
 
         // Core library
         testCore              : "androidx.test:core:1.2.0",
+        coreTesting           : "android.arch.core:core-testing:1.1.1",
 
         // AndroidJUnitRunner and JUnit Rules
         espressoRunner        : "androidx.test:runner:1.2.0",
