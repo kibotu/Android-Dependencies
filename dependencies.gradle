@@ -71,7 +71,7 @@ ext.libs = [
         kotlinxCoroutinesAndroid          : "org.jetbrains.kotlinx:kotlinx-coroutines-android:1.3.2",
 
         // https://developer.android.com/kotlin/ktx#modules
-        androidKtxCore                    : "androidx.core:core-ktx:1.1.0",
+        androidKtxCore                    : "androidx.core:core-ktx:1.2.0",
         androidKtxPalette                 : "androidx.palette:palette-ktx:1.0.0", // 	androidx.palette.graphics
         androidKtxSqlite                  : "androidx.sqlite:sqlite-ktx:2.0.1", // 	androidx.sqlite.db
         androidKtxCollection              : "androidx.collection:collection-ktx:1.1.0", // 	androidx.collection
@@ -120,7 +120,7 @@ ext.libs = [
         supportAnimatedVectorDrawable     : "androidx.vectordrawable:vectordrawable-animated:1.1.0-beta02",
         supportAnnotations                : "androidx.annotation:annotation:1.1.0",
         supportDesign                     : "com.google.android.material:material:1.1.0-alpha09",
-        material                          : "com.google.android.material:material:1.2.0-alpha02",
+        material                          : "com.google.android.material:material:1.1.0",
         supportCustomTabs                 : "androidx.browser:browser:1.2.0",
         supportPercent                    : "androidx.percentlayout:percentlayout:1.0.0",
         supportExifInterface              : "androidx.exifinterface:exifinterface:1.0.0",
@@ -200,7 +200,7 @@ ext.libs = [
         lifecycleRuntime                  : "androidx.lifecycle:lifecycle-runtime:2.2.0-alpha03",
         lifecycleCommon                   : "androidx.lifecycle:lifecycle-common:2.2.0-alpha02", // Java8 support for Lifecycles
         lifecycleRactiveStream            : "androidx.lifecycle:lifecycle-reactivestreams:2.2.0-alpha03", // ReactiveStreams support for LiveData
-        viewpager2                        : "androidx.viewpager2:viewpager2:1.0.0-beta04",
+        viewpager2                        : "androidx.viewpager2:viewpager2:1.0.0",
 
         // core
 
@@ -367,7 +367,7 @@ ext.libs = [
 
         kalmanRx                          : "com.github.kibotu:KalmanRx:2.0.0",
         rxAndroid                         : "io.reactivex:rxandroid:1.2.1", // deprecated, use rx2
-        rx2java                           : "io.reactivex.rxjava2:rxjava:2.2.7",
+        rx2java                           : "io.reactivex.rxjava2:rxjava:2.2.17",
         rx2Android                        : "io.reactivex.rxjava2:rxandroid:2.1.1",
         rx2Kotlin                         : "io.reactivex.rxjava2:rxkotlin:2.3.0",
         scalableVideoView                 : "com.yqritc:android-scalablevideoview:1.0.4",
