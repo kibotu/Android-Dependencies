@@ -26,20 +26,20 @@ ext {
 ext.plugin = [
         gradleBuildTools       : "com.android.tools.build:gradle:3.5.3",
         gradleBuildToolsCanary : "com.android.tools.build:gradle:3.5.3",
-        navigationSafeArgs     : "androidx.navigation:navigation-safe-args-gradle-plugin:2.1.0-alpha05",
+        navigationSafeArgs     : "androidx.navigation:navigation-safe-args-gradle-plugin:2.2.1",
         gradleRetroLambda      : "me.tatarka:gradle-retrolambda:3.7.0", // deprecated: use build:gradle:3
         lombok                 : "me.tatarka.retrolambda.projectlombok:lombok.ast:0.2.3.a2", // deprecated: use build:gradle:3
         androidApt             : "com.neenbedankt.gradle.plugins:android-apt:1.8", // deprecated: use build:gradle:3
         kotlinApt              : "org.jetbrains.kotlin.kapt:org.jetbrains.kotlin.kapt.gradle.plugin:$kotlinVersion",
         hockeyApp              : "de.felixschulze.gradle:gradle-hockeyapp-plugin:3.6",
-        rocketLauncher         : "com.cesarferreira:android-rocket-launcher:0.2.3",
+        rocketLauncher         : "com.cesarferreira:android-rocket-launcher:0.9.1",
         dexcountGradle         : "com.getkeepsafe.dexcount:dexcount-gradle-plugin:0.8.6",
         kotlinAndroidExtensions: "org.jetbrains.kotlin:kotlin-android-extensions:$kotlinVersion",
         kotlinGradle           : "org.jetbrains.kotlin:kotlin-gradle-plugin:$kotlinVersion",
         kotlinDokka            : "org.jetbrains.dokka:dokka-android-gradle-plugin:0.9.18",
         fabric                 : "io.fabric.tools:gradle:1.28.1",
         // https://developers.google.com/android/guides/google-services-plugin
-        gms                    : "com.google.gms:google-services:4.2.0",
+        gms                    : "com.google.gms:google-services:4.3.3",
         poeditor               : "be.lukin.poeditor:gradle:0.3.3",
         realm                  : "io.realm:realm-gradle-plugin:6.1.0",
         realmBeta              : "io.realm:realm-gradle-plugin:7.0.0-beta-SNAPSHOT",
@@ -65,16 +65,16 @@ ext.libs = [
         kotlin                            : "org.jetbrains.kotlin:kotlin-stdlib:$kotlinVersion",
         kotlinJdk7                        : "org.jetbrains.kotlin:kotlin-stdlib-jdk7:$kotlinVersion",
         kotlinJdk8                        : "org.jetbrains.kotlin:kotlin-stdlib-jdk8:$kotlinVersion",
-        kotlinxCoroutinesCore             : "org.jetbrains.kotlinx:kotlinx-coroutines-core:1.3.2",
-        kotlinxCoroutinesAndroid          : "org.jetbrains.kotlinx:kotlinx-coroutines-android:1.3.2",
+        kotlinxCoroutinesCore             : "org.jetbrains.kotlinx:kotlinx-coroutines-core:1.3.3",
+        kotlinxCoroutinesAndroid          : "org.jetbrains.kotlinx:kotlinx-coroutines-android:1.3.3",
 
         // https://developer.android.com/kotlin/ktx#modules
         androidKtxCore                    : "androidx.core:core-ktx:1.2.0",
         androidKtxPalette                 : "androidx.palette:palette-ktx:1.0.0", // 	androidx.palette.graphics
-        androidKtxSqlite                  : "androidx.sqlite:sqlite-ktx:2.0.1", // 	androidx.sqlite.db
+        androidKtxSqlite                  : "androidx.sqlite:sqlite-ktx:2.1.0", // 	androidx.sqlite.db
         androidKtxCollection              : "androidx.collection:collection-ktx:1.1.0", // 	androidx.collection
         androidKtxLifecycleViewmodel      : "androidx.lifecycle:lifecycle-viewmodel-ktx:2.2.0", // 	androidx.viewmodel
-        androidKtxLifecycleReactiveStreams: "androidx.lifecycle:lifecycle-reactivestreams-ktx:2.2.0-alpha01", // 	androidx.lifecycle
+        androidKtxLifecycleReactiveStreams: "androidx.lifecycle:lifecycle-reactivestreams-ktx:2.2.0", // 	androidx.lifecycle
 
         androidKtxNavigationCommon        : "androidx.navigation:navigation-common-ktx:2.2.1", // 	androidx.navigation
         androidKtxNavigationFragment      : "androidx.navigation:navigation-fragment-ktx:2.2.1", // 	androidx.navigation.fragment
@@ -82,8 +82,8 @@ ext.libs = [
         androidKtxNavigationRuntime       : "androidx.navigation:navigation-runtime-ktx:2.2.1", // 	androidx.navigation
 
         // https://developer.android.com/jetpack/androidx/releases/navigation
-        navigationFragment                : "androidx.navigation:navigation-fragment:2.1.0-alpha05",
-        navigationUI                      : "androidx.navigation:navigation-ui:2.1.0-alpha05",
+        navigationFragment                : "androidx.navigation:navigation-fragment:2.2.1",
+        navigationUI                      : "androidx.navigation:navigation-ui:2.2.1",
 
         // support libraries
         // https://developer.android.com/topic/libraries/support-library/revisions.html
@@ -92,34 +92,34 @@ ext.libs = [
 
         supportMultidex                   : "androidx.multidex:multidex:2.0.1",
 
-        supportFragment                   : "androidx.fragment:fragment:1.1.0-alpha08", // https://developer.android.com/jetpack/androidx/releases/fragment
+        supportFragment                   : "androidx.fragment:fragment:1.2.1", // https://developer.android.com/jetpack/androidx/releases/fragment
         fragmentKtx                       : "androidx.fragment:fragment-ktx:1.2.1",
-        supportActivity                   : "androidx.activity:activity:1.0.0-alpha08", // https://developer.android.com/jetpack/androidx/releases/activity
+        supportActivity                   : "androidx.activity:activity:1.1.0", // https://developer.android.com/jetpack/androidx/releases/activity
         activityKtx                       : "androidx.activity:activity-ktx:1.1.0",
         supportAppCompat                  : "androidx.appcompat:appcompat:1.1.0", // https://developer.android.com/jetpack/androidx/releases/appcompat
         appCompatResources                : "androidx.appcompat:appcompat-resources:1.1.0",
-        supportDrawerLayout               : "androidx.drawerlayout:drawerlayout:1.1.0-alpha02",
+        supportDrawerLayout               : "androidx.drawerlayout:drawerlayout:1.0.0",
         swipeRefreshLayout                : "androidx.swiperefreshlayout:swiperefreshlayout:1.0.0",
         supportMedia                      : "androidx.media:media:1.1.0",
         supportCardView                   : "androidx.cardview:cardview:1.0.0",
         supportGridLayout                 : "androidx.gridlayout:gridlayout:1.0.0",
-        supportMediaRouter                : "androidx.mediarouter:mediarouter:1.1.0-beta01",
+        supportMediaRouter                : "androidx.mediarouter:mediarouter:1.1.0",
         supportPalette                    : "androidx.palette:palette:1.0.0",
         supportRecyclerview               : "androidx.recyclerview:recyclerview:1.1.0",
-        supportPreferenceV7               : "androidx.preference:preference:1.1.0-alpha05",
+        supportPreferenceV7               : "androidx.preference:preference:1.1.0",
         supportPreferenceV14              : "androidx.legacy:legacy-preference-v14:1.0.0",
         supportV13                        : "androidx.legacy:legacy-support-v13:1.0.0",
         supportV4                         : "androidx.legacy:legacy-support-v4:1.0.0",
-        supportPreferenceLeanback         : "androidx.leanback:leanback-preference:1.1.0-alpha02",
-        supportLeanback                   : "androidx.leanback:leanback:1.1.0-alpha02",
+        supportPreferenceLeanback         : 'androidx.leanback:leanback-preference:1.1.0-alpha03',
+        supportLeanback                   : "androidx.leanback:leanback:1.1.0-alpha03",
         supportVectorDrawable             : "androidx.vectordrawable:vectordrawable:1.1.0",
-        supportAnimatedVectorDrawable     : "androidx.vectordrawable:vectordrawable-animated:1.1.0-beta02",
+        supportAnimatedVectorDrawable     : "androidx.vectordrawable:vectordrawable-animated:1.1.0",
         supportAnnotations                : "androidx.annotation:annotation:1.1.0",
-        supportDesign                     : "com.google.android.material:material:1.1.0-alpha09", // deprecated: use materials
+        supportDesign                     : "com.google.android.material:material:1.2.0-alpha04", // deprecated: use materials
         material                          : "com.google.android.material:material:1.1.0",
         supportCustomTabs                 : "androidx.browser:browser:1.2.0",
         supportPercent                    : "androidx.percentlayout:percentlayout:1.0.0",
-        supportExifInterface              : "androidx.exifinterface:exifinterface:1.0.0",
+        supportExifInterface              : "androidx.exifinterface:exifinterface:1.1.0",
         supportRecommendation             : "androidx.recommendation:recommendation:1.0.0",
         supportWear                       : "androidx.wear:wear:1.0.0",
         constraintLayoutSolver            : "androidx.constraintlayout:constraintlayout-solver:1.1.3", // deprecated use constraintLayout2
@@ -128,57 +128,57 @@ ext.libs = [
         supportCoreUtils                  : "androidx.legacy:legacy-support-core-utils:1.0.0",
         supportCoreUi                     : "androidx.legacy:legacy-support-core-ui:1.0.0",
         supportDynamicAnimation           : "androidx.dynamicanimation:dynamicanimation:1.0.0",
-        autoValueAnnotations              : "com.google.auto.value:auto-value-annotations:1.6.5",
+        autoValueAnnotations              : "com.google.auto.value:auto-value-annotations:1.7",
 
         // google play services
         // https://developers.google.com/android/guides/setup
 
-        playServicesPlus                  : "com.google.android.gms:play-services-plus:16.0.0", // Google+
+        playServicesPlus                  : "com.google.android.gms:play-services-plus:17.0.0", // Google+
         playServicesAuth                  : "com.google.android.gms:play-services-auth:17.0.0", // Google Account Login
-        playServicesBase                  : "com.google.android.gms:play-services-base:16.1.0", // Google Actions Base Client Library
-        playServicesIdentity              : "com.google.android.gms:play-services-identity:16.0.0", // Google Sign In
-        playServicesAnalytics             : "com.google.android.gms:play-services-analytics:16.0.8", // Google Analytics
-        playServicesAwareness             : "com.google.android.gms:play-services-awareness:16.0.0", // Google Awareness
-        playServicesCast                  : "com.google.android.gms:play-services-cast:16.2.0", // Google Cast
-        playServicesGcm                   : "com.google.android.gms:play-services-gcm:16.1.0", // Google Cloud Messaging
-        playServicesDrive                 : "com.google.android.gms:play-services-drive:16.1.0", // Google Drive
-        playServicesFitness               : "com.google.android.gms:play-services-fitness:16.0.1", // Google Fit
+        playServicesBase                  : "com.google.android.gms:play-services-base:17.1.0", // Google Actions Base Client Library
+        playServicesIdentity              : "com.google.android.gms:play-services-identity:17.0.0", // Google Sign In
+        playServicesAnalytics             : "com.google.android.gms:play-services-analytics:17.0.0", // Google Analytics
+        playServicesAwareness             : "com.google.android.gms:play-services-awareness:18.0.0", // Google Awareness
+        playServicesCast                  : "com.google.android.gms:play-services-cast:18.0.0", // Google Cast
+        playServicesGcm                   : "com.google.android.gms:play-services-gcm:17.0.0", // Google Cloud Messaging
+        playServicesDrive                 : "com.google.android.gms:play-services-drive:17.0.0", // Google Drive
+        playServicesFitness               : "com.google.android.gms:play-services-fitness:18.0.0", // Google Fit
         playServicesLocation              : "com.google.android.gms:play-services-location:17.0.0", // Google Location and Activity Recognition
         playServicesMaps                  : "com.google.android.gms:play-services-maps:17.0.0", // Google Maps
         playServicesMapsUtils             : "com.google.maps.android:android-maps-utils:0.6.2", // Google Maps
         playServicesMapsUtilsv3           : "com.google.maps.android:android-maps-utils-sdk-v3-compat:0.1", // Google Maps
-        playServicesAds                   : "com.google.android.gms:play-services-ads:17.2.1", // Google Mobile Ads
-        playServicesPlaces                : "com.google.android.gms:play-services-places:16.1.0", // Google Places
-        playServicesVision                : "com.google.android.gms:play-services-vision:17.0.2", // Mobile Vision
-        playServicesNearby                : "com.google.android.gms:play-services-nearby:16.0.0", // Google Nearby
+        playServicesAds                   : "com.google.android.gms:play-services-ads:18.3.0", // Google Mobile Ads
+        playServicesPlaces                : "com.google.android.gms:play-services-places:17.0.0", // Google Places
+        playServicesVision                : "com.google.android.gms:play-services-vision:19.0.0", // Mobile Vision
+        playServicesNearby                : "com.google.android.gms:play-services-nearby:17.0.0", // Google Nearby
         playServicesPanorama              : "com.google.android.gms:play-services-panorama:17.0.0", // Google Panorama Viewer
-        playServicesGames                 : "com.google.android.gms:play-services-games:17.0.0", // Google Play Game services
-        playServicesSafetynet             : "com.google.android.gms:play-services-safetynet:16.0.0", // SafetyNet
-        playServicesWallet                : "com.google.android.gms:play-services-wallet:16.0.1", // Android Pay
-        playServicesWearable              : "com.google.android.gms:play-services-wearable:16.0.1", // Wear OS by Google
-        playServicesCore                  : "com.google.android.play:core", // in app-updates
+        playServicesGames                 : "com.google.android.gms:play-services-games:19.0.0", // Google Play Game services
+        playServicesSafetynet             : "com.google.android.gms:play-services-safetynet:17.0.0", // SafetyNet
+        playServicesWallet                : "com.google.android.gms:play-services-wallet:18.0.0", // Android Pay
+        playServicesWearable              : "com.google.android.gms:play-services-wearable:17.0.0", // Wear OS by Google
+        playServicesCore                  : "com.google.android.play:core:1.6.5", // in app-updates
 
         // firebase
         // https://firebase.google.com/docs/android/setup
         // https://firebase.google.com/support/release-notes/android
 
-        firebaseIid                       : "com.google.firebase:firebase-iid:18.0.0",
-        firebaseCommon                    : "com.google.firebase:firebase-common:17.1.0",
+        firebaseIid                       : "com.google.firebase:firebase-iid:20.0.2",
+        firebaseCommon                    : "com.google.firebase:firebase-common:19.3.0",
         firebaseCore                      : "com.google.firebase:firebase-core:17.2.2", // Analytics
-        firebaseDatabase                  : "com.google.firebase:firebase-database:19.0.0", // Realtime Database
-        firebaseFirestore                 : "com.google.firebase:firebase-firestore:19.0.2", // Cloud Firestore
-        firebaseStorage                   : "com.google.firebase:firebase-storage:17.0.0", // Storage
+        firebaseDatabase                  : "com.google.firebase:firebase-database:19.2.1", // Realtime Database
+        firebaseFirestore                 : "com.google.firebase:firebase-firestore:21.4.0", // Cloud Firestore
+        firebaseStorage                   : "com.google.firebase:firebase-storage:19.1.1", // Storage
         firebaseCrash                     : "com.google.firebase:firebase-crash:16.2.1", // Crash Reporting
-        firebaseAuth                      : "com.google.firebase:firebase-auth:17.0.0", // Authentication
-        firebaseMessaging                 : "com.google.firebase:firebase-messaging:20.1.0",// Cloud Messaging
+        firebaseAuth                      : "com.google.firebase:firebase-auth:19.2.0", // Authentication
+        firebaseMessaging                 : "com.google.firebase:firebase-messaging:20.1.0", // Cloud Messaging
         firebaseConfig                    : "com.google.firebase:firebase-config:19.1.1", // Remote Config
         firebaseInvites                   : "com.google.firebase:firebase-invites:17.0.0", // Invites and Dynamic Links
-        firebaseAds                       : "com.google.firebase:firebase-ads:17.2.1", // AdMob
-        firebaseAppindexing               : "com.google.firebase:firebase-appindexing:18.0.0", // App Indexing
-        firebasePerf                      : "com.google.firebase:firebase-perf:17.0.2", // Performance Monitoring
-        firebaseFunctions                 : "com.google.firebase:firebase-functions:17.0.0", // Cloud Functions for Firebase Client SDK
-        firebaseMlVision                  : "com.google.firebase:firebase-ml-vision:21.0.0", //	ML Kit (Vision)
-        firebaseMlModelInterpreter        : "com.google.firebase:firebase-ml-model-interpreter:19.0.0", // 	ML Kit (Custom Model)
+        firebaseAds                       : "com.google.firebase:firebase-ads:18.3.0", // AdMob
+        firebaseAppindexing               : "com.google.firebase:firebase-appindexing:19.1.0", // App Indexing
+        firebasePerf                      : "com.google.firebase:firebase-perf:19.0.5", // Performance Monitoring
+        firebaseFunctions                 : "com.google.firebase:firebase-functions:19.0.2", // Cloud Functions for Firebase Client SDK
+        firebaseMlVision                  : "com.google.firebase:firebase-ml-vision:24.0.1", //	ML Kit (Vision)
+        firebaseMlModelInterpreter        : "com.google.firebase:firebase-ml-model-interpreter:22.0.1", // 	ML Kit (Custom Model)
 
         // architecture components
         // https://developer.android.com/topic/libraries/architecture/adding-components
@@ -190,26 +190,26 @@ ext.libs = [
         lifecycleLivedataKtx              : "androidx.lifecycle:lifecycle-livedata-ktx:2.2.0", // alternatively just LiveData
         lifecycleExtensions               : "androidx.lifecycle:lifecycle-extensions:2.2.0", // ViewModel and LiveData
 
-        lifecycleViewmodel                : "androidx.lifecycle:lifecycle-viewmodel:2.2.0-alpha03", // alternatively just ViewModel
-        lifecycleLivedata                 : "androidx.lifecycle:lifecycle-livedata:2.2.0-alpha03", // alternatively just LiveData
-        lifecycleLivedataCore             : "androidx.lifecycle:lifecycle-livedata-core:2.0.0",
-        lifecycleCompiler                 : "androidx.lifecycle:lifecycle-compiler:2.2.0-rc03",
-        lifecycleRuntime                  : "androidx.lifecycle:lifecycle-runtime:2.2.0-alpha03",
-        lifecycleCommon                   : "androidx.lifecycle:lifecycle-common:2.2.0-alpha02", // Java8 support for Lifecycles
-        lifecycleRactiveStream            : "androidx.lifecycle:lifecycle-reactivestreams:2.2.0-alpha03", // ReactiveStreams support for LiveData
+        lifecycleViewmodel                : "androidx.lifecycle:lifecycle-viewmodel:2.2.0", // alternatively just ViewModel
+        lifecycleLivedata                 : "androidx.lifecycle:lifecycle-livedata:2.2.0", // alternatively just LiveData
+        lifecycleLivedataCore             : "androidx.lifecycle:lifecycle-livedata-core:2.2.0",
+        lifecycleCompiler                 : "androidx.lifecycle:lifecycle-compiler:2.2.0",
+        lifecycleRuntime                  : "androidx.lifecycle:lifecycle-runtime:2.2.0",
+        lifecycleCommon                   : "androidx.lifecycle:lifecycle-common:2.2.0", // Java8 support for Lifecycles
+        lifecycleRactiveStream            : "androidx.lifecycle:lifecycle-reactivestreams:2.2.0", // ReactiveStreams support for LiveData
         viewpager2                        : "androidx.viewpager2:viewpager2:1.0.0",
 
         // core
 
-        archCoreCommon                    : "androidx.arch.core:core-common:2.0.0",
-        archCoreTesting                   : "androidx.arch.core:core-testing:2.0.0",
+        archCoreCommon                    : "androidx.arch.core:core-common:2.1.0",
+        archCoreTesting                   : "androidx.arch.core:core-testing:2.1.0",
         archCore                          : "androidx.arch.core:core:2.0.0-alpha1",
-        archCoreRuntime                   : "androidx.arch.core:core-runtime:2.0.1-alpha01",
+        archCoreRuntime                   : "androidx.arch.core:core-runtime:2.1.0",
 
         // paging
 
-        pagingCommon                      : "androidx.paging:paging-common:2.1.0", // Paging
-        pagingRuntime                     : "androidx.paging:paging-runtime:2.1.0", // Paging
+        pagingCommon                      : "androidx.paging:paging-common:2.1.1", // Paging
+        pagingRuntime                     : "androidx.paging:paging-runtime:2.1.1", // Paging
         pagingRuntimeKtx                  : "androidx.paging:paging-runtime-ktx:2.1.1", // Paging
 
         // room
@@ -231,9 +231,9 @@ ext.libs = [
         // https://developer.android.com/jetpack/androidx/releases/work
 
         workRuntimeKtx                    : "androidx.work:work-runtime-ktx:2.3.1", // Kotlin + coroutines
-        workRxJava2                       : "androidx.work:work-rxjava2:2.2.0",  // optional - RxJava2 support
-        workGcm                           : "androidx.work:work-gcm:2.2.0", // optional - GCMNetworkManager support
-        workTesting                       : "androidx.work:work-testing:2.2.0",  // optional - Test helpers
+        workRxJava2                       : "androidx.work:work-rxjava2:2.3.1",  // optional - RxJava2 support
+        workGcm                           : "androidx.work:work-gcm:2.3.1", // optional - GCMNetworkManager support
+        workTesting                       : "androidx.work:work-testing:2.3.1",  // optional - Test helpers
 
         // tested libs
 
@@ -277,7 +277,7 @@ ext.libs = [
         currencyEditText                  : "com.github.blackcat27:library:1.4.4-SNAPSHOT",
         brainTree                         : "com.braintreepayments.api:drop-in:3.6.1",
         facebook                          : "com.facebook.android:facebook-android-sdk:4.42.0",
-        conscryptAndroid                  : "org.conscrypt:conscrypt-android:2.1.0",
+        conscryptAndroid                  : "org.conscrypt:conscrypt-android:2.2.1",
         okhttp4                           : "com.squareup.okhttp3:okhttp:4.3.1",
         okhttp3                           : "com.squareup.okhttp3:okhttp:3.14.1", // deprecated, use okhttp4
         okhttp3LoggingInterceptor         : "com.squareup.okhttp3:logging-interceptor:4.3.1",
@@ -294,7 +294,7 @@ ext.libs = [
         numberPicker                      : "com.shawnlin:number-picker:1.0.1",
         adjust                            : "com.adjust.sdk:adjust-android:4.10.2",
         facebookCore                      : "com.facebook.android:facebook-core:4.31.0",
-        tealium                           : "com.tealium:library:5.5.4",
+        tealium                           : "com.tealium:library:5.6.1",
         hawk                              : "com.orhanobut:hawk:2.0.1",
 
         htextviewBase                     : "com.hanks:htextview-base:0.1.2",
@@ -331,10 +331,10 @@ ext.libs = [
 
         mosbyMvi                          : "com.hannesdorfmann.mosby3:mvi:3.1.1",
 
-        dagger                            : "com.google.dagger:dagger:2.21",
-        daggerAndroidSupport              : "com.google.dagger:dagger-android-support:2.21",
-        daggerAndroidProcessor            : "com.google.dagger:dagger-android-processor:2.21",
-        daggerCompiler                    : "com.google.dagger:dagger-compiler:2.21", // deprecated use dagger android processor
+        dagger                            : "com.google.dagger:dagger:2.26",
+        daggerAndroidSupport              : "com.google.dagger:dagger-android-support:2.26",
+        daggerAndroidProcessor            : "com.google.dagger:dagger-android-processor:2.26",
+        daggerCompiler                    : "com.google.dagger:dagger-compiler:2.26", // deprecated use dagger android processor
 
         koinAndroidxScope                 : "org.koin:koin-androidx-scope:2.0.0",
         koinAndroidxViewmodel             : "org.koin:koin-androidx-viewmodel:2.0.0",
