@@ -489,7 +489,7 @@ ext.testLibs = [
         jsonAssert                  : "org.skyscreamer:jsonassert:1.5.0",
         jsonUnit                    : "net.javacrumbs.json-unit:json-unit:2.8.1",
         jsonUnitFluent              : "net.javacrumbs.json-unit:json-unit-fluent:2.8.1",
-        robolectric                 : "org.robolectric:robolectric:4.3",
+        robolectric                 : "org.robolectric:robolectric:4.3.1",
         robolectricSnapshot         : "org.robolectric:robolectric:4.test:core4-SNAPSHOT",
         robolectricShadowsMultidex  : "org.robolectric:shadows-multidex:4.1",
         robolectricResources        : "org.robolectric:robolectric-resources:3.3.2",
