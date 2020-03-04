@@ -208,15 +208,15 @@ ext.libs = [
 
         // room
 
-        roomKtx                           : "androidx.room:room-ktx:2.2.3",
-        roomRuntime                       : "androidx.room:room-runtime:2.2.3",
-        roomCompiler                      : "androidx.room:room-compiler:2.2.3",
-        roomCommon                        : "androidx.room:room-common:2.2.3",
-        roomGuava                         : "androidx.room:room-guava:2.2.3",
-        roomMigration                     : "androidx.room:room-migration:2.2.3",
+        roomKtx                           : "androidx.room:room-ktx:2.2.4",
+        roomRuntime                       : "androidx.room:room-runtime:2.2.4",
+        roomCompiler                      : "androidx.room:room-compiler:2.2.4",
+        roomCommon                        : "androidx.room:room-common:2.2.4",
+        roomGuava                         : "androidx.room:room-guava:2.2.4",
+        roomMigration                     : "androidx.room:room-migration:2.2.4",
         roomCoroutines                    : "androidx.room:room-coroutines:2.1.0-alpha04",
-        roomRxjava2                       : "androidx.room:room-rxjava2:2.2.3",
-        roomTesting                       : "androidx.room:room-testing:2.2.3",
+        roomRxjava2                       : "androidx.room:room-rxjava2:2.2.4",
+        roomTesting                       : "androidx.room:room-testing:2.2.4",
         sqliteFramework                   : "androidx.sqlite:sqlite-framework:2.1.0",
         sqlite                            : "androidx.sqlite:sqlite:2.1.0",
 
@@ -481,7 +481,9 @@ ext.libs = [
         gravitySnaphelper                 : 'com.github.rubensousa:gravitysnaphelper:2.2.0',
         materialDateTimePicker            : 'com.wdullaer:materialdatetimepicker:4.2.1',
         localeHelper                      : 'com.zeugmasolutions.localehelper:locale-helper-android:1.0.2',
-        androidProgressView               : 'com.github.JastAir:Android-ProgressView:0.1'
+        androidProgressView               : 'com.github.JastAir:Android-ProgressView:0.1',
+
+        dropboxStore                      : "com.dropbox.mobile.store:store4:4.0.0-alpha03"
 ]
 
 ext.testLibs = [
