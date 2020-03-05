@@ -108,7 +108,7 @@ ext.libs = [
         supportVectorDrawable             : "androidx.vectordrawable:vectordrawable:1.1.0",
         supportAnimatedVectorDrawable     : "androidx.vectordrawable:vectordrawable-animated:1.1.0-alpha01",
         supportAnnotations                : "androidx.annotation:annotation:1.1.0",
-        supportDesign                     : "com.google.android.material:material:1.1.0-beta02",
+        supportDesign                     : "com.google.android.material:material:1.1.0-rc02",
         supportCustomTabs                 : "androidx.browser:browser:1.0.0",
         supportPercent                    : "androidx.percentlayout:percentlayout:1.0.0",
         supportExifInterface              : "androidx.exifinterface:exifinterface:1.0.0",
@@ -445,7 +445,7 @@ ext.libs = [
         compassView                       : 'com.github.arbelkilani:Compass-View:v1.1.1',
 
         flipper                           : 'com.facebook.flipper:flipper:0.24.2',
-        soloader                          : 'com.facebook.soloader:soloader:0.8.0',
+        soloader                          : 'com.facebook.soloader:soloader:0.8.2',
 
         xozRicohThetaSDK                  : 'com.exozet:ricohtheta:1.1.2',
         jrSpinner                         : 'com.github.jrizani:JRSpinner:1.0.0',
@@ -500,16 +500,16 @@ ext.androidTestLibs = [
 
         // Assertions
         testJUnit             : 'androidx.test.ext:junit:1.1.1',
-        textTruth             : 'androidx.test.ext:truth:1.1.0',
+        textTruth             : 'androidx.test.ext:truth:1.2.0',
         truth                 : 'com.google.truth:truth:1.0',
 
         // Espresso dependencies
         espressoCore          : 'androidx.test.espresso:espresso-core:3.2.0',
-        espressoContrib       : 'androidx.test.espresso:espresso-contrib:3.1.1',
+        espressoContrib       : 'androidx.test.espresso:espresso-contrib:3.2.0',
         espressoIntents       : 'androidx.test.espresso:espresso-intents:3.2.0',
-        espressoAccessibility : 'androidx.test.espresso:espresso-accessibility:3.1.1',
+        espressoAccessibility : 'androidx.test.espresso:espresso-accessibility:3.2.0',
         espressoWeb           : 'androidx.test.espresso:espresso-web:3.2.0',
-        idlingConcurrent      : 'androidx.test.espresso.idling:idling-concurrent:3.1.1',
+        idlingConcurrent      : 'androidx.test.espresso.idling:idling-concurrent:3.2.0',
 
         // The following Espresso dependency can be either "implementation"
         // or "androidTestImplementation", depending on whether you want the
