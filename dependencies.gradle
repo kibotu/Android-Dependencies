@@ -23,7 +23,7 @@ ext {
 }
 
 ext.plugin = [
-        gradleBuildTools       : 'com.android.tools.build:gradle:3.5.3',
+        gradleBuildTools       : 'com.android.tools.build:gradle:3.6.1',
         gradleBuildToolsAlpha  : 'com.android.tools.build:gradle:3.4.0-alpha10',
         gradleBuildToolsCanary : 'com.android.tools.build:gradle:3.5.0-alpha11',
         gradleRetroLambda      : 'me.tatarka:gradle-retrolambda:3.7.0', // deprecated: use build:gradle:3
@@ -68,12 +68,12 @@ ext.libs = [
         kotlinxCoroutinesAndroid          : 'org.jetbrains.kotlinx:kotlinx-coroutines-android:1.1.1',
 
         // https://developer.android.com/kotlin/ktx#modules
-        androidKtxCore                    : 'androidx.core:core-ktx:1.2.0-rc01',
-        androidKtxFragment                : "androidx.fragment:fragment-ktx:1.2.0-rc05", // 	androidx.fragment.app
+        androidKtxCore                    : 'androidx.core:core-ktx:1.2.0',
+        androidKtxFragment                : "androidx.fragment:fragment-ktx:1.2.2", // 	androidx.fragment.app
         androidKtxPalette                 : "androidx.palette:palette-ktx:1.0.0", // 	androidx.palette.graphics
         androidKtxSqlite                  : "androidx.sqlite:sqlite-ktx:2.0.0", // 	androidx.sqlite.db
         androidKtxCollection              : "androidx.collection:collection-ktx:1.1.0", // 	androidx.collection
-        androidKtxLifecycleViewmodel      : "androidx.lifecycle:lifecycle-viewmodel-ktx:2.1.0", // 	androidx.lifecycle
+        androidKtxLifecycleViewmodel      : "androidx.lifecycle:lifecycle-viewmodel-ktx:2.2.0", // 	androidx.lifecycle
         androidKtxLifecycleReactiveStreams: "androidx.lifecycle:lifecycle-reactivestreams-ktx:2.0.0", // 	androidx.lifecycle
         androidKtxNavigationCommon        : "android.arch.navigation:navigation-common-ktx:1.0.0", // 	androidx.navigation
         androidKtxNavigationFragment      : "android.arch.navigation:navigation-fragment-ktx:1.0.0", // 	androidx.navigation.fragment
@@ -85,7 +85,7 @@ ext.libs = [
         // https://developer.android.com/topic/libraries/support-library/refactor
 
         supportMultidex                   : "androidx.multidex:multidex:2.0.1",
-        supportCompat                     : "androidx.core:core:1.2.0-rc01",
+        supportCompat                     : "androidx.core:core:1.2.0",
 
         supportMediaCompat                : "androidx.media:media:1.1.0-alpha02",
         supportFragment                   : "androidx.fragment:fragment:1.1.0", // https://developer.android.com/jetpack/androidx/releases/fragment
@@ -176,16 +176,16 @@ ext.libs = [
         // architecture components
         // https://developer.android.com/topic/libraries/architecture/adding-components
 
-        lifecycleExtensions               : "androidx.lifecycle:lifecycle-extensions:2.1.0", // ViewModel and LiveData
+        lifecycleExtensions               : "androidx.lifecycle:lifecycle-extensions:2.2.0", // ViewModel and LiveData
         lifecycleViewmodel                : "androidx.lifecycle:lifecycle-viewmodel:2.1.0", // alternatively, just ViewModel
-        lifecycleLivedataKtx              : "androidx.lifecycle:lifecycle-livedata-ktx:2.2.0-rc03", // alternatively, just LiveData
+        lifecycleLivedataKtx              : "androidx.lifecycle:lifecycle-livedata-ktx:2.2.0", // alternatively, just LiveData
         lifecycleLivedata                 : "androidx.lifecycle:lifecycle-livedata:2.1.0", // alternatively, just LiveData
         lifecycleLivedataCore             : "androidx.lifecycle:lifecycle-livedata-core:2.1.0",
         lifecycleCompiler                 : "androidx.lifecycle:lifecycle-compiler:2.1.0",
         lifecycleRuntime                  : "androidx.lifecycle:lifecycle-runtime:2.1.0",
-        lifecycleRuntimeKtx               : "androidx.lifecycle:lifecycle-runtime-ktx:2.2.0-rc03",
+        lifecycleRuntimeKtx               : "androidx.lifecycle:lifecycle-runtime-ktx:2.2.0",
         lifecycleCommon                   : 'androidx.lifecycle:lifecycle-common:2.1.0', // Java8 support for Lifecycles
-        lifecycleCommonJava8              : 'androidx.lifecycle:lifecycle-common-java8:2.1.0', // Java8 support for Lifecycles
+        lifecycleCommonJava8              : 'androidx.lifecycle:lifecycle-common-java8:2.2.0', // Java8 support for Lifecycles
         lifecycleRactiveStream            : 'androidx.lifecycle:lifecycle-reactivestreams:2.0.0', // ReactiveStreams support for LiveData
 
         viewpager2                        : 'androidx.viewpager2:viewpager2:1.0.0-alpha02',
@@ -311,8 +311,8 @@ ext.libs = [
         adapterDelegate                   : 'com.hannesdorfmann:adapterdelegates3:3.0.1',
 
         picasso                           : 'com.squareup.picasso:picasso:2.71828',
-        glide                             : 'com.github.bumptech.glide:glide:4.10.0',
-        glideAnnotationsProcessor         : 'com.github.bumptech.glide:compiler:4.10.0',
+        glide                             : 'com.github.bumptech.glide:glide:4.11.0',
+        glideAnnotationsProcessor         : 'com.github.bumptech.glide:compiler:4.11.0',
         glideTransformations              : 'jp.wasabeef:glide-transformations:4.1.0',
 
         gpuImageLibrary                   : 'jp.co.cyberagent.android.gpuimage:gpuimage-library:1.4.1',
@@ -460,8 +460,8 @@ ext.libs = [
         ffmpegAndroid                     : 'com.writingminds:FFmpegAndroid:0.3.2',
 
         tvProvider                        : 'androidx.tvprovider:tvprovider:1.0.0',
-        workManagerKtx                    : "androidx.work:work-runtime-ktx:2.2.0",
-        workManagerRx2                    : "androidx.work:work-rxjava2:2.2.0"
+        workManagerKtx                    : "androidx.work:work-runtime-ktx:2.3.2",
+        workManagerRx2                    : "androidx.work:work-rxjava2:2.3.2"
 
 ]
 
