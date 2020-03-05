@@ -480,7 +480,7 @@ ext.testLibs = [
         khronos                   : 'org.khronos:opengl-api:gl1.1-android-2.1_r1',
         spek                      : 'org.jetbrains.spek:spek-api:1.1.5',
         mockito                   : 'com.nhaarman:mockito-kotlin:1.5.0',
-        truth                     : 'com.google.truth:truth:1.0',
+        truth                     : 'com.google.truth:truth:1.0.1',
         jodaTime                  : 'joda-time:joda-time:2.10.1',
         kotlinReflect             : "org.jetbrains.kotlin:kotlin-reflect:$kotlinVersion",
         kotlinTest                : "org.jetbrains.kotlin:kotlin-test:$kotlinVersion",
@@ -501,7 +501,7 @@ ext.androidTestLibs = [
         // Assertions
         testJUnit             : 'androidx.test.ext:junit:1.1.1',
         textTruth             : 'androidx.test.ext:truth:1.2.0',
-        truth                 : 'com.google.truth:truth:1.0',
+        truth                 : 'com.google.truth:truth:1.0.1',
 
         // Espresso dependencies
         espressoCore          : 'androidx.test.espresso:espresso-core:3.2.0',
