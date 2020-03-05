@@ -192,10 +192,10 @@ ext.libs = [
 
         // core
 
-        archCoreCommon                    : "androidx.arch.core:core-common:2.0.0",
+        archCoreCommon                    : "androidx.arch.core:core-common:2.1.0",
         archCoreTesting                   : "androidx.arch.core:core-testing:2.0.0",
         archCore                          : "androidx.arch.core:core:2.0.0-alpha1",
-        archCoreRuntime                   : "androidx.arch.core:core-runtime:2.0.1-alpha01",
+        archCoreRuntime                   : "androidx.arch.core:core-runtime:2.1.0",
 
         // paging
 
@@ -466,7 +466,7 @@ ext.libs = [
 ]
 
 ext.testLibs = [
-        junit                     : 'junit:junit:4.12',
+        junit                     : 'junit:junit:4.13',
         jsonAssert                : 'org.skyscreamer:jsonassert:1.5.0',
         jsonUnit                  : 'net.javacrumbs.json-unit:json-unit:1.28.2',
         jsonUnitFluent            : 'net.javacrumbs.json-unit:json-unit-fluent:1.28.2',
@@ -480,7 +480,7 @@ ext.testLibs = [
         khronos                   : 'org.khronos:opengl-api:gl1.1-android-2.1_r1',
         spek                      : 'org.jetbrains.spek:spek-api:1.1.5',
         mockito                   : 'com.nhaarman:mockito-kotlin:1.5.0',
-        truth                     : 'com.google.truth:truth:0.43',
+        truth                     : 'com.google.truth:truth:1.0',
         jodaTime                  : 'joda-time:joda-time:2.10.1',
         kotlinReflect             : "org.jetbrains.kotlin:kotlin-reflect:$kotlinVersion",
         kotlinTest                : "org.jetbrains.kotlin:kotlin-test:$kotlinVersion",
@@ -499,9 +499,9 @@ ext.androidTestLibs = [
         espressoRulesAlpha    : "androidx.test:rules:1.2.0-beta01",
 
         // Assertions
-        testJUnit             : 'androidx.test.ext:junit:1.1.0',
+        testJUnit             : 'androidx.test.ext:junit:1.1.1',
         textTruth             : 'androidx.test.ext:truth:1.1.0',
-        truth                 : 'com.google.truth:truth:0.43',
+        truth                 : 'com.google.truth:truth:1.0',
 
         // Espresso dependencies
         espressoCore          : 'androidx.test.espresso:espresso-core:3.2.0',
