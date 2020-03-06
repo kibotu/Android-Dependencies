@@ -177,14 +177,14 @@ ext.libs = [
         // https://developer.android.com/topic/libraries/architecture/adding-components
 
         lifecycleExtensions               : "androidx.lifecycle:lifecycle-extensions:2.2.0", // ViewModel and LiveData
-        lifecycleViewmodel                : "androidx.lifecycle:lifecycle-viewmodel:2.1.0", // alternatively, just ViewModel
+        lifecycleViewmodel                : "androidx.lifecycle:lifecycle-viewmodel:2.2.0", // alternatively, just ViewModel
         lifecycleLivedataKtx              : "androidx.lifecycle:lifecycle-livedata-ktx:2.2.0", // alternatively, just LiveData
-        lifecycleLivedata                 : "androidx.lifecycle:lifecycle-livedata:2.1.0", // alternatively, just LiveData
-        lifecycleLivedataCore             : "androidx.lifecycle:lifecycle-livedata-core:2.1.0",
-        lifecycleCompiler                 : "androidx.lifecycle:lifecycle-compiler:2.1.0",
-        lifecycleRuntime                  : "androidx.lifecycle:lifecycle-runtime:2.1.0",
+        lifecycleLivedata                 : "androidx.lifecycle:lifecycle-livedata:2.2.0", // alternatively, just LiveData
+        lifecycleLivedataCore             : "androidx.lifecycle:lifecycle-livedata-core:2.2.0",
+        lifecycleCompiler                 : "androidx.lifecycle:lifecycle-compiler:2.2.0",
+        lifecycleRuntime                  : "androidx.lifecycle:lifecycle-runtime:2.2.0",
         lifecycleRuntimeKtx               : "androidx.lifecycle:lifecycle-runtime-ktx:2.2.0",
-        lifecycleCommon                   : 'androidx.lifecycle:lifecycle-common:2.1.0', // Java8 support for Lifecycles
+        lifecycleCommon                   : 'androidx.lifecycle:lifecycle-common:2.2.0', // Java8 support for Lifecycles
         lifecycleCommonJava8              : 'androidx.lifecycle:lifecycle-common-java8:2.2.0', // Java8 support for Lifecycles
         lifecycleRactiveStream            : 'androidx.lifecycle:lifecycle-reactivestreams:2.0.0', // ReactiveStreams support for LiveData
 
@@ -193,8 +193,8 @@ ext.libs = [
         // core
 
         archCoreCommon                    : "androidx.arch.core:core-common:2.1.0",
-        archCoreTesting                   : "androidx.arch.core:core-testing:2.0.0",
-        archCore                          : "androidx.arch.core:core:2.0.0-alpha1",
+        archCoreTesting                   : "androidx.arch.core:core-testing:2.1.0",
+        archCore                          : "androidx.arch.core:core:2.1.0",
         archCoreRuntime                   : "androidx.arch.core:core-runtime:2.1.0",
 
         // paging
