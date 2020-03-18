@@ -367,7 +367,7 @@ ext.libs = [
 
         leakcanary2                       : "com.squareup.leakcanary:leakcanary-android:2.0-beta-3",
 
-        exozetCore                        : "com.github.exozet:AndroidCore:3.3.5",
+        exozetCore                        : "com.github.exozet:AndroidCore:3.3.6",
 
         deviceInfo                        : "com.github.kibotu:net.kibotu.android.deviceinfo:2.0.0",
         recyclerViewPresenter4            : "com.github.kibotu:RecyclerViewPresenter:4.8.0",
