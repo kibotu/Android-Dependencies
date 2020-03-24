@@ -353,8 +353,8 @@ ext.libs = [
         exoplayerCore                     : 'com.google.android.exoplayer:exoplayer-core:2.10.5',
         exoplayerImaExtension             : 'com.google.android.exoplayer:extension-ima:2.7.3',
         gpuVideoAndroid                   : 'com.github.MasayukiSuda:GPUVideo-android:v0.1.0',
-        amazonExoplayer                   : 'com.amazon.android:exoplayer:2.10.6',
-        amazonExoplayerImaExtension       : 'com.amazon.android:extension-ima:2.10.6',
+        amazonExoplayer                   : 'com.amazon.android:exoplayer:2.11.3',
+        amazonExoplayerImaExtension       : 'com.amazon.android:extension-ima:2.11.3',
 
         mzip                              : 'com.github.ghost1372:Mzip-Android:0.4.0',
         numberprogressbar                 : 'com.daimajia.numberprogressbar:library:1.4@aar',
@@ -371,7 +371,7 @@ ext.libs = [
 
         leakcanary                        : 'com.squareup.leakcanary:leakcanary-android:2.1',
 
-        //exozetCore                        : 'com.exozet:core:3.0.9',
+        //exozetCore alternative source   : 'com.exozet:core:',
         exozetCore                        : "com.github.exozet:AndroidCore:3.3.0",
 
         commonUtils                       : 'com.github.kibotu:common.android.utils:0.7.2', // deprecated, use exozetCore
