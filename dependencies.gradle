@@ -150,7 +150,7 @@ ext.libs = [
         playServicesSafetynet             : "com.google.android.gms:play-services-safetynet:17.0.0", // SafetyNet
         playServicesWallet                : "com.google.android.gms:play-services-wallet:18.0.0", // Android Pay
         playServicesWearable              : "com.google.android.gms:play-services-wearable:17.0.0", // Wear OS by Google
-        playServicesCore                  : "com.google.android.play:core:1.6.5", // in app-updates
+        playServicesCore                  : "com.google.android.play:core:1.7.1", // in app-updates
 
         // firebase
         // https://firebase.google.com/docs/android/setup
