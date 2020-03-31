@@ -123,6 +123,7 @@ ext.libs = [
         supportCoreUi                     : "androidx.legacy:legacy-support-core-ui:1.0.0",
         supportDynamicAnimation           : "androidx.dynamicanimation:dynamicanimation:1.0.0",
         autoValueAnnotations              : "com.google.auto.value:auto-value-annotations:1.7",
+        concurrentFutures                 : "androidx.concurrent:concurrent-futures-ktx:1.1.0-alpha01"
 
         // google play services
         // https://developers.google.com/android/guides/setup
