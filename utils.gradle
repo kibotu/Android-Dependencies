@@ -41,16 +41,17 @@ def simpleReleaseVersionName() {
 
     final def buildNumber = buildNumberByCI()
     def releaseName = branchName()
+
     // remove 'origin' in from branch name
     if (releaseName != null && releaseName.contains("origin/"))
         releaseName = releaseName.replace("origin/", "")
 
     if (releaseName.contains("release"))
         releaseName = releaseName.replaceFirst(".*release.*\\/", "")
-    else if(releaseName.contains("develop"))
-        releaseName = "dev" + VERSION_NAME
+    else if (releaseName.contains("develop"))
+        return "dev" + buildNumber
     else if (releaseName.contains("TSR"))
-        releaseName = releaseName.substring(releaseName.indexOf("TSR")) + VERSION_NAME
+        return releaseName.substring(releaseName.indexOf("TSR")) + buildNumber
     else
         releaseName = VERSION_NAME
 
