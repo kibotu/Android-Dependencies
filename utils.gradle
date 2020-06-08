@@ -49,18 +49,13 @@ def simpleReleaseVersionName() {
     if (releaseName.contains("release"))
         releaseName = releaseName.replaceFirst(".*release.*\\/", "")
     else if (releaseName.contains("develop"))
-        return "dev" + buildNumber
+        releaseName = "dev"
     else if (releaseName.contains("TSR"))
-        return releaseName.substring(releaseName.indexOf("TSR")) + buildNumber
+        releaseName = releaseName.substring(releaseName.indexOf("TSR"))
     else
         releaseName = VERSION_NAME
 
-    if (releaseName.count(".") < 2) {
-        if (buildNumber != null)
-            releaseName += "." + buildNumber
-        else
-            releaseName += "." + 0
-    }
+    releaseName += "." + buildNumber
 
     logd("Version Name: " + releaseName)
     return releaseName
