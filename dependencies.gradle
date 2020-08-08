@@ -418,7 +418,7 @@ ext.libs = [
         wheelNumberPickerKibotu           : "com.github.kibotu:NumberPicker:1.2.1",
         dotsIndicator                     : "com.github.kibotu:dotsindicator:2.2.1",
         rippleBackground                  : "com.skyfishjy.ripplebackground:library:1.0.1",
-        catLoading                        : "com.roger.catloadinglibrary:catloadinglibrary:1.0.4",
+        catLoading                        : "com.roger.catloadinglibrary:catloadinglibrary:1.0.5",
         inputMask                         : "com.redmadrobot:inputmask:4.0.0",
         md360Player                       : "com.github.ashqal:MD360Player4Android:2.5.0",
         md360PlayerBeta                   : "com.github.kibotu:MD360Player4Android:2.6.2",
