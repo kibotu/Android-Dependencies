@@ -8,7 +8,7 @@ ext {
     targetSdkVer = 29
 
     // @see https://mvnrepository.com/artifact/org.jetbrains.kotlin/kotlin-stdlib-jdk8
-    kotlinVersion = "1.3.61"
+    kotlinVersion = "1.3.72"
 
     VERSION_NAME = 0
     VERSION_CODE = 1
@@ -24,7 +24,7 @@ ext {
 }
 
 ext.plugin = [
-        gradleBuildTools       : "com.android.tools.build:gradle:3.6.1",
+        gradleBuildTools       : "com.android.tools.build:gradle:4.0.1",
         navigationSafeArgs     : "androidx.navigation:navigation-safe-args-gradle-plugin:2.2.1",
         kotlinApt              : "org.jetbrains.kotlin.kapt:org.jetbrains.kotlin.kapt.gradle.plugin:$kotlinVersion",
         hockeyApp              : "de.felixschulze.gradle:gradle-hockeyapp-plugin:3.6",
@@ -65,17 +65,17 @@ ext.libs = [
         kotlinxCoroutinesAndroid          : "org.jetbrains.kotlinx:kotlinx-coroutines-android:1.3.3",
 
         // https://developer.android.com/kotlin/ktx#modules
-        androidKtxCore                    : "androidx.core:core-ktx:1.2.0",
+        androidKtxCore                    : "androidx.core:core-ktx:1.3.1",
         androidKtxPalette                 : "androidx.palette:palette-ktx:1.0.0", // 	androidx.palette.graphics
         androidKtxSqlite                  : "androidx.sqlite:sqlite-ktx:2.1.0", // 	androidx.sqlite.db
         androidKtxCollection              : "androidx.collection:collection-ktx:1.1.0", // 	androidx.collection
         androidKtxLifecycleViewmodel      : "androidx.lifecycle:lifecycle-viewmodel-ktx:2.2.0", // 	androidx.viewmodel
         androidKtxLifecycleReactiveStreams: "androidx.lifecycle:lifecycle-reactivestreams-ktx:2.2.0", // 	androidx.lifecycle
 
-        androidKtxNavigationCommon        : "androidx.navigation:navigation-common-ktx:2.2.1", // 	androidx.navigation
-        androidKtxNavigationFragment      : "androidx.navigation:navigation-fragment-ktx:2.2.1", // 	androidx.navigation.fragment
-        androidKtxNavigationUi            : "androidx.navigation:navigation-ui-ktx:2.2.1", // 	androidx.navigation.fragment
-        androidKtxNavigationRuntime       : "androidx.navigation:navigation-runtime-ktx:2.2.1", // 	androidx.navigation
+        androidKtxNavigationCommon        : "androidx.navigation:navigation-common-ktx:2.3.0", // 	androidx.navigation
+        androidKtxNavigationFragment      : "androidx.navigation:navigation-fragment-ktx:2.3.0", // 	androidx.navigation.fragment
+        androidKtxNavigationUi            : "androidx.navigation:navigation-ui-ktx:2.3.0", // 	androidx.navigation.fragment
+        androidKtxNavigationRuntime       : "androidx.navigation:navigation-runtime-ktx:2.3.0", // 	androidx.navigation
 
         // https://developer.android.com/jetpack/androidx/releases/navigation
         navigationFragment                : "androidx.navigation:navigation-fragment:2.2.1",
@@ -89,7 +89,7 @@ ext.libs = [
         supportMultidex                   : "androidx.multidex:multidex:2.0.1",
 
         supportFragment                   : "androidx.fragment:fragment:1.2.1", // https://developer.android.com/jetpack/androidx/releases/fragment
-        fragmentKtx                       : "androidx.fragment:fragment-ktx:1.2.2",
+        fragmentKtx                       : "androidx.fragment:fragment-ktx:1.2.5",
         supportActivity                   : "androidx.activity:activity:1.1.0", // https://developer.android.com/jetpack/androidx/releases/activity
         activityKtx                       : "androidx.activity:activity-ktx:1.1.0",
         supportAppCompat                  : "androidx.appcompat:appcompat:1.1.0", // https://developer.android.com/jetpack/androidx/releases/appcompat
@@ -112,13 +112,13 @@ ext.libs = [
         supportAnimatedVectorDrawable     : "androidx.vectordrawable:vectordrawable-animated:1.1.0",
         supportAnnotations                : "androidx.annotation:annotation:1.1.0",
         supportDesign                     : "com.google.android.material:material:1.2.0-alpha04", // deprecated: use materials
-        material                          : "com.google.android.material:material:1.1.0",
+        material                          : "com.google.android.material:material:1.2.0-rc01",
         supportCustomTabs                 : "androidx.browser:browser:1.2.0",
         supportPercent                    : "androidx.percentlayout:percentlayout:1.0.0",
         supportExifInterface              : "androidx.exifinterface:exifinterface:1.1.0",
         supportRecommendation             : "androidx.recommendation:recommendation:1.0.0",
         supportWear                       : "androidx.wear:wear:1.0.0",
-        constraintLayout2                 : "androidx.constraintlayout:constraintlayout:2.0.0-beta4",
+        constraintLayout2                 : "androidx.constraintlayout:constraintlayout:2.0.0-rc1",
         supportCoreUtils                  : "androidx.legacy:legacy-support-core-utils:1.0.0",
         supportCoreUi                     : "androidx.legacy:legacy-support-core-ui:1.0.0",
         supportDynamicAnimation           : "androidx.dynamicanimation:dynamicanimation:1.0.0",
