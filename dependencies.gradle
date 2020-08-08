@@ -129,7 +129,7 @@ ext.libs = [
         // https://developers.google.com/android/guides/setup
 
         playServicesPlus                  : "com.google.android.gms:play-services-plus:17.0.0", // Google+
-        playServicesAuth                  : "com.google.android.gms:play-services-auth:17.0.0", // Google Account Login
+        playServicesAuth                  : "com.google.android.gms:play-services-auth:18.1.0", // Google Account Login
         playServicesBase                  : "com.google.android.gms:play-services-base:17.1.0", // Google Actions Base Client Library
         playServicesIdentity              : "com.google.android.gms:play-services-identity:17.0.0", // Google Sign In
         playServicesAnalytics             : "com.google.android.gms:play-services-analytics:17.0.0", // Google Analytics
@@ -159,13 +159,13 @@ ext.libs = [
 
         firebaseIid                       : "com.google.firebase:firebase-iid:20.1.0",
         firebaseCommon                    : "com.google.firebase:firebase-common:19.3.0",
-        firebaseCore                      : "com.google.firebase:firebase-core:17.2.3", // Analytics
+        firebaseCore                      : "com.google.firebase:firebase-core:17.4.4", // Analytics
         firebaseDatabase                  : "com.google.firebase:firebase-database:19.2.1", // Realtime Database
         firebaseFirestore                 : "com.google.firebase:firebase-firestore:21.4.0", // Cloud Firestore
         firebaseStorage                   : "com.google.firebase:firebase-storage:19.1.1", // Storage
         firebaseCrash                     : "com.google.firebase:firebase-crash:16.2.1", // Crash Reporting
         firebaseAuth                      : "com.google.firebase:firebase-auth:19.2.0", // Authentication
-        firebaseMessaging                 : "com.google.firebase:firebase-messaging:20.1.1", // Cloud Messaging
+        firebaseMessaging                 : "com.google.firebase:firebase-messaging:20.2.3", // Cloud Messaging
         firebaseConfig                    : "com.google.firebase:firebase-config:19.1.2", // Remote Config
         firebaseInvites                   : "com.google.firebase:firebase-invites:17.0.0", // Invites and Dynamic Links
         firebaseAds                       : "com.google.firebase:firebase-ads:18.3.0", // AdMob
@@ -203,9 +203,9 @@ ext.libs = [
 
         // paging
 
-        pagingCommon                      : "androidx.paging:paging-common:2.1.1", // Paging
-        pagingRuntime                     : "androidx.paging:paging-runtime:2.1.1", // Paging
-        pagingRuntimeKtx                  : "androidx.paging:paging-runtime-ktx:2.1.1", // Paging
+        pagingCommon                      : "androidx.paging:paging-common:2.1.2", // Paging
+        pagingRuntime                     : "androidx.paging:paging-runtime:2.1.2", // Paging
+        pagingRuntimeKtx                  : "androidx.paging:paging-runtime-ktx:2.1.2", // Paging
 
         // room
 
