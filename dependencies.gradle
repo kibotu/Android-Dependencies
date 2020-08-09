@@ -465,7 +465,7 @@ ext.libs = [
         fastExoPlayerSeeker               : "com.github.kibotu:FastExoPlayerSeeker:1.0.0",
 
         polet                             : "com.github.fievx:Polet:0.1.5",
-        lottie                            : "com.airbnb.android:lottie:3.0.7",
+        lottie                            : "com.airbnb.android:lottie:3.4.1",
         konfetti                          : "nl.dionsegijn:konfetti:1.1.3",
         trail                             : "com.github.amalChandran:trail-android:v1.51",
         trailFork                         : "com.github.kibotu:trail-android:2.0.2",
