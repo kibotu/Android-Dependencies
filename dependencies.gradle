@@ -325,6 +325,7 @@ ext.libs = [
 
         koinAndroidxScope                 : 'org.koin:koin-androidx-scope:2.0.1',
         koinAndroidxViewmodel             : 'org.koin:koin-androidx-viewmodel:2.0.1',
+        koinTest                          : 'org.koin:koin-test:2.0.1',
 
         retrofit                          : "com.squareup.retrofit2:retrofit:2.8.1",
         retrofitAdapterRxJava2            : "com.squareup.retrofit2:adapter-rxjava2:2.8.1",
@@ -369,7 +370,7 @@ ext.libs = [
 
         leakcanary                        : 'com.squareup.leakcanary:leakcanary-android:2.1',
 
-        //exozetCore alternative source   : 'com.exozet:core:',
+        // exozetCore alternative source   : 'com.exozet:core:',
         exozetCore                        : "com.github.exozet:AndroidCore:3.3.0",
 
         commonUtils                       : 'com.github.kibotu:common.android.utils:0.7.2', // deprecated, use exozetCore
@@ -465,6 +466,7 @@ ext.libs = [
 
 ext.testLibs = [
         junit                     : 'junit:junit:4.13',
+
         jsonAssert                : 'org.skyscreamer:jsonassert:1.5.0',
         jsonUnit                  : 'net.javacrumbs.json-unit:json-unit:1.28.2',
         jsonUnitFluent            : 'net.javacrumbs.json-unit:json-unit-fluent:1.28.2',
@@ -478,6 +480,7 @@ ext.testLibs = [
         khronos                   : 'org.khronos:opengl-api:gl1.1-android-2.1_r1',
         spek                      : 'org.jetbrains.spek:spek-api:1.1.5',
         mockito                   : 'com.nhaarman:mockito-kotlin:1.5.0',
+        mockkUnit                 : 'io.mockk:mockk:1.10.0',
         truth                     : 'com.google.truth:truth:1.0.1',
         jodaTime                  : 'joda-time:joda-time:2.10.1',
         kotlinReflect             : "org.jetbrains.kotlin:kotlin-reflect:$kotlinVersion",
@@ -491,14 +494,18 @@ ext.androidTestLibs = [
         coreTesting           : "android.arch.core:core-testing:1.1.1",
 
         // AndroidJUnitRunner and JUnit Rules
-        espressoRunner        : "androidx.test:runner:1.2.0",
-        espressoRunnerAlpha   : "androidx.test:runner:1.2.0-beta01",
-        espressoRules         : "androidx.test:rules:1.2.0",
-        espressoRulesAlpha    : "androidx.test:rules:1.2.0-beta01",
+        testRunner        : "androidx.test:runner:1.2.0",
+        testRunnerAlpha   : "androidx.test:runner:1.2.0-beta01",
+        testRules         : "androidx.test:rules:1.2.0",
+        testRulesAlpha    : "androidx.test:rules:1.2.0-beta01",
+
+        // ui-automator
+        uiAutomator       : "androidx.test.uiautomator:uiautomator:2.2.0",
 
         // Assertions
         testJUnit             : 'androidx.test.ext:junit:1.1.1',
-        textTruth             : 'androidx.test.ext:truth:1.2.0',
+        testJUnitKtx          : 'androidx.test.ext:junit-ktx:1.1.1',
+        testTruth             : 'androidx.test.ext:truth:1.2.0',
         truth                 : 'com.google.truth:truth:1.0.1',
 
         // Espresso dependencies
@@ -514,6 +521,9 @@ ext.androidTestLibs = [
         // dependency to appear on your APK's compile classpath or the test APK
         // classpath.
         espressoIdlingResource: 'androidx.test.espresso:espresso-idling-resource:3.2.0',
+
+        // mock instrumentation
+        mockkInstrumentation: 'io.mockk:mockk-android:1.10.0',
 
         fragmentTesting       : 'androidx.fragment:fragment-testing:1.1.0-alpha08',
 
