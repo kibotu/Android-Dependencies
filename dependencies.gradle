@@ -59,6 +59,7 @@ ext {
 
     detektVersion = '1.12.0'
 
+    firebaseAnalyticsVersion = '17.5.0'
     firebaseIidVersion = '17.1.0'
     firebaseCommonVersion = '16.1.0'
     firebaseCoreVersion = '16.0.8'
@@ -66,6 +67,8 @@ ext {
     firebaseFirestoreVersion = '18.1.0'
     firebaseStorageVersion = '16.1.0'
     firebaseCrashVersion = '16.2.1'
+    firebaseCrashlyticsPluginVersion = '2.2.1'
+    firebaseCrashlyticsVersion = '17.2.1'
     firebaseAuthVersion = '16.2.0'
     firebaseMessagingVersion = '17.4.0'
     firebaseConfigVersion = '16.4.0'
@@ -160,7 +163,6 @@ ext {
     stethoJsRhinoVersion = '1.4.2'
     realmBrowserVersion = '0.0.14'
     realmExtensionsVersion = '2.3.0'
-    crashlyticsVersion = '2.10.1'
     processPhoenixVersion = '1.1.0'
     circleIndicatorVersion = '2.0.0'
     indefinitePagerIndicatorVersion = '2.0.4'
@@ -389,35 +391,36 @@ ext {
 }
 
 ext.plugin = [
-        gradleBuildTools       : "com.android.tools.build:gradle:$gradleBuildToolsVersion",
+        gradleBuildTools             : "com.android.tools.build:gradle:$gradleBuildToolsVersion",
         // deprecated: use build:gradle:3
-        gradleRetroLambda      : "me.tatarka:gradle-retrolambda:$gradleRetroLambdaVersion",
-        androidApt             : "com.neenbedankt.gradle.plugins:android-apt:$androidAptVersion",
-        buildTimeTracker       : "net.rdrei.android.buildtimetracker:gradle-plugin:$buildtimeTrackerVersion",
-        buildScanPlugin        : "com.gradle:build-scan-plugin:$buildScanPluginVersion",
-        cipher                 : "net.idik.lib.security:cipher.so:$cipherVersion",
+        gradleRetroLambda            : "me.tatarka:gradle-retrolambda:$gradleRetroLambdaVersion",
+        androidApt                   : "com.neenbedankt.gradle.plugins:android-apt:$androidAptVersion",
+        buildTimeTracker             : "net.rdrei.android.buildtimetracker:gradle-plugin:$buildtimeTrackerVersion",
+        buildScanPlugin              : "com.gradle:build-scan-plugin:$buildScanPluginVersion",
+        cipher                       : "net.idik.lib.security:cipher.so:$cipherVersion",
         //  https://github.com/MEiDIK/Cipher.so/issues/9
-        cipherGithub           : "com.github.MEiDIK:Cipher.so:dev-SNAPSHOT",
+        cipherGithub                 : "com.github.MEiDIK:Cipher.so:dev-SNAPSHOT",
         // static code analysis for kotlin
-        detekt                 : "io.gitlab.arturbosch.detekt:detekt-gradle-plugin:$detektVersion",
-        dexcountGradle         : "com.getkeepsafe.dexcount:dexcount-gradle-plugin:$dexcountGradleVersion",
-        fabric                 : "io.fabric.tools:gradle:$fabricVersion",
+        detekt                       : "io.gitlab.arturbosch.detekt:detekt-gradle-plugin:$detektVersion",
+        dexcountGradle               : "com.getkeepsafe.dexcount:dexcount-gradle-plugin:$dexcountGradleVersion",
+        fabric                       : "io.fabric.tools:gradle:$fabricVersion",
+        firebaseCrashlyticsGradle    : "com.google.firebase:firebase-crashlytics-gradle:$firebaseCrashlyticsPluginVersion",
         // https://developers.google.com/android/guides/google-services-plugin
-        gms                    : "com.google.gms:google-services:$googleGmsVersion",
+        gms                          : "com.google.gms:google-services:$googleGmsVersion",
         // deprecated: use build:gradle:3
-        lombok                 : "me.tatarka.retrolambda.projectlombok:lombok.ast:$lombokVersion",
+        lombok                       : "me.tatarka.retrolambda.projectlombok:lombok.ast:$lombokVersion",
         // deprecated: use build:gradle:3
-        hockeyApp              : "de.felixschulze.gradle:gradle-hockeyapp-plugin:$hockeyAppVersion",
-        imgOptimizer           : "com.chenenyu:img-optimizer:$imgOptimizerVersion",
-        kotlinAndroidExtensions: "org.jetbrains.kotlin:kotlin-android-extensions:$kotlinVersion",
-        kotlinApt              : "org.jetbrains.kotlin.kapt:org.jetbrains.kotlin.kapt.gradle.plugin:$kotlinVersion",
-        kotlinDokka            : "org.jetbrains.dokka:dokka-android-gradle-plugin:$kotlinDokkaVersion",
-        kotlinGradle           : "org.jetbrains.kotlin:kotlin-gradle-plugin:$kotlinVersion",
-        poeditor               : "be.lukin.poeditor:gradle:$poEditorVersion",
+        hockeyApp                    : "de.felixschulze.gradle:gradle-hockeyapp-plugin:$hockeyAppVersion",
+        imgOptimizer                 : "com.chenenyu:img-optimizer:$imgOptimizerVersion",
+        kotlinAndroidExtensions      : "org.jetbrains.kotlin:kotlin-android-extensions:$kotlinVersion",
+        kotlinApt                    : "org.jetbrains.kotlin.kapt:org.jetbrains.kotlin.kapt.gradle.plugin:$kotlinVersion",
+        kotlinDokka                  : "org.jetbrains.dokka:dokka-android-gradle-plugin:$kotlinDokkaVersion",
+        kotlinGradle                 : "org.jetbrains.kotlin:kotlin-gradle-plugin:$kotlinVersion",
+        poeditor                     : "be.lukin.poeditor:gradle:$poEditorVersion",
         // 'io.realm:realm-gradle-plugin:5.0.0', can't seem to work properly with parcel atm
-        realm                  : "io.realm:realm-gradle-plugin:$realmVersion",
-        ribbonizer             : "com.github.gfx.ribbonizer:ribbonizer-plugin:$ribbonizerVersion",
-        rocketLauncher         : "com.cesarferreira:android-rocket-launcher:$rocketLauncherVersion"
+        realm                        : "io.realm:realm-gradle-plugin:$realmVersion",
+        ribbonizer                   : "com.github.gfx.ribbonizer:ribbonizer-plugin:$ribbonizerVersion",
+        rocketLauncher               : "com.cesarferreira:android-rocket-launcher:$rocketLauncherVersion"
 ]
 
 //plugins needed when developing a library project
@@ -537,7 +540,9 @@ ext.libs = [
         firebaseDatabase                  : "com.google.firebase:firebase-database:$firebaseDatabaseVersion",
         firebaseFirestore                 : "com.google.firebase:firebase-firestore:$firebaseFirestoreVersion",
         firebaseStorage                   : "com.google.firebase:firebase-storage:$firebaseStorageVersion",
+        firebaseAnalytics                 : "com.google.firebase:firebase-analytics:$firebaseAnalyticsVersion",
         firebaseCrash                     : "com.google.firebase:firebase-crash:$firebaseCrashVersion",
+        firebaseCrashlytics               : "com.google.firebase:firebase-crashlytics:$firebaseCrashlyticsVersion",
         firebaseAuth                      : "com.google.firebase:firebase-auth:$firebaseAuthVersion",
         firebaseMessaging                 : "com.google.firebase:firebase-messaging:$firebaseMessagingVersion", // Cloud Messaging
         firebaseConfig                    : "com.google.firebase:firebase-config:$firebaseConfigVersion", // Remote Config
@@ -620,7 +625,6 @@ ext.libs = [
         realmBrowserTest                  : "com.github.jonasrottmann.realm-browser:realm-browser:$realmBrowserVersion",
         realmBrowserRelease               : "com.github.jonasrottmann.realm-browser:realm-browser:$realmBrowserVersion",
         realmExtensions                   : "com.github.vicpinm:krealmextensions:$realmExtensionsVersion",
-        crashlytics                       : "com.crashlytics.sdk.android:crashlytics:$crashlyticsVersion@aar",
         processPhoenix                    : "com.jakewharton:process-phoenix:$processPhoenixVersion",
         circleIndicator                   : "me.relex:circleindicator:$circleIndicatorVersion", // please use indefinitePagerIndicator instead, due being scalable
         indefinitePagerIndicator          : "com.github.kibotu:Android-Indefinite-Pager-Indicator:$indefinitePagerIndicatorVersion",
