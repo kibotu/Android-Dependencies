@@ -159,21 +159,23 @@ ext.libs = [
 
         firebaseIid                       : "com.google.firebase:firebase-iid:20.1.0",
         firebaseCommon                    : "com.google.firebase:firebase-common:19.3.0",
-        firebaseCore                      : "com.google.firebase:firebase-core:17.4.4", // Analytics
-        firebaseDatabase                  : "com.google.firebase:firebase-database:19.2.1", // Realtime Database
-        firebaseFirestore                 : "com.google.firebase:firebase-firestore:21.4.0", // Cloud Firestore
-        firebaseStorage                   : "com.google.firebase:firebase-storage:19.1.1", // Storage
+        firebaseCore                      : "com.google.firebase:firebase-core:17.2.3", // Analytics
+        firebaseDatabase                  : "com.google.firebase:firebase-database:19.4.0", // Realtime Database
+        firebaseFirestore                 : "com.google.firebase:firebase-firestore:21.6.0", // Cloud Firestore
+        firebaseStorage                   : "com.google.firebase:firebase-storage:19.2.0", // Storage
         firebaseCrash                     : "com.google.firebase:firebase-crash:16.2.1", // Crash Reporting
-        firebaseAuth                      : "com.google.firebase:firebase-auth:19.2.0", // Authentication
-        firebaseMessaging                 : "com.google.firebase:firebase-messaging:20.2.3", // Cloud Messaging
-        firebaseConfig                    : "com.google.firebase:firebase-config:19.1.2", // Remote Config
+        firebaseAuth                      : "com.google.firebase:firebase-auth:19.3.2", // Authentication
+        firebaseMessaging                 : "com.google.firebase:firebase-messaging:20.2.4", // Cloud Messaging
+        firebaseConfig                    : "com.google.firebase:firebase-config:19.2.0", // Remote Config
         firebaseInvites                   : "com.google.firebase:firebase-invites:17.0.0", // Invites and Dynamic Links
         firebaseAds                       : "com.google.firebase:firebase-ads:18.3.0", // AdMob
         firebaseAppindexing               : "com.google.firebase:firebase-appindexing:19.1.0", // App Indexing
         firebasePerf                      : "com.google.firebase:firebase-perf:19.0.5", // Performance Monitoring
-        firebaseFunctions                 : "com.google.firebase:firebase-functions:19.0.2", // Cloud Functions for Firebase Client SDK
+        firebaseFunctions                 : "com.google.firebase:firebase-functions:19.1.0", // Cloud Functions for Firebase Client SDK
         firebaseMlVision                  : "com.google.firebase:firebase-ml-vision:24.0.1", //	ML Kit (Vision)
         firebaseMlModelInterpreter        : "com.google.firebase:firebase-ml-model-interpreter:22.0.1", // 	ML Kit (Custom Model)
+        firebaseAnalytics                 : "com.google.firebase:firebase-analytics-ktx:17.5.0", // New Analytics,
+        firebaseCrashlytics               : "com.google.firebase:firebase-crashlytics-ktx:17.2.1", // New Crashlytics
 
         // architecture components
         // https://developer.android.com/topic/libraries/architecture/adding-components
