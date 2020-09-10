@@ -8,7 +8,14 @@ ext {
     targetSdkVer = 29
 
     // @see https://mvnrepository.com/artifact/org.jetbrains.kotlin/kotlin-stdlib-jdk8
-    kotlinVersion = "1.3.72"
+    kotlinVersion = "1.4.0"
+    roomVersion = "2.2.5"
+    lifecycleVersion = "2.2.0"
+    workVersion = "2.4.0"
+    archCoreVersion = "2.1.0"
+    pagingVersion = "2.1.2"
+    htextviewVersion = "0.1.6"
+    retrofitVersion = "2.9.0"
 
     VERSION_NAME = 0
     VERSION_CODE = 1
@@ -92,8 +99,8 @@ ext.libs = [
         fragmentKtx                       : "androidx.fragment:fragment-ktx:1.2.5",
         supportActivity                   : "androidx.activity:activity:1.1.0", // https://developer.android.com/jetpack/androidx/releases/activity
         activityKtx                       : "androidx.activity:activity-ktx:1.1.0",
-        supportAppCompat                  : "androidx.appcompat:appcompat:1.1.0", // https://developer.android.com/jetpack/androidx/releases/appcompat
-        appCompatResources                : "androidx.appcompat:appcompat-resources:1.1.0",
+        supportAppCompat                  : "androidx.appcompat:appcompat:1.2.0", // https://developer.android.com/jetpack/androidx/releases/appcompat
+        appCompatResources                : "androidx.appcompat:appcompat-resources:1.2.0",
         supportDrawerLayout               : "androidx.drawerlayout:drawerlayout:1.0.0",
         swipeRefreshLayout                : "androidx.swiperefreshlayout:swiperefreshlayout:1.0.0",
         supportMedia                      : "androidx.media:media:1.1.0",
@@ -111,8 +118,8 @@ ext.libs = [
         supportVectorDrawable             : "androidx.vectordrawable:vectordrawable:1.1.0",
         supportAnimatedVectorDrawable     : "androidx.vectordrawable:vectordrawable-animated:1.1.0",
         supportAnnotations                : "androidx.annotation:annotation:1.1.0",
-        supportDesign                     : "com.google.android.material:material:1.2.0-alpha04", // deprecated: use materials
-        material                          : "com.google.android.material:material:1.2.0-rc01",
+        supportDesign                     : "com.google.android.material:material:1.2.1",
+        material                          : "com.google.android.material:material:1.2.1",
         supportCustomTabs                 : "androidx.browser:browser:1.2.0",
         supportPercent                    : "androidx.percentlayout:percentlayout:1.0.0",
         supportExifInterface              : "androidx.exifinterface:exifinterface:1.1.0",
@@ -182,44 +189,44 @@ ext.libs = [
         // ktx
         // https://android.github.io/android-ktx/core-ktx/
 
-        lifecycleRuntimeKtx               : "androidx.lifecycle:lifecycle-runtime-ktx:2.2.0",
-        lifecycleCommonJava8              : "androidx.lifecycle:lifecycle-common-java8:2.2.0", // Java8 support for Lifecycles
-        lifecycleLivedataKtx              : "androidx.lifecycle:lifecycle-livedata-ktx:2.2.0", // alternatively just LiveData
-        lifecycleExtensions               : "androidx.lifecycle:lifecycle-extensions:2.2.0", // ViewModel and LiveData
+        lifecycleRuntimeKtx               : "androidx.lifecycle:lifecycle-runtime-ktx:$lifecycleVersion",
+        lifecycleCommonJava8              : "androidx.lifecycle:lifecycle-common-java8:$lifecycleVersion", // Java8 support for Lifecycles
+        lifecycleLivedataKtx              : "androidx.lifecycle:lifecycle-livedata-ktx:$lifecycleVersion", // alternatively just LiveData
+        lifecycleExtensions               : "androidx.lifecycle:lifecycle-extensions:$lifecycleVersion", // ViewModel and LiveData
 
-        lifecycleViewmodel                : "androidx.lifecycle:lifecycle-viewmodel:2.2.0", // alternatively just ViewModel
-        lifecycleLivedata                 : "androidx.lifecycle:lifecycle-livedata:2.2.0", // alternatively just LiveData
-        lifecycleLivedataCore             : "androidx.lifecycle:lifecycle-livedata-core:2.2.0",
-        lifecycleCompiler                 : "androidx.lifecycle:lifecycle-compiler:2.2.0",
-        lifecycleRuntime                  : "androidx.lifecycle:lifecycle-runtime:2.2.0",
-        lifecycleCommon                   : "androidx.lifecycle:lifecycle-common:2.2.0", // Java8 support for Lifecycles
-        lifecycleRactiveStream            : "androidx.lifecycle:lifecycle-reactivestreams:2.2.0", // ReactiveStreams support for LiveData
+        lifecycleViewmodel                : "androidx.lifecycle:lifecycle-viewmodel:$lifecycleVersion", // alternatively just ViewModel
+        lifecycleLivedata                 : "androidx.lifecycle:lifecycle-livedata:$lifecycleVersion", // alternatively just LiveData
+        lifecycleLivedataCore             : "androidx.lifecycle:lifecycle-livedata-core:$lifecycleVersion",
+        lifecycleCompiler                 : "androidx.lifecycle:lifecycle-compiler:$lifecycleVersion",
+        lifecycleRuntime                  : "androidx.lifecycle:lifecycle-runtime:$lifecycleVersion",
+        lifecycleCommon                   : "androidx.lifecycle:lifecycle-common:$lifecycleVersion", // Java8 support for Lifecycles
+        lifecycleRactiveStream            : "androidx.lifecycle:lifecycle-reactivestreams:$lifecycleVersion", // ReactiveStreams support for LiveData
         viewpager2                        : "androidx.viewpager2:viewpager2:1.0.0",
 
         // core
 
-        archCoreCommon                    : "androidx.arch.core:core-common:2.1.0",
-        archCoreTesting                   : "androidx.arch.core:core-testing:2.1.0",
+        archCoreCommon                    : "androidx.arch.core:core-common:$archCoreVersion",
+        archCoreTesting                   : "androidx.arch.core:core-testing:$archCoreVersion",
         archCore                          : "androidx.arch.core:core:2.0.0-alpha1",
-        archCoreRuntime                   : "androidx.arch.core:core-runtime:2.1.0",
+        archCoreRuntime                   : "androidx.arch.core:core-runtime:$archCoreVersion",
 
         // paging
 
-        pagingCommon                      : "androidx.paging:paging-common:2.1.2", // Paging
-        pagingRuntime                     : "androidx.paging:paging-runtime:2.1.2", // Paging
-        pagingRuntimeKtx                  : "androidx.paging:paging-runtime-ktx:2.1.2", // Paging
+        pagingCommon                      : "androidx.paging:paging-common:$pagingVersion", // Paging
+        pagingRuntime                     : "androidx.paging:paging-runtime:$pagingVersion", // Paging
+        pagingRuntimeKtx                  : "androidx.paging:paging-runtime-ktx:$pagingVersion", // Paging
 
         // room
 
-        roomKtx                           : "androidx.room:room-ktx:2.2.4",
-        roomRuntime                       : "androidx.room:room-runtime:2.2.4",
-        roomCompiler                      : "androidx.room:room-compiler:2.2.4",
-        roomCommon                        : "androidx.room:room-common:2.2.4",
-        roomGuava                         : "androidx.room:room-guava:2.2.4",
-        roomMigration                     : "androidx.room:room-migration:2.2.4",
+        roomKtx                           : "androidx.room:room-ktx:$roomVersion",
+        roomRuntime                       : "androidx.room:room-runtime:$roomVersion",
+        roomCompiler                      : "androidx.room:room-compiler:$roomVersion",
+        roomCommon                        : "androidx.room:room-common:$roomVersion",
+        roomGuava                         : "androidx.room:room-guava:$roomVersion",
+        roomMigration                     : "androidx.room:room-migration:$roomVersion",
         roomCoroutines                    : "androidx.room:room-coroutines:2.1.0-alpha04",
-        roomRxjava2                       : "androidx.room:room-rxjava2:2.2.4",
-        roomTesting                       : "androidx.room:room-testing:2.2.4",
+        roomRxjava2                       : "androidx.room:room-rxjava2:$roomVersion",
+        roomTesting                       : "androidx.room:room-testing:$roomVersion",
         sqliteFramework                   : "androidx.sqlite:sqlite-framework:2.1.0",
         sqlite                            : "androidx.sqlite:sqlite:2.1.0",
 
@@ -227,10 +234,10 @@ ext.libs = [
 
         // https://developer.android.com/jetpack/androidx/releases/work
 
-        workRuntimeKtx                    : "androidx.work:work-runtime-ktx:2.3.2", // Kotlin + coroutines
-        workRxJava2                       : "androidx.work:work-rxjava2:2.3.1",  // optional - RxJava2 support
-        workGcm                           : "androidx.work:work-gcm:2.3.1", // optional - GCMNetworkManager support
-        workTesting                       : "androidx.work:work-testing:2.3.1",  // optional - Test helpers
+        workRuntimeKtx                    : "androidx.work:work-runtime-ktx:$workVersion", // Kotlin + coroutines
+        workRxJava2                       : "androidx.work:work-rxjava2:$workVersion",  // optional - RxJava2 support
+        workGcm                           : "androidx.work:work-gcm:$workVersion", // optional - GCMNetworkManager support
+        workTesting                       : "androidx.work:work-testing:$workVersion",  // optional - Test helpers
 
         // tested libs
 
@@ -239,7 +246,7 @@ ext.libs = [
         permissionDispatcherProcessor     : "com.github.hotchemi:permissionsdispatcher-processor:3.2.0",
         parceler                          : "org.parceler:parceler-api:1.1.12",
         parcelerProcessor                 : "org.parceler:parceler:1.1.12",
-        joda                              : "net.danlew:android.joda:2.10.3",
+        joda                              : "net.danlew:android.joda:2.10.6.1",
         smartLocation                     : "io.nlopez.smartlocation:library:3.3.3",
         smartLocationRx                   : "io.nlopez.smartlocation:rx:3.3.3",
         materialdrawer                    : "com.mikepenz:materialdrawer:7.0.0-rc06",
@@ -254,7 +261,6 @@ ext.libs = [
         realmBrowserTest                  : "com.github.jonasrottmann.realm-browser:realm-browser:0.0.14",
         realmBrowserRelease               : "com.github.jonasrottmann.realm-browser:realm-browser:0.0.14",
         realmExtensions                   : "com.github.vicpinm:krealmextensions:2.5.0",
-        crashlytics                       : "com.crashlytics.sdk.android:crashlytics:2.10.1@aar",
         processPhoenix                    : "com.jakewharton:process-phoenix:2.0.0",
         circleIndicator                   : "me.relex:circleindicator:2.0.0", // please use indefinitePagerIndicator instead, due being scalable
         indefinitePagerIndicator          : "com.github.kibotu:Android-Indefinite-Pager-Indicator:2.1.2",
@@ -272,8 +278,8 @@ ext.libs = [
         brainTree                         : "com.braintreepayments.api:drop-in:3.6.1",
         facebook                          : "com.facebook.android:facebook-android-sdk:4.42.0",
         conscryptAndroid                  : "org.conscrypt:conscrypt-android:2.2.1",
-        okhttp4                           : "com.squareup.okhttp3:okhttp:4.3.1",
-        okhttp3LoggingInterceptor         : "com.squareup.okhttp3:logging-interceptor:4.3.1",
+        okhttp4                           : "com.squareup.okhttp3:okhttp:4.8.1",
+        okhttp3LoggingInterceptor         : "com.squareup.okhttp3:logging-interceptor:4.8.1",
         okhttp3ResponseEcho               : "com.github.simonpercic:oklog3:2.3.0",
         javawriter                        : "com.squareup:javawriter:2.5.1",
         nineoldandroids                   : "com.nineoldandroids:library:2.4.0",
@@ -285,14 +291,14 @@ ext.libs = [
         tealium                           : "com.tealium:library:5.6.1",
         hawk                              : "com.orhanobut:hawk:2.0.1",
 
-        htextviewBase                     : "com.hanks:htextview-base:0.1.2",
-        htextviewFade                     : "com.hanks:htextview-fade:0.1.2",
-        htextviewLine                     : "com.hanks:htextview-line:0.1.2",
-        htextviewRainbow                  : "com.hanks:htextview-rainbow:0.1.2",
-        htextviewTyper                    : "com.hanks:htextview-typer:0.1.2",
-        htextviewScale                    : "com.hanks:htextview-scale:0.1.2",
-        htextviewEvaporate                : "com.hanks:htextview-evaporate:0.1.2",
-        htextviewFall                     : "com.hanks:htextview-fall:0.1.2",
+        htextviewBase                     : "com.hanks:htextview-base:$htextviewVersion",
+        htextviewFade                     : "com.hanks:htextview-fade:$htextviewVersion",
+        htextviewLine                     : "com.hanks:htextview-line:$htextviewVersion",
+        htextviewRainbow                  : "com.hanks:htextview-rainbow:$htextviewVersion",
+        htextviewTyper                    : "com.hanks:htextview-typer:$htextviewVersion",
+        htextviewScale                    : "com.hanks:htextview-scale:$htextviewVersion",
+        htextviewEvaporate                : "com.hanks:htextview-evaporate:$htextviewVersion",
+        htextviewFall                     : "com.hanks:htextview-fall:$htextviewVersion",
 
 
         htextviewBase2                    : "com.github.kibotu.HTextView:htextview-base:0.1.28", // https://github.com/hanks-zyh/HTextView/issues/76
@@ -328,13 +334,13 @@ ext.libs = [
 
         conscrypt                         : "org.conscrypt:conscrypt-android:2.2.1",
 
-        retrofit                          : "com.squareup.retrofit2:retrofit:2.7.1",
-        retrofitAdapterRxJava2            : "com.squareup.retrofit2:adapter-rxjava2:2.7.1",
-        retrofitConverterGson             : "com.squareup.retrofit2:converter-gson:2.7.1",
-        retrofitConverterMoshi            : "com.squareup.retrofit2:converter-moshi:2.7.1",
-        retrofitMock                      : "com.squareup.retrofit2:retrofit-mock:2.7.1",
-        converterScalars                  : "com.squareup.retrofit2:converter-scalars:2.7.1",
-        converterSimpleXml                : "com.squareup.retrofit2:converter-simplexml:2.7.1",
+        retrofit                          : "com.squareup.retrofit2:retrofit:$retrofitVersion",
+        retrofitAdapterRxJava2            : "com.squareup.retrofit2:adapter-rxjava2:$retrofitVersion",
+        retrofitConverterGson             : "com.squareup.retrofit2:converter-gson:$retrofitVersion",
+        retrofitConverterMoshi            : "com.squareup.retrofit2:converter-moshi:$retrofitVersion",
+        retrofitMock                      : "com.squareup.retrofit2:retrofit-mock:$retrofitVersion",
+        converterScalars                  : "com.squareup.retrofit2:converter-scalars:$retrofitVersion",
+        converterSimpleXml                : "com.squareup.retrofit2:converter-simplexml:$retrofitVersion",
 
         gson                              : "com.google.code.gson:gson:2.8.6",
         moshiKotlin                       : "com.squareup.moshi:moshi-kotlin:1.8.0",
@@ -348,8 +354,8 @@ ext.libs = [
         branchIoSdk                       : "io.branch.sdk.android:library:2.19.5",
         parallaxImageView                 : "it.dex.dexmovingimageview:dexmovingimageviewlib:0.1.0",
 
-        exoplayer                         : "com.google.android.exoplayer:exoplayer:2.11.1",
-        exoplayerCore                     : "com.google.android.exoplayer:exoplayer-core:2.11.1",
+        exoplayer                         : "com.google.android.exoplayer:exoplayer:2.11.8",
+        exoplayerCore                     : "com.google.android.exoplayer:exoplayer-core:2.11.8",
         gpuVideoAndroid                   : "com.github.MasayukiSuda:GPUVideo-android:v0.1.0",
         amazonExoplayer                   : "com.amazon.android:exoplayer:2.9.6",
         amazonExoplayerImaExtension       : "com.amazon.android:extension-ima:2.9.6",
@@ -486,7 +492,9 @@ ext.libs = [
         localeHelper                      : 'com.zeugmasolutions.localehelper:locale-helper-android:1.0.2',
         androidProgressView               : 'com.github.JastAir:Android-ProgressView:0.1',
 
-        dropboxStore                      : "com.dropbox.mobile.store:store4:4.0.0-alpha03"
+        dropboxStore                      : "com.dropbox.mobile.store:store4:4.0.0-alpha03",
+        QRgen                             : "com.github.kenglxn.QRGen:android:2.6.0",
+        certificateTransparency           : "com.babylon.certificatetransparency:certificatetransparency-android:0.2.0"
 ]
 
 ext.testLibs = [
@@ -525,7 +533,7 @@ ext.androidTestLibs = [
         testCore              : "androidx.test:core:1.2.0",
 
         // room
-        roomTesting           : "androidx.room:room-testing:2.1.0-rc01",
+        roomTesting           : "androidx.room:room-testing:$roomVersion",
 
         // mockito
         mockitoAndroid        : "org.mockito:mockito-android:2.28.2",
