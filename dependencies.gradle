@@ -334,9 +334,9 @@ ext {
     junitVersion = '4.13'
 
     jsonAssertVersion = '1.5.0'
-    jsonUnitVersion = '2.18.1'
-    jsonUnitFluentVersion = '2.18.1'
-    robolectricVersion = '4.3.1'
+    jsonUnitVersion = '2.19.0'
+    jsonUnitFluentVersion = '2.19.0'
+    robolectricVersion = '4.4'
     robolectricSnapshotVersion = '4.3-SNAPSHOT'
     robolectricShadowsMultidexVersion = '4.3'
     robolectricResourcesVersion = '3.3.2'
@@ -346,25 +346,25 @@ ext {
     khronosVersion = 'gl1.1-android-2.1_r1'
     spekVersion = '1.1.5'
     mockitoVersion = '1.5.0'
-    mockkUnitVersion = '1.10.0'
+    mockkUnitVersion = '1.10.2'
     truthVersion = 'c1.0.1'
     jodaTimeVersion = '2.10.1'
 
     // androidTestLibs
-    testCoreVersion = '1.2.0'
+    testCoreVersion = '1.3.0'
     coreTestingVersion = '1.1.1'
     testRunnerVersion = '1.3.0'
     testRunnerAlphaVersion = '1.2.0-beta01'
     testRulesVersion = '1.3.0'
     testRulesAlphaVersion = '1.2.0-beta01'
     uiAutomatorVersion = '2.2.0'
-    testJUnitVersion = '1.1.1'
+    testJUnitVersion = '1.1.2'
     testJUnitKtxVersion = '1.1.2'
     testTruthVersion = '1.3.0'
     truthVersion = '1.0.1'
-    espressoVersion = '3.2.0'
-    idlingConcurrentVersion = '3.2.0'
-    mockkInstrumentationVersion = '1.10.0'
+    espressoVersion = '3.3.0'
+    idlingConcurrentVersion = '3.3.0'
+    mockkInstrumentationVersion = '1.10.2'
     fragmentTestingVersion = '1.1.0-alpha08'
     findBugsVersion = '3.0.2'
     checkerCompatQualVersion = '2.5.5'
@@ -372,7 +372,7 @@ ext {
     errorProneAnnotationsVersion = '2.3.1'
 
     // androidTestUtilLibs
-    orchestratorVersion = '1.2.0'
+    orchestratorVersion = '1.3.0'
     orchestratorAlphaVersion = '1.1.2-alpha02'
 
     // configs
