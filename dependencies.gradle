@@ -10,7 +10,7 @@ ext {
 
     // define all versions to facilitate dependency update (=> updating variables here)
     // @see https://mvnrepository.com/artifact/org.jetbrains.kotlin/kotlin-stdlib-jdk8
-    kotlinVersion = '1.4.0'
+    kotlinVersion = '1.4.10'
 
     // plugins
     gradleBuildToolsVersion = '4.0.1'
