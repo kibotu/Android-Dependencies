@@ -52,8 +52,8 @@ ext {
     archWorkVersion = '1.0.1'
     autoValueAnnotations = '1.7.4'
 
-    constraintLayoutSolverVersion = '2.0.2'
-    constraintLayoutVersion = '2.0.2'
+    constraintLayoutSolverVersion = '1.1.3'
+    constraintLayoutVersion = '1.1.3'
     conscryptVersion = '2.5.1'
     coroutinesVersion = '1.1.1'
 
