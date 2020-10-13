@@ -13,7 +13,7 @@ ext {
     kotlinVersion = '1.4.10'
 
     // plugins
-    gradleBuildToolsVersion = '4.0.1'
+    gradleBuildToolsVersion = '4.1.0'
     gradleRetroLambdaVersion = '3.7.0'
     androidAptVersion = '1.8'
     buildScanPluginVersion = '2.1'
