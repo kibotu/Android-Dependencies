@@ -31,7 +31,7 @@ ext {
 }
 
 ext.plugin = [
-        gradleBuildTools       : "com.android.tools.build:gradle:4.0.1",
+        gradleBuildTools       : "com.android.tools.build:gradle:4.1.0",
         navigationSafeArgs     : "androidx.navigation:navigation-safe-args-gradle-plugin:2.2.1",
         kotlinApt              : "org.jetbrains.kotlin.kapt:org.jetbrains.kotlin.kapt.gradle.plugin:$kotlinVersion",
         hockeyApp              : "de.felixschulze.gradle:gradle-hockeyapp-plugin:3.6",
@@ -79,10 +79,10 @@ ext.libs = [
         androidKtxLifecycleViewmodel      : "androidx.lifecycle:lifecycle-viewmodel-ktx:2.2.0", // 	androidx.viewmodel
         androidKtxLifecycleReactiveStreams: "androidx.lifecycle:lifecycle-reactivestreams-ktx:2.2.0", // 	androidx.lifecycle
 
-        androidKtxNavigationCommon        : "androidx.navigation:navigation-common-ktx:2.3.0", // 	androidx.navigation
-        androidKtxNavigationFragment      : "androidx.navigation:navigation-fragment-ktx:2.3.0", // 	androidx.navigation.fragment
-        androidKtxNavigationUi            : "androidx.navigation:navigation-ui-ktx:2.3.0", // 	androidx.navigation.fragment
-        androidKtxNavigationRuntime       : "androidx.navigation:navigation-runtime-ktx:2.3.0", // 	androidx.navigation
+        androidKtxNavigationCommon        : "androidx.navigation:navigation-common-ktx:2.3.1", // 	androidx.navigation
+        androidKtxNavigationFragment      : "androidx.navigation:navigation-fragment-ktx:2.3.1", // 	androidx.navigation.fragment
+        androidKtxNavigationUi            : "androidx.navigation:navigation-ui-ktx:2.3.1", // 	androidx.navigation.fragment
+        androidKtxNavigationRuntime       : "androidx.navigation:navigation-runtime-ktx:2.3.1", // 	androidx.navigation
 
         // https://developer.android.com/jetpack/androidx/releases/navigation
         navigationFragment                : "androidx.navigation:navigation-fragment:2.2.1",
@@ -145,7 +145,7 @@ ext.libs = [
         playServicesGcm                   : "com.google.android.gms:play-services-gcm:17.0.0", // Google Cloud Messaging
         playServicesDrive                 : "com.google.android.gms:play-services-drive:17.0.0", // Google Drive
         playServicesFitness               : "com.google.android.gms:play-services-fitness:18.0.0", // Google Fit
-        playServicesLocation              : "com.google.android.gms:play-services-location:17.0.0", // Google Location and Activity Recognition
+        playServicesLocation              : "com.google.android.gms:play-services-location:17.1.0", // Google Location and Activity Recognition
         playServicesMaps                  : "com.google.android.gms:play-services-maps:17.0.0", // Google Maps
         playServicesMapsUtils             : "com.google.maps.android:android-maps-utils:0.6.2", // Google Maps
         playServicesMapsUtilsv3           : "com.google.maps.android:android-maps-utils-sdk-v3-compat:0.1", // Google Maps
@@ -158,14 +158,14 @@ ext.libs = [
         playServicesSafetynet             : "com.google.android.gms:play-services-safetynet:17.0.0", // SafetyNet
         playServicesWallet                : "com.google.android.gms:play-services-wallet:18.0.0", // Android Pay
         playServicesWearable              : "com.google.android.gms:play-services-wearable:17.0.0", // Wear OS by Google
-        playServicesCore                  : "com.google.android.play:core:1.7.1", // in app-updates
+        playServicesCore                  : "com.google.android.play:core:1.8.2", // in app-updates
 
         // firebase
         // https://firebase.google.com/docs/android/setup
         // https://firebase.google.com/support/release-notes/android
 
-        firebaseIid                       : "com.google.firebase:firebase-iid:20.1.0",
-        firebaseCommon                    : "com.google.firebase:firebase-common:19.3.0",
+        firebaseIid                       : "com.google.firebase:firebase-iid:20.3.0",
+        firebaseCommon                    : "com.google.firebase:firebase-common:19.3.1",
         firebaseCore                      : "com.google.firebase:firebase-core:17.2.3", // Analytics
         firebaseDatabase                  : "com.google.firebase:firebase-database:19.4.0", // Realtime Database
         firebaseFirestore                 : "com.google.firebase:firebase-firestore:21.6.0", // Cloud Firestore
@@ -270,7 +270,7 @@ ext.libs = [
         viewpagerTransformers             : "com.eftimoff:android-viewpager-transformers:1.0.1@aar",
         guava                             : "com.google.guava:guava:27.0.1-jre",
         preferator                        : "com.sloydev:preferator:1.0.0",
-        recyclerviewAnimators             : "jp.wasabeef:recyclerview-animators:3.0.0",
+        recyclerviewAnimators             : "jp.wasabeef:recyclerview-animators:4.0.1",
         androidSnowfall                   : "com.github.jetradarmobile:android-snowfall:1.1.6",
         googleMapsRipplEffect             : "com.github.aarsy.googlemapsrippleeffect:googlemapsrippleeffect:1.0.2",
         jellyToggleButton                 : "com.nightonke:jellytogglebutton:1.0.2",
@@ -278,8 +278,8 @@ ext.libs = [
         brainTree                         : "com.braintreepayments.api:drop-in:3.6.1",
         facebook                          : "com.facebook.android:facebook-android-sdk:4.42.0",
         conscryptAndroid                  : "org.conscrypt:conscrypt-android:2.2.1",
-        okhttp4                           : "com.squareup.okhttp3:okhttp:4.8.1",
-        okhttp3LoggingInterceptor         : "com.squareup.okhttp3:logging-interceptor:4.8.1",
+        okhttp4                           : "com.squareup.okhttp3:okhttp:4.9.0",
+        okhttp3LoggingInterceptor         : "com.squareup.okhttp3:logging-interceptor:4.9.0",
         okhttp3ResponseEcho               : "com.github.simonpercic:oklog3:2.3.0",
         javawriter                        : "com.squareup:javawriter:2.5.1",
         nineoldandroids                   : "com.nineoldandroids:library:2.4.0",
@@ -363,7 +363,7 @@ ext.libs = [
         mzip                              : "com.github.ghost1372:Mzip-Android:0.4.0",
         numberprogressbar                 : "com.daimajia.numberprogressbar:library:1.4@aar",
         fragmentanimations                : "com.labo.kaji:fragmentanimations:0.1.1",
-        firebaseJobdispatcher             : "com.firebase:firebase-jobdispatcher:0.8.5",
+        firebaseJobdispatcher             : "com.firebase:firebase-jobdispatcher:0.8.6",
         timberLogger                      : "com.jakewharton.timber:timber:4.7.1",
         cameraView                        : "com.wonderkiln:camerakit:0.13.2",
         cameraViewPhotoApparat            : "io.fotoapparat.fotoapparat:library:2.2.0",
