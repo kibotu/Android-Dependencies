@@ -3,12 +3,12 @@ ext {
 
     minSdkVer = 16
 
-    compileSdkVer = 29
-    buildToolsVer = "29.0.3"
-    targetSdkVer = 29
+    compileSdkVer = 30
+    buildToolsVer = "30.0.1"
+    targetSdkVer = 30
 
     // @see https://mvnrepository.com/artifact/org.jetbrains.kotlin/kotlin-stdlib-jdk8
-    kotlinVersion = "1.4.0"
+    kotlinVersion = "1.4.10"
     roomVersion = "2.2.5"
     lifecycleVersion = "2.2.0"
     workVersion = "2.4.0"
@@ -31,12 +31,12 @@ ext {
 }
 
 ext.plugin = [
-        gradleBuildTools       : "com.android.tools.build:gradle:4.1.0",
+        gradleBuildTools       : "com.android.tools.build:gradle:4.1.1",
         navigationSafeArgs     : "androidx.navigation:navigation-safe-args-gradle-plugin:2.2.1",
         kotlinApt              : "org.jetbrains.kotlin.kapt:org.jetbrains.kotlin.kapt.gradle.plugin:$kotlinVersion",
         hockeyApp              : "de.felixschulze.gradle:gradle-hockeyapp-plugin:3.6",
         rocketLauncher         : "com.cesarferreira:android-rocket-launcher:0.9.1",
-        dexcountGradle         : "com.getkeepsafe.dexcount:dexcount-gradle-plugin:1.0.2",
+        dexcountGradle         : "com.getkeepsafe.dexcount:dexcount-gradle-plugin:2.0.0",
         kotlinAndroidExtensions: "org.jetbrains.kotlin:kotlin-android-extensions:$kotlinVersion",
         kotlinGradle           : "org.jetbrains.kotlin:kotlin-gradle-plugin:$kotlinVersion",
         kotlinDokka            : "org.jetbrains.dokka:dokka-android-gradle-plugin:0.9.18",
@@ -72,7 +72,7 @@ ext.libs = [
         kotlinxCoroutinesAndroid          : "org.jetbrains.kotlinx:kotlinx-coroutines-android:1.3.3",
 
         // https://developer.android.com/kotlin/ktx#modules
-        androidKtxCore                    : "androidx.core:core-ktx:1.3.1",
+        androidKtxCore                    : "androidx.core:core-ktx:1.3.2",
         androidKtxPalette                 : "androidx.palette:palette-ktx:1.0.0", // 	androidx.palette.graphics
         androidKtxSqlite                  : "androidx.sqlite:sqlite-ktx:2.1.0", // 	androidx.sqlite.db
         androidKtxCollection              : "androidx.collection:collection-ktx:1.1.0", // 	androidx.collection
@@ -125,7 +125,7 @@ ext.libs = [
         supportExifInterface              : "androidx.exifinterface:exifinterface:1.1.0",
         supportRecommendation             : "androidx.recommendation:recommendation:1.0.0",
         supportWear                       : "androidx.wear:wear:1.0.0",
-        constraintLayout2                 : "androidx.constraintlayout:constraintlayout:2.0.0-rc1",
+        constraintLayout2                 : "androidx.constraintlayout:constraintlayout:2.0.4",
         supportCoreUtils                  : "androidx.legacy:legacy-support-core-utils:1.0.0",
         supportCoreUi                     : "androidx.legacy:legacy-support-core-ui:1.0.0",
         supportDynamicAnimation           : "androidx.dynamicanimation:dynamicanimation:1.0.0",
@@ -350,12 +350,15 @@ ext.libs = [
         rx2java                           : "io.reactivex.rxjava2:rxjava:2.2.17",
         rx2Android                        : "io.reactivex.rxjava2:rxandroid:2.1.1",
         rx2Kotlin                         : "io.reactivex.rxjava2:rxkotlin:2.3.0",
+        rx3java                           : "io.reactivex.rxjava3:rxjava:3.0.7",
+        rx3Android                        : "io.reactivex.rxjava3:rxandroid:3.0.0",
+        rx3Kotlin                         : "io.reactivex.rxjava2:rxkotlin:3.0.1",
         scalableVideoView                 : "com.yqritc:android-scalablevideoview:1.0.4",
         branchIoSdk                       : "io.branch.sdk.android:library:2.19.5",
         parallaxImageView                 : "it.dex.dexmovingimageview:dexmovingimageviewlib:0.1.0",
 
-        exoplayer                         : "com.google.android.exoplayer:exoplayer:2.11.8",
-        exoplayerCore                     : "com.google.android.exoplayer:exoplayer-core:2.11.8",
+        exoplayer                         : "com.google.android.exoplayer:exoplayer:2.12.1",
+        exoplayerCore                     : "com.google.android.exoplayer:exoplayer-core:2.12.1",
         gpuVideoAndroid                   : "com.github.MasayukiSuda:GPUVideo-android:v0.1.0",
         amazonExoplayer                   : "com.amazon.android:exoplayer:2.9.6",
         amazonExoplayerImaExtension       : "com.amazon.android:extension-ima:2.9.6",
@@ -431,8 +434,8 @@ ext.libs = [
         md360Player                       : "com.github.ashqal:MD360Player4Android:2.5.0",
         md360PlayerBeta                   : "com.github.kibotu:MD360Player4Android:2.6.2",
 
-        rxpermissions                     : "com.github.tbruyelle:rxpermissions:0.10.2",
-        zoomage                           : "com.jsibbold:zoomage:1.3.0",
+        rxpermissions                     : "com.github.tbruyelle:rxpermissions:0.12",
+        zoomage                           : "com.jsibbold:zoomage:1.3.1",
 
         freedomPlayer                     : "com.exozet:FreedomPlayer:1.4.7",
         threeHundertSixtyPlayer           : "com.exozet:ThreeHundertSixtyPlayer:1.5.2",
@@ -473,7 +476,7 @@ ext.libs = [
         fastExoPlayerSeeker               : "com.github.kibotu:FastExoPlayerSeeker:1.0.0",
 
         polet                             : "com.github.fievx:Polet:0.1.5",
-        lottie                            : "com.airbnb.android:lottie:3.4.1",
+        lottie                            : "com.airbnb.android:lottie:3.5.0",
         konfetti                          : "nl.dionsegijn:konfetti:1.1.3",
         trail                             : "com.github.amalChandran:trail-android:v1.51",
         trailFork                         : "com.github.kibotu:trail-android:2.0.2",
