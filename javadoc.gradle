@@ -1,8 +1,10 @@
 apply plugin: 'com.github.dcendents.android-maven'
 
+// build a jar with source files
 task sourcesJar(type: Jar) {
     from android.sourceSets.main.java.srcDirs
-    classifier = 'sources'
+    archiveClassifier.set("sources")
+    // archiveFileName.set("${project.name}-src.jar")
 }
 
 task javadoc(type: Javadoc) {
@@ -14,8 +16,9 @@ task javadoc(type: Javadoc) {
 
 // build a jar with javadoc
 task javadocJar(type: Jar, dependsOn: javadoc) {
-    classifier = 'javadoc'
+    archiveClassifier.set("javadoc")
     from javadoc.destinationDir
+    // archiveFileName.set("${project.name}-javadoc.jar")
 }
 
 artifacts {
