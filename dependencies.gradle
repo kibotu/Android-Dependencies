@@ -31,7 +31,7 @@ ext {
 }
 
 ext.plugin = [
-        gradleBuildTools       : "com.android.tools.build:gradle:4.1.1",
+        gradleBuildTools       : "com.android.tools.build:gradle:4.1.2",
         navigationSafeArgs     : "androidx.navigation:navigation-safe-args-gradle-plugin:2.3.2",
         kotlinApt              : "org.jetbrains.kotlin.kapt:org.jetbrains.kotlin.kapt.gradle.plugin:$kotlinVersion",
         hockeyApp              : "de.felixschulze.gradle:gradle-hockeyapp-plugin:3.6",
