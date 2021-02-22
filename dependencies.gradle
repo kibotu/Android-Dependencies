@@ -13,7 +13,7 @@ ext {
     kotlinVersion = '1.4.10'
 
     // plugins
-    gradleBuildToolsVersion = '4.1.0'
+    gradleBuildToolsVersion = '4.1.1'
     gradleRetroLambdaVersion = '3.7.0'
     androidAptVersion = '1.8'
     buildScanPluginVersion = '2.1'
@@ -21,7 +21,7 @@ ext {
     cipherVersion = '0.0.4'
     dexcountGradleVersion = '0.8.5'
     fabricVersion = '1.31.2'
-    googleGmsVersion = '4.3.3'
+    googleGmsVersion = '4.3.5'
     hockeyAppVersion = '3.6'
     imgOptimizerVersion = '1.1.1'
     kotlinDokkaVersion = '0.9.18'
@@ -67,8 +67,8 @@ ext {
     firebaseFirestoreVersion = '18.1.0'
     firebaseStorageVersion = '16.1.0'
     firebaseCrashVersion = '16.2.1'
-    firebaseCrashlyticsPluginVersion = '2.2.1'
-    firebaseCrashlyticsVersion = '17.2.2'
+    firebaseCrashlyticsPluginVersion = '2.5.0'
+    firebaseCrashlyticsVersion = '17.3.1'
     firebaseAuthVersion = '16.2.0'
     firebaseMessagingVersion = '17.4.0'
     firebaseConfigVersion = '16.4.0'
