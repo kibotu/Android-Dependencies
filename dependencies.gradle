@@ -203,9 +203,8 @@ ext {
     paperVersion = '2.5'
     appIntroVersion = 'v4.2.3'
     adapterDelegateVersion = '3.0.1'
-    glideVersion = '4.11.0'
-    glideAnnotationsProcessorVersion = '4.11.0'
-    glideTransformationsVersion = '4.1.0'
+    glideVersion = '4.12.0'
+    glideTransformationsVersion = '4.3.0'
     gpuImageLibraryVersion = '1.4.1'
     photoViewVersion = '2.0.0'
     mosbyMviVersion = '3.1.1'
@@ -661,7 +660,7 @@ ext.libs = [
         adapterDelegate                   : "com.hannesdorfmann:adapterdelegates3:$adapterDelegateVersion",
 
         glide                             : "com.github.bumptech.glide:glide:$glideVersion",
-        glideAnnotationsProcessor         : "com.github.bumptech.glide:compiler:$glideAnnotationsProcessorVersion",
+        glideAnnotationsProcessor         : "com.github.bumptech.glide:compiler:$glideVersion",
         glideTransformations              : "jp.wasabeef:glide-transformations:$glideTransformationsVersion",
 
         gpuImageLibrary                   : "jp.co.cyberagent.android.gpuimage:gpuimage-library:$gpuImageLibraryVersion",
