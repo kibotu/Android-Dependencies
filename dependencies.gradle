@@ -332,17 +332,15 @@ ext {
     khronosVersion = 'gl1.1-android-2.1_r1'
     spekVersion = '1.1.5'
     mockitoVersion = '1.5.0'
-    mockkUnitVersion = '1.11.0'
+    mockkVersion = '1.11.0'
     truthVersion = 'c1.0.1'
     jodaTimeVersion = '2.10.10'
 
     // androidTestLibs
     testCoreVersion = '1.3.0'
-    coreTestingVersion = '1.1.1'
+    testingCoreVersion = '2.1.0'
     testRunnerVersion = '1.3.0'
-    testRunnerAlphaVersion = '1.2.0-beta01'
     testRulesVersion = '1.3.0'
-    testRulesAlphaVersion = '1.2.0-beta01'
     uiAutomatorVersion = '2.2.0'
     testJUnitVersion = '1.1.2'
     testJUnitKtxVersion = '1.1.2'
@@ -350,7 +348,6 @@ ext {
     truthVersion = '1.1.2'
     espressoVersion = '3.3.0'
     idlingConcurrentVersion = '3.3.0'
-    mockkInstrumentationVersion = '1.10.2'
     fragmentTestingVersion = '1.1.0-alpha08'
     findBugsVersion = '3.0.2'
     checkerCompatQualVersion = '2.5.5'
@@ -359,7 +356,6 @@ ext {
 
     // androidTestUtilLibs
     orchestratorVersion = '1.3.0'
-    orchestratorAlphaVersion = '1.1.2-alpha02'
 
     // configs
     retrolambdaConfigLibVersion = '2.3.0'
@@ -812,7 +808,7 @@ ext.testLibs = [
         khronos                   : "org.khronos:opengl-api:$khronosVersion",
         spek                      : "org.jetbrains.spek:spek-api:$spekVersion",
         mockito                   : "com.nhaarman:mockito-kotlin:$mockitoVersion",
-        mockkUnit                 : "io.mockk:mockk:$mockkUnitVersion",
+        mockkUnit                 : "io.mockk:mockk:$mockkVersion",
         truth                     : "com.google.truth:truth:$truthVersion",
         jodaTime                  : "joda-time:joda-time:$jodaTimeVersion",
         kotlinReflect             : "org.jetbrains.kotlin:kotlin-reflect:$kotlinVersion",
@@ -822,23 +818,24 @@ ext.testLibs = [
 ext.androidTestLibs = [
 
         // Core library
-        testCore              : "androidx.test:core:$testCoreVersion",
-        coreTesting           : "android.arch.core:core-testing:$coreTestingVersion",
+        testCore          : "androidx.test:core:$testCoreVersion",
+        coreTesting       : "androidx.arch.core:core-testing:$testingCoreVersion",
 
         // AndroidJUnitRunner and JUnit Rules
         testRunner        : "androidx.test:runner:$testRunnerVersion",
-        testRunnerAlpha   : "androidx.test:runner:$testRunnerAlphaVersion",
         testRules         : "androidx.test:rules:$testRulesVersion",
-        testRulesAlpha    : "androidx.test:rules:$testRulesAlphaVersion",
+
+        // workManager - test helpers
+        testWorkers       : "androidx.work:work-testing:$workManagerKtxVersion",
 
         // ui-automator
         uiAutomator       : "androidx.test.uiautomator:uiautomator:$uiAutomatorVersion",
 
         // Assertions
-        testJUnit             : "androidx.test.ext:junit:$testJUnitVersion",
-        testJUnitKtx          : "androidx.test.ext:junit-ktx:$testJUnitKtxVersion",
-        testTruth             : "androidx.test.ext:truth:$testTruthVersion",
-        truth                 : "com.google.truth:truth:$truthVersion",
+        testJUnit         : "androidx.test.ext:junit:$testJUnitVersion",
+        testJUnitKtx      : "androidx.test.ext:junit-ktx:$testJUnitKtxVersion",
+        testTruth         : "androidx.test.ext:truth:$testTruthVersion",
+        truth             : "com.google.truth:truth:$truthVersion",
 
         // Espresso dependencies
         espressoCore          : "androidx.test.espresso:espresso-core:$espressoVersion",
@@ -855,7 +852,7 @@ ext.androidTestLibs = [
         espressoIdlingResource: "androidx.test.espresso:espresso-idling-resource:$espressoVersion",
 
         // mock instrumentation
-        mockkInstrumentation: "io.mockk:mockk-android:$mockkInstrumentationVersion",
+        mockkInstrumentation: "io.mockk:mockk-android:$mockkVersion",
 
         fragmentTesting       : "androidx.fragment:fragment-testing:$fragmentTestingVersion",
 
@@ -867,7 +864,6 @@ ext.androidTestLibs = [
 
 ext.androidTestUtilLibs = [
         orchestrator     : "androidx.test:orchestrator:$orchestratorVersion",
-        orchestratorAlpha: "androidx.test:orchestrator:$orchestratorAlphaVersion"
 ]
 
 ext.configs = [
