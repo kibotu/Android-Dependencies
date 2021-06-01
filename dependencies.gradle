@@ -394,7 +394,6 @@ ext.plugin = [
         // deprecated: use build:gradle:3
         hockeyApp                    : "de.felixschulze.gradle:gradle-hockeyapp-plugin:$hockeyAppVersion",
         imgOptimizer                 : "com.chenenyu:img-optimizer:$imgOptimizerVersion",
-        kotlinAndroidExtensions      : "org.jetbrains.kotlin:kotlin-android-extensions:$kotlinVersion",
         kotlinApt                    : "org.jetbrains.kotlin.kapt:org.jetbrains.kotlin.kapt.gradle.plugin:$kotlinVersion",
         kotlinDokka                  : "org.jetbrains.dokka:dokka-android-gradle-plugin:$kotlinDokkaVersion",
         kotlinGradle                 : "org.jetbrains.kotlin:kotlin-gradle-plugin:$kotlinVersion",
