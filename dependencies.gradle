@@ -216,6 +216,7 @@ ext {
     retrofitAdapterRxJava2Version = '2.9.0'
     retrofitCoroutineAdapterVersion = '2.5.0'
     retrofitConverterGsonVersion = '2.9.0'
+    retrofitConverterSerialization = '0.8.0'
     retrofitConverterMoshiVersion = '2.7.1'
     retrofitMockVersion = '2.9.0'
     converterScalarsVersion = '2.9.0'
@@ -674,6 +675,7 @@ ext.libs = [
         retrofitAdapterRxJava2            : "com.squareup.retrofit2:adapter-rxjava2:$retrofitAdapterRxJava2Version",
         retrofitCoroutineAdapter          : "com.jakewharton.retrofit:retrofit2-kotlin-coroutines-adapter:$retrofitCoroutineAdapterVersion",
         retrofitConverterGson             : "com.squareup.retrofit2:converter-gson:$retrofitConverterGsonVersion",
+        retrofitConverterSerialization    : "com.jakewharton.retrofit:retrofit2-kotlinx-serialization-converter:$retrofitConverterSerialization",
         retrofitConverterMoshi            : "com.squareup.retrofit2:converter-moshi:$retrofitConverterMoshiVersion",
         retrofitMock                      : "com.squareup.retrofit2:retrofit-mock:$retrofitMockVersion",
         converterScalars                  : "com.squareup.retrofit2:converter-scalars:$converterScalarsVersion",
