@@ -46,6 +46,7 @@ ext {
     androidKtxLifecycleViewmodelVersion = '2.3.0'
     androidKtxLifecycleReactiveStreamsVersion = '2.0.0'
     androidxNavigationVersion = '1.0.0'
+    kotlinxSerializationVersion = '1.2.2'
 
     appCompatResourcesVersion = '1.2.0'
     archCoreVersion = '2.1.0'
@@ -374,6 +375,7 @@ ext {
 
 ext.plugin = [
         gradleBuildTools             : "com.android.tools.build:gradle:$gradleBuildToolsVersion",
+        kotlinxSerialization         : "org.jetbrains.kotlin:kotlin-serialization:$kotlinVersion",
         // deprecated: use build:gradle:3
         gradleRetroLambda            : "me.tatarka:gradle-retrolambda:$gradleRetroLambdaVersion",
         androidApt                   : "com.neenbedankt.gradle.plugins:android-apt:$androidAptVersion",
@@ -420,6 +422,7 @@ ext.libs = [
         kotlinJdk8                        : "org.jetbrains.kotlin:kotlin-stdlib-jdk8:$kotlinVersion",
         kotlinxCoroutinesCore             : "org.jetbrains.kotlinx:kotlinx-coroutines-core:$coroutinesVersion",
         kotlinxCoroutinesAndroid          : "org.jetbrains.kotlinx:kotlinx-coroutines-android:$coroutinesVersion",
+        kotlinxSerializationJson          :  "org.jetbrains.kotlinx:kotlinx-serialization-json:$kotlinxSerializationVersion",
 
         // https://developer.android.com/kotlin/ktx#modules
         androidKtxCore                    : "androidx.core:core-ktx:$androidKtxCoreVersion",
