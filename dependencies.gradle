@@ -58,7 +58,7 @@ ext {
     conscryptVersion = '2.5.1'
     coroutinesVersion = '1.1.1'
 
-    detektVersion = '1.12.0'
+    detektVersion = '1.18.0'
 
     firebaseAnalyticsVersion = '17.5.0'
     firebaseIidVersion = '17.1.0'
