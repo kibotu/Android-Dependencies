@@ -236,8 +236,8 @@ ext {
     exoplayerVersion = '2.10.5'
     exoplayerImaExtensionVersion = '2.7.3'
     gpuVideoAndroidVersion = 'v0.1.0'
-    amazonExoplayerVersion = '2.11.3'
-    amazonExoplayerImaExtensionVersion = '2.11.3'
+    amazonExoplayerVersion = '2.13.3'
+    amazonExoplayerImaExtensionVersion = '2.13.3'
 
     mzipVersion = '0.4.0'
     numberprogressbarVersion = '1.4'
