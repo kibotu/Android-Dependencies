@@ -6,11 +6,11 @@ ext {
     compileSdkVer = 30
     targetSdkVer = 30
 
-    buildToolsVer = '30.0.0'
+    buildToolsVer = '30.0.3'
 
     // define all versions to facilitate dependency update (=> updating variables here)
     // @see https://mvnrepository.com/artifact/org.jetbrains.kotlin/kotlin-stdlib-jdk8
-    kotlinVersion = '1.5.0'
+    kotlinVersion = '1.5.30'
 
     // plugins
     gradleBuildToolsVersion = '4.1.1'
