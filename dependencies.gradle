@@ -6,11 +6,11 @@ ext {
     compileSdkVer = 30
     targetSdkVer = 30
 
-    buildToolsVer = '30.0.0'
+    buildToolsVer = '30.0.3'
 
     // define all versions to facilitate dependency update (=> updating variables here)
     // @see https://mvnrepository.com/artifact/org.jetbrains.kotlin/kotlin-stdlib-jdk8
-    kotlinVersion = '1.5.0'
+    kotlinVersion = '1.5.30'
 
     // plugins
     gradleBuildToolsVersion = '4.1.1'
@@ -236,8 +236,10 @@ ext {
     exoplayerVersion = '2.10.5'
     exoplayerImaExtensionVersion = '2.7.3'
     gpuVideoAndroidVersion = 'v0.1.0'
-    amazonExoplayerVersion = '2.11.3'
-    amazonExoplayerImaExtensionVersion = '2.11.3'
+    amazonExoplayerVersion = '2.13.3'
+    amazonExoplayerImaExtensionVersion = '2.13.3'
+
+    youboraVersion = '6.7.23'
 
     mzipVersion = '0.4.0'
     numberprogressbarVersion = '1.4'
@@ -699,6 +701,8 @@ ext.libs = [
         gpuVideoAndroid                   : "com.github.MasayukiSuda:GPUVideo-android:$gpuVideoAndroidVersion",
         amazonExoplayer                   : "com.amazon.android:exoplayer:$amazonExoplayerVersion",
         amazonExoplayerImaExtension       : "com.amazon.android:extension-ima:$amazonExoplayerImaExtensionVersion",
+        
+        youbora                           : "com.nicepeopleatwork:exoplayer-adapter:$youboraVersion",
 
         mzip                              : "com.github.ghost1372:Mzip-Android:$mzipVersion",
         numberprogressbar                 : "com.daimajia.numberprogressbar:library:$numberprogressbarVersion@aar",
