@@ -669,9 +669,9 @@ ext.libs = [
 
         mosbyMvi                          : "com.hannesdorfmann.mosby3:mvi:$mosbyMviVersion",
 
-        koinAndroidxScope                 : "org.koin:koin-androidx-scope:$koinVersion",
-        koinAndroidxViewmodel             : "org.koin:koin-androidx-viewmodel:$koinVersion",
-        koinTest                          : "org.koin:koin-test:$koinVersion",
+        koinAndroidxScope                 : "io.insert-koin:koin-androidx-scope:$koinVersion",
+        koinAndroidxViewmodel             : "io.insert-koin:koin-androidx-viewmodel:$koinVersion",
+        koinTest                          : "io.insert-koin:koin-test:$koinVersion",
 
         retrofit                          : "com.squareup.retrofit2:retrofit:$retrofitVersion",
         retrofitAdapterRxJava2            : "com.squareup.retrofit2:adapter-rxjava2:$retrofitAdapterRxJava2Version",
