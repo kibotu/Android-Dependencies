@@ -192,8 +192,7 @@ ext {
     photoViewVersion = '2.0.0'
     mosbyMviVersion = '3.1.1'
 
-    koinVersion = '2.0.1'
-
+    koinVersion = '3.1.2'
     retrofitVersion = '2.9.0'
     retrofitAdapterRxJava2Version = '2.9.0'
     retrofitCoroutineAdapterVersion = '2.5.0'
@@ -616,9 +615,8 @@ ext.libs = [
 
         mosbyMvi                          : "com.hannesdorfmann.mosby3:mvi:$mosbyMviVersion",
 
-        koinAndroidxScope                 : "io.insert-koin:koin-androidx-scope:$koinVersion",
-        koinAndroidxViewmodel             : "io.insert-koin:koin-androidx-viewmodel:$koinVersion",
-        koinTest                          : "io.insert-koin:koin-test:$koinVersion",
+        koinAndroid                       : "io.insert-koin:koin-android:$koinVersion",
+        koinTestJUnit4                    : "io.insert-koin:koin-test-junit4:$koinVersion",
 
         retrofit                          : "com.squareup.retrofit2:retrofit:$retrofitVersion",
         retrofitAdapterRxJava2            : "com.squareup.retrofit2:adapter-rxjava2:$retrofitAdapterRxJava2Version",
