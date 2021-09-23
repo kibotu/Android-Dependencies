@@ -14,7 +14,6 @@ ext {
 
     // plugins
     gradleBuildToolsVersion = '4.1.1'
-    dexcountGradleVersion = '3.0.0'
     googleGmsVersion = '4.3.10'
     kotlinDokkaVersion = '1.5.0'
 
@@ -142,7 +141,6 @@ ext.plugin = [
         kotlinxSerialization         : "org.jetbrains.kotlin:kotlin-serialization:$kotlinVersion",
         // static code analysis for kotlin
         detekt                       : "io.gitlab.arturbosch.detekt:detekt-gradle-plugin:$detektVersion",
-        dexcountGradle               : "com.getkeepsafe.dexcount:dexcount-gradle-plugin:$dexcountGradleVersion",
         firebaseCrashlyticsGradle    : "com.google.firebase:firebase-crashlytics-gradle:$firebaseCrashlyticsPluginVersion",
         // https://developers.google.com/android/guides/google-services-plugin
         gms                          : "com.google.gms:google-services:$googleGmsVersion"
