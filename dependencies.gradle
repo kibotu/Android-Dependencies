@@ -86,7 +86,9 @@ ext {
     loggerVersion = '4.4.4'
     timberLoggerVersion = '5.0.1'
 
-    exozetCoreVersion = '3.3.0'
+    applicationProviderVersion = '1.0.0'
+    resourceExtensionVersion = '1.4.0'
+    secureStorageVersion = '1.2.4'
 
     leakcanaryVersion = '2.7'
     detektVersion = '1.18.1'
@@ -223,13 +225,16 @@ ext.libs = [
         logger                          : "com.github.kibotu:StreamingAndroidLogger:$loggerVersion",
         timberLogger                    : "com.jakewharton.timber:timber:$timberLoggerVersion",
 
+        // applicationProvider = dependency for resourceExtension
+        applicationProvider             : "com.github.florent37:applicationprovider:$applicationProviderVersion",
+        resourceExtension               : "com.github.kibotu:AndroidResourceExtensions:$resourceExtensionVersion",
+        secureStorage                   : "de.adorsys.android:securestoragelibrary:$secureStorageVersion",
+
         tealium                         : "com.tealium:library:$tealiumVersion",
         hawk                            : "com.orhanobut:hawk:$hawkVersion",
         joda                            : "net.danlew:android.joda:$jodaVersion",
 
-        leakcanary                      : "com.squareup.leakcanary:leakcanary-android:$leakcanaryVersion",
-
-        exozetCore                      : "com.github.exozet:AndroidCore:$exozetCoreVersion"
+        leakcanary                      : "com.squareup.leakcanary:leakcanary-android:$leakcanaryVersion"
 ]
 
 ext.testLibs = [
