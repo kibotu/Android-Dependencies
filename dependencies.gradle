@@ -12,298 +12,88 @@ ext {
     // @see https://mvnrepository.com/artifact/org.jetbrains.kotlin/kotlin-stdlib-jdk8
     kotlinVersion = '1.5.30'
 
-    // plugins
-    gradleBuildToolsVersion = '4.1.1'
-    dexcountGradleVersion = '3.0.0'
+    // plugins => 7 - 7.0.2 result in NullPointerException when inflating views with include tag
+    androidGradleBuildToolsVersion = '4.2.2'
     googleGmsVersion = '4.3.10'
     kotlinDokkaVersion = '1.5.0'
 
     // libs
-    activityKtxVersion = '1.0.0'
-    androidKtxCoreVersion = '1.3.1'
-    androidKtxFragmentVersion = '1.3.0'
-    androidKtxPaletteVersion = '1.0.0'
-    androidKtxSqliteVersion = '2.0.0'
-    androidKtxCollectionVersion = '1.1.0'
-    androidKtxLifecycleViewmodelVersion = '2.3.0'
-    androidKtxLifecycleReactiveStreamsVersion = '2.0.0'
-    androidxNavigationVersion = '1.0.0'
-    kotlinxSerializationVersion = '1.2.2'
+    coreKtxVersion = '1.6.0'
+    activityKtxVersion = '1.3.1'
+    fragmentKtxVersion = '1.3.6'
+    collectionKtxVersion = '1.1.0'
+    lifecycleKtxVersion = '2.3.1'
 
-    appCompatResourcesVersion = '1.2.0'
-    archCoreVersion = '2.1.0'
-    archWorkVersion = '1.0.1'
-    autoValueAnnotations = '1.7.4'
+    appCompatVersion = '1.3.1'
+    constraintLayoutVersion = '2.1.0'
+    gridLayoutVersion = '1.0.0'
+    leanbackVersion = '1.0.0'
+    materialDesignVersion = '1.4.0'
+    recyclerviewVersion = '1.2.1'
+    vectorDrawableVersion = '1.1.0'
 
-    constraintLayoutSolverVersion = '1.1.3'
-    constraintLayoutVersion = '1.1.3'
-    conscryptVersion = '2.5.1'
-    coroutinesVersion = '1.1.1'
+    recyclerViewPresenterVersion = '5.0.1'
+    recyclerviewAnimatorsVersion = '4.0.1'
 
-    detektVersion = '1.18.1'
-
-    firebaseAnalyticsVersion = '17.5.0'
-    firebaseIidVersion = '17.1.0'
-    firebaseCommonVersion = '16.1.0'
-    firebaseCoreVersion = '16.0.8'
-    firebaseDatabaseVersion = '6.1.0'
-    firebaseFirestoreVersion = '18.1.0'
-    firebaseStorageVersion = '16.1.0'
-    firebaseCrashVersion = '16.2.1'
-    firebaseCrashlyticsPluginVersion = '2.7.1'
-    firebaseCrashlyticsVersion = '18.2.1'
-    firebaseAuthVersion = '16.2.0'
-    firebaseMessagingVersion = '17.4.0'
-    firebaseConfigVersion = '16.4.0'
-    firebaseInvitesVersion = '16.1.1'
-    firebaseAdsVersion = '17.2.0'
-    firebaseAppindexingVersion = '17.1.0'
-    firebasePerfVersion = '16.2.4'
-    firebaseFunctionsVersion = '16.3.0'
-    firebaseMlVisionVersion = '19.0.2'
-    firebaseMlModelInterpreterVersion = '17.0.3'
-
-    fragmentKtxVersion = '1.1.0'
-    lifecycleVersion = '2.2.0'
-
-    navigationFragmentVersion = '1.0.0'
-    navigationUIVersion = '1.0.0'
-    pagingVersion = '2.1.0'
-    persistenceDbVersion = '2.0.0'
-
-    playServicesPlusVersion = '16.0.0'
-    playServicesAuthVersion = '16.0.1'
-    playServicesBaseVersion = '16.1.0'
-    playServicesIdentityVersion = '16.0.0'
-    playServicesAnalyticsVersion = '16.0.8'
-    playServicesAwarenessVersion = '16.0.0'
-    playServicesCastVersion = '16.1.2'
-    playServicesGcmVersion = '16.1.0'
-    playServicesDriveVersion = '16.0.0"'
-    playServicesFitnessVersion = '16.0.1'
-    playServicesLocationVersion = '16.0.0'
-    playServicesMapsVersion = '16.1.0'
-    playServicesAdsVersion = '17.2.0'
-    playServicesPlacesVersion = '16.0.0'
-    playServicesVisionVersion = '17.0.2'
-    playServicesNearbyVersion = '16.0.0'
-    playServicesPanoramaVersion = '17.0.0'
-    playServicesGamesVersion = '16.0.0'
-    playServicesSafetynetVersion = '16.0.0'
-    playServicesWalletVersion = '16.0.1'
-    playServicesWearableVersion = '16.0.1'
-
-    persistenceRoomVersion = '2.1.0-alpha05'
-    roomVersion = '1.1.1'
-
-    supportActivityVersion = '1.0.0'
-    supportAnimatedVectorDrawableVersion = '1.1.0-alpha01'
-    supportAnnotationsVersion = '1.1.0'
-    supportAppCompatVersion = '1.2.0'
-    supportCardViewVersion = '1.0.0'
-    supportCompatVersion = '1.3.2'
-    supportCoreUiVersion = '1.0.0'
-    supportCoreUtilsVersion = '1.0.0'
-    supportCustomTabsVersion = '1.0.0'
-    supportDesignVersion = '1.2.1'
-    supportDynamicAnimationVersion = '1.0.0'
-    supportExifInterfaceVersion = '1.0.0'
-    supportGridLayoutVersion = '1.0.0'
-    supportLeanbackVersion = '1.0.0'
-    supportMediaRouterVersion = '1.1.0-alpha02'
-    supportMultiDexVersion = '2.0.1'
-    supportFragmentVersion = '1.1.0'
-    supportMediaCompatVersion = '1.1.0-alpha02'
-    supportPaletteVersion = '1.0.0'
-    supportPercentVersion = '1.0.0'
-    supportPreferenceLeanbackVersion = '1.0.0'
-    supportPreferenceV7Version = '1.1.0-alpha04'
-    supportPreferenceV14Version = '1.0.0'
-    supportRecommendationVersion = '1.0.0'
-    supportRecyclerviewVersion = '1.1.0'
-    supportV13Version = '1.0.0'
-    supportV4Version = '1.0.0'
-    supportVectorDrawableVersion = '1.1.0'
-    supportWearVersion = '1.0.0'
-
-    viewPager2Version = '1.0.0-alpha02'
-
-    connectionBuddyVersion = '2.0.0-beta1'
-    calligraphyVersion = '2.3.0'
-    calligraphy3Version = 'v4.0.1'
-    viewPumpVersion = 'v2.0.0'
-    permissionDispatcherVersion = '3.2.0'
-    permissionDispatcherProcessorVersion = '3.2.0'
-    parcelerVersion = '1.1.12'
-    jodaVersion = '2.10.6.1'
-    smartLocationVersion = '3.3.3'
-    materialdrawerVersion = '7.0.0-beta01'
-    markdownviewVersion = 'k1.0.5'
-    rxmarkdownVersion = '0.1.1-beta'
-    stethoVersion = '1.5.1'
-    stethoRealmVersion = '2.1.0'
-    stethoOkHttp3Version = '1.5.1'
-    stethoJsRhinoVersion = '1.4.2'
-    realmBrowserVersion = '0.0.14'
-    realmExtensionsVersion = '2.3.0'
-    processPhoenixVersion = '1.1.0'
-    circleIndicatorVersion = '2.0.0'
-    indefinitePagerIndicatorVersion = '2.0.4'
-    smarttablayoutLibVersion = '1.6.1'
-    smartTablayoutUtilsVersion = '1.6.1'
-    fragmentViewpagerVersion = '1.0.0'
-    viewpagerTransformersVersion = '1.0.1'
-    guavaVersion = '30.1-android'
-    preferatorVersion = '1.0.0'
-    recyclerviewAnimatorsVersion = '3.0.0'
-    androidSnowfallVersion = '1.1.6'
-    googleMapsRipplEffectVersion = '1.0.2'
-    jellyToggleButtonVersion = '1.0.2'
-    currencyEditTextVersion = '1.4.4-SNAPSHOT'
-    brainTreeVersion = 'drop-in:3.6.1'
-    facebookVersion = '4.+'
-    okhttp3Version = '4.9.0'
-    okhttp3ResponseEchoVersion = '2.3.0'
-    javawriterVersion = '2.5.1'
-    kotterknifeVersion = '0.1.0-SNAPSHOT'
-    butterknifeVersion = '10.1.0'
-    nineoldandroidsVersion = '2.4.0'
-    pubnubGsonVersion = '4.5.0'
-    wowoViewPagerVersion= '1.0.2'
-    numberPickerVersion = '1.0.1'
-    adjustVersion = '4.10.2'
-    facebookCoreVersion = '4.31.0'
-    tealiumVersion = '5.6.1'
-    hawkVersion = '2.0.1'
-
-    awsIotVersion = '2.13.3'
-    awsClientVersion = '2.13.3'
-    sweetalertVersion = '1.3'
-    circularRevealVersion = '2.1.0'
-    scalpelVersion = '1.1.2'
-    exomediaVersion = '3.1.1'
-    sqliteassethelperVersion = '2.0.1'
-    paperVersion = '2.5'
-    appIntroVersion = 'v4.2.3'
-    adapterDelegateVersion = '3.0.1'
-    glideVersion = '4.12.0'
-    glideTransformationsVersion = '4.3.0'
-    gpuImageLibraryVersion = '1.4.1'
-    photoViewVersion = '2.0.0'
+    koinVersion = '3.1.2'
     mosbyMviVersion = '3.1.1'
 
-    koinVersion = '2.0.1'
-
-    retrofitVersion = '2.9.0'
-    retrofitAdapterRxJava2Version = '2.9.0'
-    retrofitCoroutineAdapterVersion = '2.5.0'
-    retrofitConverterGsonVersion = '2.9.0'
-    retrofitConverterSerialization = '0.8.0'
-    retrofitConverterMoshiVersion = '2.7.1'
-    retrofitMockVersion = '2.9.0'
-    converterScalarsVersion = '2.9.0'
-    converterSimpleXmlVersion = '2.9.0'
-
-    gsonVersion = '2.8.5'
-    moshiVersion = '1.8.0'
-
-    kalmanRxVersion = '1.2.1'
-    rx2javaVersion = '2.2.17'
-    rx2AndroidVersion = '2.1.1'
-    rx2KotlinVersion = '2.4.0'
-    scalableVideoViewVersion = '1.0.4'
-    branchIoSdkVersion = '2.+'
-    parallaxImageViewVersion = '0.1.0'
-
-    exoplayerVersion = '2.10.5'
-    exoplayerImaExtensionVersion = '2.7.3'
-    gpuVideoAndroidVersion = 'v0.1.0'
-    amazonExoplayerVersion = '2.13.3'
-    amazonExoplayerImaExtensionVersion = '2.13.3'
-
-    youboraVersion = '6.7.23'
-
-    mzipVersion = '0.4.0'
-    numberprogressbarVersion = '1.4'
-    fragmentanimationsVersion = '0.1.1'
-    firebaseJobdispatcherVersion = '0.8.5'
-    linqVersion = 'b1.1.0'
-    timberLoggerVersion = '4.7.1'
-    cameraViewVersion = '0.13.2'
-    cameraViewPhotoApparatVersion = '2.2.0'
-    cameraPriVersion = '3.2.0'
-    cameraViewOtaliasVersion = '2.0.0-beta04'
-    realmEncryptionHelperVersion = '1.0.1'
-    preferencesHelperVersion = '1.0.0'
-
-    leakcanaryVersion = '2.1'
-
-    // exozetCore alternative source   : "com.exozet:core:",
-    exozetCoreVersion = '3.3.0'
-    commonUtilsVersion = '0.7.2'
-    deviceInfoVersion = '1.3.2'
-    recyclerViewPresenterVersion = '4.3.4'
-    googlePlayForceUpdateVersion = '1.0.8'
-    timeBombVersion = '1.1.0'
-    bloodHoundVersion = '3.1.0'
-    openAndroidSSLWrapperVersion = '1.0.7'
-    androidAnimationsActionsVersion = '1.0.7'
-    urlShortenerVersion = '1.0.7'
-    heartRateOmeterVersion = '1.3.2'
-    fastGcmVersion = '1.4.3'
-    shareIntentBuilderVersion = 'v0.0.3'
-    actionAnimationsVersion = '1.0.7'
-    androidPgpVersion = '1.2.1'
-    swipeDirectionViewPagerVersion = '3.0.1'
-    loggerVersion = '4.4.3'
-    materialDialogsVersion = '0.9.6.0'
-    orhanobutLoggerVersion = '2.1.1'
-
-    htmlcompatVersion = '1.1.1'
-    dropshadowVersion = '1.0.3'
-    searchViewVersion = '2.1.1'
-    expandablelayoutVersion = '2.9.1'
-    htmlTextViewVersion = '3.4'
-    rxandroidbleVersion = '1.4.3'
-    shortcutBadgerVersion = '1.1.21'
-    fileDownloaderVersion = '1.7.5'
-    okdownloadVersion = '1.0.5'
-    expandableLayoutVersion = '1.0.5'
-    expandableLayoutForkVersion = '1.0.5.1'
-    greenrobotEventbusVersion = '3.1.1'
-    daimajiaEasingVersion = '2.1'
-    apacheCommonsIoVersion = '1.3.2'
-    secureStorageVersion = '1.2.4'
-
-    wheelNumberPickerVersion = '1.0.1'
-    wheelNumberPickerKibotuVersion = '1.2.1'
-    dotsIndicatorVersion = '2.2.1'
-    rippleBackgroundVersion = '1.0.1'
-    catLoadingVersion = '1.0.4'
-    inputMaskVersion = '4.0.0'
-    md360PlayerVersion = '2.5.0'
-    md360PlayerBetaVersion = '2.6.2'
-    rxpermissionsVersion = '0.10.2'
-    zoomageVersion = '1.2.0'
-    freedomPlayerVersion = '1.0.5'
-    threeHundertSixtyPlayerVersion = '1.1.1'
-    sequentialImagePlayerVersion = '1.0.4'
-
-    flipperVersion = '0.24.2'
-    soloaderVersion = '0.9.0'
-    xozRicohThetaSDKVersion = '1.1.2'
-    jrSpinnerVersion = '1.0.0'
-    applicationProviderVersion = '1.0.0'
-    rxSensorsVersion = '1.0'
-    reactiveWiFiVersion = '0.3.0'
-    rxLintVersion = '1.6.1'
-    ffmpegAndroidVersion = '0.3.2'
     tvProviderVVersion = '1.0.0'
     // this version is NOT compatible with Android 12 (S)
     workManagerKtxVersion = '2.6.0'
     workManagerRx2Version = '2.6.0'
 
-    // testlibs
+    /**
+     * this is the final version for rxJava2
+     * no further maintenance
+     * would need to migrate to rxJava3
+     */
+    rx2javaVersion = '2.2.21'
+    rx2AndroidVersion = '2.1.1'
+    rx2KotlinVersion = '2.4.0'
+
+    firebaseCrashlyticsPluginVersion = '2.7.1'
+    firebaseCrashlyticsVersion = '18.2.1'
+
+    // region network versions
+    retrofitVersion = '2.9.0'
+    retrofitConverterSerializationVersion = '0.8.0'
+
+    kotlinxSerializationVersion = '1.2.2'
+
+    okhttp3Version = '4.9.1'
+    okhttp3ResponseEchoVersion = '2.3.0'
+
+    conscryptVersion = '2.5.2'
+    // endregion
+
+    amazonExoplayerVersion = '2.13.3'
+    amazonExoplayerImaExtensionVersion = '2.13.3'
+
+    // DO NOT UPDATE !
+    awsIotVersion = '2.13.3'
+    awsClientVersion = '2.13.3'
+
+    youboraVersion = '6.7.23'
+
+    glideVersion = '4.12.0'
+    glideTransformationsVersion = '4.3.0'
+
+    tealiumVersion = '5.9.1'
+    hawkVersion = '2.0.1'
+    jodaVersion = '2.10.9.1'
+
+    loggerVersion = '4.4.4'
+    timberLoggerVersion = '5.0.1'
+
+    applicationProviderVersion = '1.0.0'
+    resourceExtensionVersion = '1.4.0'
+    secureStorageVersion = '1.2.4'
+
+    leakcanaryVersion = '2.7'
+    detektVersion = '1.18.1'
+
+    // region testLibs versions
     junitVersion = '4.13.2'
 
     jsonAssertVersion = '1.5.0'
@@ -313,8 +103,9 @@ ext {
     mockkVersion = '1.12.0'
     truthVersion = 'c1.0.1'
     jodaTimeVersion = '2.10.10'
+    // endregion
 
-    // androidTestLibs
+    // region androidTestLibs versions
     testCoreVersion = '1.4.0'
     testingCoreVersion = '2.1.0'
     testRunnerVersion = '1.4.0'
@@ -327,16 +118,10 @@ ext {
     espressoVersion = '3.4.0'
     idlingConcurrentVersion = '3.3.0'
     fragmentTestingVersion = '1.1.0-alpha08'
-    findBugsVersion = '3.0.2'
-    checkerCompatQualVersion = '2.5.5'
-    checkerQualVersion = '2.5.3'
-    errorProneAnnotationsVersion = '2.3.1'
+    // endregion
 
     // androidTestUtilLibs
     orchestratorVersion = '1.4.0'
-
-    // configs
-    retrolambdaConfigLibVersion = '2.3.0'
 
     VERSION_NAME = 0
     LOG_UTILS = false
@@ -351,434 +136,139 @@ ext {
 }
 
 ext.plugin = [
-        gradleBuildTools             : "com.android.tools.build:gradle:$gradleBuildToolsVersion",
+        androidGradleBuildTools      : "com.android.tools.build:gradle:$androidGradleBuildToolsVersion",
         kotlinApt                    : "org.jetbrains.kotlin.kapt:org.jetbrains.kotlin.kapt.gradle.plugin:$kotlinVersion",
         kotlinDokka                  : "org.jetbrains.dokka:dokka-gradle-plugin:$kotlinDokkaVersion",
         kotlinGradle                 : "org.jetbrains.kotlin:kotlin-gradle-plugin:$kotlinVersion",
         kotlinxSerialization         : "org.jetbrains.kotlin:kotlin-serialization:$kotlinVersion",
         // static code analysis for kotlin
         detekt                       : "io.gitlab.arturbosch.detekt:detekt-gradle-plugin:$detektVersion",
-        dexcountGradle               : "com.getkeepsafe.dexcount:dexcount-gradle-plugin:$dexcountGradleVersion",
         firebaseCrashlyticsGradle    : "com.google.firebase:firebase-crashlytics-gradle:$firebaseCrashlyticsPluginVersion",
         // https://developers.google.com/android/guides/google-services-plugin
         gms                          : "com.google.gms:google-services:$googleGmsVersion"
 ]
 
 ext.libs = [
-        kotlin                            : "org.jetbrains.kotlin:kotlin-stdlib:$kotlinVersion",
-        kotlinJre7                        : "org.jetbrains.kotlin:kotlin-stdlib-jre7:$kotlinVersion",
-        kotlinJre8                        : "org.jetbrains.kotlin:kotlin-stdlib-jre8:$kotlinVersion",
-        kotlinJdk7                        : "org.jetbrains.kotlin:kotlin-stdlib-jdk7:$kotlinVersion",
-        kotlinJdk8                        : "org.jetbrains.kotlin:kotlin-stdlib-jdk8:$kotlinVersion",
-        kotlinxCoroutinesCore             : "org.jetbrains.kotlinx:kotlinx-coroutines-core:$coroutinesVersion",
-        kotlinxCoroutinesAndroid          : "org.jetbrains.kotlinx:kotlinx-coroutines-android:$coroutinesVersion",
-        kotlinxSerializationJson          :  "org.jetbrains.kotlinx:kotlinx-serialization-json:$kotlinxSerializationVersion",
+        kotlin                          : "org.jetbrains.kotlin:kotlin-stdlib:$kotlinVersion",
 
         // https://developer.android.com/kotlin/ktx#modules
-        androidKtxCore                    : "androidx.core:core-ktx:$androidKtxCoreVersion",
-        androidKtxFragment                : "androidx.fragment:fragment-ktx:$androidKtxFragmentVersion",
-        androidKtxPalette                 : "androidx.palette:palette-ktx:$androidKtxPaletteVersion",
-        androidKtxSqlite                  : "androidx.sqlite:sqlite-ktx:$androidKtxSqliteVersion",
-        androidKtxCollection              : "androidx.collection:collection-ktx:$androidKtxCollectionVersion",
-        androidKtxLifecycleViewmodel      : "androidx.lifecycle:lifecycle-viewmodel-ktx:$androidKtxLifecycleViewmodelVersion",
-        androidKtxLifecycleReactiveStreams: "androidx.lifecycle:lifecycle-reactivestreams-ktx:$androidKtxLifecycleReactiveStreamsVersion",
-        // androidx navigation
-        androidKtxNavigationCommon        : "android.arch.navigation:navigation-common-ktx:$androidxNavigationVersion",
-        androidKtxNavigationFragment      : "android.arch.navigation:navigation-fragment-ktx:$androidxNavigationVersion",
-        androidKtxNavigationRuntime       : "android.arch.navigation:navigation-runtime-ktx:$androidxNavigationVersion",
+        coreKtx                         : "androidx.core:core-ktx:$coreKtxVersion",
+        fragmentKtx                     : "androidx.fragment:fragment-ktx:$fragmentKtxVersion",
+        activityKtx                     : "androidx.activity:activity-ktx:$activityKtxVersion",
+        collectionKtx                   : "androidx.collection:collection-ktx:$collectionKtxVersion",
 
-        // support libraries
-        // https://developer.android.com/topic/libraries/support-library/revisions.html
-        // https://developer.android.com/topic/libraries/support-library/packages
-        // https://developer.android.com/topic/libraries/support-library/refactor
+        lifecycleLiveDataKtx            : "androidx.lifecycle:lifecycle-livedata-ktx:$lifecycleKtxVersion",
+        // > java 8 annotation processor:
+        lifecycleAnnotationKtx          : "androidx.lifecycle:lifecycle-compiler:$lifecycleKtxVersion",
+        // java 8 annotation processor:
+        lifecycleCommonJava8            : "androidx.lifecycle:lifecycle-common-java8:$lifecycleKtxVersion",
 
-        conscrypt                         : "org.conscrypt:conscrypt-android:$conscryptVersion",
+        appCompat                       : "androidx.appcompat:appcompat:$appCompatVersion",
+        appCompatResources              : "androidx.appcompat:appcompat-resources:$appCompatVersion",
 
-        supportMultidex                   : "androidx.multidex:multidex:$supportMultiDexVersion",
-        supportCompat                     : "androidx.core:core:$supportCompatVersion",
+        constraintLayout                : "androidx.constraintlayout:constraintlayout:$constraintLayoutVersion",
+        gridLayout                      : "androidx.gridlayout:gridlayout:$gridLayoutVersion",
+        leanback                        : "androidx.leanback:leanback:$leanbackVersion",
+        materialDesign                  : "com.google.android.material:material:$materialDesignVersion",
+        recyclerView                    : "androidx.recyclerview:recyclerview:$recyclerviewVersion",
+        vectorDrawable                  : "androidx.vectordrawable:vectordrawable:$vectorDrawableVersion",
 
-        supportMediaCompat                : "androidx.media:media:$supportMediaCompatVersion",
-        // https://developer.android.com/jetpack/androidx/releases/fragment
-        supportFragment                   : "androidx.fragment:fragment:$supportFragmentVersion",
-        fragmentKtx                       : "androidx.fragment:fragment-ktx:$fragmentKtxVersion",
-        // https://developer.android.com/jetpack/androidx/releases/activity
-        supportActivity                   : "androidx.activity:activity:$supportActivityVersion",
-        activityKtx                       : "androidx.activity:activity-ktx:$activityKtxVersion",
-        // https://developer.android.com/jetpack/androidx/releases/appcompat
-        supportAppCompat                  : "androidx.appcompat:appcompat:$supportAppCompatVersion",
-        appCompatResources                : "androidx.appcompat:appcompat-resources:$appCompatResourcesVersion",
-        supportCardView                   : "androidx.cardview:cardview:$supportCardViewVersion",
-        supportGridLayout                 : "androidx.gridlayout:gridlayout:$supportGridLayoutVersion",
-        supportMediaRouter                : "androidx.mediarouter:mediarouter:$supportMediaRouterVersion",
-        supportPalette                    : "androidx.palette:palette:$supportPaletteVersion",
-        supportRecyclerview               : "androidx.recyclerview:recyclerview:$supportRecyclerviewVersion",
-        supportPreferenceV7               : "androidx.preference:preference:$supportPreferenceV7Version",
-        supportPreferenceV14              : "androidx.legacy:legacy-preference-v14:$supportPreferenceV14Version",
-        supportV13                        : "androidx.legacy:legacy-support-v13:$supportV13Version",
-        supportV4                         : "androidx.legacy:legacy-support-v4:$supportV4Version",
-        supportPreferenceLeanback         : "androidx.leanback:leanback-preference:$supportPreferenceLeanbackVersion",
-        supportLeanback                   : "androidx.leanback:leanback:$supportLeanbackVersion",
-        supportVectorDrawable             : "androidx.vectordrawable:vectordrawable:$supportVectorDrawableVersion",
-        supportAnimatedVectorDrawable     : "androidx.vectordrawable:vectordrawable-animated:$supportAnimatedVectorDrawableVersion",
-        supportAnnotations                : "androidx.annotation:annotation:$supportAnnotationsVersion",
-        supportDesign                     : "com.google.android.material:material:$supportDesignVersion",
-        supportCustomTabs                 : "androidx.browser:browser:$supportCustomTabsVersion",
-        supportPercent                    : "androidx.percentlayout:percentlayout:$supportPercentVersion",
-        supportExifInterface              : "androidx.exifinterface:exifinterface:$supportExifInterfaceVersion",
-        supportRecommendation             : "androidx.recommendation:recommendation:$supportRecommendationVersion",
-        supportWear                       : "androidx.wear:wear:$supportWearVersion",
-        constraintLayoutSolver            : "androidx.constraintlayout:constraintlayout-solver:$constraintLayoutSolverVersion",
-        constraintLayout                  : "androidx.constraintlayout:constraintlayout:$constraintLayoutVersion",
-        supportCoreUtils                  : "androidx.legacy:legacy-support-core-utils:$supportCoreUtilsVersion",
-        supportCoreUi                     : "androidx.legacy:legacy-support-core-ui:$supportCoreUiVersion",
-        supportDynamicAnimation           : "androidx.dynamicanimation:dynamicanimation:$supportDynamicAnimationVersion",
+        recyclerviewAnimators           : "jp.wasabeef:recyclerview-animators:$recyclerviewAnimatorsVersion",
+        recyclerViewPresenter           : "com.github.kibotu:RecyclerViewPresenter:$recyclerViewPresenterVersion",
 
-        autoValueAnnotations              : "com.google.auto.value:auto-value-annotations:$autoValueAnnotations",
+        koinAndroid                     : "io.insert-koin:koin-android:$koinVersion",
+        koinTestJUnit4                  : "io.insert-koin:koin-test-junit4:$koinVersion",
 
-        // https://developer.android.com/jetpack/androidx/releases/navigation
-        navigationFragment                : "android.arch.navigation:navigation-fragment-ktx:$navigationFragmentVersion",
-        navigationUI                      : "android.arch.navigation:navigation-ui-ktx:$navigationUIVersion",
+        mosbyMvi                        : "com.hannesdorfmann.mosby3:mvi:$mosbyMviVersion",
 
-        // google play services
-        // https://developers.google.com/android/guides/setup
+        // atv channels
+        tvProvider                      : "androidx.tvprovider:tvprovider:$tvProviderVVersion",
+        workManagerKtx                  : "androidx.work:work-runtime-ktx:$workManagerKtxVersion",
+        workManagerRx2                  : "androidx.work:work-rxjava2:$workManagerRx2Version",
 
-        playServicesPlus                  : "com.google.android.gms:play-services-plus:$playServicesPlusVersion", // Google+
-        playServicesAuth                  : "com.google.android.gms:play-services-auth:$playServicesAuthVersion", // Google Account Login
-        playServicesBase                  : "com.google.android.gms:play-services-base:$playServicesBaseVersion", // Google Actions Base Client Library
-        playServicesIdentity              : "com.google.android.gms:play-services-identity:$playServicesIdentityVersion", // Google Sign In
-        playServicesAnalytics             : "com.google.android.gms:play-services-analytics:$playServicesAnalyticsVersion", // Google Analytics
-        playServicesAwareness             : "com.google.android.gms:play-services-awareness:$playServicesAwarenessVersion", // Google Awareness
-        playServicesCast                  : "com.google.android.gms:play-services-cast:$playServicesCastVersion", // Google Cast
-        playServicesGcm                   : "com.google.android.gms:play-services-gcm:$playServicesGcmVersion", // Google Cloud Messaging
-        playServicesDrive                 : "com.google.android.gms:play-services-drive:$playServicesDriveVersion", // Google Drive
-        playServicesFitness               : "com.google.android.gms:play-services-fitness:$playServicesFitnessVersion", // Google Fit
-        playServicesLocation              : "com.google.android.gms:play-services-location:$playServicesLocationVersion", // Google Location and Activity Recognition
-        playServicesMaps                  : "com.google.android.gms:play-services-maps:$playServicesMapsVersion", // Google Maps
-        playServicesAds                   : "com.google.android.gms:play-services-ads:$playServicesAdsVersion", // Google Mobile Ads
-        playServicesPlaces                : "com.google.android.gms:play-services-places:$playServicesPlacesVersion", // Google Places
-        playServicesVision                : "com.google.android.gms:play-services-vision:$playServicesVisionVersion", // Mobile Vision
-        playServicesNearby                : "com.google.android.gms:play-services-nearby:1$playServicesNearbyVersion", // Google Nearby
-        playServicesPanorama              : "com.google.android.gms:play-services-panorama:$playServicesPanoramaVersion", // Google Panorama Viewer
-        playServicesGames                 : "com.google.android.gms:play-services-games:$playServicesGamesVersion", // Google Play Game services
-        playServicesSafetynet             : "com.google.android.gms:play-services-safetynet:$playServicesSafetynetVersion", // SafetyNet
-        playServicesWallet                : "com.google.android.gms:play-services-wallet:$playServicesWalletVersion", // Android Pay
-        playServicesWearable              : "com.google.android.gms:play-services-wearable:$playServicesWearableVersion", // Wear OS by Google
+        rx2java                         : "io.reactivex.rxjava2:rxjava:$rx2javaVersion",
+        rx2Android                      : "io.reactivex.rxjava2:rxandroid:$rx2AndroidVersion",
+        rx2Kotlin                       : "io.reactivex.rxjava2:rxkotlin:$rx2KotlinVersion",
 
-        // firebase
-        // https://firebase.google.com/docs/android/setup
-        // https://firebase.google.com/support/release-notes/android
+        firebaseCrashlytics             : "com.google.firebase:firebase-crashlytics:$firebaseCrashlyticsVersion",
 
-        firebaseIid                       : "com.google.firebase:firebase-iid:$firebaseIidVersion",
-        firebaseCommon                    : "com.google.firebase:firebase-common:$firebaseCommonVersion",
-        firebaseCore                      : "com.google.firebase:firebase-core:$firebaseCoreVersion", // Analytics
-        firebaseDatabase                  : "com.google.firebase:firebase-database:$firebaseDatabaseVersion",
-        firebaseFirestore                 : "com.google.firebase:firebase-firestore:$firebaseFirestoreVersion",
-        firebaseStorage                   : "com.google.firebase:firebase-storage:$firebaseStorageVersion",
-        firebaseAnalytics                 : "com.google.firebase:firebase-analytics:$firebaseAnalyticsVersion",
-        firebaseCrash                     : "com.google.firebase:firebase-crash:$firebaseCrashVersion",
-        firebaseCrashlytics               : "com.google.firebase:firebase-crashlytics:$firebaseCrashlyticsVersion",
-        firebaseAuth                      : "com.google.firebase:firebase-auth:$firebaseAuthVersion",
-        firebaseMessaging                 : "com.google.firebase:firebase-messaging:$firebaseMessagingVersion", // Cloud Messaging
-        firebaseConfig                    : "com.google.firebase:firebase-config:$firebaseConfigVersion", // Remote Config
-        firebaseInvites                   : "com.google.firebase:firebase-invites:$firebaseInvitesVersion", // Invites and Dynamic Links
-        firebaseAds                       : "com.google.firebase:firebase-ads:$firebaseAdsVersion", // AdMob
-        firebaseAppindexing               : "com.google.firebase:firebase-appindexing:$firebaseAppindexingVersion", // App Indexing
-        firebasePerf                      : "com.google.firebase:firebase-perf:$firebasePerfVersion", // Performance Monitoring
-        firebaseFunctions                 : "com.google.firebase:firebase-functions:$firebaseFunctionsVersion", // Cloud Functions for Firebase Client SDK
-        firebaseMlVision                  : "com.google.firebase:firebase-ml-vision:$firebaseMlVisionVersion", // ML Kit (Vision)
-        firebaseMlModelInterpreter        : "com.google.firebase:firebase-ml-model-interpreter:$firebaseMlModelInterpreterVersion", // ML Kit (Custom Model)
+        // region network
+        retrofit                        : "com.squareup.retrofit2:retrofit:$retrofitVersion",
+        retrofitAdapterRxJava2          : "com.squareup.retrofit2:adapter-rxjava2:$retrofitVersion",
+        retrofitConverterScalars        : "com.squareup.retrofit2:converter-scalars:$retrofitVersion",
+        retrofitConverterSerialization  : "com.jakewharton.retrofit:retrofit2-kotlinx-serialization-converter:$retrofitConverterSerializationVersion",
+        retrofitConverterSimpleXml      : "com.squareup.retrofit2:converter-simplexml:$retrofitVersion",
+        retrofitMock                    : "com.squareup.retrofit2:retrofit-mock:$retrofitVersion",
 
-        // architecture components
-        // https://developer.android.com/topic/libraries/architecture/adding-components
+        okhttp3                         : "com.squareup.okhttp3:okhttp:$okhttp3Version",
+        okhttp3LoggingInterceptor       : "com.squareup.okhttp3:logging-interceptor:$okhttp3Version",
+        okhttp3ResponseEcho             : "com.github.simonpercic:oklog3:$okhttp3ResponseEchoVersion",
 
-        lifecycleExtensions               : "androidx.lifecycle:lifecycle-extensions:$lifecycleVersion", // ViewModel and LiveData
-        lifecycleViewmodel                : "androidx.lifecycle:lifecycle-viewmodel:$lifecycleVersion", // alternatively, just ViewModel
-        lifecycleLivedataKtx              : "androidx.lifecycle:lifecycle-livedata-ktx:$lifecycleVersion", // alternatively, just LiveData
-        lifecycleLivedata                 : "androidx.lifecycle:lifecycle-livedata:$lifecycleVersion", // alternatively, just LiveData
-        lifecycleLivedataCore             : "androidx.lifecycle:lifecycle-livedata-core:$lifecycleVersion",
-        lifecycleCompiler                 : "androidx.lifecycle:lifecycle-compiler:$lifecycleVersion",
-        lifecycleRuntime                  : "androidx.lifecycle:lifecycle-runtime:$lifecycleVersion",
-        lifecycleRuntimeKtx               : "androidx.lifecycle:lifecycle-runtime-ktx:$lifecycleVersion",
-        lifecycleCommon                   : "androidx.lifecycle:lifecycle-common:$lifecycleVersion", // Java8 support for Lifecycles
-        lifecycleCommonJava8              : "androidx.lifecycle:lifecycle-common-java8:$lifecycleVersion", // Java8 support for Lifecycles
-        lifecycleRactiveStream            : "androidx.lifecycle:lifecycle-reactivestreams:$lifecycleVersion", // ReactiveStreams support for LiveData
+        kotlinxSerializationJson        : "org.jetbrains.kotlinx:kotlinx-serialization-json:$kotlinxSerializationVersion",
 
-        viewpager2                        : "androidx.viewpager2:viewpager2:$viewPager2Version",
+        conscrypt                       : "org.conscrypt:conscrypt-android:$conscryptVersion",
+        // endregion
 
-        // core
-        archCoreCommon                    : "androidx.arch.core:core-common:$archCoreVersion",
-        archCoreTesting                   : "androidx.arch.core:core-testing:$archCoreVersion",
-        archCore                          : "androidx.arch.core:core:$archCoreVersion",
-        archCoreRuntime                   : "androidx.arch.core:core-runtime:$archCoreVersion",
+        amazonExoplayer                 : "com.amazon.android:exoplayer:$amazonExoplayerVersion",
+        amazonExoplayerImaExtension     : "com.amazon.android:extension-ima:$amazonExoplayerImaExtensionVersion",
 
-        // paging
-        pagingCommon                      : "androidx.paging:paging-common:$pagingVersion",
-        pagingRuntime                     : "androidx.paging:paging-runtime:2$pagingVersion",
-        pagingRuntimeKtx                  : "androidx.paging:paging-runtime-ktx:$pagingVersion",
-
-        // room
-        roomRuntime                       : "android.arch.persistence.room:runtime:$roomVersion", // Room (use 1.1.0-rc1 for latest version)
-        roomCompiler                      : "android.arch.persistence.room:compiler:$roomVersion",
-        roomGuava                         : "android.arch.persistence.room:guava:$roomVersion", // Guava support for Room
-        roomTesting                       : "android.arch.persistence.room:testing:$roomVersion",
-
-        persistenceRoomCommon             : "androidx.room:room-common:$persistenceRoomVersion",
-        persistenceRoomCompiler           : "androidx.room:room-compiler:$persistenceRoomVersion",
-        persistenceRoomGuava              : "androidx.room:room-guava:$persistenceRoomVersion",
-        persistenceRoomMigration          : "androidx.room:room-migration:$persistenceRoomVersion",
-        persistenceRoomRuntime            : "androidx.room:room-runtime:$persistenceRoomVersion",
-        persistenceRoomRxjava2            : "androidx.room:room-rxjava2:$persistenceRoomVersion",
-        persistenceRoomTesting            : "androidx.room:room-testing:$persistenceRoomVersion",
-        persistenceDbFramework            : "androidx.sqlite:sqlite-framework:$persistenceDbVersion",
-        persistenceDb                     : "androidx.sqlite:sqlite:$persistenceDbVersion",
-
-        // work
-        archWorkRuntime                   : "android.arch.work:work-runtime-ktx:$archWorkVersion",
-        archWorkRxJava2                   : "android.arch.work:work-rxjava2:$archWorkVersion",
-
-        // tested libs
-        connectionBuddy                   : "com.zplesac:connectionbuddy:$connectionBuddyVersion",
-        calligraphy                       : "uk.co.chrisjenx:calligraphy:$calligraphyVersion", // deprecated use calligraphy3 & viewpump
-        calligraphy3                      : "com.github.kibotu:Calligraphy:$calligraphy3Version", // use first class citizen support instead https://developers.google.com/fonts/docs/android
-        viewPump                          : "com.github.kibotu:ViewPump:$viewPumpVersion",  // use first class citizen support instead https://developers.google.com/fonts/docs/android
-        permissionDispatcher              : "com.github.hotchemi:permissionsdispatcher:$permissionDispatcherVersion",
-        permissionDispatcherProcessor     : "com.github.hotchemi:permissionsdispatcher-processor:$permissionDispatcherProcessorVersion",
-        parceler                          : "org.parceler:parceler-api:$parcelerVersion",
-        parcelerProcessor                 : "org.parceler:parceler:$parcelerVersion",
-        joda                              : "net.danlew:android.joda:$jodaVersion",
-        smartLocation                     : "io.nlopez.smartlocation:library:$smartLocationVersion",
-        smartLocationRx                   : "io.nlopez.smartlocation:rx:$smartLocationVersion",
-        materialdrawer                    : "com.mikepenz:materialdrawer:$materialdrawerVersion",
-        markdownview                      : "com.github.mukeshsolanki:MarkdownView-Android:$markdownviewVersion",
-        rxmarkdown                        : "com.yydcdut:rxmarkdown:$rxmarkdownVersion",
-        stetho                            : "com.facebook.stetho:stetho:$stethoVersion",
-        stethoRealm                       : "com.uphyca:stetho_realm:$stethoRealmVersion",
-        stethoOkHttp3                     : "com.facebook.stetho:stetho-okhttp3:$stethoOkHttp3Version",
-        stethoJsRhino                     : "com.facebook.stetho:stetho-js-rhino:$stethoJsRhinoVersion",
-        realmBrowser                      : "com.github.jonasrottmann.realm-browser:realm-browser:$realmBrowserVersion",
-        realmBrowserTest                  : "com.github.jonasrottmann.realm-browser:realm-browser:$realmBrowserVersion",
-        realmBrowserRelease               : "com.github.jonasrottmann.realm-browser:realm-browser:$realmBrowserVersion",
-        realmExtensions                   : "com.github.vicpinm:krealmextensions:$realmExtensionsVersion",
-        processPhoenix                    : "com.jakewharton:process-phoenix:$processPhoenixVersion",
-        circleIndicator                   : "me.relex:circleindicator:$circleIndicatorVersion", // please use indefinitePagerIndicator instead, due being scalable
-        indefinitePagerIndicator          : "com.github.kibotu:Android-Indefinite-Pager-Indicator:$indefinitePagerIndicatorVersion",
-        smarttablayoutLib                 : "com.ogaclejapan.smarttablayout:library:$smarttablayoutLibVersion@aar",
-        smartTablayoutUtils               : "com.ogaclejapan.smarttablayout:utils-v4:$smartTablayoutUtilsVersion@aar",
-        fragmentViewpager                 : "com.sbrukhanda.fragmentviewpager:fragmentviewpager:$fragmentViewpagerVersion",
-        viewpagerTransformers             : "com.eftimoff:android-viewpager-transformers:$viewpagerTransformersVersion@aar",
-        guava                             : "com.google.guava:guava:$guavaVersion",
-        preferator                        : "com.sloydev:preferator:$preferatorVersion",
-        recyclerviewAnimators             : "jp.wasabeef:recyclerview-animators:$recyclerviewAnimatorsVersion",
-        androidSnowfall                   : "com.github.jetradarmobile:android-snowfall:$androidSnowfallVersion",
-        googleMapsRipplEffect             : "com.github.aarsy.googlemapsrippleeffect:googlemapsrippleeffect:$googleMapsRipplEffectVersion",
-        jellyToggleButton                 : "com.nightonke:jellytogglebutton:$jellyToggleButtonVersion",
-        currencyEditText                  : "com.github.blackcat27:library:$currencyEditTextVersion",
-        brainTree                         : "com.braintreepayments.api:drop-in:$brainTreeVersion",
-        facebook                          : "com.facebook.android:facebook-android-sdk:$facebookVersion",
-        okhttp3                           : "com.squareup.okhttp3:okhttp:$okhttp3Version",
-        okhttp3LoggingInterceptor         : "com.squareup.okhttp3:logging-interceptor:$okhttp3Version",
-        okhttp3ResponseEcho               : "com.github.simonpercic:oklog3:$okhttp3ResponseEchoVersion",
-        javawriter                        : "com.squareup:javawriter:$javawriterVersion",
-        kotterknife                       : "com.jakewharton:kotterknife:$kotterknifeVersion", // deprecated, use kotlin synthetic imports instead
-        butterknife                       : "com.jakewharton:butterknife:$butterknifeVersion", // deprecated use kotlin synthetic imports instead
-        butterknifeCompiler               : "com.jakewharton:butterknife-compiler:$butterknifeVersion", // deprecated use kotlin synthetic imports instead
-        butterknifeX                      : "com.jakewharton:butterknife:$butterknifeVersion", // deprecated use kotlin synthetic imports instead
-        butterknifeCompilerX              : "com.jakewharton:butterknife-compiler:$butterknifeVersion", // deprecated use kotlin synthetic imports instead
-        nineoldandroids                   : "com.nineoldandroids:library:$nineoldandroidsVersion",
-        pubnubGson                        : "com.pubnub:pubnub-gson:$pubnubGsonVersion",
-        wowoViewPager                     : "com.nightonke:wowoviewpager:$wowoViewPagerVersion",
-        numberPicker                      : "com.shawnlin:number-picker:$numberPickerVersion",
-        adjust                            : "com.adjust.sdk:adjust-android:$adjustVersion",
-        facebookCore                      : "com.facebook.android:facebook-core:$facebookCoreVersion",
-        tealium                           : "com.tealium:library:$tealiumVersion",
-        hawk                              : "com.orhanobut:hawk:$hawkVersion",
+        youbora                         : "com.nicepeopleatwork:exoplayer-adapter:$youboraVersion",
 
         // AWS SDK
-        awsIot                            : "com.amazonaws:aws-android-sdk-iot:$awsIotVersion@aar",
-        awsClient                         : "com.amazonaws:aws-android-sdk-mobile-client:$awsClientVersion@aar",
+        awsIot                          : "com.amazonaws:aws-android-sdk-iot:$awsIotVersion@aar",
+        awsClient                       : "com.amazonaws:aws-android-sdk-mobile-client:$awsClientVersion@aar",
 
-        sweetalert                        : "cn.pedant.sweetalert:library:$sweetalertVersion",
-        circularReveal                    : "com.github.ozodrukh:CircularReveal:$circularRevealVersion@aar",
-        scalpel                           : "com.jakewharton.scalpel:scalpel:1$scalpelVersion",
-        exomedia                          : "com.devbrackets.android:exomedia:$exomediaVersion",
-        sqliteassethelper                 : "com.readystatesoftware.sqliteasset:sqliteassethelper:$sqliteassethelperVersion",
-        paper                             : "io.paperdb:paperdb:$paperVersion",
-        appIntro                          : "com.github.apl-devs:appintro:$appIntroVersion",
+        glide                           : "com.github.bumptech.glide:glide:$glideVersion",
+        glideAnnotationsProcessor       : "com.github.bumptech.glide:compiler:$glideVersion",
+        glideTransformations            : "jp.wasabeef:glide-transformations:$glideTransformationsVersion",
 
-        adapterDelegate                   : "com.hannesdorfmann:adapterdelegates3:$adapterDelegateVersion",
+        logger                          : "com.github.kibotu:StreamingAndroidLogger:$loggerVersion",
+        timberLogger                    : "com.jakewharton.timber:timber:$timberLoggerVersion",
 
-        glide                             : "com.github.bumptech.glide:glide:$glideVersion",
-        glideAnnotationsProcessor         : "com.github.bumptech.glide:compiler:$glideVersion",
-        glideTransformations              : "jp.wasabeef:glide-transformations:$glideTransformationsVersion",
+        // applicationProvider = dependency for resourceExtension
+        applicationProvider             : "com.github.florent37:applicationprovider:$applicationProviderVersion",
+        resourceExtension               : "com.github.kibotu:AndroidResourceExtensions:$resourceExtensionVersion",
+        secureStorage                   : "de.adorsys.android:securestoragelibrary:$secureStorageVersion",
 
-        gpuImageLibrary                   : "jp.co.cyberagent.android.gpuimage:gpuimage-library:$gpuImageLibraryVersion",
-        photoView                         : "com.github.chrisbanes:PhotoView:$photoViewVersion",
+        tealium                         : "com.tealium:library:$tealiumVersion",
+        hawk                            : "com.orhanobut:hawk:$hawkVersion",
+        joda                            : "net.danlew:android.joda:$jodaVersion",
 
-        mosbyMvi                          : "com.hannesdorfmann.mosby3:mvi:$mosbyMviVersion",
-
-        koinAndroidxScope                 : "io.insert-koin:koin-androidx-scope:$koinVersion",
-        koinAndroidxViewmodel             : "io.insert-koin:koin-androidx-viewmodel:$koinVersion",
-        koinTest                          : "io.insert-koin:koin-test:$koinVersion",
-
-        retrofit                          : "com.squareup.retrofit2:retrofit:$retrofitVersion",
-        retrofitAdapterRxJava2            : "com.squareup.retrofit2:adapter-rxjava2:$retrofitAdapterRxJava2Version",
-        retrofitCoroutineAdapter          : "com.jakewharton.retrofit:retrofit2-kotlin-coroutines-adapter:$retrofitCoroutineAdapterVersion",
-        retrofitConverterGson             : "com.squareup.retrofit2:converter-gson:$retrofitConverterGsonVersion",
-        retrofitConverterSerialization    : "com.jakewharton.retrofit:retrofit2-kotlinx-serialization-converter:$retrofitConverterSerialization",
-        retrofitConverterMoshi            : "com.squareup.retrofit2:converter-moshi:$retrofitConverterMoshiVersion",
-        retrofitMock                      : "com.squareup.retrofit2:retrofit-mock:$retrofitMockVersion",
-        converterScalars                  : "com.squareup.retrofit2:converter-scalars:$converterScalarsVersion",
-        converterSimpleXml                : "com.squareup.retrofit2:converter-simplexml:$converterSimpleXmlVersion",
-
-        gson                              : "com.google.code.gson:gson:$gsonVersion",
-        moshiKotlin                       : "com.squareup.moshi:moshi-kotlin:$moshiVersion",
-        moshiAdapters                     : "com.squareup.moshi:moshi-adapters:$moshiVersion",
-
-        kalmanRx                          : "com.github.kibotu:KalmanRx:$kalmanRxVersion",
-        rx2java                           : "io.reactivex.rxjava2:rxjava:$rx2javaVersion",
-        rx2Android                        : "io.reactivex.rxjava2:rxandroid:$rx2AndroidVersion",
-        rx2Kotlin                         : "io.reactivex.rxjava2:rxkotlin:$rx2KotlinVersion",
-        scalableVideoView                 : "com.yqritc:android-scalablevideoview:$scalableVideoViewVersion",
-        branchIoSdk                       : "io.branch.sdk.android:library:$branchIoSdkVersion",
-        parallaxImageView                 : "it.dex.dexmovingimageview:dexmovingimageviewlib:$parallaxImageViewVersion",
-
-        exoplayer                         : "com.google.android.exoplayer:exoplayer:$exoplayerVersion",
-        exoplayerCore                     : "com.google.android.exoplayer:exoplayer-core:$exoplayerVersion",
-        exoplayerImaExtension             : "com.google.android.exoplayer:extension-ima:$exoplayerImaExtensionVersion",
-        gpuVideoAndroid                   : "com.github.MasayukiSuda:GPUVideo-android:$gpuVideoAndroidVersion",
-        amazonExoplayer                   : "com.amazon.android:exoplayer:$amazonExoplayerVersion",
-        amazonExoplayerImaExtension       : "com.amazon.android:extension-ima:$amazonExoplayerImaExtensionVersion",
-        
-        youbora                           : "com.nicepeopleatwork:exoplayer-adapter:$youboraVersion",
-
-        mzip                              : "com.github.ghost1372:Mzip-Android:$mzipVersion",
-        numberprogressbar                 : "com.daimajia.numberprogressbar:library:$numberprogressbarVersion@aar",
-        fragmentanimations                : "com.labo.kaji:fragmentanimations:$fragmentanimationsVersion",
-        firebaseJobdispatcher             : "com.firebase:firebase-jobdispatcher:$firebaseJobdispatcherVersion",
-        linq                              : "br.com.zbra:android-linq:$linqVersion", //  maven { url "https://dl.bintray.com/brunovinicius/maven" }
-        timberLogger                      : "com.jakewharton.timber:timber:$timberLoggerVersion",
-        cameraView                        : "com.wonderkiln:camerakit:$cameraViewVersion",
-        cameraViewPhotoApparat            : "io.fotoapparat.fotoapparat:library:$cameraViewPhotoApparatVersion",
-        cameraPri                         : "com.priyankvasa.android:cameraview-ex:$cameraPriVersion",
-        cameraViewOtalias                 : "com.otaliastudios:cameraview:$cameraViewOtaliasVersion",
-        realmEncryptionHelper             : "com.github.tntkhang:realm-encryption-helper:$realmEncryptionHelperVersion", // requires preferenceHelper
-        preferencesHelper                 : "com.github.tntkhang:preferences-helper:$preferencesHelperVersion",
-
-        leakcanary                        : "com.squareup.leakcanary:leakcanary-android:$leakcanaryVersion",
-
-        // exozetCore alternative source   : "com.exozet:core:",
-        exozetCore                        : "com.github.exozet:AndroidCore:$exozetCoreVersion",
-
-        commonUtils                       : "com.github.kibotu:common.android.utils:$commonUtilsVersion", // deprecated, use exozetCore
-        deviceInfo                        : "com.github.kibotu:net.kibotu.android.deviceinfo:$deviceInfoVersion",
-        recyclerViewPresenter             : "com.github.kibotu:RecyclerViewPresenter:$recyclerViewPresenterVersion",
-        googlePlayForceUpdate             : "com.github.kibotu:GooglePlayForceUpdate:$googlePlayForceUpdateVersion",
-        timeBomb                          : "com.github.kibotu:TimeBomb:$timeBombVersion",
-        bloodHound                        : "com.github.kibotu:BloodHound:$bloodHoundVersion",
-        openAndroidSSLWrapper             : "com.github.kibotu:Open-Android-SSL-Wrapper:$openAndroidSSLWrapperVersion",
-        androidAnimationsActions          : "com.github.kibotu:AndroidAnimationsActions:1$androidAnimationsActionsVersion",
-        urlShortener                      : "com.github.kibotu:UrlShortener:$urlShortenerVersion",
-        heartRateOmeter                   : "com.github.kibotu:Heart-Rate-Ometer:$heartRateOmeterVersion",
-        fastGcm                           : "com.github.kibotu:FastGCM:$fastGcmVersion",
-        shareIntentBuilder                : "com.github.kibotu:ShareIntentBuilder:$shareIntentBuilderVersion",
-        actionAnimations                  : "com.github.kibotu:AndroidAnimationsActions:$actionAnimationsVersion",
-        androidPgp                        : "com.github.kibotu:Android-PGP:$androidPgpVersion",
-        swipeDirectionViewPager           : "com.github.kibotu:SwipeDirectionViewPager:$swipeDirectionViewPagerVersion",
-        logger                            : "com.github.kibotu:StreamingAndroidLogger:$loggerVersion",
-
-        materialDialogs                   : "com.afollestad.material-dialogs:core:$materialDialogsVersion",
-
-        orhanobutLogger                   : "com.orhanobut:logger:$orhanobutLoggerVersion",
-
-        htmlcompat                        : "com.pixplicity.htmlcompat:library:$htmlcompatVersion",
-        dropshadow                        : "com.github.dmytrodanylyk.shadow-layout:library:$dropshadowVersion",
-        searchView                        : "com.github.arimorty:floatingsearchview:$searchViewVersion",
-        expandablelayout                  : "net.cachapa.expandablelayout:expandablelayout:$expandablelayoutVersion",
-        htmlTextView                      : "org.sufficientlysecure:html-textview:$htmlTextViewVersion",
-
-        rxandroidble                      : "com.polidea.rxandroidble:rxandroidble:$rxandroidbleVersion",
-        shortcutBadger                    : "me.leolin:ShortcutBadger:$shortcutBadgerVersion@aar",
-        fileDownloader                    : "com.liulishuo.filedownloader:library:$fileDownloaderVersion", // deprecated
-        okdownload                        : "com.liulishuo.okdownload:okdownload:$okdownloadVersion",
-
-        expandableLayout                  : "com.github.chuross:expandable-layout:1$expandableLayoutVersion",
-        expandableLayoutFork              : "com.github.kibotu:expandable-layout:$expandableLayoutForkVersion",
-        greenrobotEventbus                : "org.greenrobot:eventbus:3$greenrobotEventbusVersion",
-        daimajiaEasing                    : "com.daimajia.easing:library:$daimajiaEasingVersion@aar",
-        apacheCommonsIo                   : "org.apache.commons:commons-io:$apacheCommonsIoVersion",
-
-        secureStorage                     : "de.adorsys.android:securestoragelibrary:$secureStorageVersion",
-
-        flatRadioGroup                    : "com.github.droid-it:Flat-Radio-Group:master",
-
-        wheelNumberPicker                 : "com.super_rabbit.wheel_picker:NumberPicker:$wheelNumberPickerVersion",
-        wheelNumberPickerKibotu           : "com.github.kibotu:NumberPicker:$wheelNumberPickerKibotuVersion",
-        dotsIndicator                     : "com.github.kibotu:dotsindicator:$dotsIndicatorVersion",
-        rippleBackground                  : "com.skyfishjy.ripplebackground:library:$rippleBackgroundVersion",
-        catLoading                        : "com.roger.catloadinglibrary:catloadinglibrary:$catLoadingVersion",
-        inputMask                         : "com.redmadrobot:inputmask:$inputMaskVersion",
-        md360Player                       : "com.github.ashqal:MD360Player4Android:$md360PlayerVersion",
-        md360PlayerBeta                   : "com.github.kibotu:MD360Player4Android:$md360PlayerBetaVersion",
-
-        rxpermissions                     : "com.github.tbruyelle:rxpermissions:$rxpermissionsVersion",
-        zoomage                           : "com.jsibbold:zoomage:$zoomageVersion",
-
-        freedomPlayer                     : "com.exozet:FreedomPlayer:$freedomPlayerVersion",
-        threeHundertSixtyPlayer           : "com.exozet:ThreeHundertSixtyPlayer:$threeHundertSixtyPlayerVersion",
-        sequentialImagePlayer             : "com.exozet:SequentialImagePlayer:$sequentialImagePlayerVersion",
-
-        flipper                           : "com.facebook.flipper:flipper:$flipperVersion",
-        soloader                          : "com.facebook.soloader:soloader:$soloaderVersion",
-
-        xozRicohThetaSDK                  : "com.exozet:ricohtheta:$xozRicohThetaSDKVersion",
-        jrSpinner                         : "com.github.jrizani:JRSpinner:$jrSpinnerVersion",
-
-        applicationProvider               : "com.github.florent37:applicationprovider:$applicationProviderVersion",
-
-        rxSensors                         : "com.gvillani:rxsensors:$rxSensorsVersion",
-
-        reactiveWiFi                      : "com.github.pwittchen:reactivewifi-rx2:$reactiveWiFiVersion",
-        rxLint                            : "nl.littlerobots.rxlint:rxlint:$rxLintVersion",
-
-        ffmpegAndroid                     : "com.writingminds:FFmpegAndroid:$ffmpegAndroidVersion",
-
-        tvProvider                        : "androidx.tvprovider:tvprovider:$tvProviderVVersion",
-        workManagerKtx                    : "androidx.work:work-runtime-ktx:$workManagerKtxVersion",
-        workManagerRx2                    : "androidx.work:work-rxjava2:$workManagerRx2Version"
+        leakcanary                      : "com.squareup.leakcanary:leakcanary-android:$leakcanaryVersion"
 ]
 
 ext.testLibs = [
-        junit                     : "junit:junit:$junitVersion",
-
-        jsonAssert                : "org.skyscreamer:jsonassert:$jsonAssertVersion",
-        jsonUnit                  : "net.javacrumbs.json-unit:json-unit:$jsonUnitVersion",
-        jsonUnitFluent            : "net.javacrumbs.json-unit:json-unit-fluent:$jsonUnitFluentVersion",
-        robolectric               : "org.robolectric:robolectric:$robolectricVersion",
-        mockkUnit                 : "io.mockk:mockk:$mockkVersion",
-        truth                     : "com.google.truth:truth:$truthVersion",
-        jodaTime                  : "joda-time:joda-time:$jodaTimeVersion"
+        junit                 : "junit:junit:$junitVersion",
+        jsonAssert            : "org.skyscreamer:jsonassert:$jsonAssertVersion",
+        jsonUnit              : "net.javacrumbs.json-unit:json-unit:$jsonUnitVersion",
+        jsonUnitFluent        : "net.javacrumbs.json-unit:json-unit-fluent:$jsonUnitFluentVersion",
+        robolectric           : "org.robolectric:robolectric:$robolectricVersion",
+        mockkUnit             : "io.mockk:mockk:$mockkVersion",
+        truth                 : "com.google.truth:truth:$truthVersion",
+        jodaTime              : "joda-time:joda-time:$jodaTimeVersion"
 ]
 ext.androidTestLibs = [
 
         // Core library
-        testCore          : "androidx.test:core:$testCoreVersion",
-        coreTesting       : "androidx.arch.core:core-testing:$testingCoreVersion",
+        testCore              : "androidx.test:core:$testCoreVersion",
+        // test helpers for liveData
+        coreTesting           : "androidx.arch.core:core-testing:$testingCoreVersion",
 
         // AndroidJUnitRunner and JUnit Rules
-        testRunner        : "androidx.test:runner:$testRunnerVersion",
-        testRules         : "androidx.test:rules:$testRulesVersion",
+        testRunner            : "androidx.test:runner:$testRunnerVersion",
+        testRules             : "androidx.test:rules:$testRulesVersion",
 
         // workManager - test helpers
-        testWorkers       : "androidx.work:work-testing:$workManagerKtxVersion",
+        testWorkers           : "androidx.work:work-testing:$workManagerKtxVersion",
 
         // ui-automator
-        uiAutomator       : "androidx.test.uiautomator:uiautomator:$uiAutomatorVersion",
+        uiAutomator           : "androidx.test.uiautomator:uiautomator:$uiAutomatorVersion",
 
         // Assertions
-        testJUnit         : "androidx.test.ext:junit:$testJUnitVersion",
-        testJUnitKtx      : "androidx.test.ext:junit-ktx:$testJUnitKtxVersion",
-        testTruth         : "androidx.test.ext:truth:$testTruthVersion",
-        truth             : "com.google.truth:truth:$truthVersion",
+        testJUnit             : "androidx.test.ext:junit:$testJUnitVersion",
+        testJUnitKtx          : "androidx.test.ext:junit-ktx:$testJUnitKtxVersion",
+        testTruth             : "androidx.test.ext:truth:$testTruthVersion",
+        truth                 : "com.google.truth:truth:$truthVersion",
 
         // Espresso dependencies
         espressoCore          : "androidx.test.espresso:espresso-core:$espressoVersion",
@@ -787,17 +277,8 @@ ext.androidTestLibs = [
         mockkInstrumentation  : "io.mockk:mockk-android:$mockkVersion",
 
         fragmentTesting       : "androidx.fragment:fragment-testing:$fragmentTestingVersion",
-
-        findBugs              : "com.google.code.findbugs:jsr305:$findBugsVersion",
-        checkerCompatQual     : "org.checkerframework:checker-compat-qual:$checkerCompatQualVersion",
-        checkerQual           : "org.checkerframework:checker-qual:$checkerQualVersion",
-        errorProneAnnotations : "com.google.errorprone:error_prone_annotations:$errorProneAnnotationsVersion"
 ]
 
 ext.androidTestUtilLibs = [
-        orchestrator     : "androidx.test:orchestrator:$orchestratorVersion",
-]
-
-ext.configs = [
-        retrolambdaConfigLib: "net.orfjackal.retrolambda:retrolambda:$retrolambdaConfigLibVersion" // deprecated: use jdk8
+        orchestrator : "androidx.test:orchestrator:$orchestratorVersion",
 ]
