@@ -3,12 +3,12 @@ ext {
 
     minSdkVer = 16
 
-    compileSdkVer = 30
-    buildToolsVer = "30.0.3"
-    targetSdkVer = 30
+    compileSdkVer = 31
+    buildToolsVer = "31.0.0"
+    targetSdkVer = 31
 
     // @see https://mvnrepository.com/artifact/org.jetbrains.kotlin/kotlin-stdlib-jdk8
-    kotlinVersion = "1.5.0"
+    kotlinVersion = "1.5.31"
     roomVersion = "2.2.5"
     lifecycleVersion = "2.3.1"
     workVersion = "2.4.0"
@@ -30,12 +30,12 @@ ext {
 }
 
 ext.plugin = [
-        gradleBuildTools       : "com.android.tools.build:gradle:4.2.0",
+        gradleBuildTools       : "com.android.tools.build:gradle:7.0.2",
         navigationSafeArgs     : "androidx.navigation:navigation-safe-args-gradle-plugin:2.3.2",
         kotlinApt              : "org.jetbrains.kotlin.kapt:org.jetbrains.kotlin.kapt.gradle.plugin:$kotlinVersion",
         hockeyApp              : "de.felixschulze.gradle:gradle-hockeyapp-plugin:3.6",
         rocketLauncher         : "com.cesarferreira:android-rocket-launcher:0.9.1",
-        dexcountGradle         : "com.getkeepsafe.dexcount:dexcount-gradle-plugin:2.0.0",
+        dexcountGradle         : "com.getkeepsafe.dexcount:dexcount-gradle-plugin:3.0.1",
         kotlinAndroidExtensions: "org.jetbrains.kotlin:kotlin-android-extensions:$kotlinVersion",
         kotlinGradle           : "org.jetbrains.kotlin:kotlin-gradle-plugin:$kotlinVersion",
         kotlinDokka            : "org.jetbrains.dokka:dokka-android-gradle-plugin:0.9.18",
@@ -52,7 +52,7 @@ ext.plugin = [
         buildTimeTracker       : "net.rdrei.android.buildtimetracker:gradle-plugin:0.11.0",
         imgOptimizer           : "com.chenenyu:img-optimizer:1.1.1",
         buildScanPlugin        : "com.gradle:build-scan-plugin:2.1",
-        gradleVersions        : "com.github.ben-manes:gradle-versions-plugin:0.38.0" // ./gradlew dependencyUpdates
+        gradleVersions        : "com.github.ben-manes:gradle-versions-plugin:0.39.0" // ./gradlew dependencyUpdates
 ]
 
 //plugins needed when developing a library project
@@ -65,14 +65,11 @@ ext.pluginLibrary = [
 ]
 
 ext.libs = [
-        kotlin                            : "org.jetbrains.kotlin:kotlin-stdlib:$kotlinVersion",
-        kotlinJdk7                        : "org.jetbrains.kotlin:kotlin-stdlib-jdk7:$kotlinVersion",
-        kotlinJdk8                        : "org.jetbrains.kotlin:kotlin-stdlib-jdk8:$kotlinVersion",
         kotlinxCoroutinesCore             : "org.jetbrains.kotlinx:kotlinx-coroutines-core:1.4.2",
         kotlinxCoroutinesAndroid          : "org.jetbrains.kotlinx:kotlinx-coroutines-android:1.4.2",
 
         // https://developer.android.com/kotlin/ktx#modules
-        androidKtxCore                    : "androidx.core:core-ktx:1.3.2",
+        androidKtxCore                    : "androidx.core:core-ktx:1.6.0",
         androidKtxPalette                 : "androidx.palette:palette-ktx:1.0.0", // 	androidx.palette.graphics
         androidKtxSqlite                  : "androidx.sqlite:sqlite-ktx:2.1.0", // 	androidx.sqlite.db
         androidKtxCollection              : "androidx.collection:collection-ktx:1.1.0", // 	androidx.collection
@@ -95,9 +92,9 @@ ext.libs = [
 
         supportMultidex                   : "androidx.multidex:multidex:2.0.1",
         supportFragment                   : "androidx.fragment:fragment:1.2.5", // use fragmentKtx instead
-        fragmentKtx                       : "androidx.fragment:fragment-ktx:1.3.3",
+        fragmentKtx                       : "androidx.fragment:fragment-ktx:1.3.6",
         supportActivity                   : "androidx.activity:activity:1.1.0", // use activityKtx instead
-        activityKtx                       : "androidx.activity:activity-ktx:1.2.3",
+        activityKtx                       : "androidx.activity:activity-ktx:1.3.1",
         supportAppCompat                  : "androidx.appcompat:appcompat:1.2.0", // https://developer.android.com/jetpack/androidx/releases/appcompat
         appCompatResources                : "androidx.appcompat:appcompat-resources:1.2.0",
         supportDrawerLayout               : "androidx.drawerlayout:drawerlayout:1.1.1",
@@ -119,7 +116,7 @@ ext.libs = [
         supportVectorDrawable             : "androidx.vectordrawable:vectordrawable:1.1.0",
         supportAnimatedVectorDrawable     : "androidx.vectordrawable:vectordrawable-animated:1.1.0",
         supportAnnotations                : "androidx.annotation:annotation:1.2.0",
-        material                          : "com.google.android.material:material:1.3.0",
+        material                          : "com.google.android.material:material:1.4.0",
         supportCustomTabs                 : "androidx.browser:browser:1.3.0",
         supportPercent                    : "androidx.percentlayout:percentlayout:1.0.0",
         supportExifInterface              : "androidx.exifinterface:exifinterface:1.3.2",
@@ -212,8 +209,7 @@ ext.libs = [
 
         // paging
 
-        pagingRuntimeKtx                  : "androidx.paging:paging-runtime-ktx:2.1.2",
-        paging3RuntimeKtx                 : "androidx.paging:paging-runtime-ktx:3.0.0",
+        pagingRuntimeKtx                  : "androidx.paging:paging-runtime-ktx:3.0.1",
 
         // room
 
@@ -500,11 +496,11 @@ ext.libs = [
 ]
 
 ext.testLibs = [
-        mockk                       : "io.mockk:mockk:1.11.0",
+        mockk                       : "io.mockk:mockk:1.12.0",
         junit                       : "junit:junit:4.13.2",
         jsonAssert                  : "org.skyscreamer:jsonassert:1.5.0",
-        jsonUnit                    : "net.javacrumbs.json-unit:json-unit:2.25.0",
-        jsonUnitFluent              : "net.javacrumbs.json-unit:json-unit-fluent:2.25.0",
+        jsonUnit                    : "net.javacrumbs.json-unit:json-unit:2.28.0",
+        jsonUnitFluent              : "net.javacrumbs.json-unit:json-unit-fluent:2.28.0",
         robolectric                 : "org.robolectric:robolectric:4.3.1",
         robolectricSnapshot         : "org.robolectric:robolectric:4.test:core4-SNAPSHOT",
         robolectricShadowsMultidex  : "org.robolectric:shadows-multidex:4.1",
@@ -533,7 +529,7 @@ ext.testLibs = [
 ext.androidTestLibs = [
 
         // Core library
-        testCore              : "androidx.test:core:1.3.0",
+        testCore              : "androidx.test:core:1.4.0",
 
         // room
         roomTesting           : "androidx.room:room-testing:$roomVersion",
@@ -547,13 +543,13 @@ ext.androidTestLibs = [
         coreTesting           : "android.arch.core:core-testing:1.1.1",
 
         // AndroidJUnitRunner and JUnit Rules
-        espressoRunner        : "androidx.test:runner:1.3.0",
-        espressoRules         : "androidx.test:rules:1.3.0",
+        espressoRunner        : "androidx.test:runner:1.4.0",
+        espressoRules         : "androidx.test:rules:1.4.0",
 
         // Assertions
         testJUnit             : "androidx.test.ext:junit:1.1.1",
         textTruth             : "androidx.test.ext:truth:1.1.0",
-        truth                 : "com.google.truth:truth:1.1.2",
+        truth                 : "com.google.truth:truth:1.1.3",
 
         // Espresso dependencies
         espressoCore          : "androidx.test.espresso:espresso-core:3.2.0",
