@@ -16,6 +16,7 @@ ext {
     androidGradleBuildToolsVersion = '4.2.2'
     googleGmsVersion = '4.3.10'
     kotlinDokkaVersion = '1.5.0'
+    jacocoVersion = '0.8.7'
 
     // libs
     coreKtxVersion = '1.6.0'
@@ -145,7 +146,8 @@ ext.plugin = [
         detekt                       : "io.gitlab.arturbosch.detekt:detekt-gradle-plugin:$detektVersion",
         firebaseCrashlyticsGradle    : "com.google.firebase:firebase-crashlytics-gradle:$firebaseCrashlyticsPluginVersion",
         // https://developers.google.com/android/guides/google-services-plugin
-        gms                          : "com.google.gms:google-services:$googleGmsVersion"
+        gms                          : "com.google.gms:google-services:$googleGmsVersion",
+        jacoco                       : "org.jacoco:org.jacoco.core:$jacocoVersion"
 ]
 
 ext.libs = [
