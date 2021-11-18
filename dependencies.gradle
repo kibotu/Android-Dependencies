@@ -118,7 +118,7 @@ ext {
     truthVersion = '1.1.3'
     espressoVersion = '3.4.0'
     idlingConcurrentVersion = '3.3.0'
-    fragmentTestingVersion = '1.1.0-alpha08'
+    fragmentTestingVersion = '1.3.6'
     // endregion
 
     // androidTestUtilLibs
@@ -259,6 +259,8 @@ ext.androidTestLibs = [
         // AndroidJUnitRunner and JUnit Rules
         testRunner            : "androidx.test:runner:$testRunnerVersion",
         testRules             : "androidx.test:rules:$testRulesVersion",
+
+        koin                  : "io.insert-koin:koin-test:$koinVersion",
 
         // workManager - test helpers
         testWorkers           : "androidx.work:work-testing:$workManagerKtxVersion",
