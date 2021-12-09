@@ -84,7 +84,7 @@ ext {
     tealiumVersion = '5.9.1'
     hawkVersion = '2.0.1'
     jodaVersion = '2.10.9.1'
-    kotlinDateTimeVersion = '0.1.1'
+    kotlinDateTimeVersion = '0.3.1'
 
     loggerVersion = '4.4.4'
     timberLoggerVersion = '5.0.1'
@@ -124,6 +124,8 @@ ext {
 
     // androidTestUtilLibs
     orchestratorVersion = '1.4.0'
+
+    desugaringVersion = '1.1.5'
 
     VERSION_NAME = 0
     LOG_UTILS = false
@@ -237,7 +239,9 @@ ext.libs = [
         joda                            : "net.danlew:android.joda:$jodaVersion",
         kotlinDateTime                  : "org.jetbrains.kotlinx:kotlinx-datetime:$kotlinDateTimeVersion",
 
-        leakcanary                      : "com.squareup.leakcanary:leakcanary-android:$leakcanaryVersion"
+        leakcanary                      : "com.squareup.leakcanary:leakcanary-android:$leakcanaryVersion",
+
+        coreLibraryDesugaring           : "com.android.tools:desugar_jdk_libs:$desugaringVersion"
 ]
 
 ext.testLibs = [
