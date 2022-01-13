@@ -150,7 +150,8 @@ ext.plugin = [
         firebaseCrashlyticsGradle    : "com.google.firebase:firebase-crashlytics-gradle:$firebaseCrashlyticsPluginVersion",
         // https://developers.google.com/android/guides/google-services-plugin
         gms                          : "com.google.gms:google-services:$googleGmsVersion",
-        jacoco                       : "org.jacoco:org.jacoco.core:$jacocoVersion"
+        jacoco                       : "org.jacoco:org.jacoco.core:$jacocoVersion",
+        allOpen                      : "org.jetbrains.kotlin:kotlin-allopen:$kotlinVersion"
 ]
 
 ext.libs = [
