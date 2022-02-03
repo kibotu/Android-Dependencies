@@ -93,7 +93,7 @@ ext {
     resourceExtensionVersion = '1.4.0'
     secureStorageVersion = '1.2.4'
 
-    leakcanaryVersion = '2.7'
+    leakcanaryVersion = '2.8.1'
     detektVersion = '1.18.1'
 
     // region testLibs versions
