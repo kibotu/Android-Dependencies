@@ -127,6 +127,9 @@ ext {
 
     desugaringVersion = '1.1.5'
 
+    zxingCoreVersion = '3.3.0'
+    zxingAndroidEmbeddedVersion = '4.3.0'
+
     VERSION_NAME = 0
     LOG_UTILS = false
 
@@ -242,7 +245,10 @@ ext.libs = [
 
         leakcanary                      : "com.squareup.leakcanary:leakcanary-android:$leakcanaryVersion",
 
-        coreLibraryDesugaring           : "com.android.tools:desugar_jdk_libs:$desugaringVersion"
+        coreLibraryDesugaring           : "com.android.tools:desugar_jdk_libs:$desugaringVersion",
+
+        zxingAndroidEmbedded            : "com.journeyapps:zxing-android-embedded:$zxingAndroidEmbeddedVersion",
+        zxingCore                       : "com.google.zxing:core:$zxingCoreVersion"
 ]
 
 ext.testLibs = [
