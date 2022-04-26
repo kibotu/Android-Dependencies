@@ -69,14 +69,14 @@ ext {
     conscryptVersion = '2.5.2'
     // endregion
 
-    amazonExoplayerVersion = '2.13.3'
-    amazonExoplayerImaExtensionVersion = '2.13.3'
+    amazonExoplayerVersion = '2.16.1'
+    amazonExoplayerImaExtensionVersion = '2.16.1'
 
     // DO NOT UPDATE !
     awsIotVersion = '2.13.3'
     awsClientVersion = '2.13.3'
 
-    youboraVersion = '6.7.23'
+    youboraVersion = '6.7.33'
 
     glideVersion = '4.12.0'
     glideTransformationsVersion = '4.3.0'
