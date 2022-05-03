@@ -12,7 +12,6 @@ ext {
     // @see https://mvnrepository.com/artifact/org.jetbrains.kotlin/kotlin-stdlib-jdk8
     kotlinVersion = '1.5.30'
 
-    // plugins => 7 - 7.0.2 result in NullPointerException when inflating views with include tag
     androidGradleBuildToolsVersion = '7.0.2'
     googleGmsVersion = '4.3.10'
     kotlinDokkaVersion = '1.5.0'
