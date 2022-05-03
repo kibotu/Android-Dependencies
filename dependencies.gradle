@@ -41,7 +41,6 @@ ext {
     mosbyMviVersion = '3.1.1'
 
     tvProviderVVersion = '1.0.0'
-    // this version is NOT compatible with Android 12 (S)
     workManagerKtxVersion = '2.7.1'
     workManagerRx2Version = '2.6.0'
 
