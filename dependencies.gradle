@@ -1,12 +1,6 @@
 ext {
     // refresh gradle dependencies: ./gradlew build --refresh-dependencies
 
-    // sdk and tools
-    minSdkVer = 21
-    compileSdkVer = 31
-    targetSdkVer = 31
-
-    buildToolsVer = '31.0.0'
 
     // define all versions to facilitate dependency update (=> updating variables here)
     // @see https://mvnrepository.com/artifact/org.jetbrains.kotlin/kotlin-stdlib-jdk8
@@ -16,8 +10,6 @@ ext {
     googleGmsVersion = '4.3.10'
     kotlinDokkaVersion = '1.5.0'
     jacocoVersion = '0.8.7'
-    kaspressoVersion = '1.3.0'
-
     // libs
     coreKtxVersion = '1.6.0'
     activityKtxVersion = '1.3.1'
@@ -118,6 +110,7 @@ ext {
     espressoVersion = '3.4.0'
     idlingConcurrentVersion = '3.3.0'
     fragmentTestingVersion = '1.3.6'
+    kaspressoVersion = '1.3.0'
     // endregion
 
     // androidTestUtilLibs
