@@ -35,7 +35,7 @@ ext {
     rx2AndroidVersion = '2.1.1'
     rx2KotlinVersion = '2.4.0'
 
-    firebaseCrashlyticsVersion = '18.2.1'
+    firebaseCrashlyticsVersion = '18.2.11'
 
     // region network versions
     retrofitVersion = '2.9.0'
@@ -72,9 +72,6 @@ ext {
     applicationProviderVersion = '1.0.0'
     resourceExtensionVersion = '1.4.0'
     secureStorageVersion = '1.2.4'
-
-    leakcanaryVersion = '2.8.1'
-    detektVersion = '1.18.1'
 
     // region testLibs versions
     junitVersion = '4.13.2'
@@ -208,8 +205,6 @@ ext.libs = [
         hawk                            : "com.orhanobut:hawk:$hawkVersion",
         joda                            : "net.danlew:android.joda:$jodaVersion",
         kotlinDateTime                  : "org.jetbrains.kotlinx:kotlinx-datetime:$kotlinDateTimeVersion",
-
-        leakcanary                      : "com.squareup.leakcanary:leakcanary-android:$leakcanaryVersion",
 
         coreLibraryDesugaring           : "com.android.tools:desugar_jdk_libs:$desugaringVersion",
 
