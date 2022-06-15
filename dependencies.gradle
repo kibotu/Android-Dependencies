@@ -2,29 +2,31 @@ ext {
     // refresh gradle dependencies: ./gradlew build --refresh-dependencies
 
     // libs
-    coreKtxVersion = '1.6.0'
-    activityKtxVersion = '1.3.1'
-    fragmentKtxVersion = '1.3.6'
-    collectionKtxVersion = '1.1.0'
-    lifecycleKtxVersion = '2.3.1'
+    coreKtxVersion = '1.8.0'
+    activityKtxVersion = '1.4.0'
+    fragmentKtxVersion = '1.4.1'
+    collectionKtxVersion = '1.2.0'
+    lifecycleKtxVersion = '2.4.1'
 
-    appCompatVersion = '1.3.1'
-    constraintLayoutVersion = '2.1.0'
+    appCompatVersion = '1.4.2'
+    constraintLayoutVersion = '2.1.4'
     gridLayoutVersion = '1.0.0'
     leanbackVersion = '1.0.0'
-    materialDesignVersion = '1.4.0'
+    materialDesignVersion = '1.6.0'
     recyclerviewVersion = '1.2.1'
     vectorDrawableVersion = '1.1.0'
 
-    recyclerViewPresenterVersion = '5.0.1'
+    multiDexVersion = '2.0.1'
+
+    recyclerViewPresenterVersion = '6.0.1'
     recyclerviewAnimatorsVersion = '4.0.1'
 
-    koinVersion = '3.1.2'
+    koinVersion = '3.2.0'
     mosbyMviVersion = '3.1.1'
 
     tvProviderVVersion = '1.0.0'
     workManagerKtxVersion = '2.7.1'
-    workManagerRx2Version = '2.6.0'
+    workManagerRx2Version = '2.7.1'
 
     /**
      * this is the final version for rxJava2
@@ -41,9 +43,10 @@ ext {
     retrofitVersion = '2.9.0'
     retrofitConverterSerializationVersion = '0.8.0'
 
-    kotlinxSerializationVersion = '1.2.2'
+    // 1.3.2 due to kotlin version 1.6.21
+    kotlinxSerializationVersion = '1.3.2'
 
-    okhttp3Version = '4.9.1'
+    okhttp3Version = '4.10.0'
     okhttp3ResponseEchoVersion = '2.3.0'
 
     conscryptVersion = '2.5.2'
@@ -58,30 +61,27 @@ ext {
 
     youboraVersion = '6.7.33-alpha3'
 
-    glideVersion = '4.12.0'
+    glideVersion = '4.13.2'
     glideTransformationsVersion = '4.3.0'
 
-    tealiumVersion = '5.9.1'
+    tealiumVersion = '5.9.3'
     hawkVersion = '2.0.1'
-    jodaVersion = '2.10.9.1'
-    kotlinDateTimeVersion = '0.3.1'
+    jodaVersion = '2.10.14'
+    // 0.3.2/3 issue with kotlin 1.7.0 IncompatibleClassChangeError
+    // https://github.com/kotest/kotest/issues/2960 https://youtrack.jetbrains.com/issue/KT-52191
+    kotlinDateTimeVersion = '0.3.2'
 
     loggerVersion = '4.4.4'
-    timberLoggerVersion = '5.0.1'
 
-    applicationProviderVersion = '1.0.0'
+    applicationProviderVersion = '1.0.5'
     resourceExtensionVersion = '1.4.0'
-    secureStorageVersion = '1.2.4'
 
     // region testLibs versions
     junitVersion = '4.13.2'
-
     jsonAssertVersion = '1.5.0'
-    jsonUnitVersion = '2.28.0'
-    jsonUnitFluentVersion = '2.28.0'
-    robolectricVersion = '4.6.1'
-    mockkVersion = '1.12.0'
-    truthVersion = 'c1.0.1'
+    jsonUnitVersion = '2.35.0'
+    robolectricVersion = '4.8.1'
+    mockkVersion = '1.12.4'
     jodaTimeVersion = '2.10.10'
     // endregion
 
@@ -90,21 +90,20 @@ ext {
     testingCoreVersion = '2.1.0'
     testRunnerVersion = '1.4.0'
     testRulesVersion = '1.4.0'
-    testJUnitVersion = '1.1.2'
-    testJUnitKtxVersion = '1.1.2'
+    testJUnitVersion = '1.1.3'
     testTruthVersion = '1.4.0'
     truthVersion = '1.1.3'
-    espressoVersion = '3.4.0'
-    idlingConcurrentVersion = '3.3.0'
-    fragmentTestingVersion = '1.3.6'
+    // Updating to 1.4.1 leads to dependency conflicts (presumable due to espresso wrapping)
+    // https://github.com/android/android-test/issues/861
     kaspressoVersion = '1.3.0'
     // endregion
 
     // androidTestUtilLibs
-    orchestratorVersion = '1.4.0'
+    orchestratorVersion = '1.4.1'
 
     desugaringVersion = '1.1.5'
 
+    // with >= 3.4.0 -> must target API 24 and above
     zxingCoreVersion = '3.3.0'
     zxingAndroidEmbeddedVersion = '4.3.0'
 
@@ -144,6 +143,8 @@ ext.libs = [
         materialDesign                  : "com.google.android.material:material:$materialDesignVersion",
         recyclerView                    : "androidx.recyclerview:recyclerview:$recyclerviewVersion",
         vectorDrawable                  : "androidx.vectordrawable:vectordrawable:$vectorDrawableVersion",
+
+        multiDex                        : "androidx.multidex:multidex:$multiDexVersion",
 
         recyclerviewAnimators           : "jp.wasabeef:recyclerview-animators:$recyclerviewAnimatorsVersion",
         recyclerViewPresenter           : "com.github.kibotu:RecyclerViewPresenter:$recyclerViewPresenterVersion",
@@ -194,12 +195,10 @@ ext.libs = [
         glideTransformations            : "jp.wasabeef:glide-transformations:$glideTransformationsVersion",
 
         logger                          : "com.github.kibotu:StreamingAndroidLogger:$loggerVersion",
-        timberLogger                    : "com.jakewharton.timber:timber:$timberLoggerVersion",
 
         // applicationProvider = dependency for resourceExtension
         applicationProvider             : "com.github.florent37:applicationprovider:$applicationProviderVersion",
         resourceExtension               : "com.github.kibotu:AndroidResourceExtensions:$resourceExtensionVersion",
-        secureStorage                   : "de.adorsys.android:securestoragelibrary:$secureStorageVersion",
 
         tealium                         : "com.tealium:library:$tealiumVersion",
         hawk                            : "com.orhanobut:hawk:$hawkVersion",
@@ -216,12 +215,13 @@ ext.testLibs = [
         junit                 : "junit:junit:$junitVersion",
         jsonAssert            : "org.skyscreamer:jsonassert:$jsonAssertVersion",
         jsonUnit              : "net.javacrumbs.json-unit:json-unit:$jsonUnitVersion",
-        jsonUnitFluent        : "net.javacrumbs.json-unit:json-unit-fluent:$jsonUnitFluentVersion",
+        jsonUnitFluent        : "net.javacrumbs.json-unit:json-unit-fluent:$jsonUnitVersion",
         robolectric           : "org.robolectric:robolectric:$robolectricVersion",
         mockkUnit             : "io.mockk:mockk:$mockkVersion",
         truth                 : "com.google.truth:truth:$truthVersion",
         jodaTime              : "joda-time:joda-time:$jodaTimeVersion",
         koinTestJUnit4        : "io.insert-koin:koin-test-junit4:$koinVersion",
+        koinTestJVM           : "io.insert-koin:koin-test-jvm:$koinVersion",
 ]
 ext.androidTestLibs = [
 
@@ -245,17 +245,14 @@ ext.androidTestLibs = [
 
         // Assertions
         testJUnit             : "androidx.test.ext:junit:$testJUnitVersion",
-        testJUnitKtx          : "androidx.test.ext:junit-ktx:$testJUnitKtxVersion",
+        testJUnitKtx          : "androidx.test.ext:junit-ktx:$testJUnitVersion",
         testTruth             : "androidx.test.ext:truth:$testTruthVersion",
         googleTruth           : "com.google.truth:truth:$truthVersion",
-
-        // Espresso dependencies
-        espressoCore          : "androidx.test.espresso:espresso-core:$espressoVersion",
 
         // mock instrumentation
         mockkInstrumentation  : "io.mockk:mockk-android:$mockkVersion",
 
-        fragmentTesting       : "androidx.fragment:fragment-testing:$fragmentTestingVersion",
+        fragmentTesting       : "androidx.fragment:fragment-testing:$fragmentKtxVersion",
 ]
 
 ext.androidTestUtilLibs = [
