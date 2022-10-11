@@ -52,14 +52,14 @@ ext {
     conscryptVersion = '2.5.2'
     // endregion
 
-    amazonExoplayerVersion = '2.16.1'
-    amazonExoplayerImaExtensionVersion = '2.16.1'
+    amazonExoplayerVersion = '2.17.1'
+    amazonExoplayerImaExtensionVersion = '2.17.1'
 
     // DO NOT UPDATE !
     awsIotVersion = '2.13.3'
     awsClientVersion = '2.13.3'
 
-    youboraVersion = '6.7.33-alpha3'
+    youboraVersion = '6.8.3'
 
     glideVersion = '4.13.2'
     glideTransformationsVersion = '4.3.0'
@@ -184,7 +184,7 @@ ext.libs = [
         amazonExoplayer                 : "com.amazon.android:exoplayer:$amazonExoplayerVersion",
         amazonExoplayerImaExtension     : "com.amazon.android:extension-ima:$amazonExoplayerImaExtensionVersion",
 
-        youbora                         : "com.nicepeopleatwork:exoplayer-adapter:$youboraVersion",
+        youbora                       : "com.nicepeopleatwork:exoplayer2-17-adapter:$youboraVersion",
 
         // AWS SDK
         awsIot                          : "com.amazonaws:aws-android-sdk-iot:$awsIotVersion@aar",
