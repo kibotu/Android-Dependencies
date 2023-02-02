@@ -52,8 +52,8 @@ ext {
     conscryptVersion = '2.5.2'
     // endregion
 
-    amazonExoplayerVersion = '2.18.1'
-    amazonExoplayerImaExtensionVersion = '2.18.1'
+    amazonExoplayerVersion = '2.18.2'
+    amazonExoplayerImaExtensionVersion = '2.18.2'
 
     // DO NOT UPDATE !
     awsIotVersion = '2.13.3'
