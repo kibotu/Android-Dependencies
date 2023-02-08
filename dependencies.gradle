@@ -55,6 +55,8 @@ ext {
     amazonExoplayerVersion = '2.18.2'
     amazonExoplayerImaExtensionVersion = '2.18.2'
 
+    googleAdsVersion = '3.28.2'
+
     // DO NOT UPDATE !
     awsIotVersion = '2.13.3'
     awsClientVersion = '2.13.3'
@@ -120,108 +122,110 @@ ext {
 }
 
 ext.libs = [
-        kotlin                          : "org.jetbrains.kotlin:kotlin-stdlib:$kotlinVersion",
+        kotlin                        : "org.jetbrains.kotlin:kotlin-stdlib:$kotlinVersion",
 
         // https://developer.android.com/kotlin/ktx#modules
-        coreKtx                         : "androidx.core:core-ktx:$coreKtxVersion",
-        fragmentKtx                     : "androidx.fragment:fragment-ktx:$fragmentKtxVersion",
-        activityKtx                     : "androidx.activity:activity-ktx:$activityKtxVersion",
-        collectionKtx                   : "androidx.collection:collection-ktx:$collectionKtxVersion",
+        coreKtx                       : "androidx.core:core-ktx:$coreKtxVersion",
+        fragmentKtx                   : "androidx.fragment:fragment-ktx:$fragmentKtxVersion",
+        activityKtx                   : "androidx.activity:activity-ktx:$activityKtxVersion",
+        collectionKtx                 : "androidx.collection:collection-ktx:$collectionKtxVersion",
 
-        lifecycleLiveDataKtx            : "androidx.lifecycle:lifecycle-livedata-ktx:$lifecycleKtxVersion",
+        lifecycleLiveDataKtx          : "androidx.lifecycle:lifecycle-livedata-ktx:$lifecycleKtxVersion",
         // > java 8 annotation processor:
-        lifecycleAnnotationKtx          : "androidx.lifecycle:lifecycle-compiler:$lifecycleKtxVersion",
+        lifecycleAnnotationKtx        : "androidx.lifecycle:lifecycle-compiler:$lifecycleKtxVersion",
         // java 8 annotation processor:
-        lifecycleCommonJava8            : "androidx.lifecycle:lifecycle-common-java8:$lifecycleKtxVersion",
+        lifecycleCommonJava8          : "androidx.lifecycle:lifecycle-common-java8:$lifecycleKtxVersion",
 
-        appCompat                       : "androidx.appcompat:appcompat:$appCompatVersion",
-        appCompatResources              : "androidx.appcompat:appcompat-resources:$appCompatVersion",
+        appCompat                     : "androidx.appcompat:appcompat:$appCompatVersion",
+        appCompatResources            : "androidx.appcompat:appcompat-resources:$appCompatVersion",
 
-        constraintLayout                : "androidx.constraintlayout:constraintlayout:$constraintLayoutVersion",
-        gridLayout                      : "androidx.gridlayout:gridlayout:$gridLayoutVersion",
-        leanback                        : "androidx.leanback:leanback:$leanbackVersion",
-        materialDesign                  : "com.google.android.material:material:$materialDesignVersion",
-        recyclerView                    : "androidx.recyclerview:recyclerview:$recyclerviewVersion",
-        vectorDrawable                  : "androidx.vectordrawable:vectordrawable:$vectorDrawableVersion",
+        constraintLayout              : "androidx.constraintlayout:constraintlayout:$constraintLayoutVersion",
+        gridLayout                    : "androidx.gridlayout:gridlayout:$gridLayoutVersion",
+        leanback                      : "androidx.leanback:leanback:$leanbackVersion",
+        materialDesign                : "com.google.android.material:material:$materialDesignVersion",
+        recyclerView                  : "androidx.recyclerview:recyclerview:$recyclerviewVersion",
+        vectorDrawable                : "androidx.vectordrawable:vectordrawable:$vectorDrawableVersion",
 
-        multiDex                        : "androidx.multidex:multidex:$multiDexVersion",
+        multiDex                      : "androidx.multidex:multidex:$multiDexVersion",
 
-        recyclerviewAnimators           : "jp.wasabeef:recyclerview-animators:$recyclerviewAnimatorsVersion",
-        recyclerViewPresenter           : "com.github.kibotu:RecyclerViewPresenter:$recyclerViewPresenterVersion",
+        recyclerviewAnimators         : "jp.wasabeef:recyclerview-animators:$recyclerviewAnimatorsVersion",
+        recyclerViewPresenter         : "com.github.kibotu:RecyclerViewPresenter:$recyclerViewPresenterVersion",
 
-        koinAndroid                     : "io.insert-koin:koin-android:$koinVersion",
+        koinAndroid                   : "io.insert-koin:koin-android:$koinVersion",
 
-        mosbyMvi                        : "com.hannesdorfmann.mosby3:mvi:$mosbyMviVersion",
+        mosbyMvi                      : "com.hannesdorfmann.mosby3:mvi:$mosbyMviVersion",
 
         // atv channels
-        tvProvider                      : "androidx.tvprovider:tvprovider:$tvProviderVVersion",
-        workManagerKtx                  : "androidx.work:work-runtime-ktx:$workManagerKtxVersion",
-        workManagerRx2                  : "androidx.work:work-rxjava2:$workManagerRx2Version",
+        tvProvider                    : "androidx.tvprovider:tvprovider:$tvProviderVVersion",
+        workManagerKtx                : "androidx.work:work-runtime-ktx:$workManagerKtxVersion",
+        workManagerRx2                : "androidx.work:work-rxjava2:$workManagerRx2Version",
 
-        rx2java                         : "io.reactivex.rxjava2:rxjava:$rx2javaVersion",
-        rx2Android                      : "io.reactivex.rxjava2:rxandroid:$rx2AndroidVersion",
-        rx2Kotlin                       : "io.reactivex.rxjava2:rxkotlin:$rx2KotlinVersion",
+        rx2java                       : "io.reactivex.rxjava2:rxjava:$rx2javaVersion",
+        rx2Android                    : "io.reactivex.rxjava2:rxandroid:$rx2AndroidVersion",
+        rx2Kotlin                     : "io.reactivex.rxjava2:rxkotlin:$rx2KotlinVersion",
 
-        firebaseCrashlytics             : "com.google.firebase:firebase-crashlytics:$firebaseCrashlyticsVersion",
+        firebaseCrashlytics           : "com.google.firebase:firebase-crashlytics:$firebaseCrashlyticsVersion",
 
         // region network
-        retrofit                        : "com.squareup.retrofit2:retrofit:$retrofitVersion",
-        retrofitAdapterRxJava2          : "com.squareup.retrofit2:adapter-rxjava2:$retrofitVersion",
-        retrofitConverterScalars        : "com.squareup.retrofit2:converter-scalars:$retrofitVersion",
-        retrofitConverterSerialization  : "com.jakewharton.retrofit:retrofit2-kotlinx-serialization-converter:$retrofitConverterSerializationVersion",
-        retrofitConverterSimpleXml      : "com.squareup.retrofit2:converter-simplexml:$retrofitVersion",
-        retrofitMock                    : "com.squareup.retrofit2:retrofit-mock:$retrofitVersion",
+        retrofit                      : "com.squareup.retrofit2:retrofit:$retrofitVersion",
+        retrofitAdapterRxJava2        : "com.squareup.retrofit2:adapter-rxjava2:$retrofitVersion",
+        retrofitConverterScalars      : "com.squareup.retrofit2:converter-scalars:$retrofitVersion",
+        retrofitConverterSerialization: "com.jakewharton.retrofit:retrofit2-kotlinx-serialization-converter:$retrofitConverterSerializationVersion",
+        retrofitConverterSimpleXml    : "com.squareup.retrofit2:converter-simplexml:$retrofitVersion",
+        retrofitMock                  : "com.squareup.retrofit2:retrofit-mock:$retrofitVersion",
 
-        okhttp3                         : "com.squareup.okhttp3:okhttp:$okhttp3Version",
-        okhttp3LoggingInterceptor       : "com.squareup.okhttp3:logging-interceptor:$okhttp3Version",
-        okhttp3ResponseEcho             : "com.github.simonpercic:oklog3:$okhttp3ResponseEchoVersion",
+        okhttp3                       : "com.squareup.okhttp3:okhttp:$okhttp3Version",
+        okhttp3LoggingInterceptor     : "com.squareup.okhttp3:logging-interceptor:$okhttp3Version",
+        okhttp3ResponseEcho           : "com.github.simonpercic:oklog3:$okhttp3ResponseEchoVersion",
 
-        kotlinxSerializationJson        : "org.jetbrains.kotlinx:kotlinx-serialization-json:$kotlinxSerializationVersion",
+        kotlinxSerializationJson      : "org.jetbrains.kotlinx:kotlinx-serialization-json:$kotlinxSerializationVersion",
 
-        conscrypt                       : "org.conscrypt:conscrypt-android:$conscryptVersion",
+        conscrypt                     : "org.conscrypt:conscrypt-android:$conscryptVersion",
         // endregion
 
-        amazonExoplayer                 : "com.amazon.android:exoplayer:$amazonExoplayerVersion",
-        amazonExoplayerImaExtension     : "com.amazon.android:extension-ima:$amazonExoplayerImaExtensionVersion",
+        amazonExoplayer               : "com.amazon.android:exoplayer:$amazonExoplayerVersion",
+        amazonExoplayerImaExtension   : "com.amazon.android:extension-ima:$amazonExoplayerImaExtensionVersion",
+
+        googleAds                     : "com.google.ads.interactivemedia.v3:interactivemedia:$googleAdsVersion",
 
         youbora                       : "com.nicepeopleatwork:exoplayer2-17-adapter:$youboraVersion",
 
         // AWS SDK
-        awsIot                          : "com.amazonaws:aws-android-sdk-iot:$awsIotVersion@aar",
-        awsClient                       : "com.amazonaws:aws-android-sdk-mobile-client:$awsClientVersion@aar",
+        awsIot                        : "com.amazonaws:aws-android-sdk-iot:$awsIotVersion@aar",
+        awsClient                     : "com.amazonaws:aws-android-sdk-mobile-client:$awsClientVersion@aar",
 
-        glide                           : "com.github.bumptech.glide:glide:$glideVersion",
-        glideAnnotationsProcessor       : "com.github.bumptech.glide:compiler:$glideVersion",
-        glideTransformations            : "jp.wasabeef:glide-transformations:$glideTransformationsVersion",
+        glide                         : "com.github.bumptech.glide:glide:$glideVersion",
+        glideAnnotationsProcessor     : "com.github.bumptech.glide:compiler:$glideVersion",
+        glideTransformations          : "jp.wasabeef:glide-transformations:$glideTransformationsVersion",
 
-        logger                          : "com.github.kibotu:StreamingAndroidLogger:$loggerVersion",
+        logger                        : "com.github.kibotu:StreamingAndroidLogger:$loggerVersion",
 
         // applicationProvider = dependency for resourceExtension
-        applicationProvider             : "com.github.florent37:applicationprovider:$applicationProviderVersion",
-        resourceExtension               : "com.github.kibotu:AndroidResourceExtensions:$resourceExtensionVersion",
+        applicationProvider           : "com.github.florent37:applicationprovider:$applicationProviderVersion",
+        resourceExtension             : "com.github.kibotu:AndroidResourceExtensions:$resourceExtensionVersion",
 
-        tealium                         : "com.tealium:library:$tealiumVersion",
-        hawk                            : "com.orhanobut:hawk:$hawkVersion",
-        joda                            : "net.danlew:android.joda:$jodaVersion",
-        kotlinDateTime                  : "org.jetbrains.kotlinx:kotlinx-datetime:$kotlinDateTimeVersion",
+        tealium                       : "com.tealium:library:$tealiumVersion",
+        hawk                          : "com.orhanobut:hawk:$hawkVersion",
+        joda                          : "net.danlew:android.joda:$jodaVersion",
+        kotlinDateTime                : "org.jetbrains.kotlinx:kotlinx-datetime:$kotlinDateTimeVersion",
 
-        coreLibraryDesugaring           : "com.android.tools:desugar_jdk_libs:$desugaringVersion",
+        coreLibraryDesugaring         : "com.android.tools:desugar_jdk_libs:$desugaringVersion",
 
-        zxingAndroidEmbedded            : "com.journeyapps:zxing-android-embedded:$zxingAndroidEmbeddedVersion",
-        zxingCore                       : "com.google.zxing:core:$zxingCoreVersion"
+        zxingAndroidEmbedded          : "com.journeyapps:zxing-android-embedded:$zxingAndroidEmbeddedVersion",
+        zxingCore                     : "com.google.zxing:core:$zxingCoreVersion"
 ]
 
 ext.testLibs = [
-        junit                 : "junit:junit:$junitVersion",
-        jsonAssert            : "org.skyscreamer:jsonassert:$jsonAssertVersion",
-        jsonUnit              : "net.javacrumbs.json-unit:json-unit:$jsonUnitVersion",
-        jsonUnitFluent        : "net.javacrumbs.json-unit:json-unit-fluent:$jsonUnitVersion",
-        robolectric           : "org.robolectric:robolectric:$robolectricVersion",
-        mockkUnit             : "io.mockk:mockk:$mockkVersion",
-        truth                 : "com.google.truth:truth:$truthVersion",
-        jodaTime              : "joda-time:joda-time:$jodaTimeVersion",
-        koinTestJUnit4        : "io.insert-koin:koin-test-junit4:$koinVersion",
-        koinTestJVM           : "io.insert-koin:koin-test-jvm:$koinVersion",
+        junit         : "junit:junit:$junitVersion",
+        jsonAssert    : "org.skyscreamer:jsonassert:$jsonAssertVersion",
+        jsonUnit      : "net.javacrumbs.json-unit:json-unit:$jsonUnitVersion",
+        jsonUnitFluent: "net.javacrumbs.json-unit:json-unit-fluent:$jsonUnitVersion",
+        robolectric   : "org.robolectric:robolectric:$robolectricVersion",
+        mockkUnit     : "io.mockk:mockk:$mockkVersion",
+        truth         : "com.google.truth:truth:$truthVersion",
+        jodaTime      : "joda-time:joda-time:$jodaTimeVersion",
+        koinTestJUnit4: "io.insert-koin:koin-test-junit4:$koinVersion",
+        koinTestJVM   : "io.insert-koin:koin-test-jvm:$koinVersion",
 ]
 ext.androidTestLibs = [
 
@@ -256,5 +260,5 @@ ext.androidTestLibs = [
 ]
 
 ext.androidTestUtilLibs = [
-        orchestrator : "androidx.test:orchestrator:$orchestratorVersion",
+        orchestrator: "androidx.test:orchestrator:$orchestratorVersion",
 ]
