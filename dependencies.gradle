@@ -186,6 +186,10 @@ ext.libs = [
         amazonExoplayer               : "com.amazon.android:exoplayer:$amazonExoplayerVersion",
         amazonExoplayerImaExtension   : "com.amazon.android:extension-ima:$amazonExoplayerImaExtensionVersion",
 
+        // We have added the following dependency in order to override the transitive dependency of the exoplayer because the
+        //current version 3.28.1 of google ads used by exoplayer has this issue
+        //https://github.com/google/ExoPlayer/issues/10828 which will be fixed in the next release of exoplayer 2.18.3
+        //When we will update to exoplayer 2.18.3 we will remove the googleAds dependency
         googleAds                     : "com.google.ads.interactivemedia.v3:interactivemedia:$googleAdsVersion",
 
         youbora                       : "com.nicepeopleatwork:exoplayer2-17-adapter:$youboraVersion",
