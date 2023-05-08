@@ -109,6 +109,9 @@ ext {
     zxingCoreVersion = '3.3.0'
     zxingAndroidEmbeddedVersion = '4.3.0'
 
+    //eventbus
+    eventBusVersion = '3.3.1'
+
     VERSION_NAME = 0
     LOG_UTILS = false
 
@@ -216,7 +219,8 @@ ext.libs = [
         coreLibraryDesugaring         : "com.android.tools:desugar_jdk_libs:$desugaringVersion",
 
         zxingAndroidEmbedded          : "com.journeyapps:zxing-android-embedded:$zxingAndroidEmbeddedVersion",
-        zxingCore                     : "com.google.zxing:core:$zxingCoreVersion"
+        zxingCore                     : "com.google.zxing:core:$zxingCoreVersion",
+        eventBus                      : "org.greenrobot:eventbus:$eventBusVersion"
 ]
 
 ext.testLibs = [
