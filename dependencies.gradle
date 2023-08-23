@@ -61,7 +61,7 @@ ext {
     awsIotVersion = '2.13.3'
     awsClientVersion = '2.13.3'
 
-    youboraVersion = '6.8.3'
+    youboraVersion = '6.9.2'
 
     glideVersion = '4.13.2'
     glideTransformationsVersion = '4.3.0'
@@ -195,7 +195,7 @@ ext.libs = [
         //When we will update to exoplayer 2.18.3 we will remove the googleAds dependency
         googleAds                     : "com.google.ads.interactivemedia.v3:interactivemedia:$googleAdsVersion",
 
-        youbora                       : "com.nicepeopleatwork:exoplayer2-17-adapter:$youboraVersion",
+        youbora                       : "com.nicepeopleatwork:exoplayer2-18-adapter:$youboraVersion",
 
         // AWS SDK
         awsIot                        : "com.amazonaws:aws-android-sdk-iot:$awsIotVersion@aar",
