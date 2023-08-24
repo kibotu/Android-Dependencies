@@ -61,7 +61,7 @@ ext {
     awsIotVersion = '2.13.3'
     awsClientVersion = '2.13.3'
 
-    youboraVersion = '6.9.2'
+    youboraVersion = '6.9.6'
 
     glideVersion = '4.13.2'
     glideTransformationsVersion = '4.3.0'
