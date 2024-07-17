@@ -73,9 +73,6 @@ ext {
     // https://github.com/kotest/kotest/issues/2960 https://youtrack.jetbrains.com/issue/KT-52191
     kotlinDateTimeVersion = '0.3.2'
 
-    loggerVersion = '4.4.4'
-
-    applicationProviderVersion = '1.0.5'
     resourceExtensionVersion = '1.4.0'
 
     // region testLibs versions
@@ -205,10 +202,7 @@ ext.libs = [
         glideAnnotationsProcessor     : "com.github.bumptech.glide:compiler:$glideVersion",
         glideTransformations          : "jp.wasabeef:glide-transformations:$glideTransformationsVersion",
 
-        logger                        : "com.github.kibotu:StreamingAndroidLogger:$loggerVersion",
-
         // applicationProvider = dependency for resourceExtension
-        applicationProvider           : "com.github.florent37:applicationprovider:$applicationProviderVersion",
         resourceExtension             : "com.github.kibotu:AndroidResourceExtensions:$resourceExtensionVersion",
 
         tealium                       : "com.tealium:library:$tealiumVersion",
