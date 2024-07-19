@@ -18,7 +18,6 @@ ext {
 
     multiDexVersion = '2.0.1'
 
-    recyclerViewPresenterVersion = '6.0.1'
     recyclerviewAnimatorsVersion = '4.0.1'
 
     koinVersion = '3.2.0'
@@ -149,7 +148,6 @@ ext.libs = [
         multiDex                      : "androidx.multidex:multidex:$multiDexVersion",
 
         recyclerviewAnimators         : "jp.wasabeef:recyclerview-animators:$recyclerviewAnimatorsVersion",
-        recyclerViewPresenter         : "com.github.kibotu:RecyclerViewPresenter:$recyclerViewPresenterVersion",
 
         koinAndroid                   : "io.insert-koin:koin-android:$koinVersion",
 
